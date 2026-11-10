@@ -60,11 +60,13 @@ python scripts/verify_evidence.py <audit-root> <audit-root>/stages/stage-1.5/evi
 
 退出码 0 表示所有列出的文件本地字节与记录一致。该校验只证明本地文件完整性，不证明测试结果或科学结论。
 
-## 关于本仓库为 Private
+## 仓库可见性与 DF4 模型的授权背景
 
-DF4 的几何与描述文件来自一个**没有任何许可证**的上游仓库（<https://github.com/mengchaoheng/DF_gazebo>，GitHub `license: null`，根目录无 `LICENSE`/`COPYING`），再分发权未确立。本仓库包含该模型的渲染与窗口截图，因此不公开。
+两个仓库均为 **Public**。
 
-一旦权利人确认可再分发（上游补充许可证，或书面许可记录在 [`manifests/ARTIFACT_MANIFEST.md`](manifests/ARTIFACT_MANIFEST.md) §6），可立即改为 Public，内容无需改动。
+DF4 的几何与描述文件来自 <https://github.com/mengchaoheng/DF_gazebo>（GitHub `license: null`，根目录无 `LICENSE`/`COPYING`，即没有正式许可证文本）。项目所有者于 2026-11-10 说明：上游模型作者为**同一实验室的同事**，DF4 为**团队共用资产**，本项目的报告与截图可以公开。因此本仓库公开，内容不含原始 STL/SDF/`.blend` 文件。
+
+上游仍缺正式许可证文本，所以：把**几何本体**或打包产物交给团队之外的第三方之前，建议先取得书面许可。相关记录见 [`manifests/ARTIFACT_MANIFEST.md`](manifests/ARTIFACT_MANIFEST.md) §1 与 §6。
 
 ## 协作流程
 

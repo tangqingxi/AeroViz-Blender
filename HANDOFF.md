@@ -11,7 +11,7 @@
 
 - DEV: <https://github.com/tangqingxi/AeroViz-Blender>
 - DEV active branch: `main`
-- DEV tested commit: `d956bec3d71b105d20f2bc9e192a940406d108f4`（已推送，`git ls-remote` 与本地 HEAD 一致）
+- DEV tested commit: `d5b303a6d2ad437c18d85b4315ca7c8e4a23e878`（已推送，`git ls-remote` 与本地 HEAD 一致；相对 Stage 1/1.5 交付时的 `d956bec…` 只有文档变更——可见性说明与 README 中文化）
 - DEV worktree at handoff: **clean**（`output/` 与缓存被 `.gitignore` 排除，属预期）
 - AUDIT: <https://github.com/tangqingxi/AeroViz-Blender-Audit>
 - AUDIT phase/report: `stages/stage-1/STAGE_1_REPORT.md`、`stages/stage-1.5/STAGE_1_5_REPORT.md`
@@ -29,7 +29,7 @@
 | 映射单元测试 | `MATERIAL_MAPPING_TESTS_OK`（重构后复跑） | DEV `tests/test_material_mapping.py` |
 | Stage 1 报告 | 33 STL / 27 可见 / 6 隐藏 / 0.353×0.376×0.378 m / 26 link / 25 joint / 矩阵误差 0 | `stages/stage-1/STAGE_1_REPORT.md` |
 | Stage 1.5 报告 | 25 SDF 材质定义 / 7 材质 / 33 分配 / 8 无原始定义 / 89 对象保留 | `stages/stage-1.5/STAGE_1_5_REPORT.md` |
-| 上游许可证核查 | `mengchaoheng/DF_gazebo` 无许可证 → 审计仓库设 Private，模型与截图不公开 | `manifests/ARTIFACT_MANIFEST.md` §6 |
+| 上游许可证核查 | `mengchaoheng/DF_gazebo` 无许可证文本 → 经所有者确认 DF4 为同实验室团队共用资产，两仓库均公开；几何本体仍不上传 | `manifests/ARTIFACT_MANIFEST.md` §1、§6 |
 | 交付字节复验 | `REVERIFY_OK`：89/89 保留、33 材质一致、7 材质、0 动画 | `manifests/reverify-2026-11-10.json` |
 
 ## What is verified complete
@@ -60,7 +60,7 @@
   ```powershell
   git clone https://github.com/tangqingxi/AeroViz-Blender.git Blender
   cd Blender
-  git checkout d956bec3d71b105d20f2bc9e192a940406d108f4
+  git checkout d5b303a6d2ad437c18d85b4315ca7c8e4a23e878
   ```
 
 - 需要的输入：DF4 模型目录（33 STL + `ductedfan4.sdf.jinja`），需另行放置；`configs/DF4.json` 的 `input_root` 目前指向原作者本机路径 `D:\01_科研\TIE\DF4_SolidWorks\DF4_SolidWorks`，别人的机器上必须改。
@@ -72,7 +72,7 @@
 
 1. **工程字节时间线缺口（中）** —— 两个 `.blend` 在图形验收会话退出时被 Blender 重存（`gui_process.log` / `material_gui_process.log` 中有 `Saved "…blend"`），脚本本身不保存文件。因此磁盘当前字节 ≠ 截图时刻字节，且本地无更早字节归档。已用只读复验对齐全部断言（`manifests/reverify-2026-11-10.json`）。**建议**：后续阶段约定验收脚本退出时不保存工程，或保存后重新截图。
 2. **Stage 1.5 的输入版本（中）** —— `material_validation.json` 记录的保护哈希 `574c1b00…` 现对应 `DF4_Stage1.blend1`；当前 `DF4_Stage1.blend` 为 `10caf87e…`。Stage 1.5 派生自 `.blend1` 那一版。两份报告均已明示，禁止再声称"两者一致"。
-3. **模型再分发权未定（高，阻塞公开发布）** —— 上游 `mengchaoheng/DF_gazebo` 无任何许可证；本地 SDF 与上游字节不同（46 482 B vs 38 859 B）。审计仓库因此为 Private。解除条件见 `manifests/ARTIFACT_MANIFEST.md` §6。
+3. **上游缺正式许可证文本（中，已由团队授权覆盖）** —— `mengchaoheng/DF_gazebo` 无任何许可证文件；本地 SDF 与上游字节不同（46 482 B vs 38 859 B）。项目所有者 2026-11-10 确认作者为同实验室同事、DF4 为团队共用资产，故两仓库公开。**未解除的部分**：把几何本体或打包产物交给团队之外第三方之前仍需书面许可。记录见 `manifests/ARTIFACT_MANIFEST.md` §1、§6。
 4. **项目许可证未定（中）** —— 主仓库无 `LICENSE`，默认"保留所有权利"。需项目所有者选择，Agent 不得代选。
 5. **补充零件无描述依据（低）** —— `controller2.STL`、`X-tend.STL` 未被 SDF 引用，沿用 STL 原始坐标；固定关系未证实。
 6. **外部 include 未建模（低）** —— `gps0`（`model://gps`）无本地网格，已在 `ignored_includes` 显式记录并跳过 `gps0_joint`。
@@ -96,7 +96,7 @@
 ## Agent startup instructions
 
 1. 先读 DEV `README.md`、`docs/architecture.md`、`docs/interfaces.md`，再读本 handoff 与两份阶段报告。
-2. 核对 DEV `main` 的 HEAD 是否仍为 `d956bec3d71b105d20f2bc9e192a940406d108f4` 或为其后代；确认无未完成的改动。
+2. 核对 DEV `main` 的 HEAD 是否仍为 `d5b303a6d2ad437c18d85b4315ca7c8e4a23e878` 或为其后代；确认无未完成的改动。
 3. 校验证据：`verify_evidence.py` 对两份 `evidence-manifest.json` 均须退出码 0。
 4. 若用户未授权 Stage 2，只做核查与汇报，不写代码、不重跑导入、不重做材质。
 5. 不得重复已通过的阶段，不得覆盖 `output/DF4/` 下的既有工程，不得公开上传模型或截图。

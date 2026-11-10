@@ -6,8 +6,8 @@
 | 验证机型 | DF4（ducted-fan UAV） |
 | 阶段状态 | 已完成并通过本地验收；等待外部复核 |
 | 开发仓库 | <https://github.com/tangqingxi/AeroViz-Blender> |
-| 开发提交 | `d956bec3d71b105d20f2bc9e192a940406d108f4`（`main`，已推送） |
-| 审计仓库 | <https://github.com/tangqingxi/AeroViz-Blender-Audit>（Private） |
+| 开发提交 | `d5b303a6d2ad437c18d85b4315ca7c8e4a23e878`（`main`，已推送；相对交付 Stage 1/1.5 时的 `d956bec…` 只有文档变更——可见性说明与 README 中文化，代码与配置未变） |
+| 审计仓库 | <https://github.com/tangqingxi/AeroViz-Blender-Audit>（Public） |
 | 原始执行日期 | 2026-11-10 |
 | 报告整理日期 | 2026-11-10 |
 | 证据清单 | [`evidence-manifest.json`](evidence-manifest.json) |
