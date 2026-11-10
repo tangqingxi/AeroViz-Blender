@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "ProjectInit",
-  "created_at": "2026-11-10T10:46:43Z",
+  "created_at": "2026-11-10T10:49:11Z",
   "agent": {
     "name": "deepseek-harness",
     "model": "deepseek-flash"
@@ -9,7 +9,7 @@
   "development": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender",
     "branch": "main",
-    "commit": "d5b303a6d2ad437c18d85b4315ca7c8e4a23e878"
+    "commit": "7df632edfc1f1320bc0b270cb22d3e73e2e6dc81"
   },
   "audit": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
@@ -21,17 +21,17 @@
   "evidence": [
     {
       "path": "README.md",
-      "sha256": "2e2126271576e8b2c9dd9433bce6fcc30610cffda29b189caa0a06661b42ddef",
+      "sha256": "f9034c9b3ff66d22a6f03c8f099b737edb2eb54efe418ddddb5205b08117f6c7",
       "kind": "other"
     },
     {
       "path": "HANDOFF.md",
-      "sha256": "f25e49f2cc527683a43b6c2c49bae42a582eb11a4b5dc453317a76f70ff14462",
+      "sha256": "67f17d9a5f6e398ad8f47b45da84c0e226dc1f4170585d3cf144d73e8fb09771",
       "kind": "handoff"
     },
     {
       "path": "manifests/ARTIFACT_MANIFEST.md",
-      "sha256": "5b68af4d77822e17bceab8094e97e9d7d14a6d235fed14fe17636d4280040c6b",
+      "sha256": "dc21e02eb2d25742a83f6623460d0ea2b5a5a810579f06ea15fd0d38db9f9489",
       "kind": "other"
     },
     {
@@ -52,7 +52,7 @@
     "result": "passed"
   },
   "limitations": [
-    "The DF4 upstream repository carries no licence text; publishing derived reports and screenshots rests on the owner confirming the airframe is a shared team asset, not on a formal licence.",
+    "The upstream model repository carries no licence file, so the geometry itself is not redistributed; only reports and screenshots are published.",
     "The adapter-equivalence check was a one-off migration script not shipped in DEV."
   ],
   "next_action": "Await Stage 2 authorisation; Stage 2 is not started."

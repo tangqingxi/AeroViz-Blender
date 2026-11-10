@@ -6,8 +6,8 @@
 | 验证机型 | DF4（ducted-fan UAV） |
 | 阶段状态 | 已完成并通过本地验收；等待外部复核 |
 | 开发仓库 | <https://github.com/tangqingxi/AeroViz-Blender> |
-| 开发提交 | `d5b303a6d2ad437c18d85b4315ca7c8e4a23e878`（`main`，已推送；相对交付 Stage 1/1.5 时的 `d956bec…` 只有文档变更——可见性说明与 README 中文化，代码与配置未变） |
-| 审计仓库 | <https://github.com/tangqingxi/AeroViz-Blender-Audit>（Public） |
+| 开发提交 | `7df632edfc1f1320bc0b270cb22d3e73e2e6dc81`（`main`，已推送；相对交付 Stage 1/1.5 时的 `d956bec…` 只有文档变更，代码与配置未变） |
+| 审计仓库 | <https://github.com/tangqingxi/AeroViz-Blender-Audit> |
 | 原始执行日期 | 2026-11-10 |
 | 报告整理日期 | 2026-11-10 |
 | 证据清单 | [`evidence-manifest.json`](evidence-manifest.json) |
@@ -217,7 +217,7 @@
 
 5. **`ductedfan4/imu_joint` 为限位 0~0 的 revolute 关节**，且没有网格子代，几何上无可见作用，仅保留为元数据。
 
-6. **本地描述文件与上游不一致。** 本地 `ductedfan4.sdf.jinja`（46 482 B）与 `mengchaoheng/DF_gazebo` 分支 `ductedfan` 上同名文件（38 859 B）字节不同，本地副本含 PX4/MAVLink 侧改造。上游仓库**没有任何许可证文本**；项目所有者已确认该模型为同实验室团队共用资产并同意公开本报告及其截图，但字节级来源差异仍然存在 —— 详见 [`../../manifests/ARTIFACT_MANIFEST.md`](../../manifests/ARTIFACT_MANIFEST.md) 与开发仓库 `docs/asset-provenance.md`。
+6. **本地描述文件与上游不一致。** 本地 `ductedfan4.sdf.jinja`（46 482 B）与 `mengchaoheng/DF_gazebo` 分支 `ductedfan` 上同名文件（38 859 B）字节不同，本地副本含 PX4/MAVLink 侧改造；上游仓库没有许可证文件，几何本体因此不入库 —— 详见 [`../../manifests/ARTIFACT_MANIFEST.md`](../../manifests/ARTIFACT_MANIFEST.md) §6 与开发仓库 `docs/asset-provenance.md`。
 
 7. **源文件未定义飞行前向**，X/Y 方向完全沿用源坐标；若后续镜头阶段需要"机头朝向"，必须另行确认，不能由本阶段推断。
 
