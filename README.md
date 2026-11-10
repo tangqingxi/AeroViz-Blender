@@ -163,7 +163,8 @@ AeroViz-Blender/
 ├── examples/
 │   └── README.md
 ├── tests/
-│   └── test_material_mapping.py
+│   ├── test_material_mapping.py     mapping priority / colour space / ambiguity
+│   └── reverify_saved_project.py    read-only re-verification of a saved project
 └── output/                     generated, git-ignored (projects, previews, reports)
 ```
 
@@ -207,9 +208,17 @@ Independent joint-transmission check and mapping unit checks:
      --python '.\tests\test_material_mapping.py'
 ```
 
-Expect `STAGE1_IMPORT_OK`, `MATERIAL_STAGE_OK 7 33`, `JOINT_HIERARCHY_OK 5` and
-`MATERIAL_MAPPING_TESTS_OK` respectively. All output paths resolve relative to the
-repository root; the model input directory is only read.
+Re-verify an accepted project against the records of the run that produced it
+(read-only; opens both stages, replays every recorded assertion, saves nothing):
+
+```powershell
+& $B --background --factory-startup --python-exit-code 1 `
+     --python '.\tests\reverify_saved_project.py' -- --config configs/DF4.json
+```
+
+Expect `STAGE1_IMPORT_OK`, `MATERIAL_STAGE_OK 7 33`, `JOINT_HIERARCHY_OK 5`,
+`MATERIAL_MAPPING_TESTS_OK` and `REVERIFY_OK` respectively. All output paths resolve
+relative to the repository root; the model input directory is only read.
 
 To build a different aircraft, copy `configs/template.json` and follow
 [docs/model-onboarding.md](docs/model-onboarding.md).
