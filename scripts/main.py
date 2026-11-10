@@ -20,8 +20,12 @@ from validation import snapshot, audit, write_report
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument('--config', required=True)
+    parser.add_argument('--force-rebuild', action='store_true', help='显式授权重建已经存在的工程')
     args = parser.parse_args(sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else [])
     config = json.loads(project_io.resolve(args.config).read_text(encoding='utf8'))
+    target = project_io.project(config)
+    if target.exists() and not args.force_rebuild:
+        raise FileExistsError(f'拒绝覆盖已有工程：{target}；如需重建必须显式提供 --force-rebuild')
     input_root = project_io.input_root(config)
     output = project_io.output_dir(config)
     target = project_io.project(config)
@@ -31,9 +35,11 @@ def main():
         raise ValueError('输入和输出目录不能相互包含')
 
     # 预览与报告先落在临时目录，验收通过后再归档到审计仓库，本地不留副本。
-    work = project_io.reset_dir(project_io.work_dir(config))
-    work_reports = project_io.reset_dir(work/'reports')
-    work_preview = project_io.reset_dir(work/'preview')
+    work = project_io.safe_reset_work_dir(config)
+    work_reports = work/'reports'
+    work_preview = work/'preview'
+    work_reports.mkdir()
+    work_preview.mkdir()
     evidence = project_io.evidence_dir(config, 'stage-1')
 
     before = snapshot(input_root)
@@ -48,8 +54,8 @@ def main():
 
     copied = project_io.publish([work_reports/'validation.json', work_reports/'input_manifest.json',
                                  work_preview/'*.png'], evidence)
-    target = project_io.save_project(config)
-    project_io.clear_dir(work)
+    target = project_io.save_project(config, allow_rebind=True)
+    project_io.clear_work_dir(config)
     print('STAGE1_IMPORT_OK', str(target), flush=True)
     print('STAGE1_EVIDENCE', ', '.join(p.name for p in copied), flush=True)
 

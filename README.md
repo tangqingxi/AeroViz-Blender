@@ -61,7 +61,7 @@ scripts/main.py               入口：边界检查 → 选择适配器 → 构�
         └── output/<MODEL>/            唯一的当前工程（<blend_name>）
 
 scripts/materials.py           Stage 1.5：SDF 材质 → Principled BSDF，
-                               在既有 Stage 1 工程上另存新版本
+                               在当前唯一工程中更新材质
 scripts/gui_verify*.py         图形进程重开 + 截图验收
 scripts/check_joint_hierarchy.py   独立进程验证关节传递
 tests/                         映射/优先级单元检查（在 Blender 内运行）
@@ -146,7 +146,7 @@ Stage 1 —— 导入与装配恢复（DF4）：
      --python '.\scripts\main.py' -- --config configs/DF4.json
 ```
 
-Stage 1.5 —— 把 SDF 材质恢复到新版本工程：
+Stage 1.5 —— 在当前唯一工程中恢复 SDF 材质：
 
 ```powershell
 & $B --background --factory-startup --python-exit-code 1 `
@@ -210,3 +210,29 @@ Stage 1 与 Stage 1.5 已针对 DF4 完成，验收证据在独立审计仓库�
 DF4 几何来自第三方仓库 `mengchaoheng/DF_gazebo`，该仓库没有 `LICENSE` 文件，因此几何本体（STL/SDF）与由它生成的工程不在本仓库分发。来源、与上游的字节差异见 [docs/asset-provenance.md](docs/asset-provenance.md)。
 
 本项目自身的许可证**尚未确定**，因此没有放置 `LICENSE` 文件；在确定之前，默认适用"保留所有权利"。
+
+
+## 工程 I/O 安全回归
+
+已有工程默认禁止 Stage 1 重建：入口在清理 `.work/`、导入和场景构建前报错。首次构建仍正常允许；只有明确授权重建时才添加 `--force-rebuild`。Stage 2 只打开并更新当前工程，不通过 Stage 1 重建。
+
+`project_io.save_project()` 用 `save_as_mainfile(copy=True)` 写到目标同目录的唯一 `*.partial.blend`，校验非空且当前路径未变后用 `os.replace()` 原子替换。已打开当前工程时，`bpy.data.filepath` 始终保持原目标；首次构建在提交成功后用真正的 `open_mainfile()` 绑定目标。覆盖另一份尚未打开的既有工程默认报错，只有 Stage 1 在显式授权门后使用 `allow_rebind=True`。所有保存关闭 `.blend1` 备份，保存或替换故障都在 finally 清理本次临时文件。
+
+临时目录只能为仓库 `.work/` 或其子目录。`validate_work_dir()` 只检查；`safe_reset_work_dir()` 与 `clear_work_dir()` 每次删除前都完整校验路径链、受保护目录的双向包含关系及整棵目录树的重解析点，不再提供任意路径递归删除接口。无效配置会在任何删除前报错。Windows 目录联接也按重解析点拒绝。
+
+在 Blender 5.0.1 中执行回归（只保存正式工程的 `.work/io-regression/` 副本）：
+
+```powershell
+& $B --background --factory-startup --python-exit-code 1 `
+     --python tests/test_project_io.py -- --config configs/DF4.json
+```
+
+测试覆盖成功保存与独立进程重开、当前路径、临时写入/替换故障、目录保护、已有工程覆盖拦截及首次/显式授权门。不执行真正的 Stage 1/1.5 重建。记录与必要日志直接写入 Audit `manifests/io-regression.json` 和 `manifests/io-regression.log`，测试结束清理自己的临时目录。符号链接或联接创建若受环境限制，单独报告 SKIP，不冒充通过。首次绑定测试同样只使用副本，不创建阶段编号工程。
+
+证据哈希校验器随代码提供：
+
+```powershell
+python scripts/verify_evidence.py ../AeroViz-Blender-Audit ../AeroViz-Blender-Audit/manifests/evidence-manifest.json
+```
+
+该回归不提供 Stage 2 执行授权。

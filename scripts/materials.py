@@ -318,9 +318,11 @@ def main():
     input_root=project_io.input_root(config)
     input_hashes={str(p.relative_to(input_root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in input_root.rglob('*') if p.is_file()}
     # 渲染与报告先落临时目录，验收通过后再归档到审计仓库。
-    work=project_io.reset_dir(project_io.work_dir(config))
-    reports=project_io.reset_dir(work/'reports')
-    preview=project_io.reset_dir(work/'preview')
+    work=project_io.safe_reset_work_dir(config)
+    reports=work/'reports'
+    preview=work/'preview'
+    reports.mkdir()
+    preview.mkdir()
     evidence=project_io.evidence_dir(config,'stage-1.5')
     bpy.ops.wm.open_mainfile(filepath=str(project))
     before=snapshot_objects()
@@ -350,7 +352,7 @@ def main():
     write_report(result,settings,reports)
     copied=project_io.publish([reports/'material_validation.json',reports/'material_structure_baseline.json',
                                preview/'eevee_preview.png'],evidence)
-    project_io.clear_dir(work)
+    project_io.clear_work_dir(config)
     print('MATERIAL_STAGE_OK',len(created),len(assignments),flush=True)
     print('MATERIAL_EVIDENCE',', '.join(p.name for p in copied),flush=True)
 
