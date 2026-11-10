@@ -1,0 +1,59 @@
+{
+  "schema_version": 2,
+  "phase": "ProjectInit",
+  "created_at": "2026-11-10T10:41:22Z",
+  "agent": {
+    "name": "deepseek-harness",
+    "model": "deepseek-flash"
+  },
+  "development": {
+    "repository": "https://github.com/tangqingxi/AeroViz-Blender",
+    "branch": "main",
+    "commit": "d956bec3d71b105d20f2bc9e192a940406d108f4"
+  },
+  "audit": {
+    "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
+  },
+  "status": "in-progress",
+  "environment": {
+    "os": "Windows 11 10.0.26200"
+  },
+  "evidence": [
+    {
+      "path": "README.md",
+      "sha256": "1e0fc54449ab927da3e50ffb5ec6a750026fa09af3dccab7704742b0903d5df8",
+      "kind": "other"
+    },
+    {
+      "path": "HANDOFF.md",
+      "sha256": "804512f831024293c68b5e2d40fcf74805f533848b320f391c9510cbe52596a8",
+      "kind": "handoff"
+    },
+    {
+      "path": "manifests/ARTIFACT_MANIFEST.md",
+      "sha256": "c2fcb1fe686bc2bd534015e43c3725c5e5746038eb0c2f9e57b428d65ede7c4c",
+      "kind": "other"
+    },
+    {
+      "path": "manifests/reverify-2026-11-10.json",
+      "sha256": "7df94466cdc87151b9f040e816d25a0a59634537711523eefc3e590bb04eb982",
+      "kind": "other"
+    },
+    {
+      "path": "manifests/refactor-check-2026-11-10.json",
+      "sha256": "1891bb8a2de44312dd2111f0c84894d570051572dbb51d4f5ba82dbcd43c7bd1",
+      "kind": "other"
+    }
+  ],
+  "verification": {
+    "commands": [
+      "python scripts/verify_evidence.py <audit-root> <manifest>"
+    ],
+    "result": "passed"
+  },
+  "limitations": [
+    "Audit repository is private because the DF4 model has no established redistribution right.",
+    "The adapter-equivalence check was a one-off migration script not shipped in DEV."
+  ],
+  "next_action": "Await Stage 2 authorisation; Stage 2 is not started."
+}

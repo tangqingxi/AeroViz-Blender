@@ -1,0 +1,81 @@
+{
+  "schema_version": 2,
+  "phase": "Stage1.5",
+  "created_at": "2026-11-10T10:40:55Z",
+  "agent": {
+    "name": "deepseek-harness",
+    "model": "deepseek-flash"
+  },
+  "development": {
+    "repository": "https://github.com/tangqingxi/AeroViz-Blender",
+    "branch": "main",
+    "commit": "d956bec3d71b105d20f2bc9e192a940406d108f4"
+  },
+  "audit": {
+    "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
+  },
+  "status": "in-progress",
+  "environment": {
+    "os": "Windows 11 10.0.26200",
+    "blender": "5.0.1 build a3db93c5b259",
+    "python": "3.11.13 (Blender bundled)"
+  },
+  "evidence": [
+    {
+      "path": "stages/stage-1.5/STAGE_1_5_REPORT.md",
+      "sha256": "198849fc860dc10844539a8a0dc2dded3ece001d231ada0e4dc4a1b1d8c8fe5d",
+      "kind": "report"
+    },
+    {
+      "path": "stages/stage-1.5/evidence/material_preview_window.png",
+      "sha256": "c5faddc47a731f577eeac16639744b9dbecc2a0f2dc98e5ad7e8ca76cb50f64f",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-1.5/evidence/material_preview.png",
+      "sha256": "061d0ff54233a68485f98e64629402991f62eea53e6213f1d2c9eee9786fba63",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-1.5/evidence/eevee_preview.png",
+      "sha256": "00026e5f61bc78ae3c0f10a5b374090dd9da667756560183f97e3c6d2cddcecc",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-1.5/evidence/material_validation.json",
+      "sha256": "754388d589f27f22c78e037cd1ff00067b5b283e74fe4f4cfa45c83c3b3a22c1",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-1.5/evidence/material_gui_validation.json",
+      "sha256": "298bb78f369f3a755cb9b211573ba04299064235960867ce46eb00c9d34dc8c8",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-1.5/evidence/material_structure_baseline.json",
+      "sha256": "fe631f37bc760bace2d4ab74023cb3a1b5f859baf0cc79d38d688512f0468e43",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-1.5/evidence/material_input_manifest.json",
+      "sha256": "54f8b70961995dfa555bed70cc628104fb37140096f9f67e21190527b5a76a11",
+      "kind": "other"
+    }
+  ],
+  "verification": {
+    "commands": [
+      "blender --background --factory-startup --python-exit-code 1 --python scripts/test_material_mapping.py",
+      "blender --background --factory-startup --python-exit-code 1 --python scripts/materials.py -- --config configs/DF4.json",
+      "blender --background --factory-startup --python-exit-code 1 --python tests/reverify_saved_project.py -- --config configs/DF4.json"
+    ],
+    "result": "passed"
+  },
+  "limitations": [
+    "Stage 1.5 derives from DF4_Stage1.blend1 (sha256 574c1b00...), not from the current DF4_Stage1.blend (10caf87e...).",
+    "The 8 objects without an original material definition use a neutral display grey that does not represent real paint.",
+    "source_color_space=linear is an assumption; the SDF declares no transfer function.",
+    "Specular is mapped via RGB mean to the Principled IOR level; this is not a Gazebo Blinn-Phong reproduction.",
+    "The stage produces no motion capability: all objects have no animation_data."
+  ],
+  "next_action": "Await Stage 2 authorisation; Stage 2 is not started."
+}

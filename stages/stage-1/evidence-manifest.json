@@ -1,0 +1,89 @@
+{
+  "schema_version": 2,
+  "phase": "Stage1",
+  "created_at": "2026-11-10T10:41:22Z",
+  "agent": {
+    "name": "deepseek-harness",
+    "model": "deepseek-flash"
+  },
+  "development": {
+    "repository": "https://github.com/tangqingxi/AeroViz-Blender",
+    "branch": "main",
+    "commit": "d956bec3d71b105d20f2bc9e192a940406d108f4"
+  },
+  "audit": {
+    "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
+  },
+  "status": "in-progress",
+  "environment": {
+    "os": "Windows 11 10.0.26200",
+    "blender": "5.0.1 build a3db93c5b259",
+    "python": "3.11.13 (Blender bundled)"
+  },
+  "evidence": [
+    {
+      "path": "stages/stage-1/STAGE_1_REPORT.md",
+      "sha256": "f1f452693838cc44ca49fbf1c3d941c3be584604c47330c7398c77c9eaa37fd4",
+      "kind": "report"
+    },
+    {
+      "path": "stages/stage-1/evidence/gui_isometric.png",
+      "sha256": "c58c247d3d9f2871d84f7727a3d5a5177b3efb3573c15b1741808f02ba677900",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-1/evidence/gui_front.png",
+      "sha256": "02b0a985521a33d34f2469df696fb2cca573a28db4c587d62c81669f350c5e49",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-1/evidence/gui_top.png",
+      "sha256": "f5a8cd1d1efade2ddd5fdb95cf6367ddb6bc1d1460e7deb773dbc079cbc359a6",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-1/evidence/gui_side.png",
+      "sha256": "d07924ba686b8bd9ee031135336b2dd467d83c041744646d30093a27b295c874",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-1/evidence/isometric.png",
+      "sha256": "37825b6b727c91da6e9730ee27931e7f91686aba01027f763471fc4702bd15f1",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-1/evidence/validation.json",
+      "sha256": "8071079305f3752c0d37e71fa432455e6e4bd8c6ea9575f56c97fccdc2ea16ee",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-1/evidence/gui_validation.json",
+      "sha256": "168a02f87572082ca50b94468e29f88660e2c41512c35befd9c35e28fecee1b3",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-1/evidence/joint_checks.json",
+      "sha256": "58b1a4ecb4c2f50196b40aa38d4eee1764dcb556f749d7af1ae5fabffce898fb",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-1/evidence/input_manifest.json",
+      "sha256": "70cfbf9c662f4079ffd77adfea1386f73c4b923dba1db496ea90fef49e4f7c0e",
+      "kind": "other"
+    }
+  ],
+  "verification": {
+    "commands": [
+      "blender --background --factory-startup --python-exit-code 1 --python scripts/main.py -- --config configs/DF4.json",
+      "blender --background --factory-startup --python-exit-code 1 --python scripts/check_joint_hierarchy.py",
+      "blender --background --factory-startup --python-exit-code 1 --python tests/reverify_saved_project.py -- --config configs/DF4.json"
+    ],
+    "result": "passed"
+  },
+  "limitations": [
+    "The .blend bytes were re-saved by Blender when the GUI verification session exited, after the screenshots were captured; the current bytes were re-verified read-only on 2026-11-10 but the exact screenshot-time bytes are not archived.",
+    "controller2.STL and X-tend.STL are not referenced by the SDF; their attachment is taken from the raw STL coordinates and is unconfirmed.",
+    "External include gps0 has no local mesh and is explicitly skipped, not modelled."
+  ],
+  "next_action": "Await Stage 2 authorisation; Stage 2 is not started."
+}

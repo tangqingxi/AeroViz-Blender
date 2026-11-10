@@ -159,7 +159,7 @@
 | # | 命令 | 结果 |
 |---|---|---|
 | 4 | `blender --background … --python tests/reverify_saved_project.py -- --config configs/DF4.json` | `REVERIFY_OK`：33 网格 / 27 可见 / 6 参考 / 26 link / 25 joint / 89 对象；矩阵误差 0.0；包围盒误差 1.49e-08；无动画数据 |
-| 5 | `blender --background … --python <审计用的适配器等价性检查>` | 适配器重构后重新解析 DF4：25 个 visual 部件、26 个 link、25 个 joint、1 个 include、1 个跳过关节，与 Stage 1/1.5 已记录的基线一致 |
+| 5 | Blender 后台运行适配器等价性检查（一次性迁移校验，记录见 [`../../manifests/refactor-check-2026-11-10.json`](../../manifests/refactor-check-2026-11-10.json)） | 适配器重构后重新解析 DF4：25 个 visual 部件、26 个 link、25 个 joint、1 个 include、1 个跳过关节；材质记录 25 条（25 条带定义）；预计网格对象 33 个 —— 与 Stage 1/1.5 已记录的基线全部一致 |
 
 包围盒 1.49e-08 的差异来自记录方式不同：Stage 1 记录用对象包围盒角点，复核用网格顶点坐标，两者在 1e-8 量级一致，不构成尺寸变化。
 

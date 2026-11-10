@@ -161,3 +161,19 @@
 | 两个工程的动画数据 | 0 个对象 |
 
 该记录证明**当前字节**仍满足 Stage 1/1.5 记录的全部断言，但不能替代"截图时刻的原始字节"——本地没有更早的字节归档，这一点已在两份报告的"未解决问题"中列明。
+
+## 8. 仓库整理时的一次性迁移校验（2026-11-10）
+
+本轮把两个导入模块移入 `adapters/` 并引入注册表，需要证明"整理"没有改变解析行为。校验方式：在 Blender 后台导入新包结构，重新解析 DF4 描述文件，并与 Stage 1/1.5 已记录的基线逐项比对。记录见 [`refactor-check-2026-11-10.json`](refactor-check-2026-11-10.json)：
+
+| 项目 | 结果 |
+|---|---|
+| 注册表映射 | `sdf → adapters.import_sdf`、`stl → adapters.import_stl`；未注册键抛错 |
+| 重新解析的部件 / link / 关节 | 25 / 26 / 25 |
+| 外部 include / 跳过关节 | 1 / 1 |
+| 材质记录（带定义） | 25（25） |
+| 预计网格对象数 | 33（与 `validation.json` 的 `imported_count` 一致） |
+| STL 支持单位 | `m`、`mm`、`cm` |
+| 结果 | `PASS` |
+
+同时复跑了 `tests/test_material_mapping.py`（`MATERIAL_MAPPING_TESTS_OK`）。该迁移校验脚本为一次性使用、未纳入开发仓库；长期回归依赖开发仓库的 `tests/reverify_saved_project.py`。
