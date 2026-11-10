@@ -10,8 +10,8 @@
 
 - DEV: <https://github.com/tangqingxi/AeroViz-Blender>
 - DEV active branch: `main`
-- DEV commit: `996d4ac3f736f23d19a1d15e087fe2d3161f3302`（已推送，`git ls-remote` 与本地一致）
-- 代码状态说明：模型证据仍由 `d956bec…` 产生；`b8bca84` 完成单工程归一化；本轮 `996d4ac` 修复 I/O 安全并在字节副本上完成回归，**未重跑** Stage 1/1.5。
+- DEV commit: `09521e8df71c05565c478ddeebfdde1746373a58`（已推送，`git ls-remote` 与本地一致）
+- 代码状态说明：模型证据仍由 `d956bec…` 产生；`b8bca84` 完成单工程归一化；本轮 `09521e8` 修复 I/O 安全并在字节副本上完成回归，**未重跑** Stage 1/1.5。
 - 约定：此后纯文档提交不需要再更新本文件与报告表头里的 SHA；只有**代码或配置**变更才需要重新对齐。
 - DEV worktree at handoff: **clean**（`output/`、`.work/` 与缓存被 `.gitignore` 排除）
 - AUDIT: <https://github.com/tangqingxi/AeroViz-Blender-Audit>
@@ -95,7 +95,7 @@ READY 不代表已获得 Stage 2 执行授权。本轮没有导入 STL、重建�
   git clone https://github.com/tangqingxi/AeroViz-Blender.git AeroViz-Blender
   git clone https://github.com/tangqingxi/AeroViz-Blender-Audit.git AeroViz-Blender-Audit
   cd AeroViz-Blender
-  git checkout 996d4ac3f736f23d19a1d15e087fe2d3161f3302
+  git checkout 09521e8df71c05565c478ddeebfdde1746373a58
   ```
 
 - 输入：DF4 模型目录（33 STL + `ductedfan4.sdf.jinja`）放在 `AeroViz-Blender/../DF4_SolidWorks`；其他位置用 `AEROVIZ_DF4_INPUT` 覆盖，不必改配置。审计仓库默认按 `../AeroViz-Blender-Audit` 解析，可用 `AEROVIZ_AUDIT_ROOT` 覆盖。
@@ -138,7 +138,7 @@ READY 不代表已获得 Stage 2 执行授权。本轮没有导入 STL、重建�
 ## Agent startup instructions
 
 1. 先读 DEV `README.md`、`docs/architecture.md`、`docs/interfaces.md`，再读本 handoff 与两份阶段报告。
-2. 核对 DEV `main` 的 HEAD 是否仍为 `996d4ac…` 或为其后代。
+2. 核对 DEV `main` 的 HEAD 是否仍为 `09521e8…` 或为其后代。
 3. 校验证据：三份 `evidence-manifest.json` 均须 `verify_evidence.py` 退出码 0。
 4. 确认本地 `output/DF4/` 只有 `DF4.blend` 一个文件。
 5. 若用户未授权 Stage 2，只做核查与汇报，不写代码、不重跑导入、不重做材质。

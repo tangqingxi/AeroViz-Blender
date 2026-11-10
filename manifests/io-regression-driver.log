@@ -11,19 +11,8 @@ PASS new_target_reopen
 PASS guard
 PASS force_gate
 PASS first_gate
-00:07.641  blend            | Read blend: "<DEV>\output\DF4\DF4.blend"
+00:07.562  blend            | Read blend: "<DEV>\output\DF4\DF4.blend"
 IO_REGRESSION PASS
-Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
-
-Blender quit
-00:00.344  blend            | Read blend: "<DEV>\output\DF4\DF4.blend"
-REVERIFY_OK 216ae8ab7de8 93
-{
-  "project": "output/DF4/DF4.blend",
-  "overall": "PASS",
-  "object_total": 93,
-  "objects_with_animation": []
-}
 Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
 
 Blender quit

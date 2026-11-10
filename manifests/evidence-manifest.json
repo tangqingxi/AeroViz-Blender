@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
   "phase": "PreStage2IORegression",
-  "created_at": "2026-11-10T11:39:48Z",
+  "created_at": "2026-11-10T11:41:43Z",
   "agent": {
     "name": "codex"
   },
   "development": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender",
     "branch": "main",
-    "commit": "996d4ac3f736f23d19a1d15e087fe2d3161f3302"
+    "commit": "09521e8df71c05565c478ddeebfdde1746373a58"
   },
   "audit": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
@@ -26,7 +26,7 @@
     },
     {
       "path": "HANDOFF.md",
-      "sha256": "7614511cca29ab132d5af1dc58b2529aa1ad5c30b998bccf6e417631a7ee79d3",
+      "sha256": "38466e1f6f829dda00d88c0304c27e9fa8dbc4af0c0e49980f084661c740adda",
       "kind": "handoff"
     },
     {
@@ -52,17 +52,17 @@
     {
       "path": "manifests/io-regression.json",
       "kind": "other",
-      "sha256": "58df5ca2ee17a21948b11d4d25ce0fddf72cbb03f7d241da97d7b217c8b1d576"
+      "sha256": "08a5c580cd968151d5e1d0d48ef6b4a1c486284e4cef13a4e481e6fd9904e688"
     },
     {
       "path": "manifests/io-regression.log",
       "kind": "other",
-      "sha256": "5617bc21059401f63b27995d3814ed273258b3c38d31d37de5bd5caf08e9e217"
+      "sha256": "4592b6e325d4679618bab318d7b014f480e35a95dec11098a5818b41e5c6b224"
     },
     {
       "path": "manifests/io-regression-driver.log",
       "kind": "other",
-      "sha256": "a01c09106fcc6904899ce05cd7020f1ed1e26dc2a18b6cecc120e05e2fd96bf8"
+      "sha256": "524cf592c94f09e298da40ddface4d009235d55764658d3e2fc80bf0a8f47139"
     }
   ],
   "verification": {

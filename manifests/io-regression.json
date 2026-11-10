@@ -106,7 +106,7 @@
     },
     "symlink": {
       "status": "SKIP",
-      "reason": "[WinError 1314] 客户端没有所需的特权。: 'D:\\\\01_科研\\\\TIE\\\\DF4_SolidWorks\\\\AeroViz-Blender-Audit' -> 'D:\\\\01_科研\\\\TIE\\\\DF4_SolidWorks\\\\AeroViz-Blender\\\\.work\\\\io-regression\\\\symlink-to-audit'"
+      "reason": "WinError 1314: 客户端没有所需的特权。"
     },
     "junction": {
       "status": "PASS",
@@ -233,8 +233,8 @@
   "formal_after_sha256": "216ae8ab7de87cac17846a304dcd34110008ef4a71ce77f1829c9a8a37c0e474",
   "formal_unchanged": true,
   "work_absent_or_empty": true,
-  "dev_commit": "996d4ac3f736f23d19a1d15e087fe2d3161f3302",
-  "generated_at": "2026-11-10T11:39:48Z",
+  "dev_commit": "09521e8df71c05565c478ddeebfdde1746373a58",
+  "generated_at": "2026-11-10T11:41:43Z",
   "development_repository": "https://github.com/tangqingxi/AeroViz-Blender",
   "audit_repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit",
   "baseline_dev_commit": "b8bca84138636af2e086d76f428b593c8ab5210b",
@@ -243,8 +243,8 @@
   "stage2_authorized": false,
   "test_script": {
     "path": "tests/test_project_io.py",
-    "sha256": "c5be62b10c1fc5b27c1e2197cbfb7522bc6aa2a2059fd1373b20834bccbe405e",
-    "commit": "996d4ac3f736f23d19a1d15e087fe2d3161f3302"
+    "sha256": "b7fe4f77c7b529d305fe60443a57f0eb63e04c1f90d5f549f9b24bd842f5fb37",
+    "commit": "09521e8df71c05565c478ddeebfdde1746373a58"
   },
   "code_files": {
     "scripts/project_io.py": "9fce340e718622cce7a1d38c4ea0e259486be38eea68f0bae13b4c649f4f7768",
