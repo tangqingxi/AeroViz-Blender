@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "ProjectInit",
-  "created_at": "2026-11-10T10:53:07Z",
+  "created_at": "2026-11-10T10:55:19Z",
   "agent": {
     "name": "deepseek-harness",
     "model": "deepseek-flash"
@@ -26,7 +26,7 @@
     },
     {
       "path": "HANDOFF.md",
-      "sha256": "72ed07d3f5199df571d624d0454982f1bd2fd9c64a5da4b0182f8028adc78fe5",
+      "sha256": "081a90bc6e1a3bc3d39927e0ebd3f7cf731aec6c0c79246d62ed684e45460c67",
       "kind": "handoff"
     },
     {

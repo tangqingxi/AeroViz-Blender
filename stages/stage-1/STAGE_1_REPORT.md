@@ -35,7 +35,7 @@
 | Blender 内置 Python | 3.11.13 |
 | 额外 Python 包 | 无（仅使用 Blender 自带模块：`bpy`、`mathutils`、`bmesh` 相关 API 与标准库） |
 | Blender 可执行文件 | `D:\app\Blender\blender.exe` |
-| 开发工作区 | `D:\01_科研\TIE\DF4_SolidWorks\Blender` |
+| 开发工作区 | `D:\01_科研\TIE\DF4_SolidWorks\AeroViz-Blender` |
 | 模型输入目录（只读） | `D:\01_科研\TIE\DF4_SolidWorks\DF4_SolidWorks` |
 
 ## 3. 实现内容

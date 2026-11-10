@@ -59,8 +59,8 @@
 - 取代码：
 
   ```powershell
-  git clone https://github.com/tangqingxi/AeroViz-Blender.git Blender
-  cd Blender
+  git clone https://github.com/tangqingxi/AeroViz-Blender.git AeroViz-Blender
+  cd AeroViz-Blender
   git checkout bc9e9d7c71d910db14d22b08229f863a37ef45c2
   ```
 
