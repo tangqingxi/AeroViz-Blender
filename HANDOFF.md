@@ -11,7 +11,8 @@
 
 - DEV: <https://github.com/tangqingxi/AeroViz-Blender>
 - DEV active branch: `main`
-- DEV tested commit: `7df632edfc1f1320bc0b270cb22d3e73e2e6dc81`（已推送，`git ls-remote` 与本地 HEAD 一致；相对 Stage 1/1.5 交付时的 `d956bec…` 只有文档变更）
+- DEV tested commit: `bc9e9d7c71d910db14d22b08229f863a37ef45c2`（已推送，`git ls-remote` 与本地 HEAD 一致；相对 Stage 1/1.5 交付时的 `d956bec…` 只有文档变更）
+- **约定**：证据对应的**代码状态**是 `d956bec…`。此后所有提交均为文档变更（材料说明精简、README 与 docs 中文化），因此**后续纯文档提交不需要再更新本文件与报告表头里的 SHA**。
 - DEV worktree at handoff: **clean**（`output/` 与缓存被 `.gitignore` 排除，属预期）
 - AUDIT: <https://github.com/tangqingxi/AeroViz-Blender-Audit>
 - AUDIT phase/report: `stages/stage-1/STAGE_1_REPORT.md`、`stages/stage-1.5/STAGE_1_5_REPORT.md`
@@ -60,7 +61,7 @@
   ```powershell
   git clone https://github.com/tangqingxi/AeroViz-Blender.git Blender
   cd Blender
-  git checkout 7df632edfc1f1320bc0b270cb22d3e73e2e6dc81
+  git checkout bc9e9d7c71d910db14d22b08229f863a37ef45c2
   ```
 
 - 需要的输入：DF4 模型目录（33 STL + `ductedfan4.sdf.jinja`），需另行放置；`configs/DF4.json` 的 `input_root` 目前指向原作者本机路径 `D:\01_科研\TIE\DF4_SolidWorks\DF4_SolidWorks`，别人的机器上必须改。
@@ -96,7 +97,7 @@
 ## Agent startup instructions
 
 1. 先读 DEV `README.md`、`docs/architecture.md`、`docs/interfaces.md`，再读本 handoff 与两份阶段报告。
-2. 核对 DEV `main` 的 HEAD 是否仍为 `7df632edfc1f1320bc0b270cb22d3e73e2e6dc81` 或为其后代；确认无未完成的改动。
+2. 核对 DEV `main` 的 HEAD 是否仍为 `bc9e9d7c71d910db14d22b08229f863a37ef45c2` 或为其后代；确认 `scripts/`、`adapters/`、`configs/` 自 `d956bec…` 起未被改动。
 3. 校验证据：`verify_evidence.py` 对两份 `evidence-manifest.json` 均须退出码 0。
 4. 若用户未授权 Stage 2，只做核查与汇报，不写代码、不重跑导入、不重做材质。
 5. 不得重复已通过的阶段，不得覆盖 `output/DF4/` 下的既有工程，不得公开上传模型或截图。
