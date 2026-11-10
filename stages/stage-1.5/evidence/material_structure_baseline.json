@@ -1,0 +1,8554 @@
+{
+  "base": {
+    "type": "MESH",
+    "parent": "DF4_ROOT",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "REFERENCE_ONLY"
+    ],
+    "hide_render": true,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "9cd0178e88ca7a86c08296ed25c79d7f15e542f90ca3259b798b9d5bbea2868d",
+    "mesh_datablock": "base"
+  },
+  "base_board_flyctrl": {
+    "type": "MESH",
+    "parent": "LINK::base_board_flyctrl",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "ELECTRONICS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "7f9fde714ea65d856f9de3b51e5736aa624a74ac46e4c368e36d7e3f0358d94a",
+    "mesh_datablock": "base_board_flyctrl"
+  },
+  "battery-4s-10000-2": {
+    "type": "MESH",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "ELECTRONICS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "1a41c7d5ec138357eae7053bc6819cde34e39bc802f2d62781dfe486b37b6ccb",
+    "mesh_datablock": "battery-4s-10000-2"
+  },
+  "bec-Hobbywing-Platinum": {
+    "type": "MESH",
+    "parent": "LINK::bec",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "ELECTRONICS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "4f211dda30a1ff6b1d7da17731686ecd56b0e61c73cfc8c820bfae73b5caa3ad",
+    "mesh_datablock": "bec-Hobbywing-Platinum"
+  },
+  "box_up": {
+    "type": "MESH",
+    "parent": "LINK::box_up",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "AIRFRAME"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "b3489cb06a8cc0bc54f77f2d6c73a77b0f62df81f15bf1cea3d23599fe7554cd",
+    "mesh_datablock": "box_up"
+  },
+  "box_up2": {
+    "type": "MESH",
+    "parent": "LINK::box_up2",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "AIRFRAME"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "845dc2e056b6663d60b24d5a5158f745f422e515bbec0db7c9f3025e82bcafa0",
+    "mesh_datablock": "box_up2"
+  },
+  "controller2": {
+    "type": "MESH",
+    "parent": "DF4_ROOT",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "ELECTRONICS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "7f7149e53a5070449eb4cae33ad0ae868d0912778e5fc0c2a9ff4be63f2ea60d",
+    "mesh_datablock": "controller2"
+  },
+  "cs11": {
+    "type": "MESH",
+    "parent": "LINK::cs1",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "CONTROL_SURFACES"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "8757f730dee6ac02b21bda157fc113758ff51d3d3826481b1e09f1c3a41b89f0",
+    "mesh_datablock": "cs11"
+  },
+  "cs2": {
+    "type": "MESH",
+    "parent": "LINK::cs2",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "CONTROL_SURFACES"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "6b6b4fa2ab7e7cb59b58161739eb587fd44ad5ee5509f6ad1199509d248acf81",
+    "mesh_datablock": "cs2"
+  },
+  "cs33": {
+    "type": "MESH",
+    "parent": "LINK::cs3",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "CONTROL_SURFACES"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "aa54f40bddaa35a6a753045c2fc3110d6dc4aa1983e116907832d7fc06420da9",
+    "mesh_datablock": "cs33"
+  },
+  "cs4": {
+    "type": "MESH",
+    "parent": "LINK::cs4",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "CONTROL_SURFACES"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "1e415a40cc8e48c3176982f0a39b719bf88a4003b4e377803c262396e5d87563",
+    "mesh_datablock": "cs4"
+  },
+  "DF4_ROOT": {
+    "type": "EMPTY",
+    "parent": null,
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "duct-in": {
+    "type": "MESH",
+    "parent": "LINK::duct_in",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "DUCT"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "bf9bc1dc7bb8efe82ba852057304fb9d7317217fb4723e433d1ca883f2643c7d",
+    "mesh_datablock": "duct-in"
+  },
+  "duct-out-1": {
+    "type": "MESH",
+    "parent": "LINK::ductout1",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "DUCT"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "16b591393548880639549e6cb6705fc77122b486388da86c2a78db643759df7a",
+    "mesh_datablock": "duct-out-1"
+  },
+  "duct-out-2": {
+    "type": "MESH",
+    "parent": "LINK::ductout2",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "DUCT"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "b70b99e6589a57345c4f8cf138ced199a0def96cf9e5eb511efa20f701f96380",
+    "mesh_datablock": "duct-out-2"
+  },
+  "duct-out-3": {
+    "type": "MESH",
+    "parent": "LINK::ductout3",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "DUCT"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "94453d1cc97878d5bcf66a8d17974f97debb82d5533b7ff560f04489636d551c",
+    "mesh_datablock": "duct-out-3"
+  },
+  "JOINT::cs1_joint": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        -0.14099499583244324
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        -0.14099499583244324
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "revolute",
+      "child": "cs1",
+      "parent": "base_link",
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "lower": "-0.3491",
+      "upper": "0.3491"
+    }
+  },
+  "JOINT::cs2_joint": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        -0.14099499583244324
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        -0.14099499583244324
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "revolute",
+      "child": "cs2",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "lower": "-0.3491",
+      "upper": "0.3491"
+    }
+  },
+  "JOINT::cs3_joint": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        -0.14099499583244324
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        -0.14099499583244324
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "revolute",
+      "child": "cs3",
+      "parent": "base_link",
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "lower": "-0.3491",
+      "upper": "0.3491"
+    }
+  },
+  "JOINT::cs4_joint": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        -0.14099499583244324
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        -0.14099499583244324
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "revolute",
+      "child": "cs4",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        1.0,
+        0.0
+      ],
+      "lower": "-0.3491",
+      "upper": "0.3491"
+    }
+  },
+  "JOINT::ductedfan4/imu_joint": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "revolute",
+      "child": "ductedfan4/imu_link",
+      "parent": "base_link",
+      "axis": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        1.0,
+        0.0,
+        0.0
+      ],
+      "lower": "0",
+      "upper": "0"
+    }
+  },
+  "JOINT::JOINT_0": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "fixed",
+      "child": "duct_in",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "JOINT::JOINT_1": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "fixed",
+      "child": "ductout1",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "JOINT::JOINT_10": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "fixed",
+      "child": "panel12",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "JOINT::JOINT_11": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "fixed",
+      "child": "shelf1",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "JOINT::JOINT_12": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "fixed",
+      "child": "servo1",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "JOINT::JOINT_13": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "fixed",
+      "child": "servo2",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "JOINT::JOINT_14": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "fixed",
+      "child": "servo3",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "JOINT::JOINT_15": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "fixed",
+      "child": "servo4",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "JOINT::JOINT_16": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "fixed",
+      "child": "box_up",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "JOINT::JOINT_17": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "fixed",
+      "child": "box_up2",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "JOINT::JOINT_18": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "fixed",
+      "child": "base_board_flyctrl",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "JOINT::JOINT_2": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "fixed",
+      "child": "ductout2",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "JOINT::JOINT_3": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "fixed",
+      "child": "ductout3",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "JOINT::JOINT_4": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "fixed",
+      "child": "tail1",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "JOINT::JOINT_5": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "fixed",
+      "child": "tail2",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "JOINT::JOINT_6": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "fixed",
+      "child": "tail3",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "JOINT::JOINT_7": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "fixed",
+      "child": "bec",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "JOINT::JOINT_8": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "fixed",
+      "child": "motor",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "JOINT::JOINT_9": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "fixed",
+      "child": "panel11",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  },
+  "JOINT::rotor_joint": {
+    "type": "EMPTY",
+    "parent": "LINK::base_link",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        -0.04500000178813934
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        -0.04500000178813934
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "joint_properties": {
+      "type": "revolute",
+      "child": "rotor",
+      "parent": "base_link",
+      "axis": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ],
+      "lower": "-1e+16",
+      "upper": "1e+16"
+    }
+  },
+  "LINK::base_board_flyctrl": {
+    "type": "EMPTY",
+    "parent": "JOINT::JOINT_18",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::base_link": {
+    "type": "EMPTY",
+    "parent": "DF4_ROOT",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::bec": {
+    "type": "EMPTY",
+    "parent": "JOINT::JOINT_7",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::box_up": {
+    "type": "EMPTY",
+    "parent": "JOINT::JOINT_16",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::box_up2": {
+    "type": "EMPTY",
+    "parent": "JOINT::JOINT_17",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::cs1": {
+    "type": "EMPTY",
+    "parent": "JOINT::cs1_joint",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.14099499583244324
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::cs2": {
+    "type": "EMPTY",
+    "parent": "JOINT::cs2_joint",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.14099499583244324
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::cs3": {
+    "type": "EMPTY",
+    "parent": "JOINT::cs3_joint",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.14099499583244324
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::cs4": {
+    "type": "EMPTY",
+    "parent": "JOINT::cs4_joint",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.14099499583244324
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::duct_in": {
+    "type": "EMPTY",
+    "parent": "JOINT::JOINT_0",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::ductedfan4/imu_link": {
+    "type": "EMPTY",
+    "parent": "JOINT::ductedfan4/imu_joint",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::ductout1": {
+    "type": "EMPTY",
+    "parent": "JOINT::JOINT_1",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::ductout2": {
+    "type": "EMPTY",
+    "parent": "JOINT::JOINT_2",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::ductout3": {
+    "type": "EMPTY",
+    "parent": "JOINT::JOINT_3",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::motor": {
+    "type": "EMPTY",
+    "parent": "JOINT::JOINT_8",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::panel11": {
+    "type": "EMPTY",
+    "parent": "JOINT::JOINT_9",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::panel12": {
+    "type": "EMPTY",
+    "parent": "JOINT::JOINT_10",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::rotor": {
+    "type": "EMPTY",
+    "parent": "JOINT::rotor_joint",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.04500000178813934
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::servo1": {
+    "type": "EMPTY",
+    "parent": "JOINT::JOINT_12",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::servo2": {
+    "type": "EMPTY",
+    "parent": "JOINT::JOINT_13",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::servo3": {
+    "type": "EMPTY",
+    "parent": "JOINT::JOINT_14",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::servo4": {
+    "type": "EMPTY",
+    "parent": "JOINT::JOINT_15",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::shelf1": {
+    "type": "EMPTY",
+    "parent": "JOINT::JOINT_11",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::tail1": {
+    "type": "EMPTY",
+    "parent": "JOINT::JOINT_4",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::tail2": {
+    "type": "EMPTY",
+    "parent": "JOINT::JOINT_5",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "LINK::tail3": {
+    "type": "EMPTY",
+    "parent": "JOINT::JOINT_6",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "LINKS_AND_JOINTS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "motor-Sunnysky-X2814III-1000KV": {
+    "type": "MESH",
+    "parent": "LINK::motor",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "MOTOR"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "4d4cf8ade884404dc186cacbe43c50fc952bf4e74d91d211811d6df99841f222",
+    "mesh_datablock": "motor-Sunnysky-X2814III-1000KV"
+  },
+  "panel11": {
+    "type": "MESH",
+    "parent": "LINK::panel11",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "AIRFRAME"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "b75501cab543f6baefa17472d73a343d0d300e4a3a8d55515cd1cf5c71e05738",
+    "mesh_datablock": "panel11"
+  },
+  "panel12": {
+    "type": "MESH",
+    "parent": "LINK::panel12",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "AIRFRAME"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "36c7de827620ddbc91bf478bc5eb3eed2b930a28914bc4b2d4c09a2fc532b043",
+    "mesh_datablock": "panel12"
+  },
+  "rotor": {
+    "type": "MESH",
+    "parent": "LINK::rotor",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "ROTOR"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "c3dda3333604ad025cf3d955825513504650516fb7ad5efca8407c017c390ceb",
+    "mesh_datablock": "rotor"
+  },
+  "rotor-iFlight-9inch": {
+    "type": "MESH",
+    "parent": "DF4_ROOT",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "REFERENCE_ONLY"
+    ],
+    "hide_render": true,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "c3dda3333604ad025cf3d955825513504650516fb7ad5efca8407c017c390ceb",
+    "mesh_datablock": "rotor-iFlight-9inch"
+  },
+  "servo-KST-X08H-1": {
+    "type": "MESH",
+    "parent": "LINK::servo1",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "SERVOS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "65be0754a7b40ec2dfd17085b87bf0acb2670d9e4158a68ac6c21b7a78fbcc7a",
+    "mesh_datablock": "servo-KST-X08H-1"
+  },
+  "servo-KST-X08H-2": {
+    "type": "MESH",
+    "parent": "LINK::servo2",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "SERVOS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "8088d3f60161dc1fbcf1e3a0c0ce4271556545a49208aa4d6b19e0e3b198a8a8",
+    "mesh_datablock": "servo-KST-X08H-2"
+  },
+  "servo-KST-X08H-3": {
+    "type": "MESH",
+    "parent": "LINK::servo3",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "SERVOS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "dd35985bed1d33128c1f1424a742ff742d2bbba0f5267363678d03efad3ed60b",
+    "mesh_datablock": "servo-KST-X08H-3"
+  },
+  "servo-KST-X08H-4": {
+    "type": "MESH",
+    "parent": "LINK::servo4",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "SERVOS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "6b00c1f30c9b09f23cd7f8f5ca8c5c334d2cf61475335827d30a01dd41cbb176",
+    "mesh_datablock": "servo-KST-X08H-4"
+  },
+  "shelf1": {
+    "type": "MESH",
+    "parent": "LINK::shelf1",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "AIRFRAME"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "d144a4a5533eabfc9753cf9300b9bac091e1513868fb6c76d2d97c21928fa6ef",
+    "mesh_datablock": "shelf1"
+  },
+  "surface-60-1": {
+    "type": "MESH",
+    "parent": "DF4_ROOT",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "REFERENCE_ONLY"
+    ],
+    "hide_render": true,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "aa54f40bddaa35a6a753045c2fc3110d6dc4aa1983e116907832d7fc06420da9",
+    "mesh_datablock": "surface-60-1"
+  },
+  "surface-60-2": {
+    "type": "MESH",
+    "parent": "DF4_ROOT",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "REFERENCE_ONLY"
+    ],
+    "hide_render": true,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "6b6b4fa2ab7e7cb59b58161739eb587fd44ad5ee5509f6ad1199509d248acf81",
+    "mesh_datablock": "surface-60-2"
+  },
+  "surface-60-3": {
+    "type": "MESH",
+    "parent": "DF4_ROOT",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "REFERENCE_ONLY"
+    ],
+    "hide_render": true,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "8757f730dee6ac02b21bda157fc113758ff51d3d3826481b1e09f1c3a41b89f0",
+    "mesh_datablock": "surface-60-3"
+  },
+  "surface-60-4": {
+    "type": "MESH",
+    "parent": "DF4_ROOT",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "REFERENCE_ONLY"
+    ],
+    "hide_render": true,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "1e415a40cc8e48c3176982f0a39b719bf88a4003b4e377803c262396e5d87563",
+    "mesh_datablock": "surface-60-4"
+  },
+  "tail-1": {
+    "type": "MESH",
+    "parent": "LINK::tail1",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "TAIL"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "25a88c6073c3f3c9473b262fc011acc54a07c88ab2738edae59b2c603efe71c3",
+    "mesh_datablock": "tail-1"
+  },
+  "tail-2": {
+    "type": "MESH",
+    "parent": "LINK::tail2",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "TAIL"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "f17661340e4312881b6dd987c28c22612ac8a9a428179d23983c2eed7a75264a",
+    "mesh_datablock": "tail-2"
+  },
+  "tail-3": {
+    "type": "MESH",
+    "parent": "LINK::tail3",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "TAIL"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "cb59ec9a4ab5ebba39b87cce2331aae1fc5427b3b189e3d52008654a5d2c009d",
+    "mesh_datablock": "tail-3"
+  },
+  "VIEW::front": {
+    "type": "CAMERA",
+    "parent": null,
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        -0.039352186024188995
+      ],
+      [
+        0.0,
+        -1.6292068494294654e-07,
+        -1.0,
+        -1.1328206062316895
+      ],
+      [
+        0.0,
+        1.0,
+        -1.6292068494294654e-07,
+        -0.0429622083902359
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        -0.039352186024188995
+      ],
+      [
+        0.0,
+        -1.6292068494294654e-07,
+        -1.0,
+        -1.1328206062316895
+      ],
+      [
+        0.0,
+        1.0,
+        -1.6292068494294654e-07,
+        -0.0429622083902359
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "PREVIEW_CAMERAS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "VIEW::isometric": {
+    "type": "CAMERA",
+    "parent": null,
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        0.7071067690849304,
+        -0.34815534949302673,
+        0.6154574155807495,
+        0.6578814387321472
+      ],
+      [
+        0.7071067690849304,
+        0.34815528988838196,
+        -0.6154574155807495,
+        -0.6971836090087891
+      ],
+      [
+        3.920428071069182e-08,
+        0.8703882694244385,
+        0.4923659861087799,
+        0.5148246884346008
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        0.7071067690849304,
+        -0.34815534949302673,
+        0.6154574155807495,
+        0.6578814387321472
+      ],
+      [
+        0.7071067690849304,
+        0.34815528988838196,
+        -0.6154574155807495,
+        -0.6971836090087891
+      ],
+      [
+        3.920428071069182e-08,
+        0.8703882694244385,
+        0.4923659861087799,
+        0.5148246884346008
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "PREVIEW_CAMERAS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "VIEW::side": {
+    "type": "CAMERA",
+    "parent": null,
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        -4.371138828673793e-08,
+        4.371138828673793e-08,
+        1.0,
+        1.0935183763504028
+      ],
+      [
+        1.0,
+        1.910685676922942e-15,
+        4.371138828673793e-08,
+        5.000084638595581e-05
+      ],
+      [
+        0.0,
+        1.0,
+        -4.371138828673793e-08,
+        -0.0429622083902359
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        -4.371138828673793e-08,
+        4.371138828673793e-08,
+        1.0,
+        1.0935183763504028
+      ],
+      [
+        1.0,
+        1.910685676922942e-15,
+        4.371138828673793e-08,
+        5.000084638595581e-05
+      ],
+      [
+        0.0,
+        1.0,
+        -4.371138828673793e-08,
+        -0.0429622083902359
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "PREVIEW_CAMERAS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "VIEW::top": {
+    "type": "CAMERA",
+    "parent": null,
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        -0.039352186024188995
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        5.000084638595581e-05
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        1.0899083614349365
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        -0.039352186024188995
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        5.000084638595581e-05
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        1.0899083614349365
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "PREVIEW_CAMERAS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": true,
+    "modifiers": [],
+    "has_animation": false
+  },
+  "X-tend": {
+    "type": "MESH",
+    "parent": "DF4_ROOT",
+    "parent_type": "OBJECT",
+    "matrix_world": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_basis": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "matrix_parent_inverse": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "collections": [
+      "ELECTRONICS"
+    ],
+    "hide_render": false,
+    "hide_viewport": false,
+    "hide_set": false,
+    "modifiers": [],
+    "has_animation": false,
+    "geometry_sha256": "7818793236f35f8a0368626ea33e05db674094d652f2702921231e3e835f6f8d",
+    "mesh_datablock": "X-tend"
+  }
+}

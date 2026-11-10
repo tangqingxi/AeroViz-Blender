@@ -1,0 +1,2060 @@
+{
+  "stage1_sha256": "574c1b0071c923f0513e41430c7c7d7b6c6ea5b62c24ddb0cae04d2c87d9afeb",
+  "source_files_unchanged": true,
+  "sdf_visual_count": 25,
+  "sdf_material_count": 25,
+  "created_material_count": 7,
+  "created_materials": [
+    "SDF_MAT::Gazebo_Black::e1f385be44bc",
+    "SDF_MAT::Gazebo_White::8192dd01231b",
+    "SDF_MAT::display_default::d6ed713989a8",
+    "SDF_MAT::sdf_rgba::26bda2d0a666",
+    "SDF_MAT::sdf_rgba::275a120d4904",
+    "SDF_MAT::sdf_rgba::599e0cbb3c46",
+    "SDF_MAT::sdf_rgba::ee00e3e90d78"
+  ],
+  "assigned_object_count": 33,
+  "assignments": [
+    {
+      "object": "base",
+      "file": "base.STL",
+      "visual_key": null,
+      "source": "display_default",
+      "material": "SDF_MAT::display_default::d6ed713989a8",
+      "definition": {
+        "rgba": [
+          0.38,
+          0.38,
+          0.38,
+          1.0
+        ],
+        "roughness": 0.7,
+        "specular": 0.1,
+        "reason": "展示用中性灰，不代表真实机体颜色",
+        "source": "display_default",
+        "metallic": 0,
+        "emission": [
+          0,
+          0,
+          0
+        ]
+      },
+      "reference_only": true
+    },
+    {
+      "object": "base_board_flyctrl",
+      "file": "base_board_flyctrl.STL",
+      "visual_key": "base_board_flyctrl/visual",
+      "source": "gazebo_named",
+      "material": "SDF_MAT::Gazebo_Black::e1f385be44bc",
+      "definition": {
+        "source": "gazebo_named",
+        "rgba": [
+          0,
+          0,
+          0,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.10000000000000002,
+        "ambient_raw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "specular_raw": [
+          0.1,
+          0.1,
+          0.1,
+          1
+        ],
+        "diffuse_raw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0,
+          0,
+          0
+        ],
+        "color_space": "linear",
+        "script_name": "Gazebo/Black"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "battery-4s-10000-2",
+      "file": "battery-4s-10000-2.STL",
+      "visual_key": "base_link/base_link_visual",
+      "source": "sdf_rgba",
+      "material": "SDF_MAT::sdf_rgba::599e0cbb3c46",
+      "definition": {
+        "source": "sdf_rgba",
+        "rgba": [
+          0.2,
+          0.4,
+          0.75,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.10000000000000002,
+        "ambient_raw": [
+          0.2,
+          0.4,
+          0.75,
+          1.0
+        ],
+        "specular_raw": [
+          0.1,
+          0.1,
+          0.1,
+          1.0
+        ],
+        "diffuse_raw": [
+          0.2,
+          0.4,
+          0.75,
+          1.0
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0,
+          0,
+          0
+        ],
+        "color_space": "linear"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "bec-Hobbywing-Platinum",
+      "file": "bec-Hobbywing-Platinum.STL",
+      "visual_key": "bec/visual",
+      "source": "gazebo_named",
+      "material": "SDF_MAT::Gazebo_Black::e1f385be44bc",
+      "definition": {
+        "source": "gazebo_named",
+        "rgba": [
+          0,
+          0,
+          0,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.10000000000000002,
+        "ambient_raw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "specular_raw": [
+          0.1,
+          0.1,
+          0.1,
+          1
+        ],
+        "diffuse_raw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0,
+          0,
+          0
+        ],
+        "color_space": "linear",
+        "script_name": "Gazebo/Black"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "box_up",
+      "file": "box_up.STL",
+      "visual_key": "box_up/visual",
+      "source": "sdf_rgba",
+      "material": "SDF_MAT::sdf_rgba::ee00e3e90d78",
+      "definition": {
+        "source": "sdf_rgba",
+        "rgba": [
+          0.55,
+          0.55,
+          0.55,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.10000000000000002,
+        "ambient_raw": [
+          0.55,
+          0.55,
+          0.55,
+          1.0
+        ],
+        "specular_raw": [
+          0.1,
+          0.1,
+          0.1,
+          1.0
+        ],
+        "diffuse_raw": [
+          0.55,
+          0.55,
+          0.55,
+          1.0
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0,
+          0,
+          0
+        ],
+        "color_space": "linear"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "box_up2",
+      "file": "box_up2.STL",
+      "visual_key": "box_up2/visual",
+      "source": "sdf_rgba",
+      "material": "SDF_MAT::sdf_rgba::ee00e3e90d78",
+      "definition": {
+        "source": "sdf_rgba",
+        "rgba": [
+          0.55,
+          0.55,
+          0.55,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.10000000000000002,
+        "ambient_raw": [
+          0.55,
+          0.55,
+          0.55,
+          1.0
+        ],
+        "specular_raw": [
+          0.1,
+          0.1,
+          0.1,
+          1.0
+        ],
+        "diffuse_raw": [
+          0.55,
+          0.55,
+          0.55,
+          1.0
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0,
+          0,
+          0
+        ],
+        "color_space": "linear"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "controller2",
+      "file": "controller2.STL",
+      "visual_key": null,
+      "source": "display_default",
+      "material": "SDF_MAT::display_default::d6ed713989a8",
+      "definition": {
+        "rgba": [
+          0.38,
+          0.38,
+          0.38,
+          1.0
+        ],
+        "roughness": 0.7,
+        "specular": 0.1,
+        "reason": "展示用中性灰，不代表真实机体颜色",
+        "source": "display_default",
+        "metallic": 0,
+        "emission": [
+          0,
+          0,
+          0
+        ]
+      },
+      "reference_only": false
+    },
+    {
+      "object": "cs11",
+      "file": "cs11.STL",
+      "visual_key": "cs1/visual",
+      "source": "sdf_rgba",
+      "material": "SDF_MAT::sdf_rgba::275a120d4904",
+      "definition": {
+        "source": "sdf_rgba",
+        "rgba": [
+          0.4,
+          0.4,
+          0.4,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.10000000000000002,
+        "ambient_raw": [
+          0.32,
+          0.32,
+          0.32,
+          1.0
+        ],
+        "specular_raw": [
+          0.1,
+          0.1,
+          0.1,
+          1.0
+        ],
+        "diffuse_raw": [
+          0.4,
+          0.4,
+          0.4,
+          1.0
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "color_space": "linear"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "cs2",
+      "file": "cs2.STL",
+      "visual_key": "cs2/visual",
+      "source": "sdf_rgba",
+      "material": "SDF_MAT::sdf_rgba::275a120d4904",
+      "definition": {
+        "source": "sdf_rgba",
+        "rgba": [
+          0.4,
+          0.4,
+          0.4,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.10000000000000002,
+        "ambient_raw": [
+          0.32,
+          0.32,
+          0.32,
+          1.0
+        ],
+        "specular_raw": [
+          0.1,
+          0.1,
+          0.1,
+          1.0
+        ],
+        "diffuse_raw": [
+          0.4,
+          0.4,
+          0.4,
+          1.0
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "color_space": "linear"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "cs33",
+      "file": "cs33.STL",
+      "visual_key": "cs3/visual",
+      "source": "sdf_rgba",
+      "material": "SDF_MAT::sdf_rgba::275a120d4904",
+      "definition": {
+        "source": "sdf_rgba",
+        "rgba": [
+          0.4,
+          0.4,
+          0.4,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.10000000000000002,
+        "ambient_raw": [
+          0.32,
+          0.32,
+          0.32,
+          1.0
+        ],
+        "specular_raw": [
+          0.1,
+          0.1,
+          0.1,
+          1.0
+        ],
+        "diffuse_raw": [
+          0.4,
+          0.4,
+          0.4,
+          1.0
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "color_space": "linear"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "cs4",
+      "file": "cs4.STL",
+      "visual_key": "cs4/visual",
+      "source": "sdf_rgba",
+      "material": "SDF_MAT::sdf_rgba::275a120d4904",
+      "definition": {
+        "source": "sdf_rgba",
+        "rgba": [
+          0.4,
+          0.4,
+          0.4,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.10000000000000002,
+        "ambient_raw": [
+          0.32,
+          0.32,
+          0.32,
+          1.0
+        ],
+        "specular_raw": [
+          0.1,
+          0.1,
+          0.1,
+          1.0
+        ],
+        "diffuse_raw": [
+          0.4,
+          0.4,
+          0.4,
+          1.0
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "color_space": "linear"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "duct-in",
+      "file": "duct-in.STL",
+      "visual_key": "duct_in/visual",
+      "source": "gazebo_named",
+      "material": "SDF_MAT::Gazebo_White::8192dd01231b",
+      "definition": {
+        "source": "gazebo_named",
+        "rgba": [
+          1,
+          1,
+          1,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.10000000000000002,
+        "ambient_raw": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "specular_raw": [
+          0.1,
+          0.1,
+          0.1,
+          1
+        ],
+        "diffuse_raw": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0,
+          0,
+          0
+        ],
+        "color_space": "linear",
+        "script_name": "Gazebo/White"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "duct-out-1",
+      "file": "duct-out-1.STL",
+      "visual_key": "ductout1/visual",
+      "source": "gazebo_named",
+      "material": "SDF_MAT::Gazebo_White::8192dd01231b",
+      "definition": {
+        "source": "gazebo_named",
+        "rgba": [
+          1,
+          1,
+          1,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.10000000000000002,
+        "ambient_raw": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "specular_raw": [
+          0.1,
+          0.1,
+          0.1,
+          1
+        ],
+        "diffuse_raw": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0,
+          0,
+          0
+        ],
+        "color_space": "linear",
+        "script_name": "Gazebo/White"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "duct-out-2",
+      "file": "duct-out-2.STL",
+      "visual_key": "ductout2/visual",
+      "source": "gazebo_named",
+      "material": "SDF_MAT::Gazebo_White::8192dd01231b",
+      "definition": {
+        "source": "gazebo_named",
+        "rgba": [
+          1,
+          1,
+          1,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.10000000000000002,
+        "ambient_raw": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "specular_raw": [
+          0.1,
+          0.1,
+          0.1,
+          1
+        ],
+        "diffuse_raw": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0,
+          0,
+          0
+        ],
+        "color_space": "linear",
+        "script_name": "Gazebo/White"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "duct-out-3",
+      "file": "duct-out-3.STL",
+      "visual_key": "ductout3/visual",
+      "source": "gazebo_named",
+      "material": "SDF_MAT::Gazebo_White::8192dd01231b",
+      "definition": {
+        "source": "gazebo_named",
+        "rgba": [
+          1,
+          1,
+          1,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.10000000000000002,
+        "ambient_raw": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "specular_raw": [
+          0.1,
+          0.1,
+          0.1,
+          1
+        ],
+        "diffuse_raw": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0,
+          0,
+          0
+        ],
+        "color_space": "linear",
+        "script_name": "Gazebo/White"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "motor-Sunnysky-X2814III-1000KV",
+      "file": "motor-Sunnysky-X2814III-1000KV.STL",
+      "visual_key": "motor/visual",
+      "source": "sdf_rgba",
+      "material": "SDF_MAT::sdf_rgba::26bda2d0a666",
+      "definition": {
+        "source": "sdf_rgba",
+        "rgba": [
+          0.72,
+          0.16,
+          0.14,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.16,
+        "ambient_raw": [
+          0.38,
+          0.06,
+          0.05,
+          1.0
+        ],
+        "specular_raw": [
+          0.16,
+          0.16,
+          0.16,
+          1.0
+        ],
+        "diffuse_raw": [
+          0.72,
+          0.16,
+          0.14,
+          1.0
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "color_space": "linear"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "panel11",
+      "file": "panel11.STL",
+      "visual_key": "panel11/visual",
+      "source": "gazebo_named",
+      "material": "SDF_MAT::Gazebo_Black::e1f385be44bc",
+      "definition": {
+        "source": "gazebo_named",
+        "rgba": [
+          0,
+          0,
+          0,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.10000000000000002,
+        "ambient_raw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "specular_raw": [
+          0.1,
+          0.1,
+          0.1,
+          1
+        ],
+        "diffuse_raw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0,
+          0,
+          0
+        ],
+        "color_space": "linear",
+        "script_name": "Gazebo/Black"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "panel12",
+      "file": "panel12.STL",
+      "visual_key": "panel12/visual",
+      "source": "gazebo_named",
+      "material": "SDF_MAT::Gazebo_Black::e1f385be44bc",
+      "definition": {
+        "source": "gazebo_named",
+        "rgba": [
+          0,
+          0,
+          0,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.10000000000000002,
+        "ambient_raw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "specular_raw": [
+          0.1,
+          0.1,
+          0.1,
+          1
+        ],
+        "diffuse_raw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0,
+          0,
+          0
+        ],
+        "color_space": "linear",
+        "script_name": "Gazebo/Black"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "rotor",
+      "file": "rotor.STL",
+      "visual_key": "rotor/visual",
+      "source": "gazebo_named",
+      "material": "SDF_MAT::Gazebo_Black::e1f385be44bc",
+      "definition": {
+        "source": "gazebo_named",
+        "rgba": [
+          0,
+          0,
+          0,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.10000000000000002,
+        "ambient_raw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "specular_raw": [
+          0.1,
+          0.1,
+          0.1,
+          1
+        ],
+        "diffuse_raw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0,
+          0,
+          0
+        ],
+        "color_space": "linear",
+        "script_name": "Gazebo/Black"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "rotor-iFlight-9inch",
+      "file": "rotor-iFlight-9inch.STL",
+      "visual_key": null,
+      "source": "display_default",
+      "material": "SDF_MAT::display_default::d6ed713989a8",
+      "definition": {
+        "rgba": [
+          0.38,
+          0.38,
+          0.38,
+          1.0
+        ],
+        "roughness": 0.7,
+        "specular": 0.1,
+        "reason": "展示用中性灰，不代表真实机体颜色",
+        "source": "display_default",
+        "metallic": 0,
+        "emission": [
+          0,
+          0,
+          0
+        ]
+      },
+      "reference_only": true
+    },
+    {
+      "object": "servo-KST-X08H-1",
+      "file": "servo-KST-X08H-1.STL",
+      "visual_key": "servo1/visual",
+      "source": "sdf_rgba",
+      "material": "SDF_MAT::sdf_rgba::26bda2d0a666",
+      "definition": {
+        "source": "sdf_rgba",
+        "rgba": [
+          0.72,
+          0.16,
+          0.14,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.16,
+        "ambient_raw": [
+          0.38,
+          0.06,
+          0.05,
+          1.0
+        ],
+        "specular_raw": [
+          0.16,
+          0.16,
+          0.16,
+          1.0
+        ],
+        "diffuse_raw": [
+          0.72,
+          0.16,
+          0.14,
+          1.0
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "color_space": "linear"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "servo-KST-X08H-2",
+      "file": "servo-KST-X08H-2.STL",
+      "visual_key": "servo2/visual",
+      "source": "sdf_rgba",
+      "material": "SDF_MAT::sdf_rgba::26bda2d0a666",
+      "definition": {
+        "source": "sdf_rgba",
+        "rgba": [
+          0.72,
+          0.16,
+          0.14,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.16,
+        "ambient_raw": [
+          0.38,
+          0.06,
+          0.05,
+          1.0
+        ],
+        "specular_raw": [
+          0.16,
+          0.16,
+          0.16,
+          1.0
+        ],
+        "diffuse_raw": [
+          0.72,
+          0.16,
+          0.14,
+          1.0
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "color_space": "linear"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "servo-KST-X08H-3",
+      "file": "servo-KST-X08H-3.STL",
+      "visual_key": "servo3/visual",
+      "source": "sdf_rgba",
+      "material": "SDF_MAT::sdf_rgba::26bda2d0a666",
+      "definition": {
+        "source": "sdf_rgba",
+        "rgba": [
+          0.72,
+          0.16,
+          0.14,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.16,
+        "ambient_raw": [
+          0.38,
+          0.06,
+          0.05,
+          1.0
+        ],
+        "specular_raw": [
+          0.16,
+          0.16,
+          0.16,
+          1.0
+        ],
+        "diffuse_raw": [
+          0.72,
+          0.16,
+          0.14,
+          1.0
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "color_space": "linear"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "servo-KST-X08H-4",
+      "file": "servo-KST-X08H-4.STL",
+      "visual_key": "servo4/visual",
+      "source": "sdf_rgba",
+      "material": "SDF_MAT::sdf_rgba::26bda2d0a666",
+      "definition": {
+        "source": "sdf_rgba",
+        "rgba": [
+          0.72,
+          0.16,
+          0.14,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.16,
+        "ambient_raw": [
+          0.38,
+          0.06,
+          0.05,
+          1.0
+        ],
+        "specular_raw": [
+          0.16,
+          0.16,
+          0.16,
+          1.0
+        ],
+        "diffuse_raw": [
+          0.72,
+          0.16,
+          0.14,
+          1.0
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "color_space": "linear"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "shelf1",
+      "file": "shelf1.STL",
+      "visual_key": "shelf1/visual",
+      "source": "sdf_rgba",
+      "material": "SDF_MAT::sdf_rgba::ee00e3e90d78",
+      "definition": {
+        "source": "sdf_rgba",
+        "rgba": [
+          0.55,
+          0.55,
+          0.55,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.10000000000000002,
+        "ambient_raw": [
+          0.55,
+          0.55,
+          0.55,
+          1.0
+        ],
+        "specular_raw": [
+          0.1,
+          0.1,
+          0.1,
+          1.0
+        ],
+        "diffuse_raw": [
+          0.55,
+          0.55,
+          0.55,
+          1.0
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0,
+          0,
+          0
+        ],
+        "color_space": "linear"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "surface-60-1",
+      "file": "surface-60-1.STL",
+      "visual_key": null,
+      "source": "display_default",
+      "material": "SDF_MAT::display_default::d6ed713989a8",
+      "definition": {
+        "rgba": [
+          0.38,
+          0.38,
+          0.38,
+          1.0
+        ],
+        "roughness": 0.7,
+        "specular": 0.1,
+        "reason": "展示用中性灰，不代表真实机体颜色",
+        "source": "display_default",
+        "metallic": 0,
+        "emission": [
+          0,
+          0,
+          0
+        ]
+      },
+      "reference_only": true
+    },
+    {
+      "object": "surface-60-2",
+      "file": "surface-60-2.STL",
+      "visual_key": null,
+      "source": "display_default",
+      "material": "SDF_MAT::display_default::d6ed713989a8",
+      "definition": {
+        "rgba": [
+          0.38,
+          0.38,
+          0.38,
+          1.0
+        ],
+        "roughness": 0.7,
+        "specular": 0.1,
+        "reason": "展示用中性灰，不代表真实机体颜色",
+        "source": "display_default",
+        "metallic": 0,
+        "emission": [
+          0,
+          0,
+          0
+        ]
+      },
+      "reference_only": true
+    },
+    {
+      "object": "surface-60-3",
+      "file": "surface-60-3.STL",
+      "visual_key": null,
+      "source": "display_default",
+      "material": "SDF_MAT::display_default::d6ed713989a8",
+      "definition": {
+        "rgba": [
+          0.38,
+          0.38,
+          0.38,
+          1.0
+        ],
+        "roughness": 0.7,
+        "specular": 0.1,
+        "reason": "展示用中性灰，不代表真实机体颜色",
+        "source": "display_default",
+        "metallic": 0,
+        "emission": [
+          0,
+          0,
+          0
+        ]
+      },
+      "reference_only": true
+    },
+    {
+      "object": "surface-60-4",
+      "file": "surface-60-4.STL",
+      "visual_key": null,
+      "source": "display_default",
+      "material": "SDF_MAT::display_default::d6ed713989a8",
+      "definition": {
+        "rgba": [
+          0.38,
+          0.38,
+          0.38,
+          1.0
+        ],
+        "roughness": 0.7,
+        "specular": 0.1,
+        "reason": "展示用中性灰，不代表真实机体颜色",
+        "source": "display_default",
+        "metallic": 0,
+        "emission": [
+          0,
+          0,
+          0
+        ]
+      },
+      "reference_only": true
+    },
+    {
+      "object": "tail-1",
+      "file": "tail-1.STL",
+      "visual_key": "tail1/visual",
+      "source": "gazebo_named",
+      "material": "SDF_MAT::Gazebo_Black::e1f385be44bc",
+      "definition": {
+        "source": "gazebo_named",
+        "rgba": [
+          0,
+          0,
+          0,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.10000000000000002,
+        "ambient_raw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "specular_raw": [
+          0.1,
+          0.1,
+          0.1,
+          1
+        ],
+        "diffuse_raw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0,
+          0,
+          0
+        ],
+        "color_space": "linear",
+        "script_name": "Gazebo/Black"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "tail-2",
+      "file": "tail-2.STL",
+      "visual_key": "tail2/visual",
+      "source": "gazebo_named",
+      "material": "SDF_MAT::Gazebo_Black::e1f385be44bc",
+      "definition": {
+        "source": "gazebo_named",
+        "rgba": [
+          0,
+          0,
+          0,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.10000000000000002,
+        "ambient_raw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "specular_raw": [
+          0.1,
+          0.1,
+          0.1,
+          1
+        ],
+        "diffuse_raw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0,
+          0,
+          0
+        ],
+        "color_space": "linear",
+        "script_name": "Gazebo/Black"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "tail-3",
+      "file": "tail-3.STL",
+      "visual_key": "tail3/visual",
+      "source": "gazebo_named",
+      "material": "SDF_MAT::Gazebo_Black::e1f385be44bc",
+      "definition": {
+        "source": "gazebo_named",
+        "rgba": [
+          0,
+          0,
+          0,
+          1.0
+        ],
+        "roughness": 0.62,
+        "metallic": 0.0,
+        "specular": 0.10000000000000002,
+        "ambient_raw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "specular_raw": [
+          0.1,
+          0.1,
+          0.1,
+          1
+        ],
+        "diffuse_raw": [
+          0,
+          0,
+          0,
+          1
+        ],
+        "transparency_raw": 0.0,
+        "emission": [
+          0,
+          0,
+          0
+        ],
+        "color_space": "linear",
+        "script_name": "Gazebo/Black"
+      },
+      "reference_only": false
+    },
+    {
+      "object": "X-tend",
+      "file": "X-tend.STL",
+      "visual_key": null,
+      "source": "display_default",
+      "material": "SDF_MAT::display_default::d6ed713989a8",
+      "definition": {
+        "rgba": [
+          0.38,
+          0.38,
+          0.38,
+          1.0
+        ],
+        "roughness": 0.7,
+        "specular": 0.1,
+        "reason": "展示用中性灰，不代表真实机体颜色",
+        "source": "display_default",
+        "metallic": 0,
+        "emission": [
+          0,
+          0,
+          0
+        ]
+      },
+      "reference_only": false
+    }
+  ],
+  "sdf_records": [
+    {
+      "key": "base_link/base_link_visual",
+      "link": "base_link",
+      "visual": "base_link_visual",
+      "geometry": "<geometry>\n          <mesh>\n            <scale>1 1 1</scale>\n            <uri>model://ductedfan4/meshes/battery-4s-10000-2.STL</uri>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/battery-4s-10000-2.STL",
+      "has_material": true,
+      "ambient": [
+        0.2,
+        0.4,
+        0.75,
+        1.0
+      ],
+      "diffuse": [
+        0.2,
+        0.4,
+        0.75,
+        1.0
+      ],
+      "specular": [
+        0.1,
+        0.1,
+        0.1,
+        1.0
+      ],
+      "emissive": null,
+      "transparency": 0.0,
+      "script_name": null,
+      "script_uris": [],
+      "lighting": null
+    },
+    {
+      "key": "duct_in/visual",
+      "link": "duct_in",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/duct-in.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/duct-in.STL",
+      "has_material": true,
+      "ambient": null,
+      "diffuse": null,
+      "specular": null,
+      "emissive": null,
+      "transparency": 0.0,
+      "script_name": "Gazebo/White",
+      "script_uris": [
+        "file://media/materials/scripts/gazebo.material"
+      ],
+      "lighting": null
+    },
+    {
+      "key": "ductout1/visual",
+      "link": "ductout1",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/duct-out-1.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/duct-out-1.STL",
+      "has_material": true,
+      "ambient": null,
+      "diffuse": null,
+      "specular": null,
+      "emissive": null,
+      "transparency": 0.0,
+      "script_name": "Gazebo/White",
+      "script_uris": [
+        "__default__"
+      ],
+      "lighting": null
+    },
+    {
+      "key": "ductout2/visual",
+      "link": "ductout2",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/duct-out-2.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/duct-out-2.STL",
+      "has_material": true,
+      "ambient": null,
+      "diffuse": null,
+      "specular": null,
+      "emissive": null,
+      "transparency": 0.0,
+      "script_name": "Gazebo/White",
+      "script_uris": [
+        "__default__"
+      ],
+      "lighting": "1"
+    },
+    {
+      "key": "ductout3/visual",
+      "link": "ductout3",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/duct-out-3.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/duct-out-3.STL",
+      "has_material": true,
+      "ambient": null,
+      "diffuse": null,
+      "specular": null,
+      "emissive": null,
+      "transparency": 0.0,
+      "script_name": "Gazebo/White",
+      "script_uris": [
+        "__default__"
+      ],
+      "lighting": null
+    },
+    {
+      "key": "tail1/visual",
+      "link": "tail1",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/tail-1.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/tail-1.STL",
+      "has_material": true,
+      "ambient": null,
+      "diffuse": null,
+      "specular": null,
+      "emissive": null,
+      "transparency": 0.0,
+      "script_name": "Gazebo/Black",
+      "script_uris": [
+        "__default__"
+      ],
+      "lighting": "1"
+    },
+    {
+      "key": "tail2/visual",
+      "link": "tail2",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/tail-2.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/tail-2.STL",
+      "has_material": true,
+      "ambient": null,
+      "diffuse": null,
+      "specular": null,
+      "emissive": null,
+      "transparency": 0.0,
+      "script_name": "Gazebo/Black",
+      "script_uris": [
+        "__default__"
+      ],
+      "lighting": null
+    },
+    {
+      "key": "tail3/visual",
+      "link": "tail3",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/tail-3.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/tail-3.STL",
+      "has_material": true,
+      "ambient": null,
+      "diffuse": null,
+      "specular": null,
+      "emissive": null,
+      "transparency": 0.0,
+      "script_name": "Gazebo/Black",
+      "script_uris": [
+        "__default__"
+      ],
+      "lighting": null
+    },
+    {
+      "key": "bec/visual",
+      "link": "bec",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/bec-Hobbywing-Platinum.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/bec-Hobbywing-Platinum.STL",
+      "has_material": true,
+      "ambient": null,
+      "diffuse": null,
+      "specular": null,
+      "emissive": null,
+      "transparency": 0.0,
+      "script_name": "Gazebo/Black",
+      "script_uris": [
+        "__default__"
+      ],
+      "lighting": null
+    },
+    {
+      "key": "motor/visual",
+      "link": "motor",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/motor-Sunnysky-X2814III-1000KV.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/motor-Sunnysky-X2814III-1000KV.STL",
+      "has_material": true,
+      "ambient": [
+        0.38,
+        0.06,
+        0.05,
+        1.0
+      ],
+      "diffuse": [
+        0.72,
+        0.16,
+        0.14,
+        1.0
+      ],
+      "specular": [
+        0.16,
+        0.16,
+        0.16,
+        1.0
+      ],
+      "emissive": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "transparency": 0.0,
+      "script_name": null,
+      "script_uris": [],
+      "lighting": "true"
+    },
+    {
+      "key": "panel11/visual",
+      "link": "panel11",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/panel11.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/panel11.STL",
+      "has_material": true,
+      "ambient": null,
+      "diffuse": null,
+      "specular": null,
+      "emissive": null,
+      "transparency": 0.0,
+      "script_name": "Gazebo/Black",
+      "script_uris": [
+        "__default__"
+      ],
+      "lighting": null
+    },
+    {
+      "key": "panel12/visual",
+      "link": "panel12",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/panel12.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/panel12.STL",
+      "has_material": true,
+      "ambient": null,
+      "diffuse": null,
+      "specular": null,
+      "emissive": null,
+      "transparency": 0.0,
+      "script_name": "Gazebo/Black",
+      "script_uris": [
+        "__default__"
+      ],
+      "lighting": "1"
+    },
+    {
+      "key": "shelf1/visual",
+      "link": "shelf1",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/shelf1.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/shelf1.STL",
+      "has_material": true,
+      "ambient": [
+        0.55,
+        0.55,
+        0.55,
+        1.0
+      ],
+      "diffuse": [
+        0.55,
+        0.55,
+        0.55,
+        1.0
+      ],
+      "specular": [
+        0.1,
+        0.1,
+        0.1,
+        1.0
+      ],
+      "emissive": null,
+      "transparency": 0.0,
+      "script_name": null,
+      "script_uris": [],
+      "lighting": null
+    },
+    {
+      "key": "servo1/visual",
+      "link": "servo1",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/servo-KST-X08H-1.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/servo-KST-X08H-1.STL",
+      "has_material": true,
+      "ambient": [
+        0.38,
+        0.06,
+        0.05,
+        1.0
+      ],
+      "diffuse": [
+        0.72,
+        0.16,
+        0.14,
+        1.0
+      ],
+      "specular": [
+        0.16,
+        0.16,
+        0.16,
+        1.0
+      ],
+      "emissive": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "transparency": 0.0,
+      "script_name": null,
+      "script_uris": [],
+      "lighting": "true"
+    },
+    {
+      "key": "servo2/visual",
+      "link": "servo2",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/servo-KST-X08H-2.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/servo-KST-X08H-2.STL",
+      "has_material": true,
+      "ambient": [
+        0.38,
+        0.06,
+        0.05,
+        1.0
+      ],
+      "diffuse": [
+        0.72,
+        0.16,
+        0.14,
+        1.0
+      ],
+      "specular": [
+        0.16,
+        0.16,
+        0.16,
+        1.0
+      ],
+      "emissive": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "transparency": 0.0,
+      "script_name": null,
+      "script_uris": [],
+      "lighting": "true"
+    },
+    {
+      "key": "servo3/visual",
+      "link": "servo3",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/servo-KST-X08H-3.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n         ",
+      "mesh_uri": "model://ductedfan4/meshes/servo-KST-X08H-3.STL",
+      "has_material": true,
+      "ambient": [
+        0.38,
+        0.06,
+        0.05,
+        1.0
+      ],
+      "diffuse": [
+        0.72,
+        0.16,
+        0.14,
+        1.0
+      ],
+      "specular": [
+        0.16,
+        0.16,
+        0.16,
+        1.0
+      ],
+      "emissive": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "transparency": 0.0,
+      "script_name": null,
+      "script_uris": [],
+      "lighting": "true"
+    },
+    {
+      "key": "servo4/visual",
+      "link": "servo4",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/servo-KST-X08H-4.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n         ",
+      "mesh_uri": "model://ductedfan4/meshes/servo-KST-X08H-4.STL",
+      "has_material": true,
+      "ambient": [
+        0.38,
+        0.06,
+        0.05,
+        1.0
+      ],
+      "diffuse": [
+        0.72,
+        0.16,
+        0.14,
+        1.0
+      ],
+      "specular": [
+        0.16,
+        0.16,
+        0.16,
+        1.0
+      ],
+      "emissive": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "transparency": 0.0,
+      "script_name": null,
+      "script_uris": [],
+      "lighting": "true"
+    },
+    {
+      "key": "box_up/visual",
+      "link": "box_up",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/box_up.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/box_up.STL",
+      "has_material": true,
+      "ambient": [
+        0.55,
+        0.55,
+        0.55,
+        1.0
+      ],
+      "diffuse": [
+        0.55,
+        0.55,
+        0.55,
+        1.0
+      ],
+      "specular": [
+        0.1,
+        0.1,
+        0.1,
+        1.0
+      ],
+      "emissive": null,
+      "transparency": 0.0,
+      "script_name": null,
+      "script_uris": [],
+      "lighting": null
+    },
+    {
+      "key": "box_up2/visual",
+      "link": "box_up2",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/box_up2.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/box_up2.STL",
+      "has_material": true,
+      "ambient": [
+        0.55,
+        0.55,
+        0.55,
+        1.0
+      ],
+      "diffuse": [
+        0.55,
+        0.55,
+        0.55,
+        1.0
+      ],
+      "specular": [
+        0.1,
+        0.1,
+        0.1,
+        1.0
+      ],
+      "emissive": null,
+      "transparency": 0.0,
+      "script_name": null,
+      "script_uris": [],
+      "lighting": null
+    },
+    {
+      "key": "base_board_flyctrl/visual",
+      "link": "base_board_flyctrl",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/base_board_flyctrl.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/base_board_flyctrl.STL",
+      "has_material": true,
+      "ambient": null,
+      "diffuse": null,
+      "specular": null,
+      "emissive": null,
+      "transparency": 0.0,
+      "script_name": "Gazebo/Black",
+      "script_uris": [
+        "__default__"
+      ],
+      "lighting": null
+    },
+    {
+      "key": "cs1/visual",
+      "link": "cs1",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/cs11.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/cs11.STL",
+      "has_material": true,
+      "ambient": [
+        0.32,
+        0.32,
+        0.32,
+        1.0
+      ],
+      "diffuse": [
+        0.4,
+        0.4,
+        0.4,
+        1.0
+      ],
+      "specular": [
+        0.1,
+        0.1,
+        0.1,
+        1.0
+      ],
+      "emissive": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "transparency": 0.0,
+      "script_name": null,
+      "script_uris": [],
+      "lighting": "true"
+    },
+    {
+      "key": "cs2/visual",
+      "link": "cs2",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/cs2.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n       ",
+      "mesh_uri": "model://ductedfan4/meshes/cs2.STL",
+      "has_material": true,
+      "ambient": [
+        0.32,
+        0.32,
+        0.32,
+        1.0
+      ],
+      "diffuse": [
+        0.4,
+        0.4,
+        0.4,
+        1.0
+      ],
+      "specular": [
+        0.1,
+        0.1,
+        0.1,
+        1.0
+      ],
+      "emissive": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "transparency": 0.0,
+      "script_name": null,
+      "script_uris": [],
+      "lighting": "true"
+    },
+    {
+      "key": "cs3/visual",
+      "link": "cs3",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/cs33.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/cs33.STL",
+      "has_material": true,
+      "ambient": [
+        0.32,
+        0.32,
+        0.32,
+        1.0
+      ],
+      "diffuse": [
+        0.4,
+        0.4,
+        0.4,
+        1.0
+      ],
+      "specular": [
+        0.1,
+        0.1,
+        0.1,
+        1.0
+      ],
+      "emissive": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "transparency": 0.0,
+      "script_name": null,
+      "script_uris": [],
+      "lighting": "true"
+    },
+    {
+      "key": "cs4/visual",
+      "link": "cs4",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/cs4.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/cs4.STL",
+      "has_material": true,
+      "ambient": [
+        0.32,
+        0.32,
+        0.32,
+        1.0
+      ],
+      "diffuse": [
+        0.4,
+        0.4,
+        0.4,
+        1.0
+      ],
+      "specular": [
+        0.1,
+        0.1,
+        0.1,
+        1.0
+      ],
+      "emissive": [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "transparency": 0.0,
+      "script_name": null,
+      "script_uris": [],
+      "lighting": "true"
+    },
+    {
+      "key": "rotor/visual",
+      "link": "rotor",
+      "visual": "visual",
+      "geometry": "<geometry>\n          <mesh>\n            <uri>model://ductedfan4/meshes/rotor.STL</uri>\n            <scale>1 1 1</scale>\n          </mesh>\n        </geometry>\n        ",
+      "mesh_uri": "model://ductedfan4/meshes/rotor.STL",
+      "has_material": true,
+      "ambient": null,
+      "diffuse": null,
+      "specular": null,
+      "emissive": null,
+      "transparency": 0.0,
+      "script_name": "Gazebo/Black",
+      "script_uris": [
+        "__default__"
+      ],
+      "lighting": null
+    }
+  ],
+  "preservation": {
+    "original_object_count": 89,
+    "preserved_count": 89,
+    "added_objects": [
+      "MATERIAL_LIGHT::FILL",
+      "MATERIAL_LIGHT::KEY",
+      "MATERIAL_LIGHT::LOW_FILL",
+      "MATERIAL_LIGHT::RIM"
+    ],
+    "geometry_and_transforms_unchanged": true
+  },
+  "idempotence_passed": true,
+  "environment": {
+    "bbox_dimensions_m": [
+      0.35328054428100586,
+      0.3756099343299866,
+      0.3776235282421112
+    ],
+    "lights": [
+      "KEY",
+      "FILL",
+      "RIM",
+      "LOW_FILL"
+    ]
+  },
+  "target": "D:\\01_科研\\TIE\\DF4_SolidWorks\\Blender\\output\\DF4\\DF4_Stage1_5.blend",
+  "gui_status": "实际打开最终工程，核对结构/材质并查看 Material Preview 与 Eevee 预览通过",
+  "visual_review_passed": true,
+  "mapping_tests_passed": true,
+  "final_blend_sha256": "fdce4368e07e7cc47034f0463a0d8f9ee29f09b702a0f701ad541e49d25deb01"
+}

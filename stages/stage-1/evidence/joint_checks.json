@@ -1,0 +1,62 @@
+[
+  {
+    "joint": "JOINT::cs1_joint",
+    "meshes": [
+      "cs11"
+    ],
+    "center_m": [
+      0.0,
+      0.0,
+      -0.14099499583244324
+    ],
+    "max_error": 0
+  },
+  {
+    "joint": "JOINT::cs2_joint",
+    "meshes": [
+      "cs2"
+    ],
+    "center_m": [
+      0.0,
+      0.0,
+      -0.14099499583244324
+    ],
+    "max_error": 0
+  },
+  {
+    "joint": "JOINT::cs3_joint",
+    "meshes": [
+      "cs33"
+    ],
+    "center_m": [
+      0.0,
+      0.0,
+      -0.14099499583244324
+    ],
+    "max_error": 0
+  },
+  {
+    "joint": "JOINT::cs4_joint",
+    "meshes": [
+      "cs4"
+    ],
+    "center_m": [
+      0.0,
+      0.0,
+      -0.14099499583244324
+    ],
+    "max_error": 0
+  },
+  {
+    "joint": "JOINT::rotor_joint",
+    "meshes": [
+      "rotor"
+    ],
+    "center_m": [
+      0.0,
+      0.0,
+      -0.04500000178813934
+    ],
+    "max_error": 0
+  }
+]

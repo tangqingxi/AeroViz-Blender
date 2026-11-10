@@ -1,0 +1,20 @@
+{
+  "filepath": "D:\\01_科研\\TIE\\DF4_SolidWorks\\Blender\\output\\DF4\\DF4_Stage1_5.blend",
+  "background": false,
+  "preservation": {
+    "original_object_count": 89,
+    "preserved_count": 89,
+    "added_objects": [
+      "MATERIAL_LIGHT::FILL",
+      "MATERIAL_LIGHT::KEY",
+      "MATERIAL_LIGHT::LOW_FILL",
+      "MATERIAL_LIGHT::RIM"
+    ],
+    "geometry_and_transforms_unchanged": true
+  },
+  "assigned_count": 33,
+  "material_colors_verified": true,
+  "viewport_mode": "MATERIAL",
+  "studio_light": "studio.exr",
+  "visual_review": "已查看最终 Material Preview 完整窗口及视口截图、Eevee 预览；结果见 MATERIAL_REPORT.md"
+}

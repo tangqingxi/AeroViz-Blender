@@ -1,0 +1,474 @@
+{
+  "background": false,
+  "filepath": "D:\\01_科研\\TIE\\DF4_SolidWorks\\Blender\\output\\DF4\\DF4_Stage1.blend",
+  "mesh_count": 33,
+  "objects": [
+    {
+      "object": "battery-4s-10000-2",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "duct-in",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "duct-out-1",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "duct-out-2",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "duct-out-3",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "tail-1",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "tail-2",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "tail-3",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "bec-Hobbywing-Platinum",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "motor-Sunnysky-X2814III-1000KV",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "panel11",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "panel12",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "shelf1",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "servo-KST-X08H-1",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "servo-KST-X08H-2",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "servo-KST-X08H-3",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "servo-KST-X08H-4",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "box_up",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "box_up2",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "base_board_flyctrl",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "cs11",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "cs2",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "cs33",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "cs4",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "rotor",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "controller2",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "X-tend",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "base",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "rotor-iFlight-9inch",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "surface-60-1",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "surface-60-2",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "surface-60-3",
+      "world_matrix_error": 0.0
+    },
+    {
+      "object": "surface-60-4",
+      "world_matrix_error": 0.0
+    }
+  ],
+  "joints": [
+    {
+      "name": "JOINT::cs1_joint",
+      "center": [
+        0.0,
+        0.0,
+        -0.14099499583244324
+      ],
+      "axis_model": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "JOINT::cs2_joint",
+      "center": [
+        0.0,
+        0.0,
+        -0.14099499583244324
+      ],
+      "axis_model": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "JOINT::cs3_joint",
+      "center": [
+        0.0,
+        0.0,
+        -0.14099499583244324
+      ],
+      "axis_model": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "JOINT::cs4_joint",
+      "center": [
+        0.0,
+        0.0,
+        -0.14099499583244324
+      ],
+      "axis_model": [
+        0.0,
+        1.0,
+        0.0
+      ]
+    },
+    {
+      "name": "JOINT::ductedfan4/imu_joint",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        1.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "name": "JOINT::JOINT_0",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "JOINT::JOINT_1",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "JOINT::JOINT_10",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "JOINT::JOINT_11",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "JOINT::JOINT_12",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "JOINT::JOINT_13",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "JOINT::JOINT_14",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "JOINT::JOINT_15",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "JOINT::JOINT_16",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "JOINT::JOINT_17",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "JOINT::JOINT_18",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "JOINT::JOINT_2",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "JOINT::JOINT_3",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "JOINT::JOINT_4",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "JOINT::JOINT_5",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "JOINT::JOINT_6",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "JOINT::JOINT_7",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "JOINT::JOINT_8",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "JOINT::JOINT_9",
+      "center": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    },
+    {
+      "name": "JOINT::rotor_joint",
+      "center": [
+        0.0,
+        0.0,
+        -0.04500000178813934
+      ],
+      "axis_model": [
+        0.0,
+        0.0,
+        1.0
+      ]
+    }
+  ],
+  "status": "实际图形进程重新打开，数据检查通过；窗口截图待人工/代理视觉检查",
+  "screenshots": [
+    "preview/gui_isometric.png",
+    "preview/gui_front.png",
+    "preview/gui_top.png",
+    "preview/gui_side.png"
+  ],
+  "visual_review": "四个实际窗口截图已逐张查看；无明显错位或几何散落，见 IMPORT_REPORT.md"
+}
