@@ -1,0 +1,6322 @@
+{
+  "status": "PASS",
+  "blender_version": "5.0.1",
+  "background": false,
+  "full_cycle_observed": true,
+  "physical_key_injection": false,
+  "method": "Blender native screen.animation_play, same operator as Space",
+  "playback_samples": [
+    {
+      "elapsed": 0.18800000000192085,
+      "frame": 6,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "elapsed": 0.39100000000325963,
+      "frame": 12,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "elapsed": 0.5940000000009604,
+      "frame": 18,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "elapsed": 0.7970000000022992,
+      "frame": 24,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "elapsed": 1.0,
+      "frame": 30,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "elapsed": 1.2040000000015425,
+      "frame": 36,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "elapsed": 1.4070000000028813,
+      "frame": 42,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "elapsed": 1.610000000000582,
+      "frame": 48,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "elapsed": 1.8130000000019209,
+      "frame": 55,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "elapsed": 2.0160000000032596,
+      "frame": 61,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "elapsed": 2.2190000000009604,
+      "frame": 67,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "elapsed": 2.422000000002299,
+      "frame": 73,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "elapsed": 2.625,
+      "frame": 79,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "elapsed": 2.8290000000015425,
+      "frame": 85,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "elapsed": 3.0320000000028813,
+      "frame": 91,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "elapsed": 3.235000000000582,
+      "frame": 97,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "elapsed": 3.438000000001921,
+      "frame": 103,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "elapsed": 3.6410000000032596,
+      "frame": 109,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "elapsed": 3.8440000000009604,
+      "frame": 115,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "elapsed": 4.047000000002299,
+      "frame": 121,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    },
+    {
+      "elapsed": 4.25,
+      "frame": 127,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.02199999801814556,
+          -7.605079190398101e-06,
+          -0.036000002175569534
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.02199999801814556,
+          -0.036000002175569534
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.02199999801814556,
+          0.0,
+          -0.036000002175569534
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -1.84511263796594e-05,
+          0.021999992430210114,
+          -0.036000002175569534
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.025999998673796654
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.023999998345971107,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.018000001087784767,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.03399999812245369,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.014345875009894371,
+          0.0043813069351017475,
+          -0.012999999336898327
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0043813069351017475,
+          -0.014345875009894371,
+          -0.012999999336898327
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0043813069351017475,
+          0.014345875009894371,
+          -0.012999999336898327
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.014345875009894371,
+          -0.0043813069351017475,
+          -0.012999999336898327
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.02199999801814556,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.02199999801814556,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.020000001415610313,
+          0.001999999862164259
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.011999999172985554,
+          0.02078459970653057,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.011999999172985554,
+          -0.02078459970653057,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.02199999801814556,
+          -0.03810509666800499,
+          -0.0029999997932463884
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.04399999603629112,
+          0.0,
+          -0.0029999997932463884
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.02199999801814556,
+          0.03810509666800499,
+          -0.0029999997932463884
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.011999999172985554,
+          -0.011999999172985554,
+          -0.0029999997932463884
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.011999999172985554
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.018000001087784767,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.014000000432133675
+        ]
+      }
+    },
+    {
+      "elapsed": 4.438000000001921,
+      "frame": 134,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.04766666516661644,
+          -1.6477670214953832e-05,
+          -0.07800000160932541
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.04766666516661644,
+          -0.07800000160932541
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.04766666516661644,
+          0.0,
+          -0.07800000160932541
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -3.997743988293223e-05,
+          0.047666650265455246,
+          -0.07800000160932541
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.056333329528570175
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.05199999734759331,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.039000000804662704,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.07366666942834854,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.031082728877663612,
+          0.009492832235991955,
+          -0.028166664764285088
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.009492832235991955,
+          -0.031082728877663612,
+          -0.028166664764285088
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.009492832235991955,
+          0.031082728877663612,
+          -0.028166664764285088
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.031082728877663612,
+          -0.009492832235991955,
+          -0.028166664764285088
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.04766666516661644,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.04766666516661644,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.04333333671092987,
+          0.004333333112299442
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.025999998673796654,
+          0.045033298432826996,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.025999998673796654,
+          -0.045033298432826996,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.04766666516661644,
+          -0.08256104588508606,
+          -0.0064999996684491634
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.09533333033323288,
+          0.0,
+          -0.0064999996684491634
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.04766666516661644,
+          0.08256104588508606,
+          -0.0064999996684491634
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.025999998673796654,
+          -0.025999998673796654,
+          -0.0064999996684491634
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.025999998673796654
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.039000000804662704,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.03033333458006382
+        ]
+      }
+    },
+    {
+      "elapsed": 4.657000000002881,
+      "frame": 140,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.06966666132211685,
+          -2.4082750314846635e-05,
+          -0.11400000005960464
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.06966666132211685,
+          -0.11400000005960464
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.06966666132211685,
+          0.0,
+          -0.11400000005960464
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -5.842856990057044e-05,
+          0.06966663897037506,
+          -0.11400000005960464
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.08233332633972168
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.07599999755620956,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.05700000002980232,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.10766666382551193,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.04542860761284828,
+          0.01387413963675499,
+          -0.04116666316986084
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.01387413963675499,
+          -0.04542860761284828,
+          -0.04116666316986084
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.01387413963675499,
+          0.04542860761284828,
+          -0.04116666316986084
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.04542860761284828,
+          -0.01387413963675499,
+          -0.04116666316986084
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.06966666132211685,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.06966666132211685,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.06333333253860474,
+          0.0063333334401249886
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.03799999877810478,
+          0.06581790000200272,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.03799999877810478,
+          -0.06581790000200272,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.06966666132211685,
+          -0.12066615372896194,
+          -0.009499999694526196
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.1393333226442337,
+          0.0,
+          -0.009499999694526196
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.06966666132211685,
+          0.12066615372896194,
+          -0.009499999694526196
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.03799999877810478,
+          -0.03799999877810478,
+          -0.009499999694526196
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.03799999877810478
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.05700000002980232,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.044333335012197495
+        ]
+      }
+    },
+    {
+      "elapsed": 4.860000000000582,
+      "frame": 146,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.09166666120290756,
+          -3.1687828595750034e-05,
+          -0.15000000596046448
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.09166666865348816,
+          -0.15000000596046448
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.09166666865348816,
+          0.0,
+          -0.15000000596046448
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -7.687969628022984e-05,
+          0.09166663140058517,
+          -0.15000000596046448
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.10833333432674408
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.10000000149011612,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.07500000298023224,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.14166666567325592,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.059774480760097504,
+          0.01825544610619545,
+          -0.05416666716337204
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.01825544610619545,
+          -0.059774480760097504,
+          -0.05416666716337204
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.01825544610619545,
+          0.059774480760097504,
+          -0.05416666716337204
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.059774480760097504,
+          -0.01825544610619545,
+          -0.05416666716337204
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.09166666865348816,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.09166666865348816,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0833333358168602,
+          0.008333333767950535
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.05000000074505806,
+          0.08660249412059784,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.05000000074505806,
+          -0.08660249412059784,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.09166666865348816,
+          -0.15877124667167664,
+          -0.012500000186264515
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.18333333730697632,
+          0.0,
+          -0.012500000186264515
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.09166666865348816,
+          0.15877124667167664,
+          -0.012500000186264515
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.05000000074505806,
+          -0.05000000074505806,
+          -0.012500000186264515
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.05000000074505806
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.07500000298023224,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.05833333358168602
+        ]
+      }
+    },
+    {
+      "elapsed": 5.063000000001921,
+      "frame": 152,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.11366666108369827,
+          -3.929290687665343e-05,
+          -0.1860000193119049
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.11366666853427887,
+          -0.1860000193119049
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.11366666853427887,
+          0.0,
+          -0.1860000193119049
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -9.533082629786804e-05,
+          0.11366663128137589,
+          -0.1860000193119049
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.13433332741260529
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.12399999797344208,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.09300000965595245,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.1756666600704193,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.07412035763263702,
+          0.02263675257563591,
+          -0.06716666370630264
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.02263675257563591,
+          -0.07412035763263702,
+          -0.06716666370630264
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.02263675257563591,
+          0.07412035763263702,
+          -0.06716666370630264
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.07412035763263702,
+          -0.02263675257563591,
+          -0.06716666370630264
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.11366666853427887,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.11366666853427887,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.10333333909511566,
+          0.010333333164453506
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.06199999898672104,
+          0.10738709568977356,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.06199999898672104,
+          -0.10738709568977356,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.11366666853427887,
+          -0.19687634706497192,
+          -0.01549999974668026
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.22733333706855774,
+          0.0,
+          -0.01549999974668026
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.11366666853427887,
+          0.19687634706497192,
+          -0.01549999974668026
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.06199999898672104,
+          -0.06199999898672104,
+          -0.01549999974668026
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.06199999898672104
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.09300000965595245,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.07233333587646484
+        ]
+      }
+    },
+    {
+      "elapsed": 5.26600000000326,
+      "frame": 158,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.1356666535139084,
+          -4.689798515755683e-05,
+          -0.22200001776218414
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.13566666841506958,
+          -0.22200001776218414
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.13566666841506958,
+          0.0,
+          -0.22200001776218414
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.00011378195631550625,
+          0.135666623711586,
+          -0.22200001776218414
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.16033333539962769
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.14800000190734863,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.11100000888109207,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.2096666693687439,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.08846623450517654,
+          0.02701806090772152,
+          -0.08016666769981384
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.02701806090772152,
+          -0.08846623450517654,
+          -0.08016666769981384
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.02701806090772152,
+          0.08846623450517654,
+          -0.08016666769981384
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.08846623450517654,
+          -0.02701806090772152,
+          -0.08016666769981384
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.13566666841506958,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.13566666841506958,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.12333333492279053,
+          0.012333333492279053
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.07400000095367432,
+          0.12817169725894928,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.07400000095367432,
+          -0.12817169725894928,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.13566666841506958,
+          -0.2349814623594284,
+          -0.01850000023841858
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.27133333683013916,
+          0.0,
+          -0.01850000023841858
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.13566666841506958,
+          0.2349814623594284,
+          -0.01850000023841858
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.07400000095367432,
+          -0.07400000095367432,
+          -0.01850000023841858
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.07400000095367432
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.11100000888109207,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.08633332699537277
+        ]
+      }
+    },
+    {
+      "elapsed": 5.46900000000096,
+      "frame": 164,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.1576666533946991,
+          -5.450306707643904e-05,
+          -0.2580000162124634
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.1576666682958603,
+          -0.2580000162124634
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.1576666682958603,
+          0.0,
+          -0.2580000162124634
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.00013223307905718684,
+          0.1576666235923767,
+          -0.2580000162124634
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.1863333284854889
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.171999990940094,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.1290000081062317,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.2436666637659073,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.10281210392713547,
+          0.03139936923980713,
+          -0.09316666424274445
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.03139936923980713,
+          -0.10281210392713547,
+          -0.09316666424274445
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.03139936923980713,
+          0.10281210392713547,
+          -0.09316666424274445
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.10281210392713547,
+          -0.03139936923980713,
+          -0.09316666424274445
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.1576666682958603,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.1576666682958603,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.1433333456516266,
+          0.014333332888782024
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.085999995470047,
+          0.148956298828125,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.085999995470047,
+          -0.148956298828125,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.1576666682958603,
+          -0.2730865478515625,
+          -0.02149999886751175
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.3153333365917206,
+          0.0,
+          -0.02149999886751175
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.1576666682958603,
+          0.2730865478515625,
+          -0.02149999886751175
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.085999995470047,
+          -0.085999995470047,
+          -0.02149999886751175
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.085999995470047
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.1290000081062317,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.1003333330154419
+        ]
+      }
+    },
+    {
+      "elapsed": 5.672000000002299,
+      "frame": 170,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.1796666532754898,
+          -6.210814171936363e-05,
+          -0.2940000295639038
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.179666668176651,
+          -0.2940000295639038
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.179666668176651,
+          0.0,
+          -0.2940000295639038
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.00015068420907482505,
+          0.17966659367084503,
+          -0.2940000295639038
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.2123333364725113
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.19599999487400055,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.1470000147819519,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.2776666581630707,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.11715798079967499,
+          0.03578067570924759,
+          -0.10616666823625565
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.03578067570924759,
+          -0.11715798079967499,
+          -0.10616666823625565
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.03578067570924759,
+          0.11715798079967499,
+          -0.10616666823625565
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.11715798079967499,
+          -0.03578067570924759,
+          -0.10616666823625565
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.179666668176651,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.179666668176651,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.16333334147930145,
+          0.016333332285284996
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.09799999743700027,
+          0.16974090039730072,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.09799999743700027,
+          -0.16974090039730072,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.179666668176651,
+          -0.3111916482448578,
+          -0.02449999935925007
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.359333336353302,
+          0.0,
+          -0.02449999935925007
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.179666668176651,
+          0.3111916482448578,
+          -0.02449999935925007
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.09799999743700027,
+          -0.09799999743700027,
+          -0.02449999935925007
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.09799999743700027
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.1470000147819519,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.11433333903551102
+        ]
+      }
+    },
+    {
+      "elapsed": 5.875,
+      "frame": 176,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.20166665315628052,
+          -6.971322727622464e-05,
+          -0.33000001311302185
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.2016666680574417,
+          -0.33000001311302185
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.2016666680574417,
+          0.0,
+          -0.33000001311302185
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.00016913533909246325,
+          0.20166659355163574,
+          -0.33000001311302185
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.2383333146572113
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.2199999988079071,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.16500000655651093,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.31166666746139526,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.1315038651227951,
+          0.04016198217868805,
+          -0.11916665732860565
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.04016198217868805,
+          -0.1315038651227951,
+          -0.11916665732860565
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.04016198217868805,
+          0.1315038651227951,
+          -0.11916665732860565
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.1315038651227951,
+          -0.04016198217868805,
+          -0.11916665732860565
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.2016666680574417,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.2016666680574417,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.18333333730697632,
+          0.01833333447575569
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.10999999940395355,
+          0.19052550196647644,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.10999999940395355,
+          -0.19052550196647644,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.2016666680574417,
+          -0.3492967486381531,
+          -0.027499999850988388
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.4033333361148834,
+          0.0,
+          -0.027499999850988388
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.2016666680574417,
+          0.3492967486381531,
+          -0.027499999850988388
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.10999999940395355,
+          -0.10999999940395355,
+          -0.027499999850988388
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.10999999940395355
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.16500000655651093,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.12833333015441895
+        ]
+      }
+    },
+    {
+      "elapsed": 6.0790000000015425,
+      "frame": 182,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.2199999839067459,
+          -7.60507900849916e-05,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.2199999988079071,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.2199999988079071,
+          0.0,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0001845112710725516,
+          0.21999992430210114,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.25999999046325684
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.23999999463558197,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.18000000715255737,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.3400000035762787,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.143458753824234,
+          0.0438130721449852,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0438130721449852,
+          -0.143458753824234,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0438130721449852,
+          0.143458753824234,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.143458753824234,
+          -0.0438130721449852,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.2199999988079071,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.2199999988079071,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.20000000298023224,
+          0.019999999552965164
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.11999999731779099,
+          0.207846000790596,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.11999999731779099,
+          -0.207846000790596,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.2199999988079071,
+          -0.3810510039329529,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.4399999976158142,
+          0.0,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.2199999988079071,
+          0.3810510039329529,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.11999999731779099,
+          -0.11999999731779099,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.11999999731779099
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.18000000715255737,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.14000000059604645
+        ]
+      }
+    },
+    {
+      "elapsed": 6.282000000002881,
+      "frame": 188,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.2199999839067459,
+          -7.60507900849916e-05,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.2199999988079071,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.2199999988079071,
+          0.0,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0001845112710725516,
+          0.21999992430210114,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.25999999046325684
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.23999999463558197,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.18000000715255737,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.3400000035762787,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.143458753824234,
+          0.0438130721449852,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0438130721449852,
+          -0.143458753824234,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0438130721449852,
+          0.143458753824234,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.143458753824234,
+          -0.0438130721449852,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.2199999988079071,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.2199999988079071,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.20000000298023224,
+          0.019999999552965164
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.11999999731779099,
+          0.207846000790596,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.11999999731779099,
+          -0.207846000790596,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.2199999988079071,
+          -0.3810510039329529,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.4399999976158142,
+          0.0,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.2199999988079071,
+          0.3810510039329529,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.11999999731779099,
+          -0.11999999731779099,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.11999999731779099
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.18000000715255737,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.14000000059604645
+        ]
+      }
+    },
+    {
+      "elapsed": 6.46900000000096,
+      "frame": 195,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.2199999839067459,
+          -7.60507900849916e-05,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.2199999988079071,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.2199999988079071,
+          0.0,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0001845112710725516,
+          0.21999992430210114,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.25999999046325684
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.23999999463558197,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.18000000715255737,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.3400000035762787,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.143458753824234,
+          0.0438130721449852,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0438130721449852,
+          -0.143458753824234,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0438130721449852,
+          0.143458753824234,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.143458753824234,
+          -0.0438130721449852,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.2199999988079071,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.2199999988079071,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.20000000298023224,
+          0.019999999552965164
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.11999999731779099,
+          0.207846000790596,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.11999999731779099,
+          -0.207846000790596,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.2199999988079071,
+          -0.3810510039329529,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.4399999976158142,
+          0.0,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.2199999988079071,
+          0.3810510039329529,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.11999999731779099,
+          -0.11999999731779099,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.11999999731779099
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.18000000715255737,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.14000000059604645
+        ]
+      }
+    },
+    {
+      "elapsed": 6.672000000002299,
+      "frame": 201,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.2199999839067459,
+          -7.60507900849916e-05,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.2199999988079071,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.2199999988079071,
+          0.0,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0001845112710725516,
+          0.21999992430210114,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.25999999046325684
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.23999999463558197,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.18000000715255737,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.3400000035762787,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.143458753824234,
+          0.0438130721449852,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0438130721449852,
+          -0.143458753824234,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0438130721449852,
+          0.143458753824234,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.143458753824234,
+          -0.0438130721449852,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.2199999988079071,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.2199999988079071,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.20000000298023224,
+          0.019999999552965164
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.11999999731779099,
+          0.207846000790596,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.11999999731779099,
+          -0.207846000790596,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.2199999988079071,
+          -0.3810510039329529,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.4399999976158142,
+          0.0,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.2199999988079071,
+          0.3810510039329529,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.11999999731779099,
+          -0.11999999731779099,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.11999999731779099
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.18000000715255737,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.14000000059604645
+        ]
+      }
+    },
+    {
+      "elapsed": 6.89100000000326,
+      "frame": 207,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.2199999839067459,
+          -7.60507900849916e-05,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.2199999988079071,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.2199999988079071,
+          0.0,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0001845112710725516,
+          0.21999992430210114,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.25999999046325684
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.23999999463558197,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.18000000715255737,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.3400000035762787,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.143458753824234,
+          0.0438130721449852,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0438130721449852,
+          -0.143458753824234,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0438130721449852,
+          0.143458753824234,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.143458753824234,
+          -0.0438130721449852,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.2199999988079071,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.2199999988079071,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.20000000298023224,
+          0.019999999552965164
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.11999999731779099,
+          0.207846000790596,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.11999999731779099,
+          -0.207846000790596,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.2199999988079071,
+          -0.3810510039329529,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.4399999976158142,
+          0.0,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.2199999988079071,
+          0.3810510039329529,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.11999999731779099,
+          -0.11999999731779099,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.11999999731779099
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.18000000715255737,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.14000000059604645
+        ]
+      }
+    },
+    {
+      "elapsed": 7.09400000000096,
+      "frame": 213,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.2199999839067459,
+          -7.60507900849916e-05,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.2199999988079071,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.2199999988079071,
+          0.0,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0001845112710725516,
+          0.21999992430210114,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.25999999046325684
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.23999999463558197,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.18000000715255737,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.3400000035762787,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.143458753824234,
+          0.0438130721449852,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0438130721449852,
+          -0.143458753824234,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0438130721449852,
+          0.143458753824234,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.143458753824234,
+          -0.0438130721449852,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.2199999988079071,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.2199999988079071,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.20000000298023224,
+          0.019999999552965164
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.11999999731779099,
+          0.207846000790596,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.11999999731779099,
+          -0.207846000790596,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.2199999988079071,
+          -0.3810510039329529,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.4399999976158142,
+          0.0,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.2199999988079071,
+          0.3810510039329529,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.11999999731779099,
+          -0.11999999731779099,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.11999999731779099
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.18000000715255737,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.14000000059604645
+        ]
+      }
+    },
+    {
+      "elapsed": 7.282000000002881,
+      "frame": 219,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.2199999839067459,
+          -7.60507900849916e-05,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.2199999988079071,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.2199999988079071,
+          0.0,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0001845112710725516,
+          0.21999992430210114,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.25999999046325684
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.23999999463558197,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.18000000715255737,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.3400000035762787,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.143458753824234,
+          0.0438130721449852,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0438130721449852,
+          -0.143458753824234,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0438130721449852,
+          0.143458753824234,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.143458753824234,
+          -0.0438130721449852,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.2199999988079071,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.2199999988079071,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.20000000298023224,
+          0.019999999552965164
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.11999999731779099,
+          0.207846000790596,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.11999999731779099,
+          -0.207846000790596,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.2199999988079071,
+          -0.3810510039329529,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.4399999976158142,
+          0.0,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.2199999988079071,
+          0.3810510039329529,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.11999999731779099,
+          -0.11999999731779099,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.11999999731779099
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.18000000715255737,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.14000000059604645
+        ]
+      }
+    },
+    {
+      "elapsed": 7.485000000000582,
+      "frame": 225,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.2199999839067459,
+          -7.60507900849916e-05,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.2199999988079071,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.2199999988079071,
+          0.0,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0001845112710725516,
+          0.21999992430210114,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.25999999046325684
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.23999999463558197,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.18000000715255737,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.3400000035762787,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.143458753824234,
+          0.0438130721449852,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0438130721449852,
+          -0.143458753824234,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0438130721449852,
+          0.143458753824234,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.143458753824234,
+          -0.0438130721449852,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.2199999988079071,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.2199999988079071,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.20000000298023224,
+          0.019999999552965164
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.11999999731779099,
+          0.207846000790596,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.11999999731779099,
+          -0.207846000790596,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.2199999988079071,
+          -0.3810510039329529,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.4399999976158142,
+          0.0,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.2199999988079071,
+          0.3810510039329529,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.11999999731779099,
+          -0.11999999731779099,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.11999999731779099
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.18000000715255737,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.14000000059604645
+        ]
+      }
+    },
+    {
+      "elapsed": 7.688000000001921,
+      "frame": 231,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.2199999839067459,
+          -7.60507900849916e-05,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.2199999988079071,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.2199999988079071,
+          0.0,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0001845112710725516,
+          0.21999992430210114,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.25999999046325684
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.23999999463558197,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.18000000715255737,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.3400000035762787,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.143458753824234,
+          0.0438130721449852,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0438130721449852,
+          -0.143458753824234,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0438130721449852,
+          0.143458753824234,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.143458753824234,
+          -0.0438130721449852,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.2199999988079071,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.2199999988079071,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.20000000298023224,
+          0.019999999552965164
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.11999999731779099,
+          0.207846000790596,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.11999999731779099,
+          -0.207846000790596,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.2199999988079071,
+          -0.3810510039329529,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.4399999976158142,
+          0.0,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.2199999988079071,
+          0.3810510039329529,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.11999999731779099,
+          -0.11999999731779099,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.11999999731779099
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.18000000715255737,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.14000000059604645
+        ]
+      }
+    },
+    {
+      "elapsed": 7.89100000000326,
+      "frame": 237,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.2199999839067459,
+          -7.60507900849916e-05,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.2199999988079071,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.2199999988079071,
+          0.0,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0001845112710725516,
+          0.21999992430210114,
+          -0.36000001430511475
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.25999999046325684
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.23999999463558197,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.18000000715255737,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.3400000035762787,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.143458753824234,
+          0.0438130721449852,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0438130721449852,
+          -0.143458753824234,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0438130721449852,
+          0.143458753824234,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.143458753824234,
+          -0.0438130721449852,
+          -0.12999999523162842
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.2199999988079071,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.2199999988079071,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.20000000298023224,
+          0.019999999552965164
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.11999999731779099,
+          0.207846000790596,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.11999999731779099,
+          -0.207846000790596,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.2199999988079071,
+          -0.3810510039329529,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.4399999976158142,
+          0.0,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.2199999988079071,
+          0.3810510039329529,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.11999999731779099,
+          -0.11999999731779099,
+          -0.029999999329447746
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.11999999731779099
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.18000000715255737,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.14000000059604645
+        ]
+      }
+    },
+    {
+      "elapsed": 8.09400000000096,
+      "frame": 243,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.21266664564609528,
+          -7.351576641667634e-05,
+          -0.34800001978874207
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.21266666054725647,
+          -0.34800001978874207
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.21266666054725647,
+          0.0,
+          -0.34800001978874207
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.00017836088954936713,
+          0.2126666009426117,
+          -0.34800001978874207
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.2513333261013031
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.23199999332427979,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.17400000989437103,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.32866665720939636,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.13867679238319397,
+          0.04235263541340828,
+          -0.12566666305065155
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.04235263541340828,
+          -0.13867679238319397,
+          -0.12566666305065155
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.04235263541340828,
+          0.13867679238319397,
+          -0.12566666305065155
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.13867679238319397,
+          -0.04235263541340828,
+          -0.12566666305065155
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.21266666054725647,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.21266666054725647,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.19333334267139435,
+          0.019333332777023315
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.11599999666213989,
+          0.2009177953004837,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.11599999666213989,
+          -0.2009177953004837,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.21266666054725647,
+          -0.3683493137359619,
+          -0.028999999165534973
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.42533332109451294,
+          0.0,
+          -0.028999999165534973
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.21266666054725647,
+          0.3683493137359619,
+          -0.028999999165534973
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.11599999666213989,
+          -0.11599999666213989,
+          -0.028999999165534973
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.11599999666213989
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.17400000989437103,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.1353333294391632
+        ]
+      }
+    },
+    {
+      "elapsed": 8.2970000000023,
+      "frame": 249,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.19066664576530457,
+          -6.591068813577294e-05,
+          -0.31200000643730164
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.19066666066646576,
+          -0.31200000643730164
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.19066666066646576,
+          0.0,
+          -0.31200000643730164
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.00015990977408364415,
+          0.19066660106182098,
+          -0.31200000643730164
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.2253333330154419
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.20800000429153442,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.15600000321865082,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.29466667771339417,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.12433092296123505,
+          0.03797132894396782,
+          -0.11266666650772095
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.03797132894396782,
+          -0.12433092296123505,
+          -0.11266666650772095
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.03797132894396782,
+          0.12433092296123505,
+          -0.11266666650772095
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.12433092296123505,
+          -0.03797132894396782,
+          -0.11266666650772095
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.19066666066646576,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.19066666066646576,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.1733333319425583,
+          0.01733333244919777
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.10400000214576721,
+          0.18013319373130798,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.10400000214576721,
+          -0.18013319373130798,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.19066666066646576,
+          -0.3302442133426666,
+          -0.026000000536441803
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.3813333213329315,
+          0.0,
+          -0.026000000536441803
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.19066666066646576,
+          0.3302442133426666,
+          -0.026000000536441803
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.10400000214576721,
+          -0.10400000214576721,
+          -0.026000000536441803
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.10400000214576721
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.15600000321865082,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.12133333086967468
+        ]
+      }
+    },
+    {
+      "elapsed": 8.5,
+      "frame": 255,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.16866666078567505,
+          -5.830560621689074e-05,
+          -0.2760000228881836
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.16866666078567505,
+          -0.2760000228881836
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.16866666078567505,
+          0.0,
+          -0.2760000228881836
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.00014145864406600595,
+          0.16866660118103027,
+          -0.2760000228881836
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.1993333250284195
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.18400000035762787,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.1380000114440918,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.2606666684150696,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.10998503863811493,
+          0.03359002247452736,
+          -0.09966666251420975
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.03359002247452736,
+          -0.10998503863811493,
+          -0.09966666251420975
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.03359002247452736,
+          0.10998503863811493,
+          -0.09966666251420975
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.10998503863811493,
+          -0.03359002247452736,
+          -0.09966666251420975
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.16866666078567505,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.16866666078567505,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.15333333611488342,
+          0.015333333052694798
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.09200000017881393,
+          0.15934860706329346,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.09200000017881393,
+          -0.15934860706329346,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.16866666078567505,
+          -0.29213911294937134,
+          -0.023000000044703484
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.3373333215713501,
+          0.0,
+          -0.023000000044703484
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.16866666078567505,
+          0.29213911294937134,
+          -0.023000000044703484
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.09200000017881393,
+          -0.09200000017881393,
+          -0.023000000044703484
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.09200000017881393
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.1380000114440918,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.10733333230018616
+        ]
+      }
+    },
+    {
+      "elapsed": 8.704000000001543,
+      "frame": 261,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.14666664600372314,
+          -5.070052793598734e-05,
+          -0.24000000953674316
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.14666666090488434,
+          -0.24000000953674316
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.14666666090488434,
+          0.0,
+          -0.24000000953674316
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.00012300751404836774,
+          0.14666661620140076,
+          -0.24000000953674316
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.1733333170413971
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.1599999964237213,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.12000000476837158,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.226666659116745,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.095639169216156,
+          0.02920871414244175,
+          -0.08666665852069855
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.02920871414244175,
+          -0.095639169216156,
+          -0.08666665852069855
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.02920871414244175,
+          0.095639169216156,
+          -0.08666665852069855
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.095639169216156,
+          -0.02920871414244175,
+          -0.08666665852069855
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.14666666090488434,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.14666666090488434,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.13333332538604736,
+          0.013333333656191826
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.07999999821186066,
+          0.13856399059295654,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.07999999821186066,
+          -0.13856399059295654,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.14666666090488434,
+          -0.25403398275375366,
+          -0.019999999552965164
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.2933333218097687,
+          0.0,
+          -0.019999999552965164
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.14666666090488434,
+          0.25403398275375366,
+          -0.019999999552965164
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.07999999821186066,
+          -0.07999999821186066,
+          -0.019999999552965164
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.07999999821186066
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.12000000476837158,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.09333333373069763
+        ]
+      }
+    },
+    {
+      "elapsed": 8.907000000002881,
+      "frame": 267,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.12466665357351303,
+          -4.309544965508394e-05,
+          -0.20400001108646393
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.12466666847467422,
+          -0.20400001108646393
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.12466666847467422,
+          0.0,
+          -0.20400001108646393
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.00010455639130668715,
+          0.12466662377119064,
+          -0.20400001108646393
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.1473333239555359
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.13600000739097595,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.10200000554323196,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.1926666647195816,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.08129329979419708,
+          0.02482740767300129,
+          -0.07366666197776794
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.02482740767300129,
+          -0.08129329979419708,
+          -0.07366666197776794
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.02482740767300129,
+          0.08129329979419708,
+          -0.07366666197776794
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.08129329979419708,
+          -0.02482740767300129,
+          -0.07366666197776794
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.12466666847467422,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.12466666847467422,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.1133333295583725,
+          0.01133333332836628
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.06800000369548798,
+          0.11777940392494202,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.06800000369548798,
+          -0.11777940392494202,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.12466666847467422,
+          -0.21592891216278076,
+          -0.017000000923871994
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.24933333694934845,
+          0.0,
+          -0.017000000923871994
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.12466666847467422,
+          0.21592891216278076,
+          -0.017000000923871994
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.06800000369548798,
+          -0.06800000369548798,
+          -0.017000000923871994
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.06800000369548798
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.10200000554323196,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0793333351612091
+        ]
+      }
+    },
+    {
+      "elapsed": 9.110000000000582,
+      "frame": 274,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0989999994635582,
+          -3.42228559020441e-05,
+          -0.16200001537799835
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0989999994635582,
+          -0.16200001537799835
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0989999994635582,
+          0.0,
+          -0.16200001537799835
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -8.30300705274567e-05,
+          0.09899996966123581,
+          -0.16200001537799835
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.11699999868869781
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.10799999535083771,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.08100000768899918,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.15299999713897705,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.06455643475055695,
+          0.01971588097512722,
+          -0.05849999934434891
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.01971588097512722,
+          -0.06455643475055695,
+          -0.05849999934434891
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.01971588097512722,
+          0.06455643475055695,
+          -0.05849999934434891
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.06455643475055695,
+          -0.01971588097512722,
+          -0.05849999934434891
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0989999994635582,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0989999994635582,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.09000000357627869,
+          0.009000000543892384
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.053999997675418854,
+          0.09353069961071014,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.053999997675418854,
+          -0.09353069961071014,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0989999994635582,
+          -0.1714729517698288,
+          -0.013499999418854713
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.1979999989271164,
+          0.0,
+          -0.013499999418854713
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0989999994635582,
+          0.1714729517698288,
+          -0.013499999418854713
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.053999997675418854,
+          -0.053999997675418854,
+          -0.013499999418854713
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.053999997675418854
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.08100000768899918,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.06300000101327896
+        ]
+      }
+    },
+    {
+      "elapsed": 9.31300000000192,
+      "frame": 280,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.07700000703334808,
+          -2.6617773983161896e-05,
+          -0.12600000202655792
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.07700000703334808,
+          -0.12600000202655792
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.07700000703334808,
+          0.0,
+          -0.12600000202655792
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -6.45789405098185e-05,
+          0.0769999772310257,
+          -0.12600000202655792
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.09100000560283661
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.08400000631809235,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.06300000101327896,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.11900000274181366,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.050210557878017426,
+          0.01533457450568676,
+          -0.045500002801418304
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.01533457450568676,
+          -0.050210557878017426,
+          -0.045500002801418304
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.01533457450568676,
+          0.050210557878017426,
+          -0.045500002801418304
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.050210557878017426,
+          -0.01533457450568676,
+          -0.045500002801418304
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.07700000703334808,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.07700000703334808,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.06999999284744263,
+          0.007000000216066837
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.04200000315904617,
+          0.07274609804153442,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.04200000315904617,
+          -0.07274609804153442,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.07700000703334808,
+          -0.1333678513765335,
+          -0.010500000789761543
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.15400001406669617,
+          0.0,
+          -0.010500000789761543
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.07700000703334808,
+          0.1333678513765335,
+          -0.010500000789761543
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.04200000315904617,
+          -0.04200000315904617,
+          -0.010500000789761543
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.04200000315904617
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.06300000101327896,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.049000002443790436
+        ]
+      }
+    },
+    {
+      "elapsed": 9.51600000000326,
+      "frame": 286,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.05499999225139618,
+          -1.9012695702258497e-05,
+          -0.09000000357627869
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.05500000715255737,
+          -0.09000000357627869
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.05500000715255737,
+          0.0,
+          -0.09000000357627869
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -4.6127825044095516e-05,
+          0.054999977350234985,
+          -0.09000000357627869
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.06499999761581421
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0599999874830246,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.04500000178813934,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.08500000834465027,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0358646884560585,
+          0.01095326617360115,
+          -0.032499998807907104
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.01095326617360115,
+          -0.0358646884560585,
+          -0.032499998807907104
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.01095326617360115,
+          0.0358646884560585,
+          -0.032499998807907104
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0358646884560585,
+          -0.01095326617360115,
+          -0.032499998807907104
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.05500000715255737,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.05500000715255737,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.04999999701976776,
+          0.004999999888241291
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0299999937415123,
+          0.051961496472358704,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0299999937415123,
+          -0.051961496472358704,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.05500000715255737,
+          -0.09526276588439941,
+          -0.007499998435378075
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.11000001430511475,
+          0.0,
+          -0.007499998435378075
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.05500000715255737,
+          0.09526276588439941,
+          -0.007499998435378075
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0299999937415123,
+          -0.0299999937415123,
+          -0.007499998435378075
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0299999937415123
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.04500000178813934,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.034999996423721313
+        ]
+      }
+    },
+    {
+      "elapsed": 9.704000000001543,
+      "frame": 292,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.03299999237060547,
+          -1.1407617421355098e-05,
+          -0.05399999022483826
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.03299999237060547,
+          -0.05399999022483826
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.03299999237060547,
+          0.0,
+          -0.05399999022483826
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -2.767669502645731e-05,
+          0.032999977469444275,
+          -0.05399999022483826
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.039000004529953
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.035999998450279236,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.02699999511241913,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.050999999046325684,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.02151881903409958,
+          0.00657195970416069,
+          -0.0195000022649765
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.00657195970416069,
+          -0.02151881903409958,
+          -0.0195000022649765
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.00657195970416069,
+          0.02151881903409958,
+          -0.0195000022649765
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.02151881903409958,
+          -0.00657195970416069,
+          -0.0195000022649765
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.03299999237060547,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.03299999237060547,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.030000001192092896,
+          0.0030000004917383194
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.017999999225139618,
+          0.031176894903182983,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.017999999225139618,
+          -0.031176894903182983,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.03299999237060547,
+          -0.05715763568878174,
+          -0.0044999998062849045
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.06599998474121094,
+          0.0,
+          -0.0044999998062849045
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.03299999237060547,
+          0.05715763568878174,
+          -0.0044999998062849045
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.017999999225139618,
+          -0.017999999225139618,
+          -0.0044999998062849045
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.017999999225139618
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.02699999511241913,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.021000005304813385
+        ]
+      }
+    },
+    {
+      "elapsed": 9.9220000000023,
+      "frame": 298,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.011000007390975952,
+          -3.8025391404516995e-06,
+          -0.018000006675720215
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.010999992489814758,
+          -0.018000006675720215
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.010999992489814758,
+          0.0,
+          -0.018000006675720215
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -9.225565008819103e-06,
+          0.010999992489814758,
+          -0.018000006675720215
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.012999996542930603
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.012000009417533875,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.009000003337860107,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0169999897480011,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.007172942161560059,
+          0.00219065323472023,
+          -0.0064999982714653015
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.00219065323472023,
+          -0.007172942161560059,
+          -0.0064999982714653015
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.00219065323472023,
+          0.007172942161560059,
+          -0.0064999982714653015
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.007172942161560059,
+          -0.00219065323472023,
+          -0.0064999982714653015
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.010999992489814758,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.010999992489814758,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.009999990463256836,
+          0.0010000001639127731
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.006000004708766937,
+          0.010392293334007263,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.006000004708766937,
+          -0.010392293334007263,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.010999992489814758,
+          -0.01905253529548645,
+          -0.0015000011771917343
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.021999984979629517,
+          0.0,
+          -0.0015000011771917343
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.010999992489814758,
+          0.01905253529548645,
+          -0.0015000011771917343
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.006000004708766937,
+          -0.006000004708766937,
+          -0.0015000011771917343
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.006000004708766937
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.009000003337860107,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.006999999284744263
+        ]
+      }
+    },
+    {
+      "elapsed": 10.125,
+      "frame": 3,
+      "locations": {
+        "EXPLODE_OFFSET::cs1_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs2_joint": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs3_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::cs4_joint": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_0": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_1": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_10": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_11": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_12": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_13": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_14": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_15": [
+          -0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_16": [
+          0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_17": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_18": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_2": [
+          -0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_3": [
+          -0.0,
+          -0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_4": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_5": [
+          -0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_6": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_7": [
+          0.0,
+          -0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_8": [
+          0.0,
+          0.0,
+          -0.0
+        ],
+        "EXPLODE_OFFSET::JOINT_9": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "EXPLODE_OFFSET::rotor_joint": [
+          0.0,
+          0.0,
+          -0.0
+        ]
+      }
+    }
+  ],
+  "frames_captured": [
+    1,
+    121,
+    151,
+    181,
+    241,
+    301
+  ],
+  "final_frame": 181,
+  "gui_saved_project": false,
+  "exit_after_capture": true,
+  "visual_review": "实际窗口完整播放与1/121/151/181/241/301截图已查看；主要部件可辨，无明显错误旋转或不可解决穿插，最终准确恢复。截图后按用户要求退出。"
+}

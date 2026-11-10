@@ -1,0 +1,286 @@
+{
+  "status": "PASS",
+  "definitions": {
+    "model_frame": "DF4_MODEL_FLU",
+    "world_frame": "BLENDER_WORLD",
+    "autopilot_frame": "PX4_BODY_FRD",
+    "root_object": "DF4_ROOT",
+    "identity_objects": [
+      "DF4_ROOT",
+      "LINK::base_link"
+    ],
+    "right_handed": true,
+    "origin": "SDF 模型坐标原点，与 base_link 初始原点重合；未经重心测定，不标注为 CG",
+    "frames": {
+      "DF4_MODEL_FLU": {
+        "axes": {
+          "+X": "机头前方",
+          "+Y": "机体左侧",
+          "+Z": "机体上方"
+        },
+        "right_handed": true
+      },
+      "BLENDER_WORLD": {
+        "axes": {
+          "+X": "与模型前方一致",
+          "+Y": "与模型左侧一致",
+          "+Z": "上方"
+        },
+        "right_handed": true
+      },
+      "PX4_BODY_FRD": {
+        "axes": {
+          "+X": "机头前方",
+          "+Y": "机体右侧",
+          "+Z": "机体下方"
+        },
+        "right_handed": true
+      }
+    },
+    "transforms": {
+      "R_FLU_FROM_FRD": {
+        "source": "PX4_BODY_FRD",
+        "target": "DF4_MODEL_FLU",
+        "matrix": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ]
+      },
+      "R_FRD_FROM_FLU": {
+        "source": "DF4_MODEL_FLU",
+        "target": "PX4_BODY_FRD",
+        "matrix": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            -1,
+            0
+          ],
+          [
+            0,
+            0,
+            -1
+          ]
+        ]
+      },
+      "R_WORLD_FROM_FLU": {
+        "source": "DF4_MODEL_FLU",
+        "target": "BLENDER_WORLD",
+        "matrix": [
+          [
+            1,
+            0,
+            0
+          ],
+          [
+            0,
+            1,
+            0
+          ],
+          [
+            0,
+            0,
+            1
+          ]
+        ]
+      }
+    },
+    "notes": [
+      "FLU机头语义由本次任务正式冻结，不旋转原始模型",
+      "不涉及 NED 地理坐标与完整实飞姿态转换"
+    ],
+    "unit_basis_tests": [
+      {
+        "source": "PX4_BODY_FRD",
+        "target": "DF4_MODEL_FLU",
+        "input": [
+          1,
+          0,
+          0
+        ],
+        "expected": [
+          1,
+          0,
+          0
+        ]
+      },
+      {
+        "source": "PX4_BODY_FRD",
+        "target": "DF4_MODEL_FLU",
+        "input": [
+          0,
+          1,
+          0
+        ],
+        "expected": [
+          0,
+          -1,
+          0
+        ]
+      },
+      {
+        "source": "PX4_BODY_FRD",
+        "target": "DF4_MODEL_FLU",
+        "input": [
+          0,
+          0,
+          1
+        ],
+        "expected": [
+          0,
+          0,
+          -1
+        ]
+      }
+    ]
+  },
+  "transforms": {
+    "R_FLU_FROM_FRD": {
+      "determinant": 1,
+      "orthogonality_error": 0,
+      "round_trip_error": 0,
+      "basis_vectors": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ]
+    },
+    "R_FRD_FROM_FLU": {
+      "determinant": 1,
+      "orthogonality_error": 0,
+      "round_trip_error": 0,
+      "basis_vectors": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          -1
+        ]
+      ]
+    },
+    "R_WORLD_FROM_FLU": {
+      "determinant": 1,
+      "orthogonality_error": 0,
+      "round_trip_error": 0,
+      "basis_vectors": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ]
+    }
+  },
+  "basis_tests": [
+    {
+      "source": "PX4_BODY_FRD",
+      "target": "DF4_MODEL_FLU",
+      "input": [
+        1,
+        0,
+        0
+      ],
+      "expected": [
+        1,
+        0,
+        0
+      ],
+      "actual": [
+        1,
+        0,
+        0
+      ],
+      "error": 0
+    },
+    {
+      "source": "PX4_BODY_FRD",
+      "target": "DF4_MODEL_FLU",
+      "input": [
+        0,
+        1,
+        0
+      ],
+      "expected": [
+        0,
+        -1,
+        0
+      ],
+      "actual": [
+        0,
+        -1,
+        0
+      ],
+      "error": 0
+    },
+    {
+      "source": "PX4_BODY_FRD",
+      "target": "DF4_MODEL_FLU",
+      "input": [
+        0,
+        0,
+        1
+      ],
+      "expected": [
+        0,
+        0,
+        -1
+      ],
+      "actual": [
+        0,
+        0,
+        -1
+      ],
+      "error": 0
+    }
+  ],
+  "reflection_rejected": true,
+  "all_world_matrices_unchanged": true
+}

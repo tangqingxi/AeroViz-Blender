@@ -1,0 +1,30 @@
+{
+  "status": "PASS",
+  "python_files": [
+    "adapters\\import_sdf.py",
+    "adapters\\import_stl.py",
+    "adapters\\__init__.py",
+    "scripts\\check_joint_hierarchy.py",
+    "scripts\\coordinate_frames.py",
+    "scripts\\gui_verify.py",
+    "scripts\\gui_verify_materials.py",
+    "scripts\\main.py",
+    "scripts\\materials.py",
+    "scripts\\project_io.py",
+    "scripts\\scene_builder.py",
+    "scripts\\validation.py",
+    "scripts\\verify_evidence.py",
+    "tests\\reverify_saved_project.py",
+    "tests\\test_coordinate_frames.py",
+    "tests\\test_exploded_view.py",
+    "tests\\test_kinematics.py",
+    "tests\\test_material_mapping.py",
+    "tests\\test_project_io.py",
+    "scripts\\animation\\exploded_view.py",
+    "scripts\\animation\\gui_verify.py",
+    "scripts\\animation\\gui_verify_exploded.py",
+    "scripts\\animation\\kinematics.py"
+  ],
+  "json_valid": true,
+  "core_model_independence": true
+}

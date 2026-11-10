@@ -1,0 +1,41 @@
+00:00.344  blend            | Read blend: "<DEV>\output\DF4\DF4.blend"
+REVERIFY_OK 392af12f14a6 117
+{
+  "project": "output/DF4/DF4.blend",
+  "overall": "PASS",
+  "object_total": 117,
+  "objects_with_animation": [
+    "EXPLODE_OFFSET::JOINT_0",
+    "EXPLODE_OFFSET::JOINT_1",
+    "EXPLODE_OFFSET::JOINT_10",
+    "EXPLODE_OFFSET::JOINT_11",
+    "EXPLODE_OFFSET::JOINT_12",
+    "EXPLODE_OFFSET::JOINT_13",
+    "EXPLODE_OFFSET::JOINT_14",
+    "EXPLODE_OFFSET::JOINT_15",
+    "EXPLODE_OFFSET::JOINT_16",
+    "EXPLODE_OFFSET::JOINT_17",
+    "EXPLODE_OFFSET::JOINT_18",
+    "EXPLODE_OFFSET::JOINT_2",
+    "EXPLODE_OFFSET::JOINT_3",
+    "EXPLODE_OFFSET::JOINT_4",
+    "EXPLODE_OFFSET::JOINT_5",
+    "EXPLODE_OFFSET::JOINT_6",
+    "EXPLODE_OFFSET::JOINT_7",
+    "EXPLODE_OFFSET::JOINT_8",
+    "EXPLODE_OFFSET::JOINT_9",
+    "EXPLODE_OFFSET::cs1_joint",
+    "EXPLODE_OFFSET::cs2_joint",
+    "EXPLODE_OFFSET::cs3_joint",
+    "EXPLODE_OFFSET::cs4_joint",
+    "EXPLODE_OFFSET::rotor_joint",
+    "JOINT::cs1_joint",
+    "JOINT::cs2_joint",
+    "JOINT::cs3_joint",
+    "JOINT::cs4_joint",
+    "JOINT::rotor_joint"
+  ]
+}
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
+
+Blender quit
