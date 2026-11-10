@@ -1,14 +1,14 @@
 {
   "schema_version": 2,
-  "phase": "PreStage2IORegression",
-  "created_at": "2026-11-10T11:41:43Z",
+  "phase": "Stage2",
+  "created_at": "2026-11-10T12:29:00Z",
   "agent": {
     "name": "codex"
   },
   "development": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender",
     "branch": "main",
-    "commit": "09521e8df71c05565c478ddeebfdde1746373a58"
+    "commit": "16f89e2c173bf5a414f8432e77c8d6744216abba"
   },
   "audit": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
@@ -21,22 +21,22 @@
   "evidence": [
     {
       "path": "README.md",
-      "sha256": "1e2912df826ebdd2005c92b208dc383fa717e36bd32a24195d99b636c39fe381",
+      "sha256": "97e8c1b98d9bd292246ece499b4645ffde6670ae83b20dac322356d8359bb809",
       "kind": "other"
     },
     {
       "path": "HANDOFF.md",
-      "sha256": "38466e1f6f829dda00d88c0304c27e9fa8dbc4af0c0e49980f084661c740adda",
+      "sha256": "b7d1b0fb882a44edc3d60906c7ca4fc635716d7df7aa4e93628fc83ece3cd1b0",
       "kind": "handoff"
     },
     {
       "path": "manifests/ARTIFACT_MANIFEST.md",
-      "sha256": "3c0fed31240f5882d5205f8c77ad4d59e413733a5f0c2ef8c0e8bc9d8168769d",
+      "sha256": "5ef411853a7298edf655e579624292cc9cf8bed7a1af2eddbab863706b2fcc2e",
       "kind": "other"
     },
     {
       "path": "manifests/reverify-current.json",
-      "sha256": "3c2b75ef4a99c66d66c9d110a9150a660e1cd142fccd8b80646de97e3ee43381",
+      "sha256": "fc7b17e65605063534b0be8f373b3121a7724eed18d659ec25623308eb344187",
       "kind": "other"
     },
     {
@@ -63,23 +63,30 @@
       "path": "manifests/io-regression-driver.log",
       "kind": "other",
       "sha256": "524cf592c94f09e298da40ddface4d009235d55764658d3e2fc80bf0a8f47139"
+    },
+    {
+      "path": "stages/stage-2/STAGE_2_REPORT.md",
+      "kind": "other",
+      "sha256": "f3906c3b5ff55688ed4b5cd2e87fbdbd6c39330d32cfb922ee78a8ca482d8a65"
+    },
+    {
+      "path": "stages/stage-2/evidence-manifest.json",
+      "kind": "other",
+      "sha256": "df7d04aa469cba32f8ed9e211bba829a991291715b768226e2dbab553287f2f4"
     }
   ],
   "verification": {
     "commands": [
-      "blender --background --factory-startup --python-exit-code 1 --python tests/test_project_io.py -- --config configs/DF4.json",
+      "blender --background --factory-startup --python-exit-code 1 --python tests/test_kinematics.py -- --config <copy-config> --phase prepare",
+      "blender --background --factory-startup --python-exit-code 1 --python tests/test_kinematics.py -- --config <copy-config> --phase verify",
       "blender --background --factory-startup --python-exit-code 1 --python tests/reverify_saved_project.py -- --config configs/DF4.json",
       "python scripts/verify_evidence.py <audit-root> <manifest>"
     ],
-    "result": "passed",
-    "limitations": [
-      "Actual symbolic-link creation skipped: Windows error 1314; real directory junction rejection passed."
-    ]
+    "result": "passed"
   },
   "limitations": [
-    "The upstream model repository carries no licence file; the rights holder granted public display of rendered evidence only, so the geometry itself is not redistributed.",
-    "The adapter-equivalence check was a one-off migration script not shipped in DEV.",
-    "The refactored main.py and materials.py build paths were not re-run this round (Stage 1/1.5 re-execution is out of scope); they are compile-checked only."
+    "历史模型来源/分发限制保持；只公开截图和数值证据，不上传模型。",
+    "Stage2为机械运动学展示；未做物理或动力学验证，整数帧严格检查。"
   ],
-  "next_action": "Stage 2 readiness: READY FOR USER AUTHORIZATION; no Stage 2 execution authorised."
+  "next_action": "Stage 2: COMPLETE; Stage 3: WAITING FOR AUTHORIZATION"
 }

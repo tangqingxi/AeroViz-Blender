@@ -1,0 +1,6 @@
+{
+  "status": "PASS",
+  "baseline_sha256": "216ae8ab7de87cac17846a304dcd34110008ef4a71ce77f1829c9a8a37c0e474",
+  "saved_sha256": "c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f84d8873b",
+  "rollback_ready": true
+}

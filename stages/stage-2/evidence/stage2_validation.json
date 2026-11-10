@@ -1,0 +1,80 @@
+{
+  "status": "PASS",
+  "generated_at": "2026-11-10T12:27:25Z",
+  "dev_commit": "16f89e2c173bf5a414f8432e77c8d6744216abba",
+  "blender_version": "5.0.1",
+  "baseline_sha256": "216ae8ab7de87cac17846a304dcd34110008ef4a71ce77f1829c9a8a37c0e474",
+  "final_sha256": "c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f84d8873b",
+  "project": "output/DF4/DF4.blend",
+  "source_code_sha256": {
+    "scripts/animation/kinematics.py": "23588bcf155643314bd23a288a63505e6d73054c75abf0982f91e67efd591b4d",
+    "scripts/animation/gui_verify.py": "dc5739fd60094c8bb4cb948f045c8711e5b6e44c3ad8d389509f448acc497a8a",
+    "tests/test_kinematics.py": "e56b6febf13bd4dd7ea6c6c4ca8b559b72722c190174a741cd59cf226b284230",
+    "tests/reverify_saved_project.py": "37e28dcb847921f4f3908ef4d1ddf8da79c62e835d6e4bdbd4040e44c0226dc1",
+    "scripts/materials.py": "bf278c977060d97ada8f41bef69fb6d46d67ce8658554b22f39494995607c4d0",
+    "configs/DF4.json": "26b3229a1d8cc3e36d40b59f3cadaa284dc97cedcfb0a720b0ed7b3cf1eb811c"
+  },
+  "rotor": {
+    "demo_speed_deg_per_s": 1200,
+    "expected_accumulation_deg": 4800,
+    "evaluated_accumulation_deg": {
+      "JOINT::rotor_joint": 4800.000025901166
+    },
+    "max_step_error_deg": 1.8903529337421787e-06,
+    "integer_samples": 121
+  },
+  "individual_tests": {
+    "JOINT::rotor_joint": "PASS",
+    "JOINT::cs1_joint": "PASS",
+    "JOINT::cs2_joint": "PASS",
+    "JOINT::cs3_joint": "PASS",
+    "JOINT::cs4_joint": "PASS"
+  },
+  "joint_centers_max_drift_m": 0.0,
+  "world_matrix_max_error": 3.5762786865234375e-07,
+  "non_target_max_error": 0.0,
+  "objects": 93,
+  "meshes": 33,
+  "materials": 7,
+  "material_assignments": 33,
+  "animated_objects": [
+    "JOINT::cs1_joint",
+    "JOINT::cs2_joint",
+    "JOINT::cs3_joint",
+    "JOINT::cs4_joint",
+    "JOINT::rotor_joint"
+  ],
+  "timeline_markers": {
+    "CS1 +10°": 11,
+    "CS1 -10°": 21,
+    "CS1 Return": 31,
+    "CS2 +10°": 41,
+    "CS2 -10°": 51,
+    "CS2 Return": 61,
+    "CS3 +10°": 71,
+    "CS3 -10°": 81,
+    "CS3 Return": 91,
+    "CS4 +10°": 101,
+    "CS4 -10°": 111,
+    "CS4 Return": 121
+  },
+  "gui_playback": {
+    "status": "PASS",
+    "actual_samples": 29,
+    "elapsed_s": 6.061999999999898,
+    "full_cycle_observed": true,
+    "physical_keyboard_injection": false,
+    "method": "Blender native screen.animation_play, identical operator to Space"
+  },
+  "no_geometry_material_hierarchy_changes": true,
+  "rollback_backup_prepared": true,
+  "rollback_used": false,
+  "saved_project_reopened_in_independent_process": true,
+  "stage3": "WAITING FOR AUTHORIZATION",
+  "limitations": [
+    "视觉演示，不是实测电机转速或动力学仿真",
+    "整数帧角度严格验证；分量线性四元数插值在子帧不保证严格匀角速",
+    "通用引擎拒绝非均匀/负缩放、剪切和受控关节级联",
+    "原有资产来源与补充零件的装配依据限制保持历史报告所述"
+  ]
+}

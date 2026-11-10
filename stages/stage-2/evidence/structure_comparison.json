@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "object_total": 93,
+  "mesh_count": 33,
+  "material_count": 7,
+  "frame1_preserved": true,
+  "geometry_materials_hierarchy_preserved": true,
+  "animated_objects": [
+    "JOINT::cs1_joint",
+    "JOINT::cs2_joint",
+    "JOINT::cs3_joint",
+    "JOINT::cs4_joint",
+    "JOINT::rotor_joint"
+  ]
+}

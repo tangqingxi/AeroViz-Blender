@@ -1,0 +1,440 @@
+{
+  "status": "PASS",
+  "accumulated_deg": {
+    "JOINT::rotor_joint": 4800.000025901166
+  },
+  "max_increment_error_deg": 1.8903529337421787e-06,
+  "frame_count": 121,
+  "samples": [
+    {
+      "frame": 1,
+      "angles": {
+        "JOINT::rotor_joint": {
+          "expected_deg": 0.0,
+          "measured_principal_deg": 0.0
+        },
+        "JOINT::cs1_joint": {
+          "expected_deg": 0,
+          "measured_principal_deg": 0.0
+        },
+        "JOINT::cs2_joint": {
+          "expected_deg": 0,
+          "measured_principal_deg": 0.0
+        },
+        "JOINT::cs3_joint": {
+          "expected_deg": 0,
+          "measured_principal_deg": 0.0
+        },
+        "JOINT::cs4_joint": {
+          "expected_deg": 0,
+          "measured_principal_deg": 0.0
+        }
+      },
+      "joint_centers_m": {
+        "JOINT::rotor_joint": [
+          0.0,
+          0.0,
+          -0.04500000178813934
+        ],
+        "JOINT::cs1_joint": [
+          0.0,
+          0.0,
+          -0.14099499583244324
+        ],
+        "JOINT::cs2_joint": [
+          0.0,
+          0.0,
+          -0.14099499583244324
+        ],
+        "JOINT::cs3_joint": [
+          0.0,
+          0.0,
+          -0.14099499583244324
+        ],
+        "JOINT::cs4_joint": [
+          0.0,
+          0.0,
+          -0.14099499583244324
+        ]
+      },
+      "quaternions": {
+        "JOINT::rotor_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "JOINT::cs1_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "JOINT::cs2_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "JOINT::cs3_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "JOINT::cs4_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_world_matrix_error": 0.0,
+      "non_target_max_error": 0.0
+    },
+    {
+      "frame": 31,
+      "angles": {
+        "JOINT::rotor_joint": {
+          "expected_deg": 1200.0,
+          "measured_principal_deg": -240.0000008905841
+        },
+        "JOINT::cs1_joint": {
+          "expected_deg": 0.0,
+          "measured_principal_deg": 0.0
+        },
+        "JOINT::cs2_joint": {
+          "expected_deg": 0.0,
+          "measured_principal_deg": 0.0
+        },
+        "JOINT::cs3_joint": {
+          "expected_deg": 0.0,
+          "measured_principal_deg": 0.0
+        },
+        "JOINT::cs4_joint": {
+          "expected_deg": 0.0,
+          "measured_principal_deg": 0.0
+        }
+      },
+      "joint_centers_m": {
+        "JOINT::rotor_joint": [
+          0.0,
+          0.0,
+          -0.04500000178813934
+        ],
+        "JOINT::cs1_joint": [
+          0.0,
+          0.0,
+          -0.14099499583244324
+        ],
+        "JOINT::cs2_joint": [
+          0.0,
+          0.0,
+          -0.14099499583244324
+        ],
+        "JOINT::cs3_joint": [
+          0.0,
+          0.0,
+          -0.14099499583244324
+        ],
+        "JOINT::cs4_joint": [
+          0.0,
+          0.0,
+          -0.14099499583244324
+        ]
+      },
+      "quaternions": {
+        "JOINT::rotor_joint": [
+          -0.5,
+          0.0,
+          0.0,
+          -0.8660253882408142
+        ],
+        "JOINT::cs1_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "JOINT::cs2_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "JOINT::cs3_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "JOINT::cs4_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_world_matrix_error": 5.960464477539063e-08,
+      "non_target_max_error": 0.0
+    },
+    {
+      "frame": 61,
+      "angles": {
+        "JOINT::rotor_joint": {
+          "expected_deg": 2400.0,
+          "measured_principal_deg": 240.0000008905841
+        },
+        "JOINT::cs1_joint": {
+          "expected_deg": 0.0,
+          "measured_principal_deg": 0.0
+        },
+        "JOINT::cs2_joint": {
+          "expected_deg": 0.0,
+          "measured_principal_deg": 0.0
+        },
+        "JOINT::cs3_joint": {
+          "expected_deg": 0.0,
+          "measured_principal_deg": 0.0
+        },
+        "JOINT::cs4_joint": {
+          "expected_deg": 0.0,
+          "measured_principal_deg": 0.0
+        }
+      },
+      "joint_centers_m": {
+        "JOINT::rotor_joint": [
+          0.0,
+          0.0,
+          -0.04500000178813934
+        ],
+        "JOINT::cs1_joint": [
+          0.0,
+          0.0,
+          -0.14099499583244324
+        ],
+        "JOINT::cs2_joint": [
+          0.0,
+          0.0,
+          -0.14099499583244324
+        ],
+        "JOINT::cs3_joint": [
+          0.0,
+          0.0,
+          -0.14099499583244324
+        ],
+        "JOINT::cs4_joint": [
+          0.0,
+          0.0,
+          -0.14099499583244324
+        ]
+      },
+      "quaternions": {
+        "JOINT::rotor_joint": [
+          -0.5,
+          0.0,
+          0.0,
+          0.8660253882408142
+        ],
+        "JOINT::cs1_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "JOINT::cs2_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "JOINT::cs3_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "JOINT::cs4_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_world_matrix_error": 5.960464477539063e-08,
+      "non_target_max_error": 0.0
+    },
+    {
+      "frame": 91,
+      "angles": {
+        "JOINT::rotor_joint": {
+          "expected_deg": 3600.0,
+          "measured_principal_deg": -1.4033418602779338e-13
+        },
+        "JOINT::cs1_joint": {
+          "expected_deg": 0.0,
+          "measured_principal_deg": 0.0
+        },
+        "JOINT::cs2_joint": {
+          "expected_deg": 0.0,
+          "measured_principal_deg": 0.0
+        },
+        "JOINT::cs3_joint": {
+          "expected_deg": 0.0,
+          "measured_principal_deg": 0.0
+        },
+        "JOINT::cs4_joint": {
+          "expected_deg": 0.0,
+          "measured_principal_deg": 0.0
+        }
+      },
+      "joint_centers_m": {
+        "JOINT::rotor_joint": [
+          0.0,
+          0.0,
+          -0.04500000178813934
+        ],
+        "JOINT::cs1_joint": [
+          0.0,
+          0.0,
+          -0.14099499583244324
+        ],
+        "JOINT::cs2_joint": [
+          0.0,
+          0.0,
+          -0.14099499583244324
+        ],
+        "JOINT::cs3_joint": [
+          0.0,
+          0.0,
+          -0.14099499583244324
+        ],
+        "JOINT::cs4_joint": [
+          0.0,
+          0.0,
+          -0.14099499583244324
+        ]
+      },
+      "quaternions": {
+        "JOINT::rotor_joint": [
+          1.0,
+          0.0,
+          0.0,
+          -1.2246467996456087e-15
+        ],
+        "JOINT::cs1_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "JOINT::cs2_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "JOINT::cs3_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "JOINT::cs4_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_world_matrix_error": 0.0,
+      "non_target_max_error": 0.0
+    },
+    {
+      "frame": 121,
+      "angles": {
+        "JOINT::rotor_joint": {
+          "expected_deg": 4800.0,
+          "measured_principal_deg": -240.0000008905841
+        },
+        "JOINT::cs1_joint": {
+          "expected_deg": 0.0,
+          "measured_principal_deg": 0.0
+        },
+        "JOINT::cs2_joint": {
+          "expected_deg": 0.0,
+          "measured_principal_deg": 0.0
+        },
+        "JOINT::cs3_joint": {
+          "expected_deg": 0.0,
+          "measured_principal_deg": 0.0
+        },
+        "JOINT::cs4_joint": {
+          "expected_deg": 0.0,
+          "measured_principal_deg": 0.0
+        }
+      },
+      "joint_centers_m": {
+        "JOINT::rotor_joint": [
+          0.0,
+          0.0,
+          -0.04500000178813934
+        ],
+        "JOINT::cs1_joint": [
+          0.0,
+          0.0,
+          -0.14099499583244324
+        ],
+        "JOINT::cs2_joint": [
+          0.0,
+          0.0,
+          -0.14099499583244324
+        ],
+        "JOINT::cs3_joint": [
+          0.0,
+          0.0,
+          -0.14099499583244324
+        ],
+        "JOINT::cs4_joint": [
+          0.0,
+          0.0,
+          -0.14099499583244324
+        ]
+      },
+      "quaternions": {
+        "JOINT::rotor_joint": [
+          -0.5,
+          0.0,
+          0.0,
+          -0.8660253882408142
+        ],
+        "JOINT::cs1_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "JOINT::cs2_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "JOINT::cs3_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "JOINT::cs4_joint": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "max_world_matrix_error": 5.960464477539063e-08,
+      "non_target_max_error": 0.0
+    }
+  ]
+}

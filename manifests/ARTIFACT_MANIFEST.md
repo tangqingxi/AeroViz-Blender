@@ -76,7 +76,7 @@
 
 | 文件 | 大小 (B) | SHA256 | 说明 |
 |---|---|---|---|
-| `DF4.blend` | 5403119 | `216ae8ab7de87cac17846a304dcd34110008ef4a71ce77f1829c9a8a37c0e474` | **当前唯一工程**，由 `DF4_Stage1_5.blend` 字节不变重命名而来 |
+| `DF4.blend` | 5414501 | `c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f84d8873b` | **当前唯一工程**：Stage 2 在原有骨架上新增五个关节动画，几何/材质/层级保持不变 |
 
 历史字节（2026-11-10 本地清理时删除，仅保留哈希）：
 
@@ -104,16 +104,17 @@
 | 18:26:44–18:26:45 | 两个图形进程退出时 Blender 执行 `Saved "…blend"`，工程被重新保存（原字节成为 `.blend1`） |
 | 19:1x | 归一化：`DF4_Stage1_5.blend` **字节不变**重命名为 `DF4.blend`；其余阶段工程与 `.blend1` 本地删除 |
 
-结论：截图与报告对应的是 **18:26 之前**的工程字节；当前 `DF4.blend` 是图形会话退出时的重新保存结果，与 `DF4_Stage1_5.blend` 完全同字节。Stage 1.5 派生的那一版 Stage 1 字节曾是 `DF4_Stage1.blend1`，现已删除、只留哈希。当前字节已用只读重开复验（§7）。
+历史结论：Stage 1/1.5 截图与报告对应的是 **18:26 之前**的工程字节；归一化后的静态 `DF4.blend` 是图形会话退出时的重新保存结果，与 `DF4_Stage1_5.blend` 完全同字节。Stage 2 当前字节已按本节最新表更新。Stage 1.5 派生的那一版 Stage 1 字节曾是 `DF4_Stage1.blend1`，现已删除、只留哈希。历史静态字节已复验，当前动画字节的只读复验见更新后的 §7。
 
 ## 5. 审计仓库内的证据文件
 
-逐文件哈希见两份 `evidence-manifest.json`（由 `build_manifest.py` 生成，`verify_evidence.py` 校验通过）。
+逐文件哈希见各阶段 `evidence-manifest.json`（由 `build_manifest.py` 生成，`verify_evidence.py` 校验通过）。
 
 | 目录 | 内容 |
 |---|---|
 | `stages/stage-1/evidence/` | 4 张图形窗口截图、1 张离线等轴测预览、`validation.json`、`gui_validation.json`、`joint_checks.json`、`input_manifest.json` |
 | `stages/stage-1.5/evidence/` | Material Preview 整窗/视口截图、Eevee 渲染、`material_validation.json`、`material_gui_validation.json`、`material_structure_baseline.json`、`material_input_manifest.json` |
+| `stages/stage-2/evidence/` | 独立运动、121帧组合、连续转角、结构基线、正式回归、七张真实窗口截图与日志 |
 | `manifests/reverify-current.json` | **当前工程** `DF4.blend` 的只读复验记录（见 §7） |
 | `manifests/reverify-2026-11-10.json` | 归一化之前两个阶段工程的复验记录（历史） |
 
@@ -144,9 +145,9 @@
 - 本项目自身的许可证尚未确定，因此**没有放置 `LICENSE` 文件**，默认"保留所有权利"。若选 MIT / BSD-3-Clause / Apache-2.0，需同时补版权行。
 - 上游无许可证文本；若将来需要把几何本体对外共享，先确认许可再执行。
 
-## 7. 当前工程的只读复验（2026-11-10）
+## 7. 当前工程的只读复验（Stage 2 / 2026-11-10）
 
-归一化把 `DF4_Stage1_5.blend` 字节不变重命名为 `DF4.blend`，随后对**磁盘上当前字节**做了一次独立复核。命令：
+Stage 2 在静态基线上增加五个关节动画后，对**磁盘上当前字节**执行历史断言与121帧运动复核。静态基线仍记录在 `io-regression.json` 和 Stage 2 的 `baseline.json`。命令：
 
 ```powershell
 & '<blender.exe>' --background --factory-startup --python-exit-code 1 `
@@ -157,7 +158,7 @@
 
 | 检查 | 结果 |
 |---|---|
-| 工程 SHA256 | `216ae8ab7de8…`（与归一化前 Stage 1.5 相同） |
+| 工程 SHA256 | `c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f84d8873b` |
 | 对象总数 | 93（33 网格 + 52 空对象 + 4 相机 + 4 展示灯） |
 | Stage 1 网格数 / 可见 / 参考件 | 33 / 27 / 6 |
 | Stage 1 `LINK::` / `JOINT::` | 26 / 25 |
@@ -167,7 +168,7 @@
 | Stage 1.5 新增对象 | 仅 4 个 `MATERIAL_LIGHT::*` |
 | Stage 1.5 材质绑定与 BSDF 数值 | 33 个对象全部一致，最大误差 2.86e-08 |
 | 材质数 / 引擎 | 7 / `BLENDER_EEVEE` |
-| 动画数据 | 0 个对象 |
+| 动画数据 | 仅5个配置指定JOINT；其余88对象无动画 |
 
 归一化之前的记录 [`reverify-2026-11-10.json`](reverify-2026-11-10.json) 保留作为历史：它对应 `DF4_Stage1.blend` 与 `DF4_Stage1_5.blend` 两个文件，那两份字节已在本轮清理中删除。
 

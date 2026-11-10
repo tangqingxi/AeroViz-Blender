@@ -1,0 +1,178 @@
+{
+  "schema_version": 2,
+  "phase": "Stage2",
+  "created_at": "2026-11-10T12:29:00Z",
+  "agent": {
+    "name": "codex"
+  },
+  "development": {
+    "repository": "https://github.com/tangqingxi/AeroViz-Blender",
+    "branch": "main",
+    "commit": "16f89e2c173bf5a414f8432e77c8d6744216abba"
+  },
+  "audit": {
+    "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
+  },
+  "status": "passed",
+  "environment": {
+    "blender": "5.0.1 build a3db93c5b259",
+    "os": "Windows"
+  },
+  "evidence": [
+    {
+      "path": "stages/stage-2/STAGE_2_REPORT.md",
+      "sha256": "f3906c3b5ff55688ed4b5cd2e87fbdbd6c39330d32cfb922ee78a8ca482d8a65",
+      "kind": "report"
+    },
+    {
+      "path": "stages/stage-2/evidence/apply.log",
+      "sha256": "5cd9cef7d374d3f26dff98eadaa8067cd804e439159547a614337f41214cfa89",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/baseline.json",
+      "sha256": "c62fbf3c9702d0239381199a7f73f45f339acc6c25935ec19cba20c12a8eaff9",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/combined_animation.json",
+      "sha256": "b6055ba181a6e451d8d43b1c823eb3d0a8b8201e045aa4ef6365a8f17e887f63",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/final-regression.json",
+      "sha256": "fc7b17e65605063534b0be8f373b3121a7724eed18d659ec25623308eb344187",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/final-regression.log",
+      "sha256": "e3759944e3f361611fa465e5f00e8aef2db0b22beeb8066afcc97c77b10c5d4c",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/gui-process.log",
+      "sha256": "f60de461961d7a77a68d68a13841456c8418880e645e5bf8214797bea668692c",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/gui_cs1_negative.png",
+      "sha256": "c2ccb644900ba1228f954756cab862ba22ed0f8c7e90cf7e781e3047110a406c",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/gui_cs1_positive.png",
+      "sha256": "087221a54b8c51502cf1263804ee33d5c4dfaf64390e5fb42ae50c5f9af573f9",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/gui_cs2_positive.png",
+      "sha256": "afa99263d6ff2b227a11d078f6d9fc22e0104c24fe094693dcd63531ecbe8127",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/gui_cs3_positive.png",
+      "sha256": "0b883db3f703446e8d79dbcaccfe96d459eb53af065e7ac58fa983345ea9d796",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/gui_cs4_positive.png",
+      "sha256": "f08e6cc9017ce33d1e21f22f0be2a976197e17589815e826e937b4d8449ef8d8",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/gui_initial.png",
+      "sha256": "4c08d320130ef63efd75f93f2c3c0eb2d7086fef8ea415d972a8eba57cc6ae39",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/gui_playback.png",
+      "sha256": "cf0d4844460fe958528baaa53fa528971b686ac828448e22a4742fc6952671f6",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/gui_validation.json",
+      "sha256": "e5ad80d3104726c273624d1d149413ce324219d9fa12c966ac9a1727a935d617",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/independent_motion.json",
+      "sha256": "8807695eb7a4777f8ed1c0c4ea2833f6cbfab1c7d075825a8af890d9c3f146f0",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/prepare.log",
+      "sha256": "2b0682420ba212816957635e2e5cb3eb0b879c00005cbd64fd5d6a1580af6ac4",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/promotion.json",
+      "sha256": "cca6e4161a6983e430578394e96852011c20a6297bc7e185a43d66f361d9827a",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/regression.log",
+      "sha256": "f7f160af405e68b70ea477f79cebbb667b8228c405e0895e1379d29cec6cd8a9",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/rotor_continuity.json",
+      "sha256": "4e4438ba7d10450ae4a1ff87b2f7881b7e45efbc90228ea127bd301486c81ea4",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/saved-motion.log",
+      "sha256": "7438091b68e7df87833b3d426fccbd4fc07678ef39b7914e62bf283fd64a2abd",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/stage2_validation.json",
+      "sha256": "c88cd860221fc4d2464e9d960cb7cbff8fdbdb93832eee85bf6c7f8abe6e9417",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/structure_baseline.json",
+      "sha256": "ba5e05c3fcb41130320e30d52f352e301d394eaa1e9631e53892509d3ae95b0d",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/structure_comparison.json",
+      "sha256": "c5cbddabaa93d653d6c9758e285e04dc7f1d1d1947caeeb1d58d65cefae7fd86",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/test-regression.log",
+      "sha256": "ec0accef754f6df75f226a6326c2e2b1a14c925e433c4e30a8408d90e36e2d23",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/test-reopen.log",
+      "sha256": "4b4f40b033bd38a3e534a46f754ca22ab390026009da3851a6ba1fcc9984592f",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/transaction-regression.log",
+      "sha256": "1ba59893638b19d7d72345eaf0c4eb8275fbfa3c8a0e176cd5dcad208c6230cb",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/transaction-reopen.log",
+      "sha256": "12d2f7ce4d10b33bb2e5d2b31ac7a57c92315dc026d685796c09a9453a4bbd6c",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-2/evidence/transaction-test.log",
+      "sha256": "0d1c8c9d0a51e89688ed46799517c978bcac0a1b2b4adb7e69175e7d531fec7e",
+      "kind": "other"
+    }
+  ],
+  "verification": {
+    "commands": [
+      "python scripts/verify_evidence.py <audit-root> <manifest>"
+    ],
+    "result": "passed"
+  },
+  "limitations": [
+    "机械运动学演示，非动力学验证；子帧四元数分量插值不保证严格匀角速。"
+  ],
+  "next_action": "Stage 3: WAITING FOR AUTHORIZATION"
+}

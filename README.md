@@ -20,8 +20,8 @@
 |---|---|---|---|
 | Stage 1 | 通用模型导入与空间装配恢复 | 已完成（本地验收通过） | [`stages/stage-1/STAGE_1_REPORT.md`](stages/stage-1/STAGE_1_REPORT.md) |
 | Stage 1.5 | SDF 材质恢复 | 已完成（本地验收通过） | [`stages/stage-1.5/STAGE_1_5_REPORT.md`](stages/stage-1.5/STAGE_1_5_REPORT.md) |
-| Stage 2 | 机械运动骨架与独立运动测试 | **未执行，等待授权** | — |
-| Stage 3 | 爆炸视图与机械动画 | 未执行 | — |
+| Stage 2 | 机械运动骨架与独立运动测试 | **COMPLETE / PASS** | [`STAGE_2_REPORT.md`](stages/stage-2/STAGE_2_REPORT.md) |
+| Stage 3 | 爆炸视图与机械动画 | **WAITING FOR AUTHORIZATION** | — |
 | Stage 4 | 镜头、灯光与视频渲染 | 未执行 | — |
 | Stage 5 | 多机型适配与工具完善 | 未执行 | — |
 
@@ -62,9 +62,9 @@ python scripts/verify_evidence.py <audit-root> <audit-root>/stages/stage-1.5/evi
 
 ## 当前工程
 
-本地只有一个工程：`output/DF4/DF4.blend`，SHA256 `216ae8ab7de87cac17846a304dcd34110008ef4a71ce77f1829c9a8a37c0e474`。
+本地只有一个工程：`output/DF4/DF4.blend`，SHA256 `c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f84d8873b`。
 
-Stage 1 与 Stage 1.5 的成果都已合并到这一个文件里；后续阶段直接在它上面迭代，不再生成阶段编号的 `.blend`。两份历史报告保留原始文件名与历史哈希，作为过程记录。
+Stage 1、Stage 1.5 与 Stage 2 的成果都在这一个文件里；后续阶段直接在它上面迭代，不再生成阶段编号的 `.blend`。两份历史报告保留原始文件名与历史哈希，作为过程记录。
 
 ## 分工边界
 
@@ -82,6 +82,8 @@ Stage 1 与 Stage 1.5 的成果都已合并到这一个文件里；后续阶段�
 
 ## 明确声明
 
-- Stage 1.5 结束时工程是**静态**的：没有任何机械运动、关键帧或动画能力。
+- Stage 1.5 结束时工程是静态的；Stage 2 现已加入五个关节的独立动画，尚无爆炸视图或视频。
 - 报告中的数据全部来自实际执行与工程文件，未将计划功能写成已实现功能。
 - 未创建版本 Tag；本项目自身许可证尚未确定。
+
+Stage 2 窗口、运动测试和保存后回归见阶段主报告；证据清单为 `stages/stage-2/evidence-manifest.json`。当前工程：93对象、33网格、7材质、33材质分配、5个JOINT动画对象。
