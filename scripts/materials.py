@@ -11,13 +11,9 @@ import bpy
 from mathutils import Vector
 
 WORKSPACE = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(WORKSPACE/'scripts'))
 sys.dont_write_bytecode = True
-
-def output_path(value):
-    path = (WORKSPACE/value).resolve()
-    if not path.is_relative_to(WORKSPACE):
-        raise ValueError(f'输出路径超出工作区：{path}')
-    return path
+import project_io
 
 def rgba(text):
     if text is None:
@@ -270,7 +266,7 @@ def write_report(result, settings, reports):
     no_source=[r for r in rows if r.get('visual_key') is None]
     direct=[r for r in rows if r['source']=='sdf_rgba']
     named=[r for r in rows if r['source']=='gazebo_named']
-    lines=['# '+Path(result['target']).stem+' 材质验收报告','',
+    lines=['# '+Path(result['project']).stem+' 材质验收报告','',
            '## 提取与分配结果','',
            f"- SDF Visual：{result['sdf_visual_count']}；带 material 定义：{result['sdf_material_count']}。原始记录逐项保存在 material_validation.json。",
            f"- 新建 Blender 材质：{result['created_material_count']}；分配对象：{result['assigned_object_count']}。",
@@ -302,7 +298,7 @@ def write_report(result, settings, reports):
               '', '## 结构保护与预览','',
               f"- Stage 1 原有 {result['preservation']['preserved_count']} 个对象全部保留：世界与局部矩阵、父对象、父逆矩阵、Collection、隐藏状态、网格顶点/拓扑/平滑标志及关节属性一致。未合并对象、修改关节中心或创建动画。",
               '- 新增对象仅为 MATERIAL_PREVIEW_LIGHTS 中的展示灯：'+', '.join(result['preservation']['added_objects'])+'。未变动任何原有模型或相机的空间位置。',
-              '- Eevee 预览：../preview/eevee_preview.png；Material Preview：../preview/material_preview.png（实际图形视口截图）。',
+              '- Eevee 预览：eevee_preview.png；Material Preview：material_preview.png（实际图形视口截图）。',
               '- 默认视口 MATERIAL，使用 Blender 内置 studio.exr、中性灰背景；Eevee 使用独立面积灯，均未进行金属化、纹理绘制或 Cycles 渲染。',
               '- 原始 STL 的三角面与法线显示特征予以保留；本阶段未为外观修整几何。',
               '', '## 实际打开验收','', '待实际打开最终工程并检查 Material Preview 截图。后台渲染成功不代替图形打开验收。','']
@@ -313,21 +309,23 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--config',required=True)
     args=parser.parse_args(sys.argv[sys.argv.index('--')+1:])
-    config=json.loads(output_path(args.config).read_text(encoding='utf8'))
+    config=json.loads(project_io.resolve(args.config).read_text(encoding='utf8'))
     settings=config['materials']
-    source=output_path(settings['source_blend'])
-    target=output_path(settings['target_blend'])
-    protected=output_path(str(Path(config['output_dir'])/config['blend_name']))
-    if source==target or target==protected:
-        raise ValueError('禁止覆盖 Stage 1 工程')
-    protected_hash=hashlib.sha256(protected.read_bytes()).hexdigest()
-    input_root=Path(config['input_root'])
+    project=project_io.project(config)
+    if not project.is_file():
+        raise FileNotFoundError(f'当前工程不存在，请先执行 Stage 1：{project}')
+    before_project=hashlib.sha256(project.read_bytes()).hexdigest()
+    input_root=project_io.input_root(config)
     input_hashes={str(p.relative_to(input_root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in input_root.rglob('*') if p.is_file()}
-    bpy.ops.wm.open_mainfile(filepath=str(source))
+    # 渲染与报告先落临时目录，验收通过后再归档到审计仓库。
+    work=project_io.reset_dir(project_io.work_dir(config))
+    reports=project_io.reset_dir(work/'reports')
+    preview=project_io.reset_dir(work/'preview')
+    evidence=project_io.evidence_dir(config,'stage-1.5')
+    bpy.ops.wm.open_mainfile(filepath=str(project))
     before=snapshot_objects()
-    reports=target.parent/'reports'
     (reports/'material_structure_baseline.json').write_text(json.dumps(before,ensure_ascii=False,indent=2),encoding='utf8')
-    records=extract_sdf(Path(config['input_root'])/config['description'] if config.get('description') else None,settings.get('jinja_parameters'))
+    records=extract_sdf(input_root/config['description'] if config.get('description') else None,settings.get('jinja_parameters'))
     assignments,created=apply_materials(config,records)
     # 再执行一次验证幂等性；材质数据块与每个槽位必须保持一致。
     slots_before={o.name:[s.material.name if s.material else None for s in o.material_slots] for o in bpy.data.objects if o.type=='MESH'}
@@ -338,18 +336,23 @@ def main():
     assert slots_before=={o.name:[s.material.name if s.material else None for s in o.material_slots] for o in bpy.data.objects if o.type=='MESH'}
     env=setup_environment(config)
     preserved=check_preserved(before)
-    bpy.context.scene.render.filepath=str(target.parent/'preview/eevee_preview.png')
+    bpy.context.scene.render.filepath=str(preview/'eevee_preview.png')
     bpy.ops.render.render(write_still=True)
-    bpy.context.preferences.filepaths.save_version=0
-    bpy.ops.wm.save_as_mainfile(filepath=str(target))
-    assert hashlib.sha256(protected.read_bytes()).hexdigest()==protected_hash
+    # 临时文件 + 原子替换：保存失败不会破坏当前工程。
+    project_io.save_project(config)
     assert input_hashes=={str(p.relative_to(input_root)):hashlib.sha256(p.read_bytes()).hexdigest() for p in input_root.rglob('*') if p.is_file()}
-    result={'stage1_sha256':protected_hash,'source_files_unchanged':True,'sdf_visual_count':len(records),'sdf_material_count':sum(r['has_material'] for r in records),'created_material_count':len(created),
+    result={'project':str(project.relative_to(project_io.WORKSPACE)).replace('\\','/'),'project_before_sha256':before_project,
+            'project_after_sha256':hashlib.sha256(project.read_bytes()).hexdigest(),'source_files_unchanged':True,
+            'sdf_visual_count':len(records),'sdf_material_count':sum(r['has_material'] for r in records),'created_material_count':len(created),
             'created_materials':created,'assigned_object_count':len(assignments),'assignments':assignments,'sdf_records':records,
-            'preservation':preserved,'idempotence_passed':True,'environment':env,'target':str(target),'gui_status':'待实际打开截图检查'}
+            'preservation':preserved,'idempotence_passed':True,'environment':env,'gui_status':'待实际打开截图检查'}
     (reports/'material_validation.json').write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf8')
     write_report(result,settings,reports)
+    copied=project_io.publish([reports/'material_validation.json',reports/'material_structure_baseline.json',
+                               preview/'eevee_preview.png'],evidence)
+    project_io.clear_dir(work)
     print('MATERIAL_STAGE_OK',len(created),len(assignments),flush=True)
+    print('MATERIAL_EVIDENCE',', '.join(p.name for p in copied),flush=True)
 
 if __name__=='__main__':
     main()

@@ -35,7 +35,7 @@ def audit(root):
     duplicates = [[a,b] for a in geometry for b in geometry if a<b and geometry[a] == geometry[b]]
     return info, geometry, duplicates
 
-def write_report(output, config, data, records, bbox, inventory, geometry, duplicates, before, after):
+def write_report(dest, config, data, records, bbox, inventory, geometry, duplicates, before, after):
     if before != after:
         raise RuntimeError("原始输入内容发生变化，验收失败")
     by_file = {r['file']: r for r in records}
@@ -55,7 +55,8 @@ def write_report(output, config, data, records, bbox, inventory, geometry, dupli
     results = {"blender_version": __import__('bpy').app.version_string, "inventory": inventory, "records": records,
                "bbox": bbox, "duplicates": duplicates, "reference_coverage": coverage, "input_unchanged": before == after,
                "missing_files": [], "imported_count": len(records), "visible_count": len(records)-len(refs), "gui_status": "待实际打开验收"}
-    report_dir = output/'reports'
+    report_dir = dest
+    report_dir.mkdir(parents=True, exist_ok=True)
     (report_dir/'validation.json').write_text(json.dumps(results, ensure_ascii=False, indent=2),encoding='utf8')
     (report_dir/'input_manifest.json').write_text(json.dumps(before, ensure_ascii=False, indent=2),encoding='utf8')
     lines = ['# '+config['model_name']+' Stage 1 导入验收报告', '',
@@ -88,6 +89,6 @@ def write_report(output, config, data, records, bbox, inventory, geometry, dupli
               '- 配置 extra_meshes 中的零件无 SDF link：沿用原始坐标挂在模型根；固定关系未由描述文件证实，逐项依据见上表。',
               f"- 外部 include：{data.get('includes', [])}；明确跳过关节：{data.get('ignored_joints', [])}；配置说明：{config.get('ignored_includes', {})}。",
               '- 本阶段检查几何完整、尺寸与层级，不等同于制造公差、碰撞干涉或动力学验证。',
-              '', '## 预览与工程', '', f"- {config['blend_name']}；preview/isometric.png、front.png、top.png、side.png。预览只使用中性工作台显示，无材质美化。",
+              '', '## 预览与工程', '', f"- {config['blend_name']}；isometric.png、front.png、top.png、side.png（四向正交预览，中性工作台显示，无材质美化）。",
               '', '## Blender 图形打开验证', '', '待执行：必须以实际图形窗口截图和重新打开的数据验证记录补充，不以后台导入成功代替。', '']
     (report_dir/'IMPORT_REPORT.md').write_text('\n'.join(lines),encoding='utf8')

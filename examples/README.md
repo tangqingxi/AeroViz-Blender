@@ -23,7 +23,7 @@ Copy-Item configs\template.json configs\SHC09.json
   "mesh_unit": "m",
   "sdf_unit": "m",
   "output_dir": "output/MINI",
-  "blend_name": "MINI_Stage1.blend",
+  "blend_name": "MINI.blend",
   "apply_model_pose": false,
   "uri_roots": {"mini": "."},
   "groups": {"AIRFRAME": ["*.STL"], "ROTOR": ["rotor*.STL"]},
@@ -50,7 +50,7 @@ Copy-Item configs\template.json configs\SHC09.json
   "description": null,
   "mesh_unit": "mm",
   "output_dir": "output/PART_SET",
-  "blend_name": "PART_SET_Stage1.blend",
+  "blend_name": "PART_SET.blend",
   "groups": {"PARTS": ["*.stl"]},
   "parts": [
     {"path": "body.stl", "pose": [0, 0, 0, 0, 0, 0],

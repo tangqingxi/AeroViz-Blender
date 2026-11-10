@@ -1,15 +1,27 @@
-"""在实际 Blender 图形进程内验证重新打开结果并保存窗口截图。"""
+"""在实际 Blender 图形进程内验证当前工程，并把截图写入审计仓库。"""
+import argparse
 import json
 from pathlib import Path
+import sys
+
 import bpy
 from mathutils import Vector
 
 WORKSPACE = Path(__file__).resolve().parents[1]
-OUTPUT = Path(bpy.data.filepath).parent
-REPORTS = OUTPUT/'reports'
-RESULT = json.loads((REPORTS/'validation.json').read_text(encoding='utf8'))
+sys.path.insert(0, str(WORKSPACE/'scripts'))
+sys.dont_write_bytecode = True
+import project_io
+
+parser = argparse.ArgumentParser()
+parser.add_argument('--config', required=True)
+argv = sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else []
+args = parser.parse_args(argv)
+CONFIG = json.loads(project_io.resolve(args.config).read_text(encoding='utf8'))
+EVIDENCE = project_io.evidence_dir(CONFIG, 'stage-1')
+RESULT = json.loads((EVIDENCE/'validation.json').read_text(encoding='utf8'))
 QUEUE = ['isometric', 'front', 'top', 'side']
 STATE = {'index': 0, 'capture': False, 'checks': {}}
+
 
 def verify_loaded():
     if bpy.app.background:
@@ -29,9 +41,10 @@ def verify_loaded():
             for a,b in zip(actual_min+actual_max,raw['min']+raw['max']):
                 assert abs(a-b) < 1e-6, obj.name
         checks.append({'object': obj.name, 'world_matrix_error': error})
-    return {'background': bpy.app.background, 'filepath': bpy.data.filepath, 'mesh_count': len(objects), 'objects': checks,
+    return {'background': bpy.app.background, 'filepath': Path(bpy.data.filepath).name, 'mesh_count': len(objects), 'objects': checks,
             'joints': [{'name': o.name, 'center': list(o.matrix_world.translation), 'axis_model': list(o['axis_model'])} for o in bpy.data.objects if o.name.startswith('JOINT::')],
             'status': '实际图形进程重新打开，数据检查通过；窗口截图待人工/代理视觉检查'}
+
 
 def step():
     try:
@@ -47,13 +60,13 @@ def step():
                     area.tag_redraw()
             STATE['capture'] = True
             return 2.0
-        bpy.ops.screen.screenshot(filepath=str(OUTPUT/'preview'/('gui_'+name+'.png')))
+        bpy.ops.screen.screenshot(filepath=str(EVIDENCE/('gui_'+name+'.png')))
         STATE['index'] += 1
         STATE['capture'] = False
         if STATE['index'] < len(QUEUE):
             return 0.5
-        STATE['checks']['screenshots'] = ['preview/gui_'+n+'.png' for n in QUEUE]
-        (REPORTS/'gui_validation.json').write_text(json.dumps(STATE['checks'],ensure_ascii=False,indent=2),encoding='utf8')
+        STATE['checks']['screenshots'] = ['gui_'+n+'.png' for n in QUEUE]
+        (EVIDENCE/'gui_validation.json').write_text(json.dumps(STATE['checks'],ensure_ascii=False,indent=2),encoding='utf8')
         # 恢复等轴测供用户继续查看，验收脚本不重写工程。
         for area in bpy.context.screen.areas:
             if area.type == 'VIEW_3D':
@@ -61,7 +74,7 @@ def step():
                 area.tag_redraw()
         return None
     except Exception as error:
-        (REPORTS/'gui_error.txt').write_text(repr(error),encoding='utf8')
+        (EVIDENCE/'gui_error.txt').write_text(repr(error),encoding='utf8')
         raise
 
 bpy.app.timers.register(step,first_interval=5.0)

@@ -58,7 +58,7 @@ scripts/main.py               入口：边界检查 → 选择适配器 → 构�
         │                              四向正交预览
         ├── scripts/validation.py      输入快照、几何清单、重复/覆盖率审计、报告生成
         │
-        └── output/<MODEL>/            .blend 工程、preview/、reports/
+        └── output/<MODEL>/            唯一的当前工程（<blend_name>）
 
 scripts/materials.py           Stage 1.5：SDF 材质 → Principled BSDF，
                                在既有 Stage 1 工程上另存新版本
@@ -125,11 +125,15 @@ AeroViz-Blender/
 │   └── README.md
 ├── tests/
 │   ├── test_material_mapping.py     映射优先级 / 颜色空间 / 歧义处理
-│   └── reverify_saved_project.py    交付工程的只读复验
-└── output/                     生成物，已被 git 忽略（工程、预览、报告）
+│   └── reverify_saved_project.py    当前工程的只读复验
+└── output/                     只有一个当前工程，已被 git 忽略
 ```
 
-`output/` 刻意不纳入版本管理：其中是多兆字节的 `.blend` 工程、渲染帧与每次运行的报告。大型工程文件留在本地，共享时再约定 Git LFS 或 Release 策略。
+`output/` 刻意不纳入版本管理，而且里面**只有一个文件**：当前工程 `output/DF4/DF4.blend`。
+
+工程版本管理只有一条规则：**所有阶段直接在同一个工程上迭代**，不再生成 `DF4_Stage1.blend`、`DF4_Stage2.blend` 之类的阶段副本。保存时先写临时文件，确认落盘成功后再原子替换当前工程，因此保存中途失败不会破坏已有工程；所有程序化保存都把 `save_version` 置为 0，不产生 `.blend1`。
+
+预览、渲染与验证记录不落本地：脚本直接写进审计仓库对应阶段的 `evidence/` 目录，运行期间的 `.work/` 临时目录在结束后删除。
 
 ## 6. 快速开始
 
@@ -152,15 +156,15 @@ Stage 1.5 —— 把 SDF 材质恢复到新版本工程：
 图形验收（必须真实窗口，不能用 `--background`）：
 
 ```powershell
-& $B -W '.\output\DF4\DF4_Stage1.blend'   --python '.\scripts\gui_verify.py'
-& $B -W '.\output\DF4\DF4_Stage1_5.blend' --python '.\scripts\gui_verify_materials.py'
+& $B -W '.\output\DF4\DF4.blend' --python '.\scripts\gui_verify.py'           -- --config configs/DF4.json
+& $B -W '.\output\DF4\DF4.blend' --python '.\scripts\gui_verify_materials.py' -- --config configs/DF4.json
 ```
 
 关节传递检查与映射单元检查：
 
 ```powershell
 & $B --background --factory-startup --python-exit-code 1 `
-     --python '.\scripts\check_joint_hierarchy.py'
+     --python '.\scripts\check_joint_hierarchy.py' -- --config configs/DF4.json
 & $B --background --factory-startup --python-exit-code 1 `
      --python '.\tests\test_material_mapping.py'
 ```
@@ -192,6 +196,7 @@ Stage 1 与 Stage 1.5 已针对 DF4 完成，验收证据在独立审计仓库�
 ## 8. 当前状态
 
 - 仅在 Blender 5.0.1 / Windows 上验证，目前唯一的机型是 DF4。
+- **当前工程**：`output/DF4/DF4.blend`，93 个对象（33 网格 + 52 空对象 + 4 相机 + 4 展示灯）、7 个材质、33 个对象已分配材质。Stage 1 与 Stage 1.5 的成果都在这一个文件里，没有阶段副本。
 - **Stage 1**：33 个 STL 输入 → 33 个独立网格对象，27 可见 + 6 隐藏参考件；整机可见尺寸约 0.353 × 0.376 × 0.378 m；26 个 link 空对象与 25 个关节空对象；相对描述文件的世界矩阵误差为 0；输入哈希前后不变。
 - **Stage 1.5**：提取 25 条 SDF visual 材质定义（25 条带显式定义），新建并复用 7 个 Blender 材质，为 33 个网格对象完成分配（13 个显式 RGBA、12 个 Gazebo 命名脚本、8 个展示默认），Stage 1 的 89 个对象全部保持不变，Eevee 与 Material Preview 均在真实窗口截图。
 - **Stage 2（机械运动）尚未开始**，需要明确授权。

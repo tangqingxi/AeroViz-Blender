@@ -24,7 +24,10 @@ Copy-Item configs\template.json configs\SHC09.json
 | `description` | 相对 `input_root` 的描述文件（STL 适配器填 `null`） |
 | `mesh_unit` | **网格**坐标的单位：`"m"`、`"mm"`、`"cm"` |
 | `sdf_unit` | **描述文件**位姿数值的单位；SDFormat 为米 |
-| `output_dir`、`blend_name` | 输出工程位置，相对仓库根 |
+| `input_root` | 绝对路径，或相对仓库根的路径；默认相对 |
+| `input_root_env` | 可选环境变量名；设置后整体覆盖 `input_root`，换机器不必改配置 |
+| `output_dir`、`blend_name` | 当前工程位置，形如 `output/SHC09/SHC09.blend`；全阶段共用这一个文件 |
+| `work_dir`、`audit_root` | 临时目录（默认 `.work`，运行后删除）与审计仓库根目录（证据写这里） |
 | `apply_model_pose` | `false` 保留模型原点（不把仿真飞行高度烘进工程） |
 | `uri_roots` | `model://<id>` → `input_root` 下的目录映射 |
 | `ignored_includes` | 有意不建模的外部 include，**每个都要写理由** |
@@ -56,8 +59,8 @@ Copy-Item configs\template.json configs\SHC09.json
 $B = '<blender.exe>'
 & $B --background --factory-startup --python-exit-code 1 --python .\scripts\main.py -- --config configs\SHC09.json
 & $B --background --factory-startup --python-exit-code 1 --python .\scripts\materials.py -- --config configs\SHC09.json
-& $B -W .\output\SHC09\SHC09_Stage1.blend --python .\scripts\gui_verify.py
-& $B -W .\output\SHC09\SHC09_Stage1_5.blend --python .\scripts\gui_verify_materials.py
+& $B -W .\output\SHC09\SHC09.blend --python .\scripts\gui_verify.py           -- --config configs\SHC09.json
+& $B -W .\output\SHC09\SHC09.blend --python .\scripts\gui_verify_materials.py -- --config configs\SHC09.json
 ```
 
 然后**逐张看截图**。文件存在不等于视觉验收通过。

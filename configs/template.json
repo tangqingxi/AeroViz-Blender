@@ -6,7 +6,9 @@
   "mesh_unit": "mm",
   "sdf_unit": "m",
   "output_dir": "output/MODEL",
-  "blend_name": "MODEL_Stage1.blend",
+  "blend_name": "MODEL.blend",
+  "work_dir": ".work",
+  "audit_root": "../AeroViz-Blender-Audit",
   "apply_model_pose": false,
   "groups": {
     "PARTS": [
@@ -31,8 +33,6 @@
     }
   ],
   "materials": {
-    "source_blend": "output/MODEL/MODEL_Stage1.blend",
-    "target_blend": "output/MODEL/MODEL_Stage1_5.blend",
     "source_color_space": "linear",
     "color_space_reason": "SDF 未标注传递函数；按 Gazebo/OGRE 光照反射系数解释为线性，保持原始数值，不进行未知 sRGB 解码。",
     "roughness": 0.62,

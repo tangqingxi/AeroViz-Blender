@@ -1,41 +1,49 @@
-"""Re-verify a saved AeroViz project against the records of the run that built it.
+"""只读复验当前唯一工程，对照审计仓库中已归档的验收记录。
 
-Read-only: opens the saved `.blend` files, replays the assertions recorded in the
-Stage 1 / Stage 1.5 evidence JSON, and prints a fresh record.  It never saves a
-`.blend`, never touches the model input and never rewrites the reports, so it is safe
-to run on an accepted deliverable.
+打开 `output/<MODEL>/<blend_name>`，重放 Stage 1 与 Stage 1.5 记录过的断言，然后把
+一份新的核验记录写回审计仓库的 `manifests/`。本脚本不保存任何 `.blend`，不写临时
+工程，也不改动模型输入，因此可以安全地跑在交付物上。
 
-Usage (inside Blender, no scene required)::
+用法::
 
     blender --background --factory-startup --python-exit-code 1 `
             --python tests/reverify_saved_project.py -- --config configs/DF4.json `
             [--out path/to/record.json]
 
-Checks performed when the matching report exists:
+期望值来源（均在审计仓库内，不依赖本地 output/reports）：
 
-* Stage 1 project: mesh count, object names, world matrices against the recorded
-  matrices, visible/reference split, link and joint empty counts, visible bounding box,
-  absence of animation data.
-* Stage 1.5 project: every Stage 1 object preserved unchanged (matrices, parenting,
-  collections, hide state, geometry hash, joint properties), plus exactly the documented
-  display lights added; material name and Principled BSDF values per assigned object;
-  Eevee engine; absence of animation data.
+* ``stages/stage-1/evidence/validation.json``            网格数、世界矩阵、包围盒
+* ``stages/stage-1.5/evidence/material_validation.json``  材质分配与 BSDF 数值
+* ``stages/stage-1.5/evidence/material_structure_baseline.json``  89 个原有对象的状态
 """
 import argparse
+import hashlib
 import json
+from datetime import datetime, timezone
+from pathlib import Path
 import sys
 import traceback
-from pathlib import Path
 
 import bpy
 
 WORKSPACE = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(WORKSPACE / "scripts"))
 sys.dont_write_bytecode = True
+import project_io  # noqa: E402
+
+REL = project_io  # 便于阅读：所有路径都经 project_io 解析
 
 
 def load(path):
-    return json.loads(path.read_text(encoding="utf8"))
+    return json.loads(Path(path).read_text(encoding="utf8"))
+
+
+def rel(path):
+    path = Path(path).resolve()
+    try:
+        return str(path.relative_to(WORKSPACE)).replace("\\", "/")
+    except ValueError:
+        return path.name
 
 
 def max_matrix_error(obj, matrix_rows):
@@ -44,13 +52,11 @@ def max_matrix_error(obj, matrix_rows):
     )
 
 
-def check_stage1(project, reports):
-    record = load(reports / "validation.json")
-    bpy.ops.wm.open_mainfile(filepath=str(project))
+def check_stage1(record, baseline):
     meshes = [o for o in bpy.data.objects if o.type == "MESH"]
     assert len(meshes) == record["imported_count"], (len(meshes), record["imported_count"])
     rows = {r["object"]: r for r in record["records"]}
-    assert set(rows) == {o.name for o in meshes}, "mesh object names differ from the record"
+    assert set(rows) == {o.name for o in meshes}, "网格对象名与 Stage 1 记录不一致"
     matrix_error = max(max_matrix_error(bpy.data.objects[n], r["world_matrix"]) for n, r in rows.items())
     assert matrix_error < 1e-6, matrix_error
     reference = [o for o in meshes if o.get("reference_only")]
@@ -63,36 +69,26 @@ def check_stage1(project, reports):
     dims = [hi[i] - lo[i] for i in range(3)]
     bbox_error = max(abs(dims[i] - record["bbox"]["dimensions_m"][i]) for i in range(3))
     assert bbox_error < 1e-6, bbox_error
-    animated = [o.name for o in bpy.data.objects if o.animation_data]
-    assert not animated, animated
+    links = sum(1 for o in bpy.data.objects if o.name.startswith("LINK::"))
+    joints = sum(1 for o in bpy.data.objects if o.name.startswith("JOINT::"))
+    assert links == sum(1 for k in baseline if k.startswith("LINK::")), links
+    assert joints == sum(1 for k in baseline if k.startswith("JOINT::")), joints
     return {
-        "project": str(project),
-        "project_sha256_note": "hash recorded separately by the audit manifest",
         "mesh_count": len(meshes),
         "visible_count": len(visible),
         "reference_only_count": len(reference),
-        "link_empty_count": sum(1 for o in bpy.data.objects if o.name.startswith("LINK::")),
-        "joint_empty_count": sum(1 for o in bpy.data.objects if o.name.startswith("JOINT::")),
-        "object_total": len(bpy.data.objects),
+        "link_empty_count": links,
+        "joint_empty_count": joints,
         "world_matrix_max_error": matrix_error,
         "bbox_dimensions_m": dims,
-        "bbox_dimensions_recorded_m": record["bbox"]["dimensions_m"],
         "bbox_max_abs_error": bbox_error,
-        "objects_with_animation": animated,
         "status": "PASS",
     }
 
 
-def check_stage15(config, reports):
-    settings = config["materials"]
-    project = (WORKSPACE / settings["target_blend"]).resolve()
-    if not project.is_file() or not (reports / "material_validation.json").is_file():
-        return None
-    import materials  # noqa: E402  (imported late: needs bpy)
+def check_stage15(record, baseline):
+    import materials  # 延迟导入：需要 bpy
 
-    record = load(reports / "material_validation.json")
-    baseline = load(reports / "material_structure_baseline.json")
-    bpy.ops.wm.open_mainfile(filepath=str(project))
     preserved = materials.check_preserved(baseline)
     added = preserved["added_objects"]
     expected_added = sorted("MATERIAL_LIGHT::" + name for name in record["environment"]["lights"])
@@ -128,10 +124,7 @@ def check_stage15(config, reports):
     assert color_error < 1e-6, color_error
     lights = sorted(o.name for o in bpy.data.objects if o.name.startswith("MATERIAL_LIGHT::"))
     assert lights == expected_added, lights
-    animated = [o.name for o in bpy.data.objects if o.animation_data]
-    assert not animated, animated
     return {
-        "project": str(project),
         "object_total": len(bpy.data.objects),
         "baseline_object_count": len(baseline),
         "preserved_object_count": preserved["preserved_count"],
@@ -142,7 +135,6 @@ def check_stage15(config, reports):
         "assignments_verified": verified,
         "assignment_color_max_error": color_error,
         "render_engine": bpy.context.scene.render.engine,
-        "objects_with_animation": animated,
         "status": "PASS",
     }
 
@@ -150,42 +142,48 @@ def check_stage15(config, reports):
 def main():
     argv = sys.argv[sys.argv.index("--") + 1:] if "--" in sys.argv else []
     parser = argparse.ArgumentParser()
-    parser.add_argument("--config", required=True, help="Model config, relative to the repo root")
-    parser.add_argument("--out", help="Optional path for the JSON record (default: stdout)")
+    parser.add_argument("--config", required=True)
+    parser.add_argument("--out", help="记录路径，默认写入审计仓库 manifests/reverify-current.json")
     args = parser.parse_args(argv)
-    config_path = (WORKSPACE / args.config).resolve()
-    config = load(config_path)
-    output = (WORKSPACE / config["output_dir"]).resolve()
-    reports = output / "reports"
-    stage1_project = output / config["blend_name"]
+
+    config = load(project_io.resolve(args.config))
+    project = project_io.project(config)
+    stage1 = project_io.evidence_dir(config, "stage-1")
+    stage15 = project_io.evidence_dir(config, "stage-1.5")
+    out = Path(args.out) if args.out else project_io.reports_dir(config) / "reverify-current.json"
 
     result = {
+        "generated_at": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "blender_version": bpy.app.version_string,
         "background": bpy.app.background,
-        "config": str(config_path),
-        "stage1": None,
-        "stage1_5": None,
+        "project": rel(project),
         "overall": "FAIL",
     }
     try:
-        if stage1_project.is_file() and (reports / "validation.json").is_file():
-            result["stage1"] = check_stage1(stage1_project, reports)
-        result["stage1_5"] = check_stage15(config, reports)
+        assert project.is_file(), f"当前工程不存在：{project}"
+        result["project_sha256"] = hashlib.sha256(project.read_bytes()).hexdigest()
+        bpy.ops.wm.open_mainfile(filepath=str(project))
+        baseline = load(stage15 / "material_structure_baseline.json")
+        result["stage1"] = check_stage1(load(stage1 / "validation.json"), baseline)
+        result["stage1_5"] = check_stage15(load(stage15 / "material_validation.json"), baseline)
+        animated = [o.name for o in bpy.data.objects if o.animation_data]
+        assert not animated, animated
+        result["objects_with_animation"] = animated
+        result["object_total"] = len(bpy.data.objects)
         result["overall"] = "PASS"
     except Exception:
         result["traceback"] = traceback.format_exc()
-        text = json.dumps(result, ensure_ascii=False, indent=2)
-        if args.out:
-            Path(args.out).write_text(text, encoding="utf8")
+        out.parent.mkdir(parents=True, exist_ok=True)
+        out.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf8")
         print("REVERIFY_FAIL")
         traceback.print_exc()
         sys.exit(1)
 
-    text = json.dumps(result, ensure_ascii=False, indent=2)
-    if args.out:
-        Path(args.out).write_text(text, encoding="utf8")
-    print("REVERIFY_OK")
-    print(text)
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(json.dumps(result, ensure_ascii=False, indent=2), encoding="utf8")
+    print("REVERIFY_OK", result["project_sha256"][:12], result["object_total"])
+    print(json.dumps({k: result[k] for k in ("project", "overall", "object_total", "objects_with_animation")},
+                     ensure_ascii=False, indent=2))
 
 
 main()

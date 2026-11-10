@@ -1,12 +1,15 @@
 {
   "model_name": "DF4",
   "adapter": "sdf",
-  "input_root": "D:\\01_科研\\TIE\\DF4_SolidWorks\\DF4_SolidWorks",
+  "input_root": "../DF4_SolidWorks",
+  "input_root_env": "AEROVIZ_DF4_INPUT",
   "description": "ductedfan4.sdf.jinja",
   "mesh_unit": "m",
   "sdf_unit": "m",
   "output_dir": "output/DF4",
-  "blend_name": "DF4_Stage1.blend",
+  "blend_name": "DF4.blend",
+  "work_dir": ".work",
+  "audit_root": "../AeroViz-Blender-Audit",
   "apply_model_pose": false,
   "expected_dimensions_m": [
     [
@@ -101,8 +104,6 @@
   "coordinate_evidence": "本模型所有 link/visual 放置矩阵均为单位阵；STL 已有非零装配范围，且惯性质心与对应几何相符。保留源坐标，不重复平移。",
   "unit_evidence": "STL 无单位元数据。原始几何跨度约 0.38，SDF mesh scale=1，碰撞箱 0.30 × 0.30 × 0.47 m，据此采用米。",
   "materials": {
-    "source_blend": "output/DF4/DF4_Stage1.blend",
-    "target_blend": "output/DF4/DF4_Stage1_5.blend",
     "source_color_space": "linear",
     "color_space_reason": "SDF 未标注传递函数；按 Gazebo/OGRE 光照反射系数解释为线性，保持原始数值，不进行未知 sRGB 解码。",
     "roughness": 0.62,
