@@ -1,14 +1,9 @@
-# `scripts/rendering/` — reserved, not implemented
+# `scripts/rendering/` —— 预留目录，尚未实现
 
-**Nothing in this directory is implemented.** No camera choreography, no lighting setup
-for production and no video encoding exists in this repository yet.
+**本目录下没有任何实现。** 本仓库目前没有镜头编排、没有正式的灯光布置，也没有视频编码。
 
-This directory is the intended home for Stage 4 — camera, lighting and video rendering
-(`render.py`), consuming a finished stage project without modifying geometry or rig state.
+本目录预定的内容：Stage 4 —— 镜头、灯光与视频渲染（`render.py`），消费一个已完成的阶段工程，不修改几何或骨架状态。
 
-The parameter contract and the evidence rules (a render is not acceptance evidence on
-its own) are specified in [`docs/interfaces.md`](../../docs/interfaces.md).
+参数契约与证据规则（渲染本身不算验收证据）见 [`docs/interfaces.md`](../../docs/interfaces.md)。
 
-The four orthographic `VIEW::*` cameras and the four `MATERIAL_LIGHT::*` area lights
-that already exist are *preview* assets produced by Stage 1 / Stage 1.5, not a rendering
-pipeline.
+需要注意区分：现有的四个 `VIEW::*` 正交相机与四个 `MATERIAL_LIGHT::*` 面积灯，是 Stage 1 / Stage 1.5 产生的**预览**设施，不是渲染管线。
