@@ -1,6 +1,6 @@
 # 后续阶段的预留接口
 
-**Stage 2 已实现并验证；Stage 3/4 未实现。** 当前工程包含五个现有机械关节的运动，仍没有爆炸视图、镜头运动或视频渲染。
+**Stage 2与Stage 3已实现并验证；Stage 4未实现。** 当前工程保留五个机械关节动画，并增加独立爆炸/恢复位移层；没有相机运动或最终视频渲染。
 
 本文存在的目的：让后续工作**挂在现有骨架上**，而不是推翻它重做。
 
@@ -42,27 +42,16 @@ Blender 5.0.1 的 Action 经 `layers → strips → channelbag(action_slot) → 
 
 `tests/reverify_saved_project.py` 保留历史几何、矩阵、包围盒、材质断言，在第1帧检查，只受控允许配置中五个 JOINT 的动画标志改变。其他字段仍严格比较；历史无动画工程仍按原规则检查。当前动画工程的完整逐帧回归基线在 Audit `stages/stage-2/evidence/structure_baseline.json`。
 
-## Stage 3 —— 爆炸视图与机械动画
+## Stage 3 —— 已实现坐标冻结与爆炸/恢复
 
-预期入口：`scripts/animation/explode.py`（只负责分配，不在此键帧）加 Stage 2 的动画层组合。
-
-建议的配置块：
-
-```json
-"explode": {
-  "grouping": "collection",
-  "offset_m": 0.03,
-  "gap_axis": "z",
-  "order": ["REFERENCE_ONLY", "ELECTRONICS", "DUCT", "ROTOR", "TAIL", "CONTROL_SURFACES"],
-  "keep_together": [["cs1", "cs11"], ["rotor", "motor"]]
-}
-```
-
-契约：
-
-- 爆炸位移由对象自身包围盒与分组计算，并作为**有记录的偏移**保存（后续可键帧）；不永久移动几何。
-- 隐藏的 `REFERENCE_ONLY` 件默认排除，除非显式要求。
-- 每个爆炸参数都要连同产生的偏移量写进阶段报告。
+- `scripts/coordinate_frames.py`：读取 `coordinate_frames`，验证正交且det=+1的3x3旋转，转换向量，验证单位基与往返；不处理NED或CG推定。
+- `scripts/animation/exploded_view.py`：读取 `exploded_view`，在既有JOINT上方增加独立偏移层，绝不调用Stage2机械build。
+- `branches[]`：`joint`、`parent`、`child_link`、`meshes`是对原子树的约束；`group`只用于管理，不声称新的机械连接；`direction_flu`、`distance_m`、`displacement_flu_m`必须一致，并写 `reason`。
+- 全局时间参数：`frame_start`、`mechanical_end`、`fully_exploded`、`hold_end`、`frame_end`；所有控制器只在这五个帧上写三轴Location。`coordinate_frame`、`root_object`、Collection名、控制器前缀及截图帧均可配置。
+- 方向采用模型向量→世界向量→父级局部位移，不施加平移原点，支持不同模型层级。配置必须明确覆盖全部有网格JOINT，空子树/参考件拒绝；未知父级与原子树变化立即报错。
+- 每个控制器初始单位姿态并归零，保持旧JOINT的matrix_basis和matrix_parent_inverse，原Action内存身份在构建前后不变，保存后按关键帧/插值/句柄/外推/自定义属性指纹复核。
+- 爆炸回归逐整数帧检查机械末帧之后的刚体平移、非目标不动、保持段和最终恢复；原机械Action在121之后按原外推保持，不延长或重做。
+- `tests/reverify_saved_project.py`保留旧检查，仅扩展配置白名单：声明的控制器、24个关节父级变更及总帧数；其余原对象字段仍逐项检查。完整动画工程需要Audit的Stage3结构与Action基线。
 
 ## Stage 4 —— 镜头、灯光与视频渲染
 

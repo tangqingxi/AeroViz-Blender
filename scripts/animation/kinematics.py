@@ -139,6 +139,8 @@ def fcurves(obj):
 
 def build(config, prepared=None):
     animation=config['animation'];scene=bpy.context.scene
+    if scene.get('aeroviz_exploded'):
+        raise RuntimeError('已有爆炸层时禁止重建原机械Action')
     if animation['interpolation']!='LINEAR' or animation['fps']<=0:
         raise ValueError('此实现要求正 FPS 与 LINEAR 插值')
     scene.frame_set(animation['frame_start'])
@@ -204,14 +206,20 @@ def validate(config,baseline):
     scene=bpy.context.scene;animation=config['animation'];scene.frame_set(animation['frame_start'])
     prepared=bindings(config)
     expected_names=sorted(b['object'].name for b in prepared)
-    assert sorted(o.name for o in bpy.data.objects if o.animation_data)==expected_names
-    assert len(bpy.data.actions)==len(prepared)
-    assert len(bpy.data.objects)==len(baseline['objects'])
+    from animation.exploded_view import contract
+    parent_overrides, added = contract(config)
+    assert sorted(o.name for o in bpy.data.objects if o.animation_data)==sorted(set(expected_names)|added)
+    assert len(bpy.data.actions)==len(prepared)+len(added)
+    assert set(bpy.data.objects.keys())==set(baseline['objects'])|added
     snapshot=base_snapshot()
     for key in ('material_signatures','slots','material_nodes'):
         assert snapshot[key]==baseline[key],key
     for name,old in baseline['objects'].items():
         current=snapshot['objects'][name]
+        if name in parent_overrides:
+            new_parent, old_parent=parent_overrides[name]
+            assert current['parent']==new_parent and old['parent']==old_parent and bpy.data.objects[new_parent].parent.name==old_parent
+            current=dict(current,parent=old_parent)
         for key,value in old.items():
             if key=='has_animation':
                 assert current[key]==(name in expected_names)
@@ -220,10 +228,11 @@ def validate(config,baseline):
             else:
                 assert current[key]==value,(name,key)
     assert scene.render.fps==animation['fps'] and scene.render.fps_base==1
-    assert (scene.frame_start,scene.frame_end)==(animation['frame_start'],animation['frame_end'])
+    assert scene.frame_start==animation['frame_start']
+    assert scene.frame_end==(config['exploded_view']['frame_end'] if added else animation['frame_end'])
     before={n:Matrix(s['matrix_world']) for n,s in baseline['objects'].items()}
     rows=[];previous={};totals={};max_step_error=0.0
-    for frame in range(scene.frame_start,scene.frame_end+1):
+    for frame in range(animation['frame_start'],animation['frame_end']+1):
         scene.frame_set(frame);bpy.context.view_layer.update();depsgraph=bpy.context.evaluated_depsgraph_get()
         expected={name:m.copy() for name,m in before.items()};angles={};centers={};quaternions={}
         for b in prepared:
@@ -234,7 +243,8 @@ def validate(config,baseline):
             # 独立世界坐标参考：平移到原关节中心，按模型世界轴旋转，再平移回来。
             delta=Matrix.Translation(b['center']) @ reference_rotation(b['axis_world'],angle) @ Matrix.Translation(-b['center'])
             for descendant in (obj,*obj.children_recursive):
-                expected[descendant.name]=delta @ before[descendant.name]
+                if descendant.name in before:
+                    expected[descendant.name]=delta @ before[descendant.name]
             actual_q=evaluated.rotation_quaternion.copy().normalized()
             relative=b['q0'].conjugated() @ actual_q
             measured=math.degrees(2*math.atan2(Vector((relative.x,relative.y,relative.z)).dot(b['axis_local']),relative.w))
@@ -262,7 +272,7 @@ def validate(config,baseline):
         assert len(curves)==4 and all(c.data_path=='rotation_quaternion' for c in curves)
         assert all(k.interpolation=='LINEAR' for c in curves for k in c.keyframe_points)
         channels[b['object'].name]={'action':b['object'].animation_data.action.name,'channel_count':len(curves),'keys_per_channel':[len(c.keyframe_points) for c in curves]}
-        expected_total=angle_at(b['motion'],scene.frame_end,animation)-angle_at(b['motion'],scene.frame_start,animation)
+        expected_total=angle_at(b['motion'],animation['frame_end'],animation)-angle_at(b['motion'],animation['frame_start'],animation)
         if b['motion']['kind']=='spin':
             assert abs(totals[b['object'].name]-expected_total)<animation['tolerances']['angle_deg']
     markers={k['marker']:k['frame'] for m in animation['motions'] for k in m.get('keys',[]) if k.get('marker')}

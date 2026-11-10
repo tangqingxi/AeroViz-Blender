@@ -86,13 +86,13 @@ def check_stage1(record, baseline):
     }
 
 
-def check_stage15(record, baseline, animated_objects=()):
+def check_stage15(record, baseline, animated_objects=(), parent_overrides=None, additional_objects=()):
     import materials  # 延迟导入：需要 bpy
 
-    preserved = materials.check_preserved(baseline, animated_objects=animated_objects)
+    preserved = materials.check_preserved(baseline, animated_objects=animated_objects, parent_overrides=parent_overrides)
     added = preserved["added_objects"]
     expected_added = sorted("MATERIAL_LIGHT::" + name for name in record["environment"]["lights"])
-    assert added == expected_added, (added, expected_added)
+    assert added == sorted(expected_added + list(additional_objects)), (added, expected_added)
     assert len(bpy.data.objects) == len(baseline) + len(added), len(bpy.data.objects)
     meshes = [o for o in bpy.data.objects if o.type == "MESH"]
     assert len(meshes) == 33, len(meshes)
@@ -146,6 +146,7 @@ def main():
     parser.add_argument("--config", required=True)
     parser.add_argument("--out", help="记录路径，默认写入审计仓库 manifests/reverify-current.json")
     parser.add_argument("--animation-baseline", help="动画原始结构基线，默认读取 Stage 2 归档证据")
+    parser.add_argument("--explosion-baseline", help="Stage3原始结构及Action基线")
     args = parser.parse_args(argv)
 
     config = load(project_io.resolve(args.config))
@@ -168,18 +169,26 @@ def main():
         animated = sorted(o.name for o in bpy.data.objects if o.animation_data)
         stage2_active = bool(bpy.context.scene.get("aeroviz_animation"))
         allowed = sorted("JOINT::"+m["joint"] for m in config.get("animation",{}).get("motions",[])) if stage2_active else []
-        assert animated == allowed, (animated,allowed)
+        from animation.exploded_view import contract
+        parent_overrides, extra_controllers = contract(config)
+        assert animated == sorted(set(allowed)|extra_controllers), (animated,allowed)
         if stage2_active:
             bpy.context.scene.frame_set(config["animation"]["frame_start"])
         baseline = load(stage15 / "material_structure_baseline.json")
         result["stage1"] = check_stage1(load(stage1 / "validation.json"), baseline)
-        result["stage1_5"] = check_stage15(load(stage15 / "material_validation.json"), baseline, animated_objects=allowed)
+        result["stage1_5"] = check_stage15(load(stage15 / "material_validation.json"), baseline, animated_objects=allowed, parent_overrides=parent_overrides, additional_objects=extra_controllers)
         if stage2_active:
             from animation import kinematics
             source = project_io.resolve(args.animation_baseline) if args.animation_baseline else project_io.evidence_dir(config,"stage-2")/"structure_baseline.json"
             result["stage2"] = kinematics.validate(config,load(source))
-            assert len(animated)==len(config["animation"]["motions"])
+            assert len(animated)==len(config["animation"]["motions"])+len(extra_controllers)
             assert all(not o.animation_data for o in bpy.data.objects if o.type=="MESH")
+        if extra_controllers:
+            from animation import exploded_view
+            source = project_io.evidence_dir(config,'stage-3')/'explosion_baseline.json'
+            if args.explosion_baseline:
+                source = project_io.resolve(args.explosion_baseline)
+            result['stage3'] = exploded_view.validate(config,load(source))
         result["objects_with_animation"] = animated
         result["object_total"] = len(bpy.data.objects)
         result["overall"] = "PASS"

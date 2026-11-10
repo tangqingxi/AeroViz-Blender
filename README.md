@@ -40,7 +40,7 @@
 - **结构保护**：Stage 1.5 必须保持原有对象的矩阵、父子关系、Collection、隐藏状态、几何哈希与关节属性完全不变。
 - **图形验收**：专用脚本在真实窗口中重开 `.blend`、断言状态并截图；后台渲染成功**不**算目视验收。
 
-已新增配置驱动的机械运动与关键帧验证。尚未实现（不得假设存在）：爆炸视图、镜头与灯光编排、视频渲染、多机型批处理。见 §7 路线图。
+已新增配置驱动的机械运动与关键帧验证。Stage 3已实现配置驱动爆炸/恢复。尚未实现（不得假设存在）：镜头与灯光编排、视频渲染、多机型批处理。见 §7 路线图。
 
 ## 3. 架构
 
@@ -187,11 +187,11 @@ Stage 1.5 —— 在当前唯一工程中恢复 SDF 材质：
 | Stage 1 | 通用模型导入与空间装配恢复 | 已完成 |
 | Stage 1.5 | SDF 材质恢复 | 已完成 |
 | Stage 2 | 机械运动骨架与独立运动测试 | 已完成 |
-| Stage 3 | 爆炸视图与机械动画 | 待执行 |
+| Stage 3 | 坐标系定义与爆炸/装配恢复 | 已完成 |
 | Stage 4 | 镜头、灯光与视频渲染 | 待执行 |
 | Stage 5 | 多机型适配与工具完善 | 待执行 |
 
-Stage 1、1.5、2 已针对 DF4 完成。旋翼与四个舵面动画在当前工程，证据在独立审计仓库。Stage 3 及后续阶段尚未授权，不包含爆炸视图或视频渲染能力。
+Stage 1、1.5、2 已针对 DF4 完成。旋翼与四个舵面动画在当前工程，证据在独立审计仓库。Stage 3 已增加坐标定义与爆炸/恢复视图；Stage 4 尚未授权，不包含最终视频渲染。
 
 ## 8. 当前状态
 
@@ -199,7 +199,7 @@ Stage 1、1.5、2 已针对 DF4 完成。旋翼与四个舵面动画在当前工
 - **当前工程**：`output/DF4/DF4.blend`，93 个对象（33 网格 + 52 空对象 + 4 相机 + 4 展示灯）、7 个材质、33 个对象已分配材质。Stage 1 与 Stage 1.5 的成果都在这一个文件里，没有阶段副本。
 - **Stage 1**：33 个 STL 输入 → 33 个独立网格对象，27 可见 + 6 隐藏参考件；整机可见尺寸约 0.353 × 0.376 × 0.378 m；26 个 link 空对象与 25 个关节空对象；相对描述文件的世界矩阵误差为 0；输入哈希前后不变。
 - **Stage 1.5**：提取 25 条 SDF visual 材质定义（25 条带显式定义），新建并复用 7 个 Blender 材质，为 33 个网格对象完成分配（13 个显式 RGBA、12 个 Gazebo 命名脚本、8 个展示默认），Stage 1 的 89 个对象全部保持不变，Eevee 与 Material Preview 均在真实窗口截图。
-- **Stage 2 已完成**：30 FPS、1–121帧；旋翼演示 1200°/s、累计 4800°，四个舵面按 CS1→CS4 顺序独立完成 ±10° 并归零。动画对象恰好五个原有 JOINT。Stage 3 等待授权。
+- **Stage 2 已完成**：30 FPS、1–121帧；旋翼演示 1200°/s、累计 4800°，四个舵面按 CS1→CS4 顺序独立完成 ±10° 并归零。动画对象恰好五个原有 JOINT。Stage 3 已完成；Stage 4 等待授权。
 
 详细的阶段报告、截图与产物哈希位于配套审计仓库 `tangqingxi/AeroViz-Blender-Audit`，不在本仓库。
 
@@ -252,4 +252,17 @@ python scripts/verify_evidence.py ../AeroViz-Blender-Audit ../AeroViz-Blender-Au
 
 该脚本调用与空格相同的原生播放操作，记录真实帧推进和循环，显示 Dope Sheet 五个 Action，保存六种姿态和播放窗口截图；不保存工程。结果直写 Audit `stages/stage-2/evidence/`。受控回归接口为 `tests/test_kinematics.py -- --config <副本配置> --phase prepare`，随后独立进程 `--phase verify`；测试需要先准备 `.work/stage-2/rollback/` 原字节副本。正式更新的 `--phase apply --expected-sha256 <基线哈希>` 要求副本测试批准记录与动画配置一致，保存失败或回归失败必须恢复原字节并停止。
 
-Pre-Stage 2 的 `test_project_io.py` 是静态工程基线专项记录，不用于断言 Stage 2 工程仍然无动画。当前工程的完整回归以更新后的 reverify 与运动验证为准。Stage 3 尚未授权。
+Pre-Stage 2 的 `test_project_io.py` 是静态工程基线专项记录，不用于断言 Stage 2 工程仍然无动画。当前工程的完整回归以更新后的 reverify 与运动验证为准。Stage 4 尚未授权。
+
+
+## Stage 3 坐标与爆炸视图
+
+DF4模型按用户定义冻结为FLU（前/左/上），原点为SDF模型原点，不声称为实机CG。根对象保持单位阵，FRD/FLU转换与说明见 [docs/coordinate-frames.md](docs/coordinate-frames.md)。
+
+单工程现为117对象：原93对象保留，24个有网格的JOINT各增加一个独立 `EXPLODE_OFFSET` Empty。原五个机械Action不重建、不增键；只对配置声明的24个JOINT改变直接父级，其网格和子LINK关系不变。其余对象、33网格、7材质、相机和灯光保持。
+
+时间轴30FPS、1–301帧：1–121保留机械运动，121–181展开，181–241保持，241–301恢复到121帧装配状态。控制器仅有Location动画（每轴5点、LINEAR），旋转和缩放不变。分支方向/距离/理由全部在 `exploded_view.branches` 配置；人为展示位移不是实际拆装行程。直接电池、controller2、X-tend、参考重复件、无网格IMU不单独爆炸。
+
+`tests/test_exploded_view.py`提供prepare/apply/verify，先在 `.work/stage-3/` 的字节副本测试；apply保存后新启进程回归，失败恢复已核对的字节备份。只读复验仍使用 `tests/reverify_saved_project.py`，Stage2只验证1–121帧，Stage3继续验证121–301帧及原Action完整指纹。
+
+实际窗口验收入口为 `scripts/animation/gui_verify_exploded.py -- --config configs/DF4.json`。使用原生播放，截取1/121/151/181/241/301帧，按用户最新要求截图后自动退出Blender，不保存GUI状态。无需用户操作Blender；结果与截图见Audit Stage3主报告。本阶段不输出MP4。
