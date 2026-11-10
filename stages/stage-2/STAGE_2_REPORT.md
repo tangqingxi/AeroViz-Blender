@@ -76,13 +76,13 @@ q(t)=q0×q_delta(local_axis,angle)，保留初始姿态。另有非单位 q0 与
 
 副本独立试验、组合检查、独立进程重开和历史回归通过后，重新打开仍匹配原始 SHA256 的正式工程，使用同一引擎生成、验证，再经 `project_io.save_project()` 原子保存。新进程再次重开并逐帧验证与执行历史回归，PASS。持久化测试入口的 apply 阶段也包含保存后子进程回归与失败字节恢复逻辑，事务成功分支已在副本验证；本轮未触发正式工程恢复，也不声称做了新的故障注入试验。
 
-本地最终只有 `output/DF4/DF4.blend`，无阶段编号工程、preview/reports 或 .blend1。成功证据提交后清理 `.work/stage-2/`，不上传原件、回滚副本、STL、SDF 或测试工程。
+本地最终只有 `output/DF4/DF4.blend`，无阶段编号工程、preview/reports 或 .blend1。证据提交后已清理 `.work/stage-2/`，不上传原件、回滚副本、STL、SDF 或测试工程。
 
 ## 6. 实际 Blender 图形窗口验收
 
 真实 Blender 5.0.1 打开最终工程，Timeline 范围1–121，Dope Sheet 中五个独立 Action 可见。采用 Blender 原生 `screen.animation_play`（与空格绑定的同一操作），未使用 computer-use 或物理按键注入。播放期间不通过脚本设帧，连续观察到 29 个实际帧状态、约 6.06 s，跨过一次完整循环；截图中播放状态与 fps 显示可见。
 
-实际播放及六种窗口截图已查看：旋翼姿态推进、舵面顺序偏转，无部件脱离或明显错位。截图是 `screen.screenshot` 的真实窗口，不是离线渲染。验收后暂停在第1帧，保留完整工程窗口，GUI 没有保存文件，磁盘 SHA256 未变。证据：[gui_validation.json](evidence/gui_validation.json)。
+实际播放及六种窗口截图已查看：旋翼姿态推进、舵面顺序偏转，无部件脱离或明显错位。截图是 `screen.screenshot` 的真实窗口，不是离线渲染。验收后暂停在第1帧，保留完整工程窗口，GUI 没有保存文件，磁盘 SHA256 未变。清理时为释放临时日志句柄重开了同一工程，最终窗口仍在第1帧并显示五个Action；重开未保存。证据：[gui_validation.json](evidence/gui_validation.json)。
 
 ![初始完整模型与五个 Action](evidence/gui_initial.png)
 

@@ -35,7 +35,7 @@
 - 12个Timeline Markers；五个独立Action，每个4个Quaternion通道、每通道121点。Action通过Blender5的channelbag访问。
 - 正式更新前副本保存/重开/历史回归通过；正式原件仍匹配基线后才生成、验证和原子保存，独立进程再次重开PASS。
 - GUI调用与空格绑定相同的Blender原生播放操作，29次实时采样跨一完整循环；未用computer-use或物理键盘注入。六种状态与播放窗口共七张真实截图均已查看；GUI未保存工程。
-- `.work/stage-2/rollback/` 原字节备份已准备且未触发恢复；成功证据提交后清理临时目录并核对本地最终状态。
+- `.work/stage-2/rollback/` 原字节备份已准备且未触发恢复；证据已提交后清理临时目录；已核对 .work 不存在、output/DF4 仅 DF4.blend、无 .blend1。两个工作区提交后 clean。
 
 ## 核心接口与复验
 

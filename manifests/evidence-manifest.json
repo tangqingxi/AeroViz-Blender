@@ -26,7 +26,7 @@
     },
     {
       "path": "HANDOFF.md",
-      "sha256": "b7d1b0fb882a44edc3d60906c7ca4fc635716d7df7aa4e93628fc83ece3cd1b0",
+      "sha256": "7a5f91abaed6bd81faeb015714185a8b756dc882a117ef4a874a475ff5e71f3d",
       "kind": "handoff"
     },
     {
@@ -36,7 +36,7 @@
     },
     {
       "path": "manifests/reverify-current.json",
-      "sha256": "fc7b17e65605063534b0be8f373b3121a7724eed18d659ec25623308eb344187",
+      "sha256": "82dd37adada649fbf406ba47890fa18cf29bcd3ebd61710e4509ca9eb1b23617",
       "kind": "other"
     },
     {
@@ -67,12 +67,12 @@
     {
       "path": "stages/stage-2/STAGE_2_REPORT.md",
       "kind": "other",
-      "sha256": "f3906c3b5ff55688ed4b5cd2e87fbdbd6c39330d32cfb922ee78a8ca482d8a65"
+      "sha256": "7a572361e59af318bcbf73596f86c1f23018e532d64a2c130debcd657c052490"
     },
     {
       "path": "stages/stage-2/evidence-manifest.json",
       "kind": "other",
-      "sha256": "df7d04aa469cba32f8ed9e211bba829a991291715b768226e2dbab553287f2f4"
+      "sha256": "7c1592a612b841ebbeb820583f6878b266766dcde8b013ffa2baafce0d79b68a"
     }
   ],
   "verification": {

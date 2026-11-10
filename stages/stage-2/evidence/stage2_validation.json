@@ -76,5 +76,13 @@
     "整数帧角度严格验证；分量线性四元数插值在子帧不保证严格匀角速",
     "通用引擎拒绝非均匀/负缩放、剪切和受控关节级联",
     "原有资产来源与补充零件的装配依据限制保持历史报告所述"
-  ]
+  ],
+  "local_cleanup": {
+    "work_absent": true,
+    "only_current_project": true,
+    "blend1_absent": true,
+    "after_audit_evidence_commit": true,
+    "gui_reopened_after_releasing_transient_log": true,
+    "formal_sha256_still_matches": true
+  }
 }
