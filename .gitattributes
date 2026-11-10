@@ -1,0 +1,6 @@
+# Evidence files must stay byte-identical to what the manifests hash.
+# Disable every line-ending / text conversion so a fresh clone reproduces the
+# exact bytes recorded in evidence-manifest.json (several measurement JSON files
+# were written on Windows with CRLF; normalising them to LF would silently break
+# verify_evidence.py for anyone who clones this repository).
+* -text
