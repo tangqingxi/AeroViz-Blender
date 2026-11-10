@@ -26,7 +26,7 @@
     },
     {
       "path": "HANDOFF.md",
-      "sha256": "e1bc07bdd07845e1538184ac11d66ba477ae71747d839e0f2f169590e6e1687b",
+      "sha256": "54979785d5d66ea37bed6a787e9e8a90d3dc69706e0408e97926f4ff8f394443",
       "kind": "handoff"
     },
     {
@@ -36,7 +36,7 @@
     },
     {
       "path": "manifests/reverify-current.json",
-      "sha256": "93c5dc198d639e54c4ae33222ad3cc656baef5233641486a91c152ded4a82201",
+      "sha256": "b86a99b51ebbe1e1f852c3f50e60f19e7e42ae056c9abc94d5ed726465784949",
       "kind": "other"
     },
     {
@@ -77,12 +77,12 @@
     {
       "path": "stages/stage-3/STAGE_3_REPORT.md",
       "kind": "other",
-      "sha256": "bb477af33c901bc61ba8c3914ec6160daf28784890880f613cdc38555fc171ce"
+      "sha256": "a0fbc376aa55e5cc7e5cb1607563d2acce36902d546826dd96d093c78ba743bd"
     },
     {
       "path": "stages/stage-3/evidence-manifest.json",
       "kind": "other",
-      "sha256": "e8aab4d092aa51448fe0a189589cd2468fb0cf64de95d700cff1761ad96f9de8"
+      "sha256": "98c59ebf8728ec2d7163fa24d8f2278d68757055d9ab4e1e38ec95d708ec06b9"
     }
   ],
   "verification": {

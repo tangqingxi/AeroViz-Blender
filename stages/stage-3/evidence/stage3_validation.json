@@ -39,5 +39,12 @@
     "tests/test_exploded_view.py": "fa06e88977628f899ddc5d37f812f0211f330b287fed70c523b5d892341aa749",
     "tests/reverify_saved_project.py": "737ffe3e8abe5f76067efb69e14578de7b0f9edcac840ac860e0b606842074b9",
     "configs/DF4.json": "1b2fa12f328257e8fa8ea5dc6e09970a109897ef909ee46086ef4016f394e783"
+  },
+  "final_local_state": {
+    "work_absent": true,
+    "only_df4_blend": true,
+    "blend1_absent": true,
+    "blender_gui_exited": true,
+    "evidence_pushed_before_cleanup": true
   }
 }

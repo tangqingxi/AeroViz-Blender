@@ -144,7 +144,7 @@ Autopilot两个C++路径按任务给定作为对照来源；当前可访问工�
 
 ## 8. 交付与限制
 
-代码/配置SHA、基线接受、当前工程SHA与结果汇总见 [stage3_validation.json](evidence/stage3_validation.json)。DEV README、架构/接口/坐标说明及AUDIT导航/交接/产物清单同步更新；历史Stage2报告不修改。证据清单校验通过；最终仅保留DF4.blend，无阶段编号工程、.blend1、preview/reports或长期测试目录。成功证据推送后清理.work。
+代码/配置SHA、基线接受、当前工程SHA与结果汇总见 [stage3_validation.json](evidence/stage3_validation.json)。DEV README、架构/接口/坐标说明及AUDIT导航/交接/产物清单同步更新；历史Stage2报告不修改。证据清单校验通过；最终仅保留DF4.blend，无阶段编号工程、.blend1、preview/reports或长期测试目录。成功证据推送后已清理.work。
 
 未解决的验收失败：无。技术限制：本轮没有实机CG测量、动力学或制造干涉验证；NED完整姿态转换不在范围；Autopilot源码未取得，不声称完成代码级复核。FLU是用户冻结定义，爆炸距离是人为展示参数，模型来源与原未描述电子部件的连接不确定性保持历史说明。
 

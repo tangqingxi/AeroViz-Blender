@@ -63,7 +63,7 @@ DEV：`scripts/coordinate_frames.py`、`scripts/animation/exploded_view.py`、`s
 
 回归默认读取Audit Stage3爆炸基线及Stage2原结构基线。机械build在已有爆炸层时拒绝执行，防止重做旧Action。所有工程保存仍走project_io.save_project；测试失败必须用已核对字节恢复并停止。
 
-本轮成功证据推送后清理.work，保持output/DF4只含DF4.blend且没有.blend1或阶段副本；最终核对两仓库clean和本地/远端HEAD一致。不得上传本地模型工程。
+本轮证据推送后已清理.work，output/DF4只含DF4.blend且没有.blend1或阶段副本；最终核对两仓库clean和本地/远端HEAD一致。不得上传本地模型工程。
 
 ## 未解决问题与下一阶段
 
