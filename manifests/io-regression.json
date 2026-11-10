@@ -1,0 +1,275 @@
+{
+  "static_checks": {
+    "status": "PASS",
+    "python_syntax": [
+      "adapters/__init__.py",
+      "adapters/import_sdf.py",
+      "adapters/import_stl.py",
+      "scripts/check_joint_hierarchy.py",
+      "scripts/gui_verify.py",
+      "scripts/gui_verify_materials.py",
+      "scripts/main.py",
+      "scripts/materials.py",
+      "scripts/project_io.py",
+      "scripts/scene_builder.py",
+      "scripts/validation.py",
+      "scripts/verify_evidence.py",
+      "tests/reverify_saved_project.py",
+      "tests/test_material_mapping.py",
+      "tests/test_project_io.py"
+    ],
+    "json_and_paths": [
+      "configs/DF4.json",
+      "configs/template.json"
+    ],
+    "save_call_scan": [
+      {
+        "file": "scripts/project_io.py",
+        "line": 149,
+        "operation": "bpy.ops.wm.save_as_mainfile"
+      },
+      {
+        "file": "scripts/project_io.py",
+        "line": 128,
+        "operation": "shutil.rmtree"
+      },
+      {
+        "file": "scripts/project_io.py",
+        "line": 137,
+        "operation": "shutil.rmtree"
+      },
+      {
+        "file": "scripts/project_io.py",
+        "line": 180,
+        "operation": "os.replace"
+      }
+    ]
+  },
+  "path_safety": {
+    "work_root": {
+      "status": "PASS",
+      "decision": "ALLOW",
+      "judgment_only": true
+    },
+    "work_nested": {
+      "status": "PASS",
+      "decision": "ALLOW",
+      "judgment_only": true
+    },
+    "repository_root": {
+      "status": "PASS",
+      "decision": "REJECT",
+      "judgment_only": true
+    },
+    "workspace_parent": {
+      "status": "PASS",
+      "decision": "REJECT",
+      "judgment_only": true
+    },
+    "output": {
+      "status": "PASS",
+      "decision": "REJECT",
+      "judgment_only": true
+    },
+    "input": {
+      "status": "PASS",
+      "decision": "REJECT",
+      "judgment_only": true
+    },
+    "audit": {
+      "status": "PASS",
+      "decision": "REJECT",
+      "judgment_only": true
+    },
+    "outside": {
+      "status": "PASS",
+      "decision": "REJECT",
+      "judgment_only": true
+    },
+    "prefix_collision": {
+      "status": "PASS",
+      "decision": "REJECT",
+      "judgment_only": true
+    },
+    "parent_traversal": {
+      "status": "PASS",
+      "decision": "REJECT",
+      "judgment_only": true
+    },
+    "contains_input": {
+      "status": "PASS",
+      "decision": "REJECT",
+      "judgment_only": true
+    },
+    "safe_reset_and_clear": {
+      "status": "PASS"
+    },
+    "symlink": {
+      "status": "SKIP",
+      "reason": "[WinError 1314] 客户端没有所需的特权。: 'D:\\\\01_科研\\\\TIE\\\\DF4_SolidWorks\\\\AeroViz-Blender-Audit' -> 'D:\\\\01_科研\\\\TIE\\\\DF4_SolidWorks\\\\AeroViz-Blender\\\\.work\\\\io-regression\\\\symlink-to-audit'"
+    },
+    "junction": {
+      "status": "PASS",
+      "decision": "REJECT",
+      "tree_scan_rejects": true
+    }
+  },
+  "success": {
+    "case": "success",
+    "status": "PASS",
+    "filepath_correct": true,
+    "target_nonempty": true,
+    "partials_absent": true,
+    "backups_absent": true,
+    "target_hash_unchanged": false,
+    "same_filesystem": true,
+    "filepath_before": "<DEV>\\.work\\io-regression\\success\\DF4.blend",
+    "filepath_after": "<DEV>\\.work\\io-regression\\success\\DF4.blend"
+  },
+  "success_reopen": {
+    "case": "reopen",
+    "status": "PASS",
+    "reopened": true,
+    "marker_present": true
+  },
+  "save_failure": {
+    "case": "save_failure",
+    "status": "PASS",
+    "reported_error": "临时文件保存失败，原目标未改动：<DEV>\\.work\\io-regression\\save_failure\\DF4.blend；INJECTED_TEMP_SAVE_FAILURE",
+    "filepath_correct": true,
+    "target_nonempty": true,
+    "partials_absent": true,
+    "backups_absent": true,
+    "target_hash_unchanged": true,
+    "same_filesystem": true,
+    "filepath_before": "<DEV>\\.work\\io-regression\\save_failure\\DF4.blend",
+    "filepath_after": "<DEV>\\.work\\io-regression\\save_failure\\DF4.blend"
+  },
+  "save_failure_reopen": {
+    "case": "reopen",
+    "status": "PASS",
+    "reopened": true,
+    "marker_present": false
+  },
+  "replace_failure": {
+    "case": "replace_failure",
+    "status": "PASS",
+    "reported_error": "原子替换失败，原目标未改动：<DEV>\\.work\\io-regression\\replace_failure\\DF4.blend；INJECTED_REPLACE_FAILURE",
+    "filepath_correct": true,
+    "target_nonempty": true,
+    "partials_absent": true,
+    "backups_absent": true,
+    "target_hash_unchanged": true,
+    "same_filesystem": true,
+    "filepath_before": "<DEV>\\.work\\io-regression\\replace_failure\\DF4.blend",
+    "filepath_after": "<DEV>\\.work\\io-regression\\replace_failure\\DF4.blend"
+  },
+  "replace_failure_reopen": {
+    "case": "reopen",
+    "status": "PASS",
+    "reopened": true,
+    "marker_present": false
+  },
+  "new_target": {
+    "case": "new_target",
+    "status": "PASS",
+    "filepath_correct": true,
+    "target_nonempty": true,
+    "partials_absent": true,
+    "backups_absent": true,
+    "target_hash_unchanged": null,
+    "same_filesystem": true,
+    "filepath_before": "<DEV>\\.work\\io-regression\\new_target\\DF4.blend",
+    "filepath_after": "<DEV>\\.work\\io-regression\\new_target\\new-target.blend"
+  },
+  "new_target_reopen": {
+    "case": "reopen",
+    "status": "PASS",
+    "reopened": true,
+    "marker_present": true
+  },
+  "guard": {
+    "case": "guard",
+    "status": "PASS",
+    "counters": {
+      "cleanup": 0,
+      "build": 0
+    },
+    "entry_exit_code": 1,
+    "scene_unchanged": true
+  },
+  "force_gate": {
+    "case": "force_gate",
+    "status": "PASS",
+    "counters": {
+      "cleanup": 1,
+      "build": 0
+    },
+    "entry_exit_code": 1,
+    "scene_unchanged": true
+  },
+  "first_gate": {
+    "case": "first_gate",
+    "status": "PASS",
+    "counters": {
+      "cleanup": 1,
+      "build": 0
+    },
+    "entry_exit_code": 1,
+    "scene_unchanged": true
+  },
+  "formal_integrity": {
+    "object_total": 93,
+    "mesh_count": 33,
+    "material_count": 7,
+    "assigned_objects": 33,
+    "animation_data": 0,
+    "actions": 0,
+    "open": "PASS"
+  },
+  "overall": "PASS",
+  "blender_version": "5.0.1",
+  "formal_before_sha256": "216ae8ab7de87cac17846a304dcd34110008ef4a71ce77f1829c9a8a37c0e474",
+  "formal_after_sha256": "216ae8ab7de87cac17846a304dcd34110008ef4a71ce77f1829c9a8a37c0e474",
+  "formal_unchanged": true,
+  "work_absent_or_empty": true,
+  "dev_commit": "996d4ac3f736f23d19a1d15e087fe2d3161f3302",
+  "generated_at": "2026-11-10T11:39:48Z",
+  "development_repository": "https://github.com/tangqingxi/AeroViz-Blender",
+  "audit_repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit",
+  "baseline_dev_commit": "b8bca84138636af2e086d76f428b593c8ab5210b",
+  "baseline_audit_commit": "a0a993cb28654fb299d30c5f26c9dd40fee62c0d",
+  "stage2_readiness": "READY FOR USER AUTHORIZATION",
+  "stage2_authorized": false,
+  "test_script": {
+    "path": "tests/test_project_io.py",
+    "sha256": "c5be62b10c1fc5b27c1e2197cbfb7522bc6aa2a2059fd1373b20834bccbe405e",
+    "commit": "996d4ac3f736f23d19a1d15e087fe2d3161f3302"
+  },
+  "code_files": {
+    "scripts/project_io.py": "9fce340e718622cce7a1d38c4ea0e259486be38eea68f0bae13b4c649f4f7768",
+    "scripts/main.py": "2f8fd1abeba59e0ea2ba24c9d40ecd9056953860ddef120961f7176c2e2a2dcd",
+    "scripts/materials.py": "682e06c800a3fdc8d7f7b6e0d7a32dee544c4a63559ae3d6662f4ec5e5c1a1ac",
+    "scripts/verify_evidence.py": "dcb705f933d35c5e4a11e9adc93f91ad875afffaec49302f500d735bc8ed3f19"
+  },
+  "discovered_issues": [
+    "副本保存缺少 copy=True，当前路径可能留在被替换移走的临时工程",
+    "临时清理缺少范围/重解析点保护",
+    "Stage 1 未在清理和构建前拦截已有工程",
+    "原 HANDOFF 提及的 verify_evidence.py 未随仓库交付，本轮补齐"
+  ],
+  "unexecuted": [
+    {
+      "item": "实际符号链接创建与端到端拒绝",
+      "status": "SKIP",
+      "reason": "WinError 1314；未提升权限；实际 Windows 目录联接的路径和树扫描拒绝均通过"
+    },
+    {
+      "item": "Stage 1/1.5 完整重建及 Stage 2",
+      "status": "NOT_RUN",
+      "reason": "用户明确禁止，本轮只验证入口门，不导入或生成材质"
+    }
+  ],
+  "atomic_save_behavior": "现有工程 copy=True 不改变当前路径；新目标原子提交后用 open_mainfile 真正绑定，独立进程重开验证属性持久化",
+  "safety_scope": "本地受控进程内的保存/替换故障回归；不声称验证断电、磁盘硬件故障或并发恶意文件系统竞态"
+}

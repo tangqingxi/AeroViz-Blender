@@ -1,22 +1,22 @@
 {
   "schema_version": 2,
-  "phase": "ProjectInit",
-  "created_at": "2026-11-10T11:16:01Z",
+  "phase": "PreStage2IORegression",
+  "created_at": "2026-11-10T11:39:48Z",
   "agent": {
-    "name": "deepseek-harness",
-    "model": "deepseek-flash"
+    "name": "codex"
   },
   "development": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender",
     "branch": "main",
-    "commit": "b8bca84138636af2e086d76f428b593c8ab5210b"
+    "commit": "996d4ac3f736f23d19a1d15e087fe2d3161f3302"
   },
   "audit": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
   },
-  "status": "in-progress",
+  "status": "passed",
   "environment": {
-    "os": "Windows 11 10.0.26200"
+    "os": "Windows 11 10.0.26200",
+    "blender": "5.0.1 build a3db93c5b259"
   },
   "evidence": [
     {
@@ -26,7 +26,7 @@
     },
     {
       "path": "HANDOFF.md",
-      "sha256": "bc71fe5db80c9fe5326bef25b231ad529eaf1ac854bf6eeef195b146b535f4bf",
+      "sha256": "7614511cca29ab132d5af1dc58b2529aa1ad5c30b998bccf6e417631a7ee79d3",
       "kind": "handoff"
     },
     {
@@ -36,7 +36,7 @@
     },
     {
       "path": "manifests/reverify-current.json",
-      "sha256": "20d3e47a6cb05337589bf1b3c1791d223c1e80c0e3042acfa049b609b71213db",
+      "sha256": "3c2b75ef4a99c66d66c9d110a9150a660e1cd142fccd8b80646de97e3ee43381",
       "kind": "other"
     },
     {
@@ -48,18 +48,38 @@
       "path": "manifests/refactor-check-2026-11-10.json",
       "sha256": "1891bb8a2de44312dd2111f0c84894d570051572dbb51d4f5ba82dbcd43c7bd1",
       "kind": "other"
+    },
+    {
+      "path": "manifests/io-regression.json",
+      "kind": "other",
+      "sha256": "58df5ca2ee17a21948b11d4d25ce0fddf72cbb03f7d241da97d7b217c8b1d576"
+    },
+    {
+      "path": "manifests/io-regression.log",
+      "kind": "other",
+      "sha256": "5617bc21059401f63b27995d3814ed273258b3c38d31d37de5bd5caf08e9e217"
+    },
+    {
+      "path": "manifests/io-regression-driver.log",
+      "kind": "other",
+      "sha256": "a01c09106fcc6904899ce05cd7020f1ed1e26dc2a18b6cecc120e05e2fd96bf8"
     }
   ],
   "verification": {
     "commands": [
+      "blender --background --factory-startup --python-exit-code 1 --python tests/test_project_io.py -- --config configs/DF4.json",
+      "blender --background --factory-startup --python-exit-code 1 --python tests/reverify_saved_project.py -- --config configs/DF4.json",
       "python scripts/verify_evidence.py <audit-root> <manifest>"
     ],
-    "result": "passed"
+    "result": "passed",
+    "limitations": [
+      "Actual symbolic-link creation skipped: Windows error 1314; real directory junction rejection passed."
+    ]
   },
   "limitations": [
     "The upstream model repository carries no licence file; the rights holder granted public display of rendered evidence only, so the geometry itself is not redistributed.",
     "The adapter-equivalence check was a one-off migration script not shipped in DEV.",
     "The refactored main.py and materials.py build paths were not re-run this round (Stage 1/1.5 re-execution is out of scope); they are compile-checked only."
   ],
-  "next_action": "Await Stage 2 authorisation; Stage 2 is not started."
+  "next_action": "Stage 2 readiness: READY FOR USER AUTHORIZATION; no Stage 2 execution authorised."
 }
