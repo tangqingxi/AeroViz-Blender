@@ -1,9 +1,10 @@
-# 机械运动模块
+# 机械运动与爆炸位移模块
 
-Stage 2 已实现 `kinematics.py`：读取配置及现有 JOINT 属性，创建独立四元数 Action，按真实依赖图验证每一整数帧。`gui_verify.py` 在真实窗口播放并截图，绝不保存工程。
+- `kinematics.py`：Stage2，读取已有JOINT轴与限位，保留q0并生成独立Quaternion Action，严格验证1–121帧。已有爆炸层时禁止重建机械Action。
+- `exploded_view.py`：Stage3，在配置的原LINK→JOINT间插入独立偏移Empty，只给其Location写关键帧；原机械Action不修改。支持自身控制器复用和分层分支位移叠加。
+- `gui_verify.py`：Stage2原生窗口验收。
+- `gui_verify_exploded.py`：Stage3实际播放与截图，最后按照用户要求退出Blender，不保存GUI状态。
 
-模型专属关节名、预期轴/中心/子网格、测试角度、运动速度、关键角度和截图帧均在机型 JSON 配置。引擎没有机型或零件常量。仅支持彼此独立的受控关节、正均匀缩放，遇到剪切、非均匀缩放、级联驱动或外来动画会明确报错。
+模型名称、关节、子树、时间轴、向量与距离均来自配置。坐标模块位于上级 `coordinate_frames.py`，模型元数据不写在机械旋转层。原点不推定为CG；爆炸距离不是物理运动数据。
 
-旋转为 q0 × 局部增量，根变换先将模型轴转到世界，再按关节旋转逆变换到局部。四元数半角用双精度三角函数求值，避免大累计角先变为单精度。按配置角度曲线逐帧采样，四元数分量保持符号连续并使用 LINEAR F-Curve；不把端点姿态当成多圈旋转。
-
-`tests/test_kinematics.py` 在字节副本上先做独立运动，再组合动画及重新打开验证；回滚原件与测试文件在 `.work/stage-2/`。不包含 Stage 3 爆炸动画。详细契约见 `docs/interfaces.md`。
+测试先在 `.work/` 字节副本运行；所有阶段使用唯一当前工程，保存统一经过project_io；报告和证据在独立Audit仓库。Stage4相机/灯光编排、最终视频尚未授权。

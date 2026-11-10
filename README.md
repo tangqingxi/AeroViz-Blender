@@ -28,7 +28,7 @@
 
 ## 2. 核心能力
 
-当前已实现并验证的能力（Stage 1、Stage 1.5 与 Stage 2）：
+当前已实现并验证的能力（Stage 1、Stage 1.5、Stage 2 与 Stage 3）：
 
 - **配置驱动导入**：每架飞机一份 JSON 配置，引擎不从代码里读取任何机型信息。
 - **SDF（单模型）适配器**：`link` / `visual` / `joint` / `frame` 位姿、弧度 RPY、`expressed_in`、`relative_to`、`model://` URI 映射、外部 include 记账、多父/成环关节拒绝。
