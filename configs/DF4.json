@@ -1,0 +1,181 @@
+{
+  "model_name": "DF4",
+  "adapter": "sdf",
+  "input_root": "D:\\01_科研\\TIE\\DF4_SolidWorks\\DF4_SolidWorks",
+  "description": "ductedfan4.sdf.jinja",
+  "mesh_unit": "m",
+  "sdf_unit": "m",
+  "output_dir": "output/DF4",
+  "blend_name": "DF4_Stage1.blend",
+  "apply_model_pose": false,
+  "expected_dimensions_m": [
+    [
+      0.34,
+      0.4
+    ],
+    [
+      0.36,
+      0.4
+    ],
+    [
+      0.35,
+      0.4
+    ]
+  ],
+  "uri_roots": {
+    "ductedfan4": "."
+  },
+  "ignored_includes": {
+    "gps0": "外部 Gazebo GPS 传感器，无本地网格；不虚构模型"
+  },
+  "groups": {
+    "AIRFRAME": [
+      "base.STL",
+      "box_up.STL",
+      "box_up2.STL",
+      "panel11.STL",
+      "panel12.STL",
+      "shelf1.STL"
+    ],
+    "DUCT": [
+      "duct-*.STL"
+    ],
+    "TAIL": [
+      "tail-*.STL"
+    ],
+    "ROTOR": [
+      "rotor*.STL"
+    ],
+    "MOTOR": [
+      "motor-*.STL"
+    ],
+    "ELECTRONICS": [
+      "battery*.STL",
+      "bec-*.STL",
+      "base_board*.STL",
+      "controller*.STL",
+      "X-tend.STL"
+    ],
+    "SERVOS": [
+      "servo-*.STL"
+    ],
+    "CONTROL_SURFACES": [
+      "cs*.STL",
+      "surface-*.STL"
+    ]
+  },
+  "reference_only": {
+    "base.STL": "多个固定零件的合并件，审计三角面覆盖率，避免重复显示",
+    "rotor-iFlight-9inch.STL": "与 rotor.STL 几何完全相同",
+    "surface-60-1.STL": "与 cs33.STL 几何完全相同",
+    "surface-60-2.STL": "与 cs2.STL 几何完全相同",
+    "surface-60-3.STL": "与 cs11.STL 几何完全相同",
+    "surface-60-4.STL": "与 cs4.STL 几何完全相同"
+  },
+  "extra_meshes": [
+    {
+      "path": "meshes/controller2.STL",
+      "pose": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reason": "SDF 未引用；沿用 STL 原始装配坐标，位于飞控底板上方；型号与固定关系未经描述文件确认"
+    },
+    {
+      "path": "meshes/X-tend.STL",
+      "pose": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reason": "SDF 未引用；沿用 STL 原始装配坐标，位于电子舱侧面；固定关系未经描述文件确认"
+    }
+  ],
+  "coordinate_evidence": "本模型所有 link/visual 放置矩阵均为单位阵；STL 已有非零装配范围，且惯性质心与对应几何相符。保留源坐标，不重复平移。",
+  "unit_evidence": "STL 无单位元数据。原始几何跨度约 0.38，SDF mesh scale=1，碰撞箱 0.30 × 0.30 × 0.47 m，据此采用米。",
+  "materials": {
+    "source_blend": "output/DF4/DF4_Stage1.blend",
+    "target_blend": "output/DF4/DF4_Stage1_5.blend",
+    "source_color_space": "linear",
+    "color_space_reason": "SDF 未标注传递函数；按 Gazebo/OGRE 光照反射系数解释为线性，保持原始数值，不进行未知 sRGB 解码。",
+    "roughness": 0.62,
+    "metallic": 0.0,
+    "specular_mapping": "mean_rgb_to_ior_level",
+    "default": {
+      "rgba": [
+        0.38,
+        0.38,
+        0.38,
+        1.0
+      ],
+      "roughness": 0.7,
+      "specular": 0.1,
+      "reason": "展示用中性灰，不代表真实机体颜色"
+    },
+    "gazebo_library": "assets/materials/gazebo_standard.json",
+    "object_visuals": {},
+    "overrides": {},
+    "preview": {
+      "camera": "VIEW::isometric",
+      "resolution": 1200,
+      "view_transform": "AgX",
+      "studio_light": "studio.exr",
+      "studio_strength": 1.0,
+      "world_color": [
+        0.16,
+        0.16,
+        0.16
+      ],
+      "world_strength": 0.4,
+      "lights": [
+        {
+          "name": "KEY",
+          "offset": [
+            0.45,
+            -0.55,
+            0.65
+          ],
+          "energy": 12.0,
+          "size": 0.55
+        },
+        {
+          "name": "FILL",
+          "offset": [
+            -0.5,
+            -0.25,
+            0.12
+          ],
+          "energy": 7.2,
+          "size": 0.5
+        },
+        {
+          "name": "RIM",
+          "offset": [
+            0.0,
+            0.5,
+            0.35
+          ],
+          "energy": 10.0,
+          "size": 0.45
+        },
+        {
+          "name": "LOW_FILL",
+          "offset": [
+            0.2,
+            -0.3,
+            -0.35
+          ],
+          "energy": 3.2,
+          "size": 0.4
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,111 @@
+{
+  "model_name": "MODEL",
+  "adapter": "stl",
+  "input_root": "../your_model",
+  "description": null,
+  "mesh_unit": "mm",
+  "sdf_unit": "m",
+  "output_dir": "output/MODEL",
+  "blend_name": "MODEL_Stage1.blend",
+  "apply_model_pose": false,
+  "groups": {
+    "PARTS": [
+      "*.stl",
+      "*.STL"
+    ]
+  },
+  "reference_only": {},
+  "extra_meshes": [],
+  "parts": [
+    {
+      "path": "part.stl",
+      "pose": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "reason": "必须填写来源与坐标依据"
+    }
+  ],
+  "materials": {
+    "source_blend": "output/MODEL/MODEL_Stage1.blend",
+    "target_blend": "output/MODEL/MODEL_Stage1_5.blend",
+    "source_color_space": "linear",
+    "color_space_reason": "SDF 未标注传递函数；按 Gazebo/OGRE 光照反射系数解释为线性，保持原始数值，不进行未知 sRGB 解码。",
+    "roughness": 0.62,
+    "metallic": 0.0,
+    "specular_mapping": "mean_rgb_to_ior_level",
+    "default": {
+      "rgba": [
+        0.38,
+        0.38,
+        0.38,
+        1.0
+      ],
+      "roughness": 0.7,
+      "specular": 0.1,
+      "reason": "展示用中性灰，不代表真实机体颜色"
+    },
+    "gazebo_library": "assets/materials/gazebo_standard.json",
+    "object_visuals": {},
+    "overrides": {},
+    "preview": {
+      "camera": "VIEW::isometric",
+      "resolution": 1200,
+      "view_transform": "AgX",
+      "studio_light": "studio.exr",
+      "studio_strength": 1.0,
+      "world_color": [
+        0.16,
+        0.16,
+        0.16
+      ],
+      "world_strength": 0.4,
+      "lights": [
+        {
+          "name": "KEY",
+          "offset": [
+            0.45,
+            -0.55,
+            0.65
+          ],
+          "energy": 30,
+          "size": 0.55
+        },
+        {
+          "name": "FILL",
+          "offset": [
+            -0.5,
+            -0.25,
+            0.12
+          ],
+          "energy": 18,
+          "size": 0.5
+        },
+        {
+          "name": "RIM",
+          "offset": [
+            0.0,
+            0.5,
+            0.35
+          ],
+          "energy": 25,
+          "size": 0.45
+        },
+        {
+          "name": "LOW_FILL",
+          "offset": [
+            0.2,
+            -0.3,
+            -0.35
+          ],
+          "energy": 8,
+          "size": 0.4
+        }
+      ]
+    }
+  }
+}
