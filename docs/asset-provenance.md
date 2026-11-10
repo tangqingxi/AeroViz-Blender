@@ -43,7 +43,7 @@ redistributing someone else's CAD, cannot be determined from the repository.
 |---|---|---|
 | 33 STL files, `.sdf.jinja` | local only, never committed | third-party geometry, no redistribution grant |
 | `DF4_Stage1.blend`, `DF4_Stage1_5.blend` (≈ 5.4 MB each) | local only, git-ignored | contains the third-party geometry |
-| Rendered previews and window screenshots | **private** audit repository only | depict the third-party geometry |
+| Rendered previews and window screenshots | audit repository (public) | depict the third-party geometry; publication confirmed by the project owner (see §4.2) |
 | Code, configs, docs, this file | public main repository | authored for this project; no geometry embedded |
 
 `.gitignore` blocks `*.stl`, `*.sdf`, `*.sdf.jinja`, `*.urdf`, `*.step` and `/output/`
@@ -54,9 +54,14 @@ so that the assets cannot be committed by accident.
 1. **Project licence for this repository.** Not chosen. No `LICENSE` file is present,
    so "all rights reserved" applies. Pick one (MIT / BSD-3-Clause / Apache-2.0 are the
    usual candidates for tooling like this) and add `LICENSE` plus the copyright line.
-2. **Model redistribution.** If you hold the rights to the DF4 geometry, add an explicit
-   licence or written permission to the upstream repository, or record it here, and the
-   audit repository can then be made public. Until then it stays private.
+2. **Model redistribution.** The project owner confirmed on 2026-11-10 that the author of
+   the upstream model is a colleague in the same laboratory, that the aircraft is a shared
+   team asset, and that publishing this project's derived material (reports and screenshots
+   of the rendered assembly) is acceptable. The audit repository is therefore public.
+   The upstream repository still carries **no licence text**, so a formal written
+   permission is still advisable before handing the geometry itself, or a released
+   artefact package, to a third party outside the team. Record such permission here when
+   it exists; this section is the place to overturn the current assumption.
 3. **Stage 2+ assets.** Any new airframe (SHC09 etc.) inherits the same rule: document
    provenance and rights before publishing a single screenshot.
 

@@ -258,8 +258,13 @@ repository `tangqingxi/AeroViz-Blender-Audit`, not here.
 ## Licence and third-party assets
 
 This repository contains **no** model assets, no `.blend` projects and no rendered
-frames. The DF4 geometry is third-party material whose redistribution terms are not
-established; see [docs/asset-provenance.md](docs/asset-provenance.md).
+frames. The DF4 geometry comes from a third-party repository that carries no licence
+file; the upstream author is a colleague in the same laboratory and the aircraft is a
+shared team asset, so the derived reports and screenshots are published alongside this
+repository in the audit repository. See
+[docs/asset-provenance.md](docs/asset-provenance.md) for the exact provenance, the
+byte-level differences from upstream, and what to do if the material ever leaves the
+team.
 
 The project's own licence is **not yet chosen**, so no `LICENSE` file is included.
 Until one is confirmed, the default of "all rights reserved" applies to this code.
