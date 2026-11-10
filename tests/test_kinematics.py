@@ -5,6 +5,8 @@ import json
 import math
 from pathlib import Path
 import sys
+import subprocess
+import shutil
 import bpy
 from mathutils import Matrix,Vector,Quaternion
 
@@ -106,7 +108,23 @@ def main():
         result=engine.validate(config,baseline)
         write(work/(args.phase+'_animation.json'),result)
         if args.phase=='apply':
-            project_io.save_project(config)
+            backup=work/'rollback'/target.name
+            assert backup.is_file() and hashlib.sha256(backup.read_bytes()).hexdigest()==args.expected_sha256
+            # 保存及独立进程回归作为一个事务；失败时恢复经过哈希核对的原字节。
+            try:
+                project_io.save_project(config)
+                commands=[('transaction-reopen',['--python',str(Path(__file__).resolve()),'--','--config',args.config,'--phase','verify']),
+                          ('transaction-regression',['--python',str(WORKSPACE/'tests/reverify_saved_project.py'),'--','--config',args.config,'--out',str(work/'final-regression.json'),'--animation-baseline',str(work/'structure_baseline.json')])]
+                for label,command in commands:
+                    process=subprocess.run([bpy.app.binary_path,'--background','--factory-startup','--python-exit-code','1',*command],cwd=WORKSPACE,capture_output=True,timeout=120)
+                    (work/(label+'.log')).write_bytes(process.stdout+process.stderr)
+                    if process.returncode:
+                        raise RuntimeError(label+' failed')
+            except Exception:
+                if hashlib.sha256(target.read_bytes()).hexdigest()!=args.expected_sha256:
+                    shutil.copyfile(backup,target)
+                assert hashlib.sha256(target.read_bytes()).hexdigest()==args.expected_sha256
+                raise
         else:
             write(work/'structure_comparison.json',{'status':'PASS','object_total':result['object_count'],'mesh_count':result['mesh_count'],'material_count':result['material_count'],'frame1_preserved':True,'geometry_materials_hierarchy_preserved':True,'animated_objects':result['animated_objects']})
     print('KINEMATICS_'+args.phase.upper()+'_PASS',flush=True)
