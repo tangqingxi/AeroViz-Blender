@@ -223,7 +223,7 @@ def run(args):
                         link.symlink_to(audit, target_is_directory=True)
                         created = True
                     except OSError as error:
-                        path_results[kind] = {"status":"SKIP", "reason":str(error)}
+                        path_results[kind] = {"status":"SKIP", "reason":f"WinError {getattr(error, 'winerror', None)}: {error.strerror}"}
                 else:
                     process = subprocess.run(["cmd", "/c", "mklink", "/J", str(link), str(audit)], capture_output=True, text=True, errors="replace")
                     created = process.returncode == 0
