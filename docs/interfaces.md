@@ -1,33 +1,26 @@
-# Reserved interfaces for later stages
+# 后续阶段的预留接口
 
-> 中文摘要：本文件只描述**尚未实现**的后续阶段接口约定，用于保证 Stage 2/3/4 不需要
-> 推翻现有结构。仓库中不存在相应的动画或渲染实现。
+**状态：未实现。** `scripts/animation/` 与 `scripts/rendering/` 目前只有一份 README。本仓库中没有任何脚本创建关键帧、驱动器、爆炸视图、镜头运动或视频文件。Stage 1 与 Stage 1.5 结束时是一个静止的、装配正确、着色正确的工程。
 
-**Status: not implemented.** `scripts/animation/` and `scripts/rendering/` currently
-contain only a README. Nothing in this repository creates keyframes, drivers, exploded
-views, camera moves or video files. Stage 1 and Stage 1.5 end with a static, correctly
-assembled, correctly shaded project.
+本文存在的目的：让后续工作**挂在现有骨架上**，而不是推翻它重做。
 
-These contracts exist so that later work attaches to the existing rig instead of
-rewriting it.
+## 现有可复用的东西
 
-## What already exists to build on
-
-| Available | Meaning |
+| 已有 | 含义 |
 |---|---|
-| `JOINT::<name>` empties | True joint frames in world space; each carries `type`, `child`, `parent`, `axis`, `axis_model`, `lower`, `upper` |
-| Child meshes under a joint | Rotating a joint moves exactly the meshes it should; verified by `scripts/check_joint_hierarchy.py` |
-| `LINK::<name>` empties | Description link frames, useful for frame-anchored effects |
-| `SDF_MAT::*` materials | Deterministic, content-addressed, safe to reuse in renders |
-| `PREVIEW_CAMERAS` | Four orthographic views already framed on the model |
-| `MATERIAL_PREVIEW_LIGHTS` | Four area lights already positioned around the model |
+| `JOINT::<名称>` 空对象 | 世界坐标下的真实关节坐标系；每个携带 `type`、`child`、`parent`、`axis`、`axis_model`、`lower`、`upper` |
+| 关节下的子网格 | 旋转关节时只有它该动的网格动；已由 `scripts/check_joint_hierarchy.py` 验证 |
+| `LINK::<名称>` 空对象 | 描述文件 link 坐标系，可用于以坐标系为锚点的效果 |
+| `SDF_MAT::*` 材质 | 确定性、按内容寻址，渲染时可安全复用 |
+| `PREVIEW_CAMERAS` | 已对准模型的四个正交视角 |
+| `MATERIAL_PREVIEW_LIGHTS` | 已布置在模型周围的四盏面积灯 |
 
-## Stage 2 — mechanical motion skeleton
+## Stage 2 —— 机械运动骨架
 
-Intended entry point: `scripts/animation/kinematics.py`, invoked as
-`--python scripts/animation/kinematics.py -- --config configs/<MODEL>.json`.
+预期入口：`scripts/animation/kinematics.py`，调用方式
+`--python scripts/animation/kinematics.py -- --config configs/<MODEL>.json`。
 
-Proposed config block (additive; absent means "do nothing"):
+建议的配置块（纯增量；缺省即"什么都不做"）：
 
 ```json
 "animation": {
@@ -41,22 +34,18 @@ Proposed config block (additive; absent means "do nothing"):
 }
 ```
 
-Contract:
+契约：
 
-- Motion is expressed per **joint name from the description**, never per mesh name.
-- Limits: any commanded angle must stay inside `lower`/`upper` when those are finite;
-  a violation raises instead of clipping silently.
-- The script writes a **new** project version (e.g. `<MODEL>_Stage2.blend`) and never
-  overwrites Stage 1 / 1.5.
-- Verification must include an independent test that rotating one joint moves only its
-  own descendants, and that no object gains `animation_data` it should not have.
+- 运动按**描述文件中的关节名**表达，绝不按网格名。
+- 限位：命令角度必须落在 `lower`/`upper`（有限时）之内；越界报错，不静默裁剪。
+- 脚本写出**新的**工程版本（如 `<MODEL>_Stage2.blend`），绝不覆盖 Stage 1 / 1.5。
+- 验证必须包含独立测试：旋转某个关节只移动它自己的后代，且没有对象凭空获得 `animation_data`。
 
-## Stage 3 — exploded views and mechanical animation
+## Stage 3 —— 爆炸视图与机械动画
 
-Intended entry point: `scripts/animation/explode.py` (assignment only, no keyframes
-here) plus composition in Stage 2's animation layer.
+预期入口：`scripts/animation/explode.py`（只负责分配，不在此键帧）加 Stage 2 的动画层组合。
 
-Proposed config block:
+建议的配置块：
 
 ```json
 "explode": {
@@ -68,18 +57,17 @@ Proposed config block:
 }
 ```
 
-Contract:
+契约：
 
-- Explosion is computed from the object's own bounds and group, and stored as a
-  documented offset (keyframable later); no geometry is permanently moved.
-- Hidden `REFERENCE_ONLY` parts stay excluded unless explicitly requested.
-- Every explosion parameter must appear in the stage report with the resulting offsets.
+- 爆炸位移由对象自身包围盒与分组计算，并作为**有记录的偏移**保存（后续可键帧）；不永久移动几何。
+- 隐藏的 `REFERENCE_ONLY` 件默认排除，除非显式要求。
+- 每个爆炸参数都要连同产生的偏移量写进阶段报告。
 
-## Stage 4 — camera, lighting and video rendering
+## Stage 4 —— 镜头、灯光与视频渲染
 
-Intended entry point: `scripts/rendering/render.py`.
+预期入口：`scripts/rendering/render.py`。
 
-Proposed config block:
+建议的配置块：
 
 ```json
 "render": {
@@ -95,16 +83,12 @@ Proposed config block:
 }
 ```
 
-Contract:
+契约：
 
-- Rendering reads a finished stage project; it never modifies geometry or rig state.
-- Frames go to a git-ignored directory; only the final video and a few stills are ever
-  delivered, and never committed to this repository.
-- A render is not acceptance evidence on its own; a real-window screenshot of the
-  same state still has to be captured for the audit record.
+- 渲染只读一个已完成的阶段工程；不修改几何或骨架状态。
+- 帧序列写入被 git 忽略的目录；只交付最终视频与少量静帧，且不提交到本仓库。
+- 渲染本身不算验收证据；同一状态仍需真实窗口截图进入审计记录。
 
-## Non-goals carried forward
+## 一以贯之的非目标
 
-These stay out of scope unless a later stage is explicitly authorised: physics
-simulation, collision/interference analysis, manufacturing tolerances, motion planning,
-and any claim that the visual result is numerically identical to Gazebo rendering.
+除非另行授权，以下始终不在范围内：物理仿真、碰撞/干涉分析、制造公差、运动规划，以及任何"视觉结果与 Gazebo 渲染数值等价"的声明。

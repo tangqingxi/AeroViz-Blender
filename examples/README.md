@@ -1,23 +1,18 @@
-# Examples
+# 示例
 
-> 中文摘要：新增机型从 `configs/template.json` 开始，不要直接改通用代码。
-> 完整样例是 `configs/DF4.json`。
+本仓库不分发模型资产，因此示例是**配置的形状**，而不是可直接运行的数据集。完整样例是 [`configs/DF4.json`](../configs/DF4.json)（DF4：SDF 1.5 单模型，25 个 visual 网格 + 2 个补充 + 6 个参考件）。
 
-This project ships **no model assets**, so the examples are configuration shapes rather
-than runnable datasets. The complete worked example is [`configs/DF4.json`](../configs/DF4.json)
-(DF4, SDF 1.5, single model, 25 visual meshes + 2 extra + 6 reference-only).
-
-## Starting point
+## 起步方式
 
 ```powershell
 Copy-Item configs\template.json configs\SHC09.json
 ```
 
-Then follow [docs/model-onboarding.md](../docs/model-onboarding.md).
+然后按 [docs/model-onboarding.md](../docs/model-onboarding.md) 逐项填写。
 
-## Minimal SDF model
+## 最小 SDF 模型
 
-The adapter only needs a single `<model>` with `link`/`visual`/`joint` elements:
+适配器只需要一个 `<model>`，内含 `link`/`visual`/`joint`：
 
 ```json
 {
@@ -34,20 +29,18 @@ The adapter only needs a single `<model>` with `link`/`visual`/`joint` elements:
   "groups": {"AIRFRAME": ["*.STL"], "ROTOR": ["rotor*.STL"]},
   "reference_only": {},
   "extra_meshes": [],
-  "unit_evidence": "STL has no unit metadata; the SDF collision box of 0.4 m matches the mesh extent.",
-  "coordinate_evidence": "All link/visual poses are identity; meshes already carry assembly coordinates."
+  "unit_evidence": "STL 无单位元数据；SDF 碰撞盒 0.4 m 与网格跨度一致，据此采用米。",
+  "coordinate_evidence": "所有 link/visual 位姿均为单位阵；网格自带装配坐标。"
 }
 ```
 
-Rules of thumb:
+要点：
 
-- Every STL under `input_root` must be referenced by the description, listed in
-  `extra_meshes`, or listed in `reference_only` with a reason — otherwise the build stops.
-- `expected_dimensions_m` is optional but recommended: it turns a silent unit mistake
-  into a failed build.
-- `extra_meshes` entries always need `reason`; they have no link in the description.
+- `input_root` 下每个 STL 必须被描述引用、列入 `extra_meshes`、或列入 `reference_only` 并给出理由，否则构建中止。
+- `expected_dimensions_m` 可选但建议填：它能把"单位搞错了"从静默错误变成构建失败。
+- `extra_meshes` 每项都要 `reason`；它们在描述文件里没有对应 link。
 
-## Minimal STL part list (no description file)
+## 最小 STL 零件清单（无描述文件）
 
 ```json
 {
@@ -61,10 +54,9 @@ Rules of thumb:
   "groups": {"PARTS": ["*.stl"]},
   "parts": [
     {"path": "body.stl", "pose": [0, 0, 0, 0, 0, 0],
-     "reason": "Assembly origin from the CAD export; verified against the drawing."}
+     "reason": "装配原点取自 CAD 导出；已对照图纸核对。"}
   ]
 }
 ```
 
-The STL adapter refuses to guess: without an explicit `pose` and `reason` per part it
-raises instead of placing geometry arbitrarily.
+STL 适配器拒绝猜测：缺少每个零件的 `pose` 与 `reason` 时它会报错，而不是随意摆放几何。

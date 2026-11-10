@@ -1,69 +1,48 @@
-# Asset provenance and licence status
+# 模型来源与许可状态
 
-> 中文摘要：DF4 模型来自第三方仓库 `mengchaoheng/DF_gazebo`，该仓库**没有任何许可证**
-> （GitHub API `license: null`，根目录无 LICENSE/COPYING），因此再分发权不明确。
-> 本仓库不包含任何模型资产、`.blend` 工程或渲染截图；本项目自身许可证尚未确定，
-> 故不放置 `LICENSE` 文件。
+本文件只记录**事实**：DF4 的数据从哪来、与上游差在哪、哪些内容因此不入库。
 
-Checked on 2026-11-10 from the local workspace and the public GitHub API.
+核查时间：2026-11-10，依据本地工作区与公开 GitHub API。
 
-## 1. DF4 geometry and description
+## 1. DF4 的几何与描述文件
 
-| Item | Value |
+| 项目 | 值 |
 |---|---|
-| Local input directory | `D:\01_科研\TIE\DF4_SolidWorks\DF4_SolidWorks` (read-only, outside this repo) |
-| Description file | `ductedfan4.sdf.jinja`, 46 482 B, SHA-256 `8567be57b6181812bc0f20c8bd065b02f89eeec0f6b3047ca02154786e5b52c4` |
-| Meshes | 33 STL files under `meshes/` |
-| Input files total | 34 |
-| Presumed upstream | <https://github.com/mengchaoheng/DF_gazebo>, branch `ductedfan`, directory `models/ductedfan4` |
-| Upstream description file | `models/ductedfan4/ductedfan4.sdf.jinja`, 38 859 B, git blob `62b55d9224222945a396a075fe894ceea34c8801` |
-| Local git blob of the same file | `5755d40a7e6dfdbc58bfdcf9ac05639eddcdaf32` |
+| 本地输入目录 | `D:\01_科研\TIE\DF4_SolidWorks\DF4_SolidWorks`（只读，在本仓库之外） |
+| 描述文件 | `ductedfan4.sdf.jinja`，46 482 B，SHA-256 `8567be57b6181812bc0f20c8bd065b02f89eeec0f6b3047ca02154786e5b52c4` |
+| 网格 | `meshes/` 下 33 个 STL |
+| 输入文件合计 | 34 个 |
+| 推定上游 | <https://github.com/mengchaoheng/DF_gazebo>，分支 `ductedfan`，目录 `models/ductedfan4` |
+| 上游同名描述文件 | `models/ductedfan4/ductedfan4.sdf.jinja`，38 859 B，git blob `62b55d9224222945a396a075fe894ceea34c8801` |
+| 本地同一文件的 git blob | `5755d40a7e6dfdbc58bfdcf9ac05639eddcdaf32` |
 
-**The local description file is not byte-identical to the upstream file** (46 482 B vs
-38 859 B). The local copy carries simulation-side adaptations, for example an external
-`<include>` of `model://gps` and a model-mass comment keeping the total at 1.56 kg with
-that sensor link. The upstream commit the local copy was derived from has not been
-identified, and the exact delta has not been audited. Treat the local set as a
-**modified derivative** of the upstream model, not as upstream.
+**本地描述文件与上游同名文件不是同一份字节**（46 482 B vs 38 859 B）。本地副本带有仿真侧改造，例如外部 `<include>` 的 `model://gps`，以及"加入该传感器后总质量仍为 1.56 kg"的注释。本地副本对应的上游提交尚未定位，差异范围也未逐一审计。因此本地数据应视为上游模型的**修改派生版本**，而不是上游原件。
 
-## 2. Upstream licence
+## 2. 上游许可
 
-- GitHub repository metadata reports `"license": null`.
-- The repository root on branch `ductedfan` contains no `LICENSE`, `COPYING` or
-  `NOTICE` file (checked 2026-11-10).
-- No licence statement was found in the upstream `README.md` either.
+- GitHub 仓库元数据为 `"license": null`。
+- 分支 `ductedfan` 的根目录下没有 `LICENSE`、`COPYING` 或 `NOTICE`（2026-11-10 核查）。
+- 上游 `README.md` 中同样没有许可声明。
 
-A public repository without a licence grants **no** redistribution right: the default is
-"all rights reserved". Whether the third party actually holds the rights, or is itself
-redistributing someone else's CAD, cannot be determined from the repository.
+公开仓库没有许可证，等于**未授予**再分发权，默认"保留所有权利"。至于第三方是否真的持有该 CAD 的权利，还是它自己也在转发别人的模型，从仓库本身无法判断。
 
-## 3. What this repository does and does not contain
+## 3. 本仓库包含与不包含的内容
 
-| Material | Where it lives | Reason |
+| 内容 | 位置 | 原因 |
 |---|---|---|
-| 33 STL files, `.sdf.jinja` | local only, never committed | third-party geometry; upstream grants no licence |
-| `DF4_Stage1.blend`, `DF4_Stage1_5.blend` (≈ 5.4 MB each) | local only, git-ignored | large, regenerable, and contains the third-party geometry |
-| Rendered previews and window screenshots | audit repository | evidence for the stage reports; they depict the geometry |
-| Code, configs, docs, this file | main repository | authored for this project; no geometry embedded |
+| 33 个 STL、`.sdf.jinja` | 仅在本地，从不提交 | 第三方几何；上游未授予许可 |
+| `DF4_Stage1.blend`、`DF4_Stage1_5.blend`（各约 5.4 MB） | 仅在本地，已被 git 忽略 | 体积大、可重生成，且含第三方几何 |
+| 渲染预览与窗口截图 | 审计仓库 | 阶段报告的证据；画面取自该几何 |
+| 代码、配置、文档、本文件 | 主仓库 | 本项目编写，未内嵌几何 |
 
-`.gitignore` blocks `*.stl`, `*.sdf`, `*.sdf.jinja`, `*.urdf`, `*.step` and `/output/`
-so that the assets cannot be committed by accident.
+`.gitignore` 屏蔽 `*.stl`、`*.sdf`、`*.sdf.jinja`、`*.urdf`、`*.step` 与 `/output/`，使这些资产不会因误操作进入版本库。
 
-## 4. What remains to be decided
+## 4. 仍需确定的事
 
-1. **Project licence for this repository.** Not chosen. No `LICENSE` file is present,
-   so "all rights reserved" applies. Pick one (MIT / BSD-3-Clause / Apache-2.0 are the
-   usual candidates for tooling like this) and add `LICENSE` plus the copyright line.
-2. **Model redistribution.** Upstream carries no licence text, so the geometry itself is
-   not redistributed by this project; only reports and screenshots of the rebuilt
-   assembly are published. If the geometry or a packaged artefact ever has to leave the
-   team, confirm the terms first and record them here.
-3. **Stage 2+ assets.** Any new airframe (SHC09 etc.) inherits the same rule: document
-   provenance and rights before publishing a single screenshot.
+1. **本仓库自身的许可证。** 尚未选定，因此没有 `LICENSE` 文件，默认"保留所有权利"。若采用 MIT / BSD-3-Clause / Apache-2.0，需补上 `LICENSE` 与版权行。
+2. **模型再分发。** 上游没有许可证文本，所以本项目不分发几何本体，只公开重建结果报告与截图。若将来几何本体或打包产物需要离开团队，先确认条款并记录在这里。
+3. **Stage 2 及之后的资产。** 任何新机型（SHC09 等）沿用同一规则：先记录来源与权利状态，再发布任何一张截图。
 
-## 5. Third-party material that *is* redistributable here
+## 5. 本仓库中可合法再分发的第三方内容
 
-`assets/materials/gazebo_standard.json` contains a numeric summary of two material
-definitions from Gazebo Classic's `gazebo.material` script
-(<https://github.com/gazebosim/gazebo-classic>, Apache-2.0). It stores colour values,
-not script source, and the source URL is recorded inside the file for attribution.
+`assets/materials/gazebo_standard.json` 是 Gazebo Classic `gazebo.material` 脚本（<https://github.com/gazebosim/gazebo-classic>，Apache-2.0）中两个材质定义的**数值摘要**。它保存颜色数值而非脚本源码，文件内已注明来源链接以便署名。
