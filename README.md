@@ -60,6 +60,12 @@ python scripts/verify_evidence.py <audit-root> <audit-root>/stages/stage-1.5/evi
 
 退出码 0 表示所有列出的文件本地字节与记录一致。该校验只证明本地文件完整性，不证明测试结果或科学结论。
 
+## 当前工程
+
+本地只有一个工程：`output/DF4/DF4.blend`，SHA256 `216ae8ab7de87cac17846a304dcd34110008ef4a71ce77f1829c9a8a37c0e474`。
+
+Stage 1 与 Stage 1.5 的成果都已合并到这一个文件里；后续阶段直接在它上面迭代，不再生成阶段编号的 `.blend`。两份历史报告保留原始文件名与历史哈希，作为过程记录。
+
 ## 分工边界
 
 本仓库只放报告、截图与测量记录，不含原始 STL/SDF/`.blend`，也不放可执行源码。模型来源与文件取舍见 [`manifests/ARTIFACT_MANIFEST.md`](manifests/ARTIFACT_MANIFEST.md) §1、§6。

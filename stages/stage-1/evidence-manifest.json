@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "Stage1",
-  "created_at": "2026-11-10T10:55:19Z",
+  "created_at": "2026-11-10T11:16:01Z",
   "agent": {
     "name": "deepseek-harness",
     "model": "deepseek-flash"
@@ -9,7 +9,7 @@
   "development": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender",
     "branch": "main",
-    "commit": "bc9e9d7c71d910db14d22b08229f863a37ef45c2"
+    "commit": "b8bca84138636af2e086d76f428b593c8ab5210b"
   },
   "audit": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
@@ -23,7 +23,7 @@
   "evidence": [
     {
       "path": "stages/stage-1/STAGE_1_REPORT.md",
-      "sha256": "98352f401fc1627d89ae05b15d3ede4364cce31b6d028d1e37a15eda2233f690",
+      "sha256": "56823809cacea2b31ae3e2f8ee8cc2b801f1b6f0d9e2264f348ea0d2c588d550",
       "kind": "report"
     },
     {
@@ -58,7 +58,7 @@
     },
     {
       "path": "stages/stage-1/evidence/gui_validation.json",
-      "sha256": "168a02f87572082ca50b94468e29f88660e2c41512c35befd9c35e28fecee1b3",
+      "sha256": "bb40ed1707610495bc24c5db2471688151c069a72612092796ac75d8f7745e02",
       "kind": "other"
     },
     {
@@ -75,13 +75,13 @@
   "verification": {
     "commands": [
       "blender --background --factory-startup --python-exit-code 1 --python scripts/main.py -- --config configs/DF4.json",
-      "blender --background --factory-startup --python-exit-code 1 --python scripts/check_joint_hierarchy.py",
+      "blender --background --factory-startup --python-exit-code 1 --python scripts/check_joint_hierarchy.py -- --config configs/DF4.json",
       "blender --background --factory-startup --python-exit-code 1 --python tests/reverify_saved_project.py -- --config configs/DF4.json"
     ],
     "result": "passed"
   },
   "limitations": [
-    "The .blend bytes were re-saved by Blender when the GUI verification session exited, after the screenshots were captured; the current bytes were re-verified read-only on 2026-11-10 but the exact screenshot-time bytes are not archived.",
+    "The Stage 1 bytes were deleted during single-project normalisation; only the hash is kept. The current project DF4.blend is byte-identical to the Stage 1.5 output.",
     "controller2.STL and X-tend.STL are not referenced by the SDF; their attachment is taken from the raw STL coordinates and is unconfirmed.",
     "External include gps0 has no local mesh and is explicitly skipped, not modelled."
   ],

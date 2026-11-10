@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "Stage1.5",
-  "created_at": "2026-11-10T10:53:07Z",
+  "created_at": "2026-11-10T11:16:01Z",
   "agent": {
     "name": "deepseek-harness",
     "model": "deepseek-flash"
@@ -9,7 +9,7 @@
   "development": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender",
     "branch": "main",
-    "commit": "bc9e9d7c71d910db14d22b08229f863a37ef45c2"
+    "commit": "b8bca84138636af2e086d76f428b593c8ab5210b"
   },
   "audit": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
@@ -23,7 +23,7 @@
   "evidence": [
     {
       "path": "stages/stage-1.5/STAGE_1_5_REPORT.md",
-      "sha256": "3f01b3536ba149f478849b796aee75670abf251b6d50721a364f5ee6412be3da",
+      "sha256": "e4665a1d6d0f856ed469468dcf8e0228cda6954934158c3db0db215c4606aed3",
       "kind": "report"
     },
     {
@@ -38,17 +38,17 @@
     },
     {
       "path": "stages/stage-1.5/evidence/eevee_preview.png",
-      "sha256": "00026e5f61bc78ae3c0f10a5b374090dd9da667756560183f97e3c6d2cddcecc",
+      "sha256": "9e5692f94e14d1654ab01c4302756106f446f94acb6b5a823b9966e717afadb2",
       "kind": "other"
     },
     {
       "path": "stages/stage-1.5/evidence/material_validation.json",
-      "sha256": "754388d589f27f22c78e037cd1ff00067b5b283e74fe4f4cfa45c83c3b3a22c1",
+      "sha256": "0667fd28d70554e9ea60378496876369ca6c529567825fc9bc55ff401f77e9de",
       "kind": "other"
     },
     {
       "path": "stages/stage-1.5/evidence/material_gui_validation.json",
-      "sha256": "298bb78f369f3a755cb9b211573ba04299064235960867ce46eb00c9d34dc8c8",
+      "sha256": "068c67c69141481a96b29a764d40b6366c5d6b8479aee08cc3f54ed5428804ac",
       "kind": "other"
     },
     {
@@ -71,7 +71,7 @@
     "result": "passed"
   },
   "limitations": [
-    "Stage 1.5 derives from DF4_Stage1.blend1 (sha256 574c1b00...), not from the current DF4_Stage1.blend (10caf87e...).",
+    "Stage 1.5 originally derived from DF4_Stage1.blend1 (sha256 574c1b00...), not from the Stage 1 output of the time (10caf87e...); those bytes are now deleted, only hashes remain.",
     "The 8 objects without an original material definition use a neutral display grey that does not represent real paint.",
     "source_color_space=linear is an assumption; the SDF declares no transfer function.",
     "Specular is mapped via RGB mean to the Principled IOR level; this is not a Gazebo Blinn-Phong reproduction.",

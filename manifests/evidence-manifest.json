@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "ProjectInit",
-  "created_at": "2026-11-10T10:55:19Z",
+  "created_at": "2026-11-10T11:16:01Z",
   "agent": {
     "name": "deepseek-harness",
     "model": "deepseek-flash"
@@ -9,7 +9,7 @@
   "development": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender",
     "branch": "main",
-    "commit": "bc9e9d7c71d910db14d22b08229f863a37ef45c2"
+    "commit": "b8bca84138636af2e086d76f428b593c8ab5210b"
   },
   "audit": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
@@ -21,22 +21,27 @@
   "evidence": [
     {
       "path": "README.md",
-      "sha256": "f9034c9b3ff66d22a6f03c8f099b737edb2eb54efe418ddddb5205b08117f6c7",
+      "sha256": "1e2912df826ebdd2005c92b208dc383fa717e36bd32a24195d99b636c39fe381",
       "kind": "other"
     },
     {
       "path": "HANDOFF.md",
-      "sha256": "081a90bc6e1a3bc3d39927e0ebd3f7cf731aec6c0c79246d62ed684e45460c67",
+      "sha256": "bc71fe5db80c9fe5326bef25b231ad529eaf1ac854bf6eeef195b146b535f4bf",
       "kind": "handoff"
     },
     {
       "path": "manifests/ARTIFACT_MANIFEST.md",
-      "sha256": "dc21e02eb2d25742a83f6623460d0ea2b5a5a810579f06ea15fd0d38db9f9489",
+      "sha256": "3c0fed31240f5882d5205f8c77ad4d59e413733a5f0c2ef8c0e8bc9d8168769d",
+      "kind": "other"
+    },
+    {
+      "path": "manifests/reverify-current.json",
+      "sha256": "20d3e47a6cb05337589bf1b3c1791d223c1e80c0e3042acfa049b609b71213db",
       "kind": "other"
     },
     {
       "path": "manifests/reverify-2026-11-10.json",
-      "sha256": "7df94466cdc87151b9f040e816d25a0a59634537711523eefc3e590bb04eb982",
+      "sha256": "03d3b72f9c017c2dc242aa206dd9563cbd823192626f8a65aae5a4cce155541b",
       "kind": "other"
     },
     {
@@ -52,8 +57,9 @@
     "result": "passed"
   },
   "limitations": [
-    "The upstream model repository carries no licence file, so the geometry itself is not redistributed; only reports and screenshots are published.",
-    "The adapter-equivalence check was a one-off migration script not shipped in DEV."
+    "The upstream model repository carries no licence file; the rights holder granted public display of rendered evidence only, so the geometry itself is not redistributed.",
+    "The adapter-equivalence check was a one-off migration script not shipped in DEV.",
+    "The refactored main.py and materials.py build paths were not re-run this round (Stage 1/1.5 re-execution is out of scope); they are compile-checked only."
   ],
   "next_action": "Await Stage 2 authorisation; Stage 2 is not started."
 }

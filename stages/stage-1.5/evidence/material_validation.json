@@ -2052,7 +2052,7 @@
       "LOW_FILL"
     ]
   },
-  "target": "D:\\01_科研\\TIE\\DF4_SolidWorks\\Blender\\output\\DF4\\DF4_Stage1_5.blend",
+  "target": "output/DF4/DF4_Stage1_5.blend",
   "gui_status": "实际打开最终工程，核对结构/材质并查看 Material Preview 与 Eevee 预览通过",
   "visual_review_passed": true,
   "mapping_tests_passed": true,

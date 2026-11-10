@@ -6,7 +6,7 @@
 | 验证机型 | DF4（ducted-fan UAV） |
 | 阶段状态 | 已完成并通过本地验收；等待外部复核 |
 | 开发仓库 | <https://github.com/tangqingxi/AeroViz-Blender> |
-| 开发提交 | `bc9e9d7c71d910db14d22b08229f863a37ef45c2`（`main`，已推送；相对交付 Stage 1/1.5 时的 `d956bec…` 只有文档变更，代码与配置未变） |
+| 开发提交 | `b8bca84138636af2e086d76f428b593c8ab5210b`（`main`，已推送；模型证据由 `d956bec…` 的代码产生，`b8bca84` 只改工程路径与保存方式，未重跑导入或材质） |
 | 审计仓库 | <https://github.com/tangqingxi/AeroViz-Blender-Audit> |
 | 原始执行日期 | 2026-11-10 |
 | 报告整理日期 | 2026-11-10 |
@@ -179,6 +179,8 @@
 
 ## 8. 产物路径及 SHA256
 
+> 2026-11-10 归一化后，`DF4_Stage1_5.blend` 已**字节不变**重命名为唯一工程 `output/DF4/DF4.blend`（SHA256 仍为 `216ae8ab…`），其余阶段工程与 `.blend1` 已从本地删除。下表保留原始文件名与哈希作为历史记录；当前工程的字节见 [`../../manifests/ARTIFACT_MANIFEST.md`](../../manifests/ARTIFACT_MANIFEST.md) §4。
+
 路径相对开发工作区根目录。审计仓库中的证据副本为逐字节拷贝，哈希相同。
 
 | 文件 | 大小 (B) | SHA256 | 开发工作区路径 |
@@ -197,7 +199,7 @@
 
 ## 9. 未解决问题
 
-1. **工程文件在验收截图之后被重新保存。** 材质图形会话关闭时被 Blender 执行了 `Saved "DF4_Stage1_5.blend"`（进程运行 13 分 14 秒后），因此磁盘上的当前字节不等于截图时刻的字节。当前字节已用只读复验重新对齐全部断言（§6.2 第 4 项）。
+1. **工程文件在验收截图之后被重新保存。** 材质图形会话关闭时被 Blender 执行了 `Saved "DF4_Stage1_5.blend"`（进程运行 13 分 14 秒后），因此当时的磁盘字节不等于截图时刻的字节。该字节已用只读复验重新对齐全部断言（§6.2 第 4 项），并成为当前唯一的 `DF4.blend`。
 
 2. **Stage 1.5 的输入版本与当前 Stage 1 工程不同。** `material_validation.json` 记录的被保护工程哈希 `574c1b00…` 现在对应 `DF4_Stage1.blend1`；当前 `DF4_Stage1.blend` 为 `10caf87e…`。即 Stage 1.5 派生自 `.blend1` 那一版，而非当前 `DF4_Stage1.blend`。这一因果关系必须保持明示：**不能声称"当前 Stage 1 工程与 Stage 1.5 输入一致"**。
 
@@ -222,4 +224,4 @@ Stage 2 可直接使用的基础：
 - 材质名与数值可从 `evidence/material_validation.json` 的 `assignments` 直接引用，无需重建材质。
 - 复验脚本 `tests/reverify_saved_project.py` 可直接用于 Stage 2 交付物的结构与材质回归。
 
-Stage 2 的交付物应写入**新的**工程版本（例如 `<MODEL>_Stage2.blend`），不得覆盖 `DF4_Stage1.blend` 或 `DF4_Stage1_5.blend`。
+Stage 2 直接在**当前唯一工程** `output/DF4/DF4.blend` 上迭代，不再生成阶段编号的 `.blend` 副本；保存走临时文件 + 校验 + 原子替换。

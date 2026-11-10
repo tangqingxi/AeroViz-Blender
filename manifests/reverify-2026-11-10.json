@@ -1,9 +1,9 @@
 {
   "blender_version": "5.0.1",
   "background": true,
-  "config": "D:\\01_科研\\TIE\\DF4_SolidWorks\\Blender\\configs\\DF4.json",
+  "config": "configs/DF4.json",
   "stage1": {
-    "project": "D:\\01_科研\\TIE\\DF4_SolidWorks\\Blender\\output\\DF4\\DF4_Stage1.blend",
+    "project": "output/DF4/DF4_Stage1.blend",
     "project_sha256_note": "hash recorded separately by the audit manifest",
     "mesh_count": 33,
     "visible_count": 27,
@@ -27,7 +27,7 @@
     "status": "PASS"
   },
   "stage1_5": {
-    "project": "D:\\01_科研\\TIE\\DF4_SolidWorks\\Blender\\output\\DF4\\DF4_Stage1_5.blend",
+    "project": "output/DF4/DF4_Stage1_5.blend",
     "object_total": 93,
     "baseline_object_count": 89,
     "preserved_object_count": 89,

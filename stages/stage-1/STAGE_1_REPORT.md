@@ -6,7 +6,7 @@
 | 验证机型 | DF4（ducted-fan UAV） |
 | 阶段状态 | 已完成并通过本地验收；等待外部复核 |
 | 开发仓库 | <https://github.com/tangqingxi/AeroViz-Blender> |
-| 开发提交 | `bc9e9d7c71d910db14d22b08229f863a37ef45c2`（`main`，已推送；相对交付 Stage 1/1.5 时的 `d956bec…` 只有文档变更，代码与配置未变） |
+| 开发提交 | `b8bca84138636af2e086d76f428b593c8ab5210b`（`main`，已推送；模型证据由 `d956bec…` 的代码产生，`b8bca84` 只改工程路径与保存方式，未重跑导入或材质） |
 | 审计仓库 | <https://github.com/tangqingxi/AeroViz-Blender-Audit> |
 | 原始执行日期 | 2026-11-10 |
 | 报告整理日期 | 2026-11-10 |
@@ -34,9 +34,9 @@
 | Blender | 5.0.1，build hash `a3db93c5b259`，构建日期 2025-12-16 |
 | Blender 内置 Python | 3.11.13 |
 | 额外 Python 包 | 无（仅使用 Blender 自带模块：`bpy`、`mathutils`、`bmesh` 相关 API 与标准库） |
-| Blender 可执行文件 | `D:\app\Blender\blender.exe` |
-| 开发工作区 | `D:\01_科研\TIE\DF4_SolidWorks\AeroViz-Blender` |
-| 模型输入目录（只读） | `D:\01_科研\TIE\DF4_SolidWorks\DF4_SolidWorks` |
+| Blender 可执行文件 | `<blender.exe>` |
+| 开发工作区 | `AeroViz-Blender` |
+| 模型输入目录（只读） | `../DF4_SolidWorks` |
 
 ## 3. 实现内容
 
@@ -183,6 +183,8 @@
 
 ## 8. 产物路径及 SHA256
 
+> 2026-11-10 归一化后，本阶段的工程字节已从本地删除，合并为唯一工程 `output/DF4/DF4.blend`（SHA256 `216ae8ab…`，与 Stage 1.5 字节相同）。下表保留原始文件名与哈希作为历史记录；当前工程的字节见 [`../../manifests/ARTIFACT_MANIFEST.md`](../../manifests/ARTIFACT_MANIFEST.md) §4。
+
 路径相对开发工作区根目录。审计仓库中的证据副本为逐字节拷贝，哈希相同。
 
 | 文件 | 大小 (B) | SHA256 | 开发工作区路径 |
@@ -207,9 +209,9 @@
 
 ## 9. 未解决问题
 
-1. **工程文件在验收截图之后被重新保存。** 图形进程日志显示，Stage 1 会诊会话在关闭时被 Blender 执行了 `Saved "DF4_Stage1.blend"`（进程运行 28 分 39 秒后）。因此磁盘上当前的 `.blend` 字节与截图时刻的字节不是同一份，且本地没有更早的字节归档。当前字节已通过只读复验重新对齐全部断言（§6.2 第 4 项），但"截图时刻的原始字节"无法再独立提供 —— 后续阶段应约定：验收脚本退出时不保存工程，或保存后重新截图。
+1. **工程文件在验收截图之后被重新保存。** 图形进程日志显示，Stage 1 会诊会话在关闭时被 Blender 执行了 `Saved "DF4_Stage1.blend"`（进程运行 28 分 39 秒后）。因此当时的磁盘字节与截图时刻的字节不是同一份，且本地没有更早的字节归档。该字节已通过只读复验重新对齐全部断言（§6.2 第 4 项），但"截图时刻的原始字节"无法再独立提供 —— 后续阶段应约定：验收脚本退出时不保存工程，或保存后重新截图。
 
-2. **Stage 1.5 的输入版本与当前 Stage 1 文件不同。** Stage 1.5 记录的被保护工程哈希 `574c1b00…` 现在对应 `DF4_Stage1.blend1`（前一次保存），当前 `DF4_Stage1.blend` 为 `10caf87e…`。即 Stage 1.5 是从 `.blend1` 那一版派生的，这一因果关系已在本报告中明确，而不是"两者一致"。
+2. **Stage 1.5 的输入版本与当时的 Stage 1 文件不同。** Stage 1.5 记录的被保护工程哈希 `574c1b00…` 当时对应 `DF4_Stage1.blend1`（前一次保存），当时的 `DF4_Stage1.blend` 为 `10caf87e…`。即 Stage 1.5 是从 `.blend1` 那一版派生的，这一因果关系已在本报告中明确，而不是"两者一致"。
 
 3. **两个补充零件缺少描述文件依据。** `controller2.STL` 与 `X-tend.STL` 未被 SDF 引用，只能沿用 STL 原始坐标挂在模型根下；其型号与固定关系未经描述文件证实（配置中已有 `reason` 记录）。
 
