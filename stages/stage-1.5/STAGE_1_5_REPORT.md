@@ -185,7 +185,7 @@
 
 | 文件 | 大小 (B) | SHA256 | 开发工作区路径 |
 |---|---|---|---|
-| Stage 1.5 工程（当前字节） | 5403119 | `216ae8ab7de87cac17846a304dcd34110008ef4a71ce77f1829c9a8a37c0e474` | `output/DF4/DF4_Stage1_5.blend` |
+| Stage 1.5 工程（阶段结束时的字节） | 5403119 | `216ae8ab7de87cac17846a304dcd34110008ef4a71ce77f1829c9a8a37c0e474` | `output/DF4/DF4_Stage1_5.blend`<br>现已重命名为 `output/DF4/DF4.blend` |
 | Stage 1.5 工程（前一次保存） | 5393663 | `fdce4368e07e7cc47034f0463a0d8f9ee29f09b702a0f701ad541e49d25deb01` | `output/DF4/DF4_Stage1_5.blend1` |
 | Eevee 相机渲染 | 870776 | `00026e5f61bc78ae3c0f10a5b374090dd9da667756560183f97e3c6d2cddcecc` | `output/DF4/preview/eevee_preview.png`<br>审计副本：`stages/stage-1.5/evidence/eevee_preview.png` |
 | Material Preview 视口截图 | 1535655 | `061d0ff54233a68485f98e64629402991f62eea53e6213f1d2c9eee9786fba63` | `output/DF4/preview/material_preview.png`<br>审计副本：`stages/stage-1.5/evidence/material_preview.png` |
@@ -201,7 +201,7 @@
 
 1. **工程文件在验收截图之后被重新保存。** 材质图形会话关闭时被 Blender 执行了 `Saved "DF4_Stage1_5.blend"`（进程运行 13 分 14 秒后），因此当时的磁盘字节不等于截图时刻的字节。该字节已用只读复验重新对齐全部断言（§6.2 第 4 项），并成为当前唯一的 `DF4.blend`。
 
-2. **Stage 1.5 的输入版本与当前 Stage 1 工程不同。** `material_validation.json` 记录的被保护工程哈希 `574c1b00…` 现在对应 `DF4_Stage1.blend1`；当前 `DF4_Stage1.blend` 为 `10caf87e…`。即 Stage 1.5 派生自 `.blend1` 那一版，而非当前 `DF4_Stage1.blend`。这一因果关系必须保持明示：**不能声称"当前 Stage 1 工程与 Stage 1.5 输入一致"**。
+2. **Stage 1.5 的输入版本与当时的 Stage 1 工程不同。** `material_validation.json` 记录的被保护工程哈希 `574c1b00…` 当时对应 `DF4_Stage1.blend1`；当时的 `DF4_Stage1.blend` 为 `10caf87e…`。即 Stage 1.5 派生自 `.blend1` 那一版，而非当时的 `DF4_Stage1.blend`。这一因果关系必须保持明示：**不能声称"当时的 Stage 1 工程与 Stage 1.5 输入一致"**。
 
 3. **8 个对象没有原始材质定义**，其中 6 个是隐藏参考件、2 个是 SDF 未引用的可见补充件，均使用中性展示灰。若后续确认涂装，应通过配置 `overrides`（并写明 `reason`）或补充已知脚本材质库，而不是改材质核心代码。
 

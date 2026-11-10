@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "Stage1",
-  "created_at": "2026-11-10T11:16:01Z",
+  "created_at": "2026-11-10T11:16:25Z",
   "agent": {
     "name": "deepseek-harness",
     "model": "deepseek-flash"
@@ -23,7 +23,7 @@
   "evidence": [
     {
       "path": "stages/stage-1/STAGE_1_REPORT.md",
-      "sha256": "56823809cacea2b31ae3e2f8ee8cc2b801f1b6f0d9e2264f348ea0d2c588d550",
+      "sha256": "0223e59ecdf0f0b799b6349ab9d5b999bc3f6b85d213b1b56c649a2b4caec0f7",
       "kind": "report"
     },
     {

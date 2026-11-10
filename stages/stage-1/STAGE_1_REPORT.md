@@ -189,7 +189,7 @@
 
 | 文件 | 大小 (B) | SHA256 | 开发工作区路径 |
 |---|---|---|---|
-| Stage 1 工程（当前字节） | 5397145 | `10caf87e82d5072801f4cdf10c1a3690696a1b60d94012cfecbc12403048bc8d` | `output/DF4/DF4_Stage1.blend` |
+| Stage 1 工程（阶段结束时的字节） | 5397145 | `10caf87e82d5072801f4cdf10c1a3690696a1b60d94012cfecbc12403048bc8d` | `output/DF4/DF4_Stage1.blend` |
 | Stage 1 工程（前一次保存，被 Stage 1.5 引用） | 5389699 | `574c1b0071c923f0513e41430c7c7d7b6c6ea5b62c24ddb0cae04d2c87d9afeb` | `output/DF4/DF4_Stage1.blend1` |
 | 离线工作台预览 等轴测 | 1102914 | `37825b6b727c91da6e9730ee27931e7f91686aba01027f763471fc4702bd15f1` | `output/DF4/preview/isometric.png`<br>审计副本：`stages/stage-1/evidence/isometric.png` |
 | 离线工作台预览 正视 | 1028845 | `636f9b3ae2e354301986749bdcc97cb2702f3bb11a93c663ddf3cf224c2726e0` | `output/DF4/preview/front.png` |
