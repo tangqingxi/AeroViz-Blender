@@ -202,6 +202,6 @@ Stage 1 与 Stage 1.5 已针对 DF4 完成，验收证据在独立审计仓库�
 
 本仓库**不含**任何模型资产、`.blend` 工程或渲染帧。
 
-DF4 几何来自一个**没有许可证文本**的上游仓库；该模型作者与本项目作者是同一实验室的同事，DF4 属团队共用资产，因此派生的报告与截图在配套审计仓库中公开发布。具体来源、与上游的字节差异，以及超出团队范围使用时的处理方式，见 [docs/asset-provenance.md](docs/asset-provenance.md)。
+DF4 几何来自第三方仓库 `mengchaoheng/DF_gazebo`，该仓库没有 `LICENSE` 文件，因此几何本体（STL/SDF）与由它生成的工程不在本仓库分发。来源、与上游的字节差异见 [docs/asset-provenance.md](docs/asset-provenance.md)。
 
 本项目自身的许可证**尚未确定**，因此没有放置 `LICENSE` 文件；在确定之前，默认适用"保留所有权利"。
