@@ -189,8 +189,13 @@ def snapshot_objects():
     bpy.context.view_layer.update()
     return {o.name:object_state(o) for o in bpy.data.objects}
 
-def check_preserved(before):
+def check_preserved(before, animated_objects=()):
     current = snapshot_objects()
+    # 只允许已授权关节的动画存在标志变化，其他历史结构字段仍逐项严格相等。
+    for name in animated_objects:
+        if name not in current or name not in before or not current[name]['has_animation']:
+            raise RuntimeError(f'授权动画对象不存在或没有动画：{name}')
+        current[name] = dict(current[name], has_animation=before[name]['has_animation'])
     errors = [name for name, state in before.items() if current.get(name)!=state]
     if errors:
         raise RuntimeError(f'原有对象的结构或坐标发生变化：{errors}')

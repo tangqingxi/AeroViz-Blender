@@ -28,7 +28,7 @@
 
 ## 2. 核心能力
 
-当前已实现并验证的能力（Stage 1 与 Stage 1.5）：
+当前已实现并验证的能力（Stage 1、Stage 1.5 与 Stage 2）：
 
 - **配置驱动导入**：每架飞机一份 JSON 配置，引擎不从代码里读取任何机型信息。
 - **SDF（单模型）适配器**：`link` / `visual` / `joint` / `frame` 位姿、弧度 RPY、`expressed_in`、`relative_to`、`model://` URI 映射、外部 include 记账、多父/成环关节拒绝。
@@ -40,7 +40,7 @@
 - **结构保护**：Stage 1.5 必须保持原有对象的矩阵、父子关系、Collection、隐藏状态、几何哈希与关节属性完全不变。
 - **图形验收**：专用脚本在真实窗口中重开 `.blend`、断言状态并截图；后台渲染成功**不**算目视验收。
 
-尚未实现（不得假设存在）：机械运动、关键帧动画、爆炸视图、镜头与灯光编排、视频渲染、多机型批处理。见 §7 路线图。
+已新增配置驱动的机械运动与关键帧验证。尚未实现（不得假设存在）：爆炸视图、镜头与灯光编排、视频渲染、多机型批处理。见 §7 路线图。
 
 ## 3. 架构
 
@@ -169,7 +169,7 @@ Stage 1.5 —— 在当前唯一工程中恢复 SDF 材质：
      --python '.\tests\test_material_mapping.py'
 ```
 
-对已验收工程做只读复验（打开两个阶段的工程、重放全部记录断言、不保存任何文件）：
+对当前唯一工程做只读复验（第1帧重放历史断言，并验证已授权关节动画，不保存工程）：
 
 ```powershell
 & $B --background --factory-startup --python-exit-code 1 `
@@ -186,12 +186,12 @@ Stage 1.5 —— 在当前唯一工程中恢复 SDF 材质：
 |---|---|---|
 | Stage 1 | 通用模型导入与空间装配恢复 | 已完成 |
 | Stage 1.5 | SDF 材质恢复 | 已完成 |
-| Stage 2 | 机械运动骨架与独立运动测试 | 待执行 |
+| Stage 2 | 机械运动骨架与独立运动测试 | 已完成 |
 | Stage 3 | 爆炸视图与机械动画 | 待执行 |
 | Stage 4 | 镜头、灯光与视频渲染 | 待执行 |
 | Stage 5 | 多机型适配与工具完善 | 待执行 |
 
-Stage 1 与 Stage 1.5 已针对 DF4 完成，验收证据在独立审计仓库。后续阶段均未开始：本仓库目前**不包含任何动画、爆炸视图或视频渲染能力**。
+Stage 1、1.5、2 已针对 DF4 完成。旋翼与四个舵面动画在当前工程，证据在独立审计仓库。Stage 3 及后续阶段尚未授权，不包含爆炸视图或视频渲染能力。
 
 ## 8. 当前状态
 
@@ -199,7 +199,7 @@ Stage 1 与 Stage 1.5 已针对 DF4 完成，验收证据在独立审计仓库�
 - **当前工程**：`output/DF4/DF4.blend`，93 个对象（33 网格 + 52 空对象 + 4 相机 + 4 展示灯）、7 个材质、33 个对象已分配材质。Stage 1 与 Stage 1.5 的成果都在这一个文件里，没有阶段副本。
 - **Stage 1**：33 个 STL 输入 → 33 个独立网格对象，27 可见 + 6 隐藏参考件；整机可见尺寸约 0.353 × 0.376 × 0.378 m；26 个 link 空对象与 25 个关节空对象；相对描述文件的世界矩阵误差为 0；输入哈希前后不变。
 - **Stage 1.5**：提取 25 条 SDF visual 材质定义（25 条带显式定义），新建并复用 7 个 Blender 材质，为 33 个网格对象完成分配（13 个显式 RGBA、12 个 Gazebo 命名脚本、8 个展示默认），Stage 1 的 89 个对象全部保持不变，Eevee 与 Material Preview 均在真实窗口截图。
-- **Stage 2（机械运动）尚未开始**，需要明确授权。
+- **Stage 2 已完成**：30 FPS、1–121帧；旋翼演示 1200°/s、累计 4800°，四个舵面按 CS1→CS4 顺序独立完成 ±10° 并归零。动画对象恰好五个原有 JOINT。Stage 3 等待授权。
 
 详细的阶段报告、截图与产物哈希位于配套审计仓库 `tangqingxi/AeroViz-Blender-Audit`，不在本仓库。
 
@@ -236,3 +236,20 @@ python scripts/verify_evidence.py ../AeroViz-Blender-Audit ../AeroViz-Blender-Au
 ```
 
 该回归不提供 Stage 2 执行授权。
+
+
+## Stage 2 使用与验证
+
+直接打开 `output/DF4/DF4.blend`，时间轴范围 1–121，按空格播放/暂停。四秒演示中旋翼持续转动，四个舵面分时偏转并回零；Timeline Markers 标明 CS1–CS4 正负偏转及 Return。1200°/s 不是实际电机测量值。
+
+通用运动模块在 `scripts/animation/kinematics.py`，配置在 `configs/DF4.json` 的 `animation` 块。每个关节四个 Quaternion 通道、121 个采样点，LINEAR 插值与符号连续；不通过起终姿态的模360°结果冒充累计转数。重建动画会改工程，应先在 `.work/stage-2/` 字节副本完成测试，并匹配目标哈希。现有 Action 只有属于本引擎时才允许重建，不覆盖外来动画。
+
+只读重新验证已保存工程：沿用 `tests/reverify_saved_project.py -- --config configs/DF4.json`，无需重跑导入或材质。真实窗口播放与截图：
+
+```powershell
+& $B -W '.\output\DF4\DF4.blend' --python scripts/animation/gui_verify.py -- --config configs/DF4.json
+```
+
+该脚本调用与空格相同的原生播放操作，记录真实帧推进和循环，显示 Dope Sheet 五个 Action，保存六种姿态和播放窗口截图；不保存工程。结果直写 Audit `stages/stage-2/evidence/`。受控回归接口为 `tests/test_kinematics.py -- --config <副本配置> --phase prepare`，随后独立进程 `--phase verify`；测试需要先准备 `.work/stage-2/rollback/` 原字节副本。正式更新的 `--phase apply --expected-sha256 <基线哈希>` 要求副本测试批准记录与动画配置一致，保存失败或回归失败必须恢复原字节并停止。
+
+Pre-Stage 2 的 `test_project_io.py` 是静态工程基线专项记录，不用于断言 Stage 2 工程仍然无动画。当前工程的完整回归以更新后的 reverify 与运动验证为准。Stage 3 尚未授权。

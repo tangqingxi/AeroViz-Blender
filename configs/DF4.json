@@ -178,5 +178,266 @@
         }
       ]
     }
+  },
+  "animation": {
+    "root_object": "DF4_ROOT",
+    "fps": 30,
+    "frame_start": 1,
+    "frame_end": 121,
+    "interpolation": "LINEAR",
+    "motions": [
+      {
+        "joint": "rotor_joint",
+        "kind": "spin",
+        "rate_deg_per_s": 1200,
+        "start_frame": 1,
+        "end_frame": 121,
+        "initial_angle_deg": 0,
+        "expected_axis_model": [
+          0,
+          0,
+          1
+        ],
+        "expected_center_m": [
+          0,
+          0,
+          -0.045
+        ],
+        "expected_meshes": [
+          "rotor"
+        ],
+        "test_angles_deg": [
+          90
+        ],
+        "parameter_note": "视觉演示参数，不是实测电机转速"
+      },
+      {
+        "joint": "cs1_joint",
+        "kind": "keyed_angles",
+        "expected_axis_model": [
+          1,
+          0,
+          0
+        ],
+        "expected_center_m": [
+          0,
+          0,
+          -0.140995
+        ],
+        "expected_meshes": [
+          "cs11"
+        ],
+        "test_angles_deg": [
+          10,
+          -10,
+          0
+        ],
+        "keys": [
+          {
+            "frame": 1,
+            "angle_deg": 0
+          },
+          {
+            "frame": 11,
+            "angle_deg": 10,
+            "marker": "CS1 +10°"
+          },
+          {
+            "frame": 21,
+            "angle_deg": -10,
+            "marker": "CS1 -10°"
+          },
+          {
+            "frame": 31,
+            "angle_deg": 0,
+            "marker": "CS1 Return"
+          },
+          {
+            "frame": 121,
+            "angle_deg": 0
+          }
+        ]
+      },
+      {
+        "joint": "cs2_joint",
+        "kind": "keyed_angles",
+        "expected_axis_model": [
+          0,
+          1,
+          0
+        ],
+        "expected_center_m": [
+          0,
+          0,
+          -0.140995
+        ],
+        "expected_meshes": [
+          "cs2"
+        ],
+        "test_angles_deg": [
+          10,
+          -10,
+          0
+        ],
+        "keys": [
+          {
+            "frame": 1,
+            "angle_deg": 0
+          },
+          {
+            "frame": 31,
+            "angle_deg": 0
+          },
+          {
+            "frame": 41,
+            "angle_deg": 10,
+            "marker": "CS2 +10°"
+          },
+          {
+            "frame": 51,
+            "angle_deg": -10,
+            "marker": "CS2 -10°"
+          },
+          {
+            "frame": 61,
+            "angle_deg": 0,
+            "marker": "CS2 Return"
+          },
+          {
+            "frame": 121,
+            "angle_deg": 0
+          }
+        ]
+      },
+      {
+        "joint": "cs3_joint",
+        "kind": "keyed_angles",
+        "expected_axis_model": [
+          1,
+          0,
+          0
+        ],
+        "expected_center_m": [
+          0,
+          0,
+          -0.140995
+        ],
+        "expected_meshes": [
+          "cs33"
+        ],
+        "test_angles_deg": [
+          10,
+          -10,
+          0
+        ],
+        "keys": [
+          {
+            "frame": 1,
+            "angle_deg": 0
+          },
+          {
+            "frame": 61,
+            "angle_deg": 0
+          },
+          {
+            "frame": 71,
+            "angle_deg": 10,
+            "marker": "CS3 +10°"
+          },
+          {
+            "frame": 81,
+            "angle_deg": -10,
+            "marker": "CS3 -10°"
+          },
+          {
+            "frame": 91,
+            "angle_deg": 0,
+            "marker": "CS3 Return"
+          },
+          {
+            "frame": 121,
+            "angle_deg": 0
+          }
+        ]
+      },
+      {
+        "joint": "cs4_joint",
+        "kind": "keyed_angles",
+        "expected_axis_model": [
+          0,
+          1,
+          0
+        ],
+        "expected_center_m": [
+          0,
+          0,
+          -0.140995
+        ],
+        "expected_meshes": [
+          "cs4"
+        ],
+        "test_angles_deg": [
+          10,
+          -10,
+          0
+        ],
+        "keys": [
+          {
+            "frame": 1,
+            "angle_deg": 0
+          },
+          {
+            "frame": 91,
+            "angle_deg": 0
+          },
+          {
+            "frame": 101,
+            "angle_deg": 10,
+            "marker": "CS4 +10°"
+          },
+          {
+            "frame": 111,
+            "angle_deg": -10,
+            "marker": "CS4 -10°"
+          },
+          {
+            "frame": 121,
+            "angle_deg": 0,
+            "marker": "CS4 Return"
+          }
+        ]
+      }
+    ],
+    "tolerances": {
+      "matrix": 1e-06,
+      "axis": 1e-06,
+      "angle_deg": 0.0001
+    },
+    "gui_samples": [
+      {
+        "name": "initial",
+        "frame": 1
+      },
+      {
+        "name": "cs1_positive",
+        "frame": 11
+      },
+      {
+        "name": "cs1_negative",
+        "frame": 21
+      },
+      {
+        "name": "cs2_positive",
+        "frame": 41
+      },
+      {
+        "name": "cs3_positive",
+        "frame": 71
+      },
+      {
+        "name": "cs4_positive",
+        "frame": 101
+      }
+    ]
   }
 }

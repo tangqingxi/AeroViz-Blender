@@ -86,10 +86,10 @@ def check_stage1(record, baseline):
     }
 
 
-def check_stage15(record, baseline):
+def check_stage15(record, baseline, animated_objects=()):
     import materials  # 延迟导入：需要 bpy
 
-    preserved = materials.check_preserved(baseline)
+    preserved = materials.check_preserved(baseline, animated_objects=animated_objects)
     added = preserved["added_objects"]
     expected_added = sorted("MATERIAL_LIGHT::" + name for name in record["environment"]["lights"])
     assert added == expected_added, (added, expected_added)
@@ -121,6 +121,7 @@ def check_stage15(record, baseline):
             else:
                 color_error = max(color_error, max(abs(a - b) for a, b in zip(actual, value)))
         verified += 1
+    assert len(bpy.data.materials) == len(record["created_materials"])
     assert color_error < 1e-6, color_error
     lights = sorted(o.name for o in bpy.data.objects if o.name.startswith("MATERIAL_LIGHT::"))
     assert lights == expected_added, lights
@@ -144,6 +145,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--config", required=True)
     parser.add_argument("--out", help="记录路径，默认写入审计仓库 manifests/reverify-current.json")
+    parser.add_argument("--animation-baseline", help="动画原始结构基线，默认读取 Stage 2 归档证据")
     args = parser.parse_args(argv)
 
     config = load(project_io.resolve(args.config))
@@ -163,11 +165,21 @@ def main():
         assert project.is_file(), f"当前工程不存在：{project}"
         result["project_sha256"] = hashlib.sha256(project.read_bytes()).hexdigest()
         bpy.ops.wm.open_mainfile(filepath=str(project))
+        animated = sorted(o.name for o in bpy.data.objects if o.animation_data)
+        stage2_active = bool(bpy.context.scene.get("aeroviz_animation"))
+        allowed = sorted("JOINT::"+m["joint"] for m in config.get("animation",{}).get("motions",[])) if stage2_active else []
+        assert animated == allowed, (animated,allowed)
+        if stage2_active:
+            bpy.context.scene.frame_set(config["animation"]["frame_start"])
         baseline = load(stage15 / "material_structure_baseline.json")
         result["stage1"] = check_stage1(load(stage1 / "validation.json"), baseline)
-        result["stage1_5"] = check_stage15(load(stage15 / "material_validation.json"), baseline)
-        animated = [o.name for o in bpy.data.objects if o.animation_data]
-        assert not animated, animated
+        result["stage1_5"] = check_stage15(load(stage15 / "material_validation.json"), baseline, animated_objects=allowed)
+        if stage2_active:
+            from animation import kinematics
+            source = project_io.resolve(args.animation_baseline) if args.animation_baseline else project_io.evidence_dir(config,"stage-2")/"structure_baseline.json"
+            result["stage2"] = kinematics.validate(config,load(source))
+            assert len(animated)==len(config["animation"]["motions"])
+            assert all(not o.animation_data for o in bpy.data.objects if o.type=="MESH")
         result["objects_with_animation"] = animated
         result["object_total"] = len(bpy.data.objects)
         result["overall"] = "PASS"
@@ -186,4 +198,5 @@ def main():
                      ensure_ascii=False, indent=2))
 
 
-main()
+if __name__ == "__main__":
+    main()
