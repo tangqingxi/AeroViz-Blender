@@ -23,7 +23,7 @@
 | 事项 | 结果 | 证据 |
 |---|---|---|
 | 主仓库正式建立 | 公开仓库，24 个文件，2 次提交 | <https://github.com/tangqingxi/AeroViz-Blender> |
-| 审计仓库建立 | 私有仓库，阶段报告 + 证据 + 清单 | 本仓库 |
+| 审计仓库建立 | 公开仓库（2026-11-10 由 Private 改为 Public），阶段报告 + 证据 + 清单 | 本仓库 |
 | 通用代码与机型配置分离 | `adapters/` 注册表 + `configs/<MODEL>.json`；通用代码中 grep 无 DF4/ductedfan 命中 | DEV `adapters/__init__.py`、`configs/DF4.json` |
 | 适配器重构的等价性验证 | 重新解析 DF4：25 visual / 26 link / 25 joint / 1 include / 1 跳过关节，与 Stage 1–1.5 基线一致 | `manifests/reverify-2026-11-10.json`、本轮 dev 侧 `tests/` 输出 |
 | 映射单元测试 | `MATERIAL_MAPPING_TESTS_OK`（重构后复跑） | DEV `tests/test_material_mapping.py` |
