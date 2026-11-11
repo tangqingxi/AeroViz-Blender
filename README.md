@@ -40,7 +40,7 @@
 - **结构保护**：Stage 1.5 必须保持原有对象的矩阵、父子关系、Collection、隐藏状态、几何哈希与关节属性完全不变。
 - **图形验收**：专用脚本在真实窗口中重开 `.blend`、断言状态并截图；后台渲染成功**不**算目视验收。
 
-已新增配置驱动的机械运动与关键帧验证。Stage 3已实现配置驱动爆炸/恢复。尚未实现（不得假设存在）：镜头与灯光编排、视频渲染、多机型批处理。见 §7 路线图。
+已新增配置驱动的机械运动与关键帧验证；Stage 3 已实现配置驱动爆炸/恢复；Stage 4.0 已实现展示镜头与实际渲染；Stage 4.1 已定标 Cycles 静帧参数（平均 10.08 s/帧）。尚未实现（不得假设存在）：正式 900 帧序列与 MP4 交付、多机型批处理。见 §7 路线图。
 
 ## 3. 架构
 
@@ -112,7 +112,7 @@ AeroViz-Blender/
 │   ├── gui_verify_materials.py Stage 1.5 图形验收
 │   ├── check_joint_hierarchy.py
 │   ├── animation/              机械运动、独立爆炸位移层与真实窗口验收
-│   └── rendering/              Stage 4 预留：只有接口说明，无实现
+│   └── rendering/              展示场景、总览图、编码入口与 Cycles 静帧渲染
 ├── assets/
 │   └── materials/
 │       └── gazebo_standard.json   Gazebo Classic 脚本材质数值摘要
