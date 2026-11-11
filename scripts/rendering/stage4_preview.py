@@ -25,8 +25,8 @@ def main():
     parser.add_argument('--keep-work-source',action='store_true',help='仅测试副本时保留.work输入帧')
     args = parser.parse_args(sys.argv[sys.argv.index('--')+1:])
     config = json.loads(project_io.resolve(args.config).read_text(encoding='utf8'))
-    if config['presentation'].get('revision')=='4.0-R1' and args.mode=='video':
-        raise RuntimeError('Stage4.0-R1明确禁止生成MP4或视频预览序列')
+    if config['presentation'].get('revision') in ('4.0-R1','4.0-R2') and args.mode=='video':
+        raise RuntimeError('当前修订明确禁止生成MP4或视频预览序列')
     bpy.ops.wm.open_mainfile(filepath=str(project_io.project(config)))
     spec = config['presentation']; scene = bpy.data.scenes[spec['scene']]
     presentation.activate(scene)

@@ -26,7 +26,7 @@ config = json.loads(project_io.resolve(args.config).read_text(encoding='utf8'))
 evidence = project_io.evidence_dir(config,config['presentation'].get('output_stage','stage-4.0'))
 evidence.mkdir(parents=True,exist_ok=True)
 work=WORKSPACE/config['presentation'].get('work_dir','.work/stage-4.0')
-screen_path=work/'gui_layout_only.png' if config['presentation'].get('revision')=='4.0-R1' else evidence/'gui_layout_only.png'
+screen_path=work/'gui_layout_only.png' if config['presentation'].get('revision') in ('4.0-R1','4.0-R2') else evidence/'gui_layout_only.png'
 screen_path.parent.mkdir(parents=True,exist_ok=True)
 state = {'step':'reopen-check' if args.reopen_check_only else 'setup','samples':[]}
 initial_open_state={'scene':bpy.context.scene.name,'frame':bpy.context.scene.frame_current}
@@ -112,17 +112,18 @@ def timer():
                 return 1.0
             state['samples'].append({'elapsed_s':round(time.monotonic()-state['started'],3),
                                      'frame':scene.frame_current,'camera':scene.camera.name})
-            if config['presentation'].get('revision')=='4.0-R1':
+            if config['presentation'].get('revision') in ('4.0-R1','4.0-R2'):
                 captured=state.setdefault('visual_sample_frames',{})
-                for frame in (80,248,412,453,612,807,855,930,975):
+                samples=(75,235,350,412,453,625,821,913,975) if config['presentation'].get('revision')=='4.0-R2' else (80,248,412,453,612,807,855,930,975)
+                for frame in samples:
                     if frame<=scene.frame_current<frame+25 and str(frame) not in captured:
                         bpy.ops.screen.screenshot(filepath=str(work/f'gui_live_{frame:03d}.png'))
                         captured[str(frame)]={'actual_frame':scene.frame_current,'camera':scene.camera.name}
             wrapped = any(b['frame'] < a['frame'] for a,b in zip(state['samples'],state['samples'][1:]))
             if wrapped:
                 bpy.ops.screen.animation_cancel(restore_frame=False)
-                if config['presentation'].get('revision')=='4.0-R1':
-                    state['check_frames']=[80,248,412,453,807,930,975]
+                if config['presentation'].get('revision') in ('4.0-R1','4.0-R2'):
+                    state['check_frames']=[75,350,412,453,625,821,913,975] if config['presentation'].get('revision')=='4.0-R2' else [80,248,412,453,807,930,975]
                     state['check_index']=0;state['check_wait']=False;state['step']='checks';return .2
                 scene.frame_set(1);scene.camera = bpy.data.objects['S4::CAMERA_A']
                 state['step'] = 'finish';return 2.0

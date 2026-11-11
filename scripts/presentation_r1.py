@@ -52,7 +52,8 @@ def ease_owned():
                 for bag in strip.channelbags:
                     for curve in bag.fcurves:
                         for point in curve.keyframe_points:
-                            point.interpolation='LINEAR' if action.get('r1_sampled_rotation') or action.get('r1_sampled_location') else 'BEZIER'
+                            sampled=any(action.get(name) for name in ('r1_sampled_rotation','r1_sampled_location','sampled_rotation','sampled_location'))
+                            point.interpolation='LINEAR' if sampled else 'BEZIER'
                             point.handle_left_type=point.handle_right_type='AUTO_CLAMPED'
 
 

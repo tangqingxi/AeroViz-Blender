@@ -17,7 +17,7 @@ import project_io
 def compose(config, source_dir, font_path=None):
     spec = config['presentation']; source_dir = Path(source_dir).resolve()
     evidence = project_io.evidence_dir(config,spec.get('output_stage','stage-4.0'))
-    destination = evidence/'images'/spec.get('overview_name',f"{config['model_name']}_Stage4_0_overview.png")
+    destination = evidence/spec.get('overview_subdir','images')/spec.get('overview_name',f"{config['model_name']}_Stage4_0_overview.png")
     frames = sorted(spec['stills'].items(),key=lambda row:row[1])
     labels = {
         'stage_00_hero':'完整机型 · Hero',
@@ -66,7 +66,7 @@ def compose(config, source_dir, font_path=None):
     draw.text((gap,height-40),'上排：完整机型 / 最终布局；下排：按时间顺序的阶段与细节。画面不代表实际拆装行程。',font=note_font,fill=(156,164,175))
     destination.parent.mkdir(parents=True,exist_ok=True)
     sheet.save(destination)
-    record = {'local_only':True,'path':destination.relative_to(project_io.audit_root(config)).as_posix(),
+    record = {'local_only':spec.get('overview_local_only',True),'path':destination.relative_to(project_io.audit_root(config)).as_posix(),
               'width':width,'height':height,'source_frame_count':len(sources),'sources':sources,
               'sha256':hashlib.sha256(destination.read_bytes()).hexdigest(),'bytes':destination.stat().st_size}
     (evidence/'contact_sheet.json').write_bytes((json.dumps(record,ensure_ascii=False,indent=2)+'\n').encode('utf8'))
