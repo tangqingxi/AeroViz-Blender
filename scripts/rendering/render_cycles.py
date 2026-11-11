@@ -48,6 +48,9 @@ def parse_args():
     parser.add_argument("--backend", default="OPTIX", choices=("OPTIX", "CUDA", "CPU"))
     parser.add_argument("--skip-existing", action="store_true")
     parser.add_argument("--frame-prefix", default="DF4_F")
+    parser.add_argument("--frame-digits", type=int, default=4)
+    parser.add_argument("--frames-subdir", default="frames",
+                        help="帧目录名，位于 --out 之下；正式交付用 PNG_Master")
     return parser.parse_args(argv)
 
 
@@ -133,7 +136,7 @@ def main():
         raise FileNotFoundError(f"正式工程不存在：{project}")
 
     out = Path(args.out) if args.out else project_io.resolve("../DF4_Render/Stage4_1_QualityTest")
-    frames_dir = out / "frames"
+    frames_dir = out / args.frames_subdir
     frames_dir.mkdir(parents=True, exist_ok=True)
     work = out / "_work"
     work.mkdir(parents=True, exist_ok=True)
@@ -168,7 +171,7 @@ def main():
     total = 0.0
     rendered = 0
     for number in frames:
-        target = frames_dir / f"{args.frame_prefix}{number:04d}.png"
+        target = frames_dir / f"{args.frame_prefix}{number:0{args.frame_digits}d}.png"
         if args.skip_existing and existing_ok(target, args.width, args.height):
             record["skipped"].append({"frame": number, "path": target.name})
             print(f"FRAME_SKIP {number}", flush=True)
