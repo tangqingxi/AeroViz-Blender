@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
-  "phase": "Stage4.0-R2",
-  "created_at": "2026-11-11T09:17:07.212435+00:00",
+  "phase": "Stage4.0-R3",
+  "created_at": "2026-11-11T09:57:45.344579+00:00",
   "development": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender",
     "branch": "main",
-    "commit": "4b8dca8ef2e2810f2c40477f8c394ff8c4d49b21"
+    "commit": "e38ecc3f646eaccdd16c13cf7cc6593fce02a870"
   },
   "audit": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
@@ -27,14 +27,14 @@
     },
     {
       "path": "HANDOFF.md",
-      "sha256": "ddd636bb69b3112b6388877608bef871f36d4d834b0d7774ea37a222a2489658",
-      "bytes": 3043,
+      "sha256": "d15693b5cab69254e8e07745d5f123b73cf29d0a9c8046959255e62cfb7f2689",
+      "bytes": 2636,
       "kind": "report"
     },
     {
       "path": "manifests/ARTIFACT_MANIFEST.md",
-      "sha256": "4b35bf3b59413149f0289a0e607336c96b6b9f3d66d16ebf8615e60297cc3040",
-      "bytes": 17848,
+      "sha256": "3594e207fd14a2754138dcb0cbec58eaebfc86fd1f28e687fcf52ee5c13d0c51",
+      "bytes": 18970,
       "kind": "report"
     },
     {
@@ -75,8 +75,8 @@
     },
     {
       "path": "README.md",
-      "sha256": "e965eb6b651aa6217640dc3a73a85e1c55cf3d659f365837b65cb33a2b02a0fe",
-      "bytes": 5555,
+      "sha256": "84a3524dc5e5897f4f1201eb56e50eba46b7936ede6fff3a61eb600da97c2a75",
+      "bytes": 5707,
       "kind": "report"
     },
     {
@@ -620,6 +620,102 @@
       "kind": "record"
     },
     {
+      "path": "stages/stage-4/evidence/r3/baseline_regression.json",
+      "sha256": "cd897b1680d423ea279afc48dd36143d2507ca3811772a4ba85fbd68ff909ff3",
+      "bytes": 1822477,
+      "kind": "record"
+    },
+    {
+      "path": "stages/stage-4/evidence/r3/battery_path.json",
+      "sha256": "6d98ba6a3a9baecf85a509c87e3963f4222f951a387d6078122069cbcacefe45",
+      "bytes": 17128,
+      "kind": "record"
+    },
+    {
+      "path": "stages/stage-4/evidence/r3/contact_sheet.json",
+      "sha256": "191bf0773e53fb23988d8e08dd6c1039af2064d1383713bb057448eaef125bf1",
+      "bytes": 3464,
+      "kind": "record"
+    },
+    {
+      "path": "stages/stage-4/evidence/r3/delivery_checks.json",
+      "sha256": "c9c4134af42259be0511498cb39bc60322f473c23845d9d867c3aed3b2ccf7a3",
+      "bytes": 768,
+      "kind": "record"
+    },
+    {
+      "path": "stages/stage-4/evidence/r3/final_reopen_validation.json",
+      "sha256": "2f256e13c76339e3cb7d8dc3e0712716c107815ea6ecfac6573f0d302644c0d1",
+      "bytes": 590,
+      "kind": "record"
+    },
+    {
+      "path": "stages/stage-4/evidence/r3/formal_candidate_equivalence.json",
+      "sha256": "9b14625f5f76c05af0d00172435362e40c16b5de6fe69405522f79639098a9b7",
+      "bytes": 724,
+      "kind": "record"
+    },
+    {
+      "path": "stages/stage-4/evidence/r3/geometry_intersections.json",
+      "sha256": "6e0d3b7e9448819f27b69a16a132ac32305d4b9435fda24236041449b67f3668",
+      "bytes": 1196,
+      "kind": "record"
+    },
+    {
+      "path": "stages/stage-4/evidence/r3/gui_validation.json",
+      "sha256": "c45dc835082df6829b5e3025fb01cb3eb5fc854a1d8b03d4cdd8ea9e8f9b32bc",
+      "bytes": 7939,
+      "kind": "record"
+    },
+    {
+      "path": "stages/stage-4/evidence/r3/input_preservation.json",
+      "sha256": "e9b225b122eaa246a6d44b0654f7e07b130bc9da751f885ebc5308907c87a3a0",
+      "bytes": 5517,
+      "kind": "record"
+    },
+    {
+      "path": "stages/stage-4/evidence/r3/presentation_config.json",
+      "sha256": "0a4a3a7a4aa411f6ea1c9fe2037d45ff3e780d0e1d3626449dd2afe49ff4281d",
+      "bytes": 15897,
+      "kind": "record"
+    },
+    {
+      "path": "stages/stage-4/evidence/r3/preserved_design.json",
+      "sha256": "be17c709089950ac8bc6776614fde3f9f012a67fd8cd6880e9a20f580a1cf977",
+      "bytes": 7096,
+      "kind": "record"
+    },
+    {
+      "path": "stages/stage-4/evidence/r3/r2_compatibility_regression.json",
+      "sha256": "5fe1f83f1527e54bfad37d83c2e269848260d78332f9ec82f6744ab6d3e2db40",
+      "bytes": 17872,
+      "kind": "record"
+    },
+    {
+      "path": "stages/stage-4/evidence/r3/repository_visibility.json",
+      "sha256": "41e8a2134c01c286d80ee90d4e3e90a28863fb0c3eb0b9ef01c7207930a7c4d5",
+      "bytes": 342,
+      "kind": "record"
+    },
+    {
+      "path": "stages/stage-4/evidence/r3/saved_project_regression.json",
+      "sha256": "1e55bd18e88a44f45785b51d13678258995eeb5c7b774ab922936731720a1612",
+      "bytes": 1827454,
+      "kind": "record"
+    },
+    {
+      "path": "stages/stage-4/evidence/r3/static_checks.json",
+      "sha256": "8516236edab5a85d993289042c621fee1009d3451651748025e41e100f736370",
+      "bytes": 188,
+      "kind": "record"
+    },
+    {
+      "path": "stages/stage-4/evidence/r3/summary.json",
+      "sha256": "bf185759dbf30e63068061dea898af0232a8e9181c078c718940ae7b25820475",
+      "bytes": 1214,
+      "kind": "record"
+    },
+    {
       "path": "stages/stage-4/evidence/repository_visibility.json",
       "sha256": "41e8a2134c01c286d80ee90d4e3e90a28863fb0c3eb0b9ef01c7207930a7c4d5",
       "bytes": 342,
@@ -638,6 +734,12 @@
       "kind": "image"
     },
     {
+      "path": "stages/stage-4/evidence/STAGE_4_0_R3_OVERVIEW.png",
+      "sha256": "a8dc8501cc698ebdbb09c09b53a7571e28b9f215b1be4da998740db0fc5fde30",
+      "bytes": 2035308,
+      "kind": "image"
+    },
+    {
       "path": "stages/stage-4/evidence/static_checks.json",
       "sha256": "5f8af210f9c23205f259ce3f2f6183d24490b722d6bf5de1ead6cfde50ec54e4",
       "bytes": 130,
@@ -650,6 +752,12 @@
       "kind": "record"
     },
     {
+      "path": "stages/stage-4/evidence-manifest-r3.json",
+      "sha256": "27e0c5f2c03b82b0e753ba3a9f26514be66d757b4133dcf6fb285e4837456a70",
+      "bytes": 4297,
+      "kind": "record"
+    },
+    {
       "path": "stages/stage-4/evidence-manifest.json",
       "sha256": "4f861f070e10c113146213288147e019db84dce2fdb0c2a041696dbc75864a75",
       "bytes": 3827,
@@ -659,6 +767,12 @@
       "path": "stages/stage-4/STAGE_4_0_R2_REPORT.md",
       "sha256": "62dcc4d643ed92cf468264750339eb6b5ac5a33267b8f9ff06ce2f64a1d0e97d",
       "bytes": 10768,
+      "kind": "report"
+    },
+    {
+      "path": "stages/stage-4/STAGE_4_0_R3_REPORT.md",
+      "sha256": "cedbf076dfc23e427196bf30b30ff003409015a43d854228325200dcf58b5c6f",
+      "bytes": 9846,
       "kind": "report"
     },
     {

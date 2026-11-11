@@ -1,0 +1,16 @@
+{
+  "status": "PASS",
+  "source": "GitHub connector get_repo",
+  "repositories": [
+    {
+      "repository": "tangqingxi/AeroViz-Blender",
+      "visibility": "public",
+      "default_branch": "main"
+    },
+    {
+      "repository": "tangqingxi/AeroViz-Blender-Audit",
+      "visibility": "public",
+      "default_branch": "main"
+    }
+  ]
+}

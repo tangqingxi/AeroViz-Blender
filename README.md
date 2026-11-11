@@ -25,6 +25,7 @@
 | Stage 4.0 | 展示镜头与渐进式拆解原型 | **技术PASS / 等待人工效果验收** | [STAGE_4_0_REPORT.md](stages/stage-4.0/STAGE_4_0_REPORT.md) |
 | Stage 4.0-R1 | 中性摄影棚、姿态、同步拆解与逆序装配 | **READY FOR USER VISUAL ACCEPTANCE** | [STAGE_4_0_R1_REPORT.md](stages/stage-4.0-r1/STAGE_4_0_R1_REPORT.md) |
 | Stage 4.0-R2 | 柔和灰摄影棚、相机叙事与完整动力拆解 | **READY FOR USER VISUAL ACCEPTANCE** | [STAGE_4_0_R2_REPORT.md](stages/stage-4/STAGE_4_0_R2_REPORT.md) |
+| Stage 4.0-R3 | 镜头精简与四舵面同步拆解 | **READY FOR USER VISUAL ACCEPTANCE** | [STAGE_4_0_R3_REPORT.md](stages/stage-4/STAGE_4_0_R3_REPORT.md) |
 | Stage 5 | 多机型适配与工具完善 | 未执行 | — |
 
 当前验证机型只有 DF4。项目定位、路线图与代码结构见开发仓库 README。
@@ -64,9 +65,9 @@ python scripts/verify_evidence.py <audit-root> <audit-root>/stages/stage-1.5/evi
 
 ## 当前工程
 
-唯一正式工程为`<DEV>/output/DF4/DF4.blend`，当前Stage4.0-R2 SHA256 `766faf3114d05f2b3f0193ae8cc0ecd0aeb0e08f476afcc686e34d59be8af197`。原Stage1–3成果保留，新增展示层为33秒、1–990帧。最终Blender保持Camera A、第1帧、停止播放，用户可直接按空格检查。
+唯一正式工程`<DEV>/output/DF4/DF4.blend`，当前R3 SHA256 `cfafc7c7245654409a378a7c16267251a3307863dfcfb6c288ac53c1674295a0`。Stage1–3保留，展示层30秒、1–900帧、10镜头章节，脚架/舵机特写删除，四舵面同步偏转后同步退出、同步回装。
 
-本轮唯一总览图在`stages/stage-4/evidence/STAGE_4_0_R2_OVERVIEW.png`，随R2报告提交；此前images目录仍忽略。无新视频或分散序列。用户视觉验收仍PENDING，历史报告和哈希保持原记录。当前DEV提交`4b8dca8ef2e2810f2c40477f8c394ff8c4d49b21`。
+唯一总览图`stages/stage-4/evidence/STAGE_4_0_R3_OVERVIEW.png`；机器记录另存evidence/r3，不覆盖R1/R2。无新视频或序列，用户视觉验收PENDING。最终Blender保持Camera A、第1帧、停止播放，按空格即可检查。DEV `e38ecc3f646eaccdd16c13cf7cc6593fce02a870`。
 
 ## 分工边界
 

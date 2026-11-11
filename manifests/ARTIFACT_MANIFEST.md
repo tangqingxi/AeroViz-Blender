@@ -215,7 +215,7 @@ Stage2历史交付为 `c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f8
 - 状态为READY FOR USER VISUAL ACCEPTANCE，尚未获得用户效果认可。原Stage4.0及Stage1–3报告/哈希保持历史。
 
 
-## Stage 4.0-R2 当前交付
+## Stage 4.0-R2 历史交付
 
 - 唯一正式工程：`<DEV>/output/DF4/DF4.blend`，5,518,390字节，SHA256 `766faf3114d05f2b3f0193ae8cc0ecd0aeb0e08f476afcc686e34d59be8af197`。
 - DEV：`4b8dca8ef2e2810f2c40477f8c394ff8c4d49b21`。源117对象/33网格/7材质/29Action保持；R1展示72对象保留，只增POWER，展示73/全局190对象。
@@ -223,3 +223,13 @@ Stage2历史交付为 `c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f8
 - 唯一图片：`stages/stage-4/evidence/STAGE_4_0_R2_OVERVIEW.png`，18个正式工程渲染画面合图；按本轮明确路径提交一张总览图，历史images仍忽略。无新MP4或序列。
 - Stage1–3/源输入34文件哈希/17,245几何样本/动力与舵面/电池连续扫掠/正式重开/真实GUI播放全部PASS。回装误差2.45e-16。历史阶段目录不改写，临时副本及PNG结束清理。
 - 状态READY FOR USER VISUAL ACCEPTANCE，用户效果验收PENDING。Blender保持Camera A、Frame1、停止播放，等用户按空格检查。
+
+
+## Stage 4.0-R3 当前交付
+
+- 唯一正式工程`<DEV>/output/DF4/DF4.blend`，5,519,908字节，SHA256 `cfafc7c7245654409a378a7c16267251a3307863dfcfb6c288ac53c1674295a0`，DEV `e38ecc3f646eaccdd16c13cf7cc6593fce02a870`。
+- 实际R2基线766faf31…保留回归和字节备份记录，未回退R1。源117对象/33网格/7材质/29Action及展示73对象保持，不改原几何/父级/材质。
+- 30秒、30FPS、1–900帧、10章节；C只保留涵道/完整动力，四舵面同步±20°后同步退出与同步返回，完整动力和-Y380mm电池保留。
+- 691–750分解保持2秒，751–870逆序回装4秒，871–900完整机型1秒。恢复误差2.45e-16；13,981自适应网格子帧无新增相交对，源输入34哈希/完整回归/真实GUI通过。
+- 唯一图片`stages/stage-4/evidence/STAGE_4_0_R3_OVERVIEW.png`，16画面由正式工程实际渲染。R3记录单独存evidence/r3，历史报告/清单保持，无新MP4或分散序列；.work/stage-4-r3清理。
+- READY FOR USER VISUAL ACCEPTANCE，效果验收PENDING。Blender保持Camera A、第1帧、停止播放，等待用户检查。

@@ -1,0 +1,53 @@
+{
+  "status": "STAGE 4.0-R3: READY FOR USER VISUAL ACCEPTANCE",
+  "human_visual_acceptance": "PENDING",
+  "formal_project": "output/DF4/DF4.blend",
+  "sha256": "cfafc7c7245654409a378a7c16267251a3307863dfcfb6c288ac53c1674295a0",
+  "baseline_sha256": "766faf3114d05f2b3f0193ae8cc0ecd0aeb0e08f476afcc686e34d59be8af197",
+  "development_head": "e38ecc3f646eaccdd16c13cf7cc6593fce02a870",
+  "frames": [
+    1,
+    900
+  ],
+  "fps": 30,
+  "duration_s": 30,
+  "shot_chapters": 10,
+  "camera_letter_changes": 4,
+  "closeups": [
+    "DUCT1",
+    "POWER"
+  ],
+  "removed_closeups": [
+    "LEG1",
+    "SERVO1"
+  ],
+  "surface_exit": [
+    426,
+    465
+  ],
+  "surface_return": [
+    823,
+    830
+  ],
+  "surface_exit_and_return_synchronized": true,
+  "power_installation_matrix_error": 0,
+  "reassembly_matrix_error": 2.4492937051703357e-16,
+  "geometry_samples": 13981,
+  "new_intersection_pairs": 0,
+  "source_counts": [
+    117,
+    33,
+    7,
+    29
+  ],
+  "retained_r2_presentation_objects": 73,
+  "global_objects": 190,
+  "battery_delta_m": [
+    0,
+    -0.38,
+    0
+  ],
+  "mp4_generated": false,
+  "overview": "stages/stage-4/evidence/STAGE_4_0_R3_OVERVIEW.png",
+  "blender_left_open_camera_A_frame_1_stopped": true
+}

@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": ".work/stage-4-r3/candidate.blend",
+      "sha256": "2d2a235220be1e01657e805bc105ca88761a782ae807ba2b92cfc8cc1f02b434",
+      "render_input_signature": "3799064e50b7bd81e65da12a808c636c9de2874103e85d6a7c8a2d91c82e35eb",
+      "geometry_input_signature": "1d1e8a0383d86f0f4cf572ee562b62176a3a4ad6ed8ef6df8462c903454ae2aa"
+    },
+    {
+      "path": "output/DF4/DF4.blend",
+      "sha256": "cfafc7c7245654409a378a7c16267251a3307863dfcfb6c288ac53c1674295a0",
+      "render_input_signature": "3799064e50b7bd81e65da12a808c636c9de2874103e85d6a7c8a2d91c82e35eb",
+      "geometry_input_signature": "1d1e8a0383d86f0f4cf572ee562b62176a3a4ad6ed8ef6df8462c903454ae2aa"
+    }
+  ]
+}

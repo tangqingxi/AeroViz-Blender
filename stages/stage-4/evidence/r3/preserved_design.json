@@ -1,0 +1,448 @@
+{
+  "status": "PASS",
+  "baseline_sha256": "766faf3114d05f2b3f0193ae8cc0ecd0aeb0e08f476afcc686e34d59be8af197",
+  "appearance_preserved_from_r2": true,
+  "intro_preservation_error": 0,
+  "leg_motion_preservation_error": 0,
+  "paths": [
+    {
+      "module": "LEG1",
+      "objects": [
+        "tail-1"
+      ],
+      "delta_m": [
+        0.175,
+        -0.3031088913245535,
+        -0.4
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        91,
+        145,
+        859,
+        870
+      ]
+    },
+    {
+      "module": "LEG2",
+      "objects": [
+        "tail-2"
+      ],
+      "delta_m": [
+        -0.35,
+        0,
+        -0.4
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        91,
+        145,
+        859,
+        870
+      ]
+    },
+    {
+      "module": "LEG3",
+      "objects": [
+        "tail-3"
+      ],
+      "delta_m": [
+        0.175,
+        0.3031088913245535,
+        -0.4
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        91,
+        145,
+        859,
+        870
+      ]
+    },
+    {
+      "module": "DUCT1",
+      "objects": [
+        "duct-out-1"
+      ],
+      "delta_m": [
+        0.38,
+        0,
+        0.02
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        146,
+        200,
+        851,
+        858
+      ]
+    },
+    {
+      "module": "DUCT2",
+      "objects": [
+        "duct-out-2"
+      ],
+      "delta_m": [
+        -0.19,
+        0.32908965343808666,
+        0.02
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        146,
+        200,
+        851,
+        858
+      ]
+    },
+    {
+      "module": "DUCT3",
+      "objects": [
+        "duct-out-3"
+      ],
+      "delta_m": [
+        -0.19,
+        -0.32908965343808666,
+        0.02
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        146,
+        200,
+        851,
+        858
+      ]
+    },
+    {
+      "module": "POWER",
+      "objects": [
+        "motor-Sunnysky-X2814III-1000KV",
+        "rotor"
+      ],
+      "delta_m": [
+        0.38,
+        -0.28,
+        0.18
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        241,
+        300,
+        839,
+        850
+      ]
+    },
+    {
+      "module": "INNER_DUCT",
+      "objects": [
+        "duct-in"
+      ],
+      "delta_m": [
+        0,
+        -0.6,
+        -0.32
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        306,
+        327,
+        831,
+        838
+      ]
+    },
+    {
+      "module": "SURFACE1",
+      "objects": [
+        "cs11"
+      ],
+      "delta_m": [
+        0.32,
+        0,
+        -0.39
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        426,
+        465,
+        823,
+        830
+      ]
+    },
+    {
+      "module": "SURFACE2",
+      "objects": [
+        "cs2"
+      ],
+      "delta_m": [
+        0,
+        -0.32,
+        -0.39
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        426,
+        465,
+        823,
+        830
+      ]
+    },
+    {
+      "module": "SURFACE3",
+      "objects": [
+        "cs33"
+      ],
+      "delta_m": [
+        -0.32,
+        0,
+        -0.39
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        426,
+        465,
+        823,
+        830
+      ]
+    },
+    {
+      "module": "SURFACE4",
+      "objects": [
+        "cs4"
+      ],
+      "delta_m": [
+        0,
+        0.32,
+        -0.39
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        426,
+        465,
+        823,
+        830
+      ]
+    },
+    {
+      "module": "SERVO1",
+      "objects": [
+        "servo-KST-X08H-1"
+      ],
+      "delta_m": [
+        0.23,
+        0,
+        -0.24
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        471,
+        500,
+        815,
+        822
+      ]
+    },
+    {
+      "module": "SERVO2",
+      "objects": [
+        "servo-KST-X08H-2"
+      ],
+      "delta_m": [
+        0,
+        -0.23,
+        -0.24
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        471,
+        500,
+        815,
+        822
+      ]
+    },
+    {
+      "module": "SERVO3",
+      "objects": [
+        "servo-KST-X08H-4"
+      ],
+      "delta_m": [
+        -0.23,
+        0,
+        -0.24
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        471,
+        500,
+        815,
+        822
+      ]
+    },
+    {
+      "module": "SERVO4",
+      "objects": [
+        "servo-KST-X08H-3"
+      ],
+      "delta_m": [
+        0,
+        0.23,
+        -0.24
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        471,
+        500,
+        815,
+        822
+      ]
+    },
+    {
+      "module": "BATTERY",
+      "objects": [
+        "battery-4s-10000-2"
+      ],
+      "delta_m": [
+        0,
+        -0.38,
+        0
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        506,
+        540,
+        807,
+        814
+      ]
+    },
+    {
+      "module": "FLYBOARD",
+      "objects": [
+        "base_board_flyctrl",
+        "controller2"
+      ],
+      "delta_m": [
+        0,
+        0.28,
+        0.15
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        541,
+        570,
+        799,
+        806
+      ]
+    },
+    {
+      "module": "PANEL_FRONT",
+      "objects": [
+        "panel11"
+      ],
+      "delta_m": [
+        0.25,
+        0,
+        0.09
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        571,
+        590,
+        791,
+        798
+      ]
+    },
+    {
+      "module": "PANEL_REAR",
+      "objects": [
+        "panel12",
+        "X-tend"
+      ],
+      "delta_m": [
+        -0.25,
+        0,
+        0.09
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        591,
+        610,
+        783,
+        790
+      ]
+    },
+    {
+      "module": "SHELF",
+      "objects": [
+        "shelf1"
+      ],
+      "delta_m": [
+        0,
+        0.4,
+        -0.04
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        611,
+        640,
+        775,
+        782
+      ]
+    },
+    {
+      "module": "ESC",
+      "objects": [
+        "bec-Hobbywing-Platinum"
+      ],
+      "delta_m": [
+        0.26,
+        -0.25,
+        0.1
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        641,
+        660,
+        767,
+        774
+      ]
+    },
+    {
+      "module": "CLAMP1",
+      "objects": [
+        "box_up"
+      ],
+      "delta_m": [
+        0,
+        -0.28,
+        0.06
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        661,
+        675,
+        759,
+        766
+      ]
+    },
+    {
+      "module": "CLAMP2",
+      "objects": [
+        "box_up2"
+      ],
+      "delta_m": [
+        0,
+        0.28,
+        0.06
+      ],
+      "waypoint_vectors_unchanged": true,
+      "r3_frames": [
+        676,
+        690,
+        751,
+        758
+      ]
+    }
+  ],
+  "remaining_closeups": [
+    "DUCT1",
+    "POWER"
+  ]
+}

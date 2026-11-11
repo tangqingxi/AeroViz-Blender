@@ -1,25 +1,21 @@
-# Agent Handoff — Stage 4.0-R2 就绪，待用户视觉验收
+# Agent Handoff — Stage 4.0-R3 就绪，待用户视觉验收
 
-DEV：<https://github.com/tangqingxi/AeroViz-Blender>，main，`4b8dca8ef2e2810f2c40477f8c394ff8c4d49b21`，已推送。AUDIT：<https://github.com/tangqingxi/AeroViz-Blender-Audit>，本交付提交见Git HEAD。两个仓库Public，禁止上传Blend/STL/SDF、视频或大量序列，不force push、不建Tag。
+DEV <https://github.com/tangqingxi/AeroViz-Blender> main `e38ecc3f646eaccdd16c13cf7cc6593fce02a870`，已推送。AUDIT <https://github.com/tangqingxi/AeroViz-Blender-Audit>，当前提交见Git HEAD。两仓库Public，不force push、不建Tag，不上传Blend/STL/SDF/视频/序列。
 
-**STAGE 4.0-R2: READY FOR USER VISUAL ACCEPTANCE**，用户视觉验收PENDING。停止等待，不进入最终高质量渲染或Premiere。
+**STAGE 4.0-R3: READY FOR USER VISUAL ACCEPTANCE**，用户效果验收PENDING。停止等待，不进入最终高质量渲染或Premiere。
 
-## 当前工程与历史
+## 当前工程
 
-唯一正式工程`<DEV>/output/DF4/DF4.blend`，SHA256 `766faf3114d05f2b3f0193ae8cc0ecd0aeb0e08f476afcc686e34d59be8af197`。实际R1基线da631cf3…通过回归后备份，临时副本测试通过后原子更新；未回退任务文本中更早的489553c1…。Stage1–3、4.0及R1历史报告和清单不改写。源Scene117对象、33网格、7材质、29Action、五机械关节和24爆炸控制保持，FLU不改。
+唯一正式工程`<DEV>/output/DF4/DF4.blend`，SHA256 `cfafc7c7245654409a378a7c16267251a3307863dfcfb6c288ac53c1674295a0`。实际R2基线`766faf3114d05f2b3f0193ae8cc0ecd0aeb0e08f476afcc686e34d59be8af197`先完整回归/字节备份再在临时副本修改，未回退R1。原Scene117对象/33网格/7材质/29Action、五机械关节、24爆炸控制与FLU保持，历史断言源码不变；R2展示73对象、27共享实例和全局190对象保留，不改父级或几何。
 
-## R2结构与时间轴
+## R3时间与镜头
 
-保留R1展示72对象与27共享Mesh/材质实例，只新增POWER平移Empty，展示73/全局190对象。MOTOR/ROTOR静态子层共同退出；旋翼局部原Action通过NLA慢转，不重制Stage2动画。AIRCRAFT_POSE_ROOT保持中立、无Action；开场机体静止，相机推进、升高与20°弧线。
+30秒、30FPS、1–900帧，10章节，相机字母切换4次。删除脚架与舵机特写，C仅涵道201–230和完整动力231–305。原开场1–90相机、脚架1–145运动逐帧误差0，摄影棚/主灯签名保留，特写6W补光按新时段触发。B偏转近景336–425、退出全景426–505各自固定。
 
-33秒、30FPS、1–990。14镜头章节；Camera C仅单脚架、单涵道、完整动力组件、一组舵机/舵面。同步脚架/外涵道后完整动力退出、内涵道让开；391–480四舵面同步±20°，随后依次退出、四舵机协调退出，配对1/cs11、2/cs2、4/cs33、3/cs4。电池经R1实际关键帧和世界轨迹确认-Y380mm；601–624退出，框架、电调和夹持片随后按配置退出。766–825分解保持，826–945逆序逐组回装，946–990完整机型保持。恢复误差2.45e-16。
+四舵面336–425同步±20°回零后426–465同步退出，471–500四舵机退出。POWER仍共同平移，Rotor局部原Action慢转保持。电池-Y380mm与所有模块的空间路径向量保留，只压缩时间；连续扫掠和43个进出帧无穿透。691–750完整分解停留2秒，751–870按14组逆序回装4秒，四舵面同步返回，871–900完整机型保持1秒。恢复误差2.45e-16。
 
-柔和中性灰摄影棚、深色弱网格、六灯，sRGB参考正确线性化，AgX曝光-0.1。原机体材质保持。原20对源接触/相交保留；17,245约1mm自适应实际三角BVH样本没有新增相交对；电池另有±Y连续扫掠/31帧路径验证。不声称制造级全机CCD。
+## 证据与用户窗口
 
-## 验证与交付
+唯一主报告`stages/stage-4/STAGE_4_0_R3_REPORT.md`，机器证据`stages/stage-4/evidence/r3/`，新清单`stages/stage-4/evidence-manifest-r3.json`。R1/R2报告和证据字节不改写。完整保存后回归、R2验证兼容、源输入34哈希、同步/动力/电池/构图与恢复、13,981自适应实际网格子帧和真实GUI均PASS。原20对源接触/相交保留，不宣称制造级全机CCD。
 
-唯一主报告`stages/stage-4/STAGE_4_0_R2_REPORT.md`。保存后完整回归、源输入34哈希、动力安装/旋翼轴、舵面角度/限位、990帧轨迹/构图与恢复、正式/副本渲染签名、真实GUI完整播放/精确帧复查及最终重开全部PASS。详情见evidence及SHA清单。
-
-本轮仅一张`stages/stage-4/evidence/STAGE_4_0_R2_OVERVIEW.png`，18个实际正式工程渲染画面合图，按本轮明确路径提交Audit；历史images忽略规则不变。没有新MP4、没有分散PNG交付。所有临时帧/GUI截图/副本在.work，已通过project_io受限清理。
-
-用户不熟悉Blender。最终保持本机5.0.1窗口打开，STAGE4_PRESENTATION、Camera A、Frame1、停止播放、Timeline完整1–990；用户按空格即可检查，操作说明在DEV docs/stage4-acceptance.md。下一步仅等待用户反馈与新授权。
+本轮只交付一张`stages/stage-4/evidence/STAGE_4_0_R3_OVERVIEW.png`，16个正式工程实际渲染画面。无新MP4/分散PNG，.work/stage-4-r3通过project_io安全清理。Blender5.0.1实际完整播放和精确关键帧检查后重新打开，保持STAGE4_PRESENTATION、Camera A、第1帧、停止播放、Timeline完整1–900。用户直接按空格检查，无需修改参数；说明在DEV docs/stage4-acceptance.md。
