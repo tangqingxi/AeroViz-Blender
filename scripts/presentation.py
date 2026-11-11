@@ -363,6 +363,9 @@ def build(config, baseline):
 
 
 def validate(config, baseline):
+    if config['presentation'].get('revision') == '4.0-R3':
+        import presentation_r3
+        return presentation_r3.validate(config,baseline)
     if config['presentation'].get('revision') == '4.0-R2':
         import presentation_r2
         return presentation_r2.validate(config,baseline)

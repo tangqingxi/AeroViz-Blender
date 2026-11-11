@@ -1550,7 +1550,7 @@
     "source_scene": "Scene",
     "prefix": "S4::",
     "fps": 30,
-    "frame_end": 990,
+    "frame_end": 900,
     "preview": {
       "width": 960,
       "height": 540,
@@ -1579,8 +1579,8 @@
           -0.3031088913245535,
           -0.4
         ],
-        "return_start": 938,
-        "return_end": 944,
+        "return_start": 859,
+        "return_end": 870,
         "detail": true,
         "waypoints": [
           [
@@ -1594,7 +1594,7 @@
         ],
         "return_waypoints": [
           [
-            941,
+            864,
             [
               0.0875,
               -0.15155444566227674,
@@ -1616,8 +1616,8 @@
           0,
           -0.4
         ],
-        "return_start": 938,
-        "return_end": 944,
+        "return_start": 859,
+        "return_end": 870,
         "detail": false,
         "waypoints": [
           [
@@ -1631,7 +1631,7 @@
         ],
         "return_waypoints": [
           [
-            941,
+            864,
             [
               -0.175,
               0.0,
@@ -1653,8 +1653,8 @@
           0.3031088913245535,
           -0.4
         ],
-        "return_start": 938,
-        "return_end": 944,
+        "return_start": 859,
+        "return_end": 870,
         "detail": false,
         "waypoints": [
           [
@@ -1668,7 +1668,7 @@
         ],
         "return_waypoints": [
           [
-            941,
+            864,
             [
               0.0875,
               0.15155444566227674,
@@ -1683,15 +1683,15 @@
         "objects": [
           "duct-out-1"
         ],
-        "start": 181,
-        "end": 235,
+        "start": 146,
+        "end": 200,
         "delta": [
           0.38,
           0,
           0.02
         ],
-        "return_start": 931,
-        "return_end": 937,
+        "return_start": 851,
+        "return_end": 858,
         "detail": true
       },
       {
@@ -1700,15 +1700,15 @@
         "objects": [
           "duct-out-2"
         ],
-        "start": 181,
-        "end": 235,
+        "start": 146,
+        "end": 200,
         "delta": [
           -0.19,
           0.32908965343808666,
           0.02
         ],
-        "return_start": 931,
-        "return_end": 937,
+        "return_start": 851,
+        "return_end": 858,
         "detail": false
       },
       {
@@ -1717,15 +1717,15 @@
         "objects": [
           "duct-out-3"
         ],
-        "start": 181,
-        "end": 235,
+        "start": 146,
+        "end": 200,
         "delta": [
           -0.19,
           -0.32908965343808666,
           0.02
         ],
-        "return_start": 931,
-        "return_end": 937,
+        "return_start": 851,
+        "return_end": 858,
         "detail": false
       },
       {
@@ -1735,19 +1735,19 @@
           "motor-Sunnysky-X2814III-1000KV",
           "rotor"
         ],
-        "start": 281,
-        "end": 340,
+        "start": 241,
+        "end": 300,
         "delta": [
           0.38,
           -0.28,
           0.18
         ],
-        "return_start": 924,
-        "return_end": 930,
+        "return_start": 839,
+        "return_end": 850,
         "detail": true,
         "waypoints": [
           [
-            310,
+            270,
             [
               0.22,
               -0.14,
@@ -1757,7 +1757,7 @@
         ],
         "return_waypoints": [
           [
-            927,
+            844,
             [
               0.22,
               -0.14,
@@ -1772,19 +1772,19 @@
         "objects": [
           "duct-in"
         ],
-        "start": 361,
-        "end": 382,
+        "start": 306,
+        "end": 327,
         "delta": [
           0,
           -0.6,
           -0.32
         ],
-        "return_start": 917,
-        "return_end": 923,
+        "return_start": 831,
+        "return_end": 838,
         "detail": false,
         "waypoints": [
           [
-            367,
+            312,
             [
               0,
               0,
@@ -1792,7 +1792,7 @@
             ]
           ],
           [
-            376,
+            321,
             [
               0,
               -0.6,
@@ -1802,7 +1802,7 @@
         ],
         "return_waypoints": [
           [
-            919,
+            833,
             [
               0,
               -0.6,
@@ -1810,7 +1810,7 @@
             ]
           ],
           [
-            921,
+            836,
             [
               0,
               0,
@@ -1825,15 +1825,15 @@
         "objects": [
           "cs11"
         ],
-        "start": 481,
-        "end": 494,
+        "start": 426,
+        "end": 465,
         "delta": [
           0.32,
           0,
           -0.39
         ],
-        "return_start": 910,
-        "return_end": 916,
+        "return_start": 823,
+        "return_end": 830,
         "detail": false
       },
       {
@@ -1842,15 +1842,15 @@
         "objects": [
           "cs2"
         ],
-        "start": 499,
-        "end": 512,
+        "start": 426,
+        "end": 465,
         "delta": [
           0,
           -0.32,
           -0.39
         ],
-        "return_start": 903,
-        "return_end": 909,
+        "return_start": 823,
+        "return_end": 830,
         "detail": false
       },
       {
@@ -1859,15 +1859,15 @@
         "objects": [
           "cs33"
         ],
-        "start": 517,
-        "end": 530,
+        "start": 426,
+        "end": 465,
         "delta": [
           -0.32,
           0,
           -0.39
         ],
-        "return_start": 896,
-        "return_end": 902,
+        "return_start": 823,
+        "return_end": 830,
         "detail": false
       },
       {
@@ -1876,15 +1876,15 @@
         "objects": [
           "cs4"
         ],
-        "start": 535,
-        "end": 548,
+        "start": 426,
+        "end": 465,
         "delta": [
           0,
           0.32,
           -0.39
         ],
-        "return_start": 889,
-        "return_end": 895,
+        "return_start": 823,
+        "return_end": 830,
         "detail": false
       },
       {
@@ -1893,15 +1893,15 @@
         "objects": [
           "servo-KST-X08H-1"
         ],
-        "start": 553,
-        "end": 575,
+        "start": 471,
+        "end": 500,
         "delta": [
           0.23,
           0,
           -0.24
         ],
-        "return_start": 882,
-        "return_end": 888,
+        "return_start": 815,
+        "return_end": 822,
         "detail": true
       },
       {
@@ -1910,15 +1910,15 @@
         "objects": [
           "servo-KST-X08H-2"
         ],
-        "start": 553,
-        "end": 575,
+        "start": 471,
+        "end": 500,
         "delta": [
           0,
           -0.23,
           -0.24
         ],
-        "return_start": 882,
-        "return_end": 888,
+        "return_start": 815,
+        "return_end": 822,
         "detail": false
       },
       {
@@ -1927,15 +1927,15 @@
         "objects": [
           "servo-KST-X08H-4"
         ],
-        "start": 553,
-        "end": 575,
+        "start": 471,
+        "end": 500,
         "delta": [
           -0.23,
           0,
           -0.24
         ],
-        "return_start": 882,
-        "return_end": 888,
+        "return_start": 815,
+        "return_end": 822,
         "detail": false
       },
       {
@@ -1944,15 +1944,15 @@
         "objects": [
           "servo-KST-X08H-3"
         ],
-        "start": 553,
-        "end": 575,
+        "start": 471,
+        "end": 500,
         "delta": [
           0,
           0.23,
           -0.24
         ],
-        "return_start": 882,
-        "return_end": 888,
+        "return_start": 815,
+        "return_end": 822,
         "detail": false
       },
       {
@@ -1961,15 +1961,15 @@
         "objects": [
           "battery-4s-10000-2"
         ],
-        "start": 601,
-        "end": 624,
+        "start": 506,
+        "end": 540,
         "delta": [
           0,
           -0.38,
           0
         ],
-        "return_start": 875,
-        "return_end": 881,
+        "return_start": 807,
+        "return_end": 814,
         "detail": false
       },
       {
@@ -1979,15 +1979,15 @@
           "base_board_flyctrl",
           "controller2"
         ],
-        "start": 626,
-        "end": 649,
+        "start": 541,
+        "end": 570,
         "delta": [
           0,
           0.28,
           0.15
         ],
-        "return_start": 868,
-        "return_end": 874,
+        "return_start": 799,
+        "return_end": 806,
         "detail": false
       },
       {
@@ -1996,15 +1996,15 @@
         "objects": [
           "panel11"
         ],
-        "start": 651,
-        "end": 671,
+        "start": 571,
+        "end": 590,
         "delta": [
           0.25,
           0,
           0.09
         ],
-        "return_start": 861,
-        "return_end": 867,
+        "return_start": 791,
+        "return_end": 798,
         "detail": false
       },
       {
@@ -2014,15 +2014,15 @@
           "panel12",
           "X-tend"
         ],
-        "start": 674,
-        "end": 695,
+        "start": 591,
+        "end": 610,
         "delta": [
           -0.25,
           0,
           0.09
         ],
-        "return_start": 854,
-        "return_end": 860,
+        "return_start": 783,
+        "return_end": 790,
         "detail": false
       },
       {
@@ -2031,19 +2031,19 @@
         "objects": [
           "shelf1"
         ],
-        "start": 697,
-        "end": 717,
+        "start": 611,
+        "end": 640,
         "delta": [
           0,
           0.4,
           -0.04
         ],
-        "return_start": 847,
-        "return_end": 853,
+        "return_start": 775,
+        "return_end": 782,
         "detail": false,
         "waypoints": [
           [
-            703,
+            620,
             [
               0,
               0,
@@ -2051,7 +2051,7 @@
             ]
           ],
           [
-            712,
+            633,
             [
               0,
               0.4,
@@ -2061,7 +2061,7 @@
         ],
         "return_waypoints": [
           [
-            849,
+            777,
             [
               0,
               0.4,
@@ -2069,7 +2069,7 @@
             ]
           ],
           [
-            852,
+            781,
             [
               0,
               0,
@@ -2084,19 +2084,19 @@
         "objects": [
           "bec-Hobbywing-Platinum"
         ],
-        "start": 721,
-        "end": 740,
+        "start": 641,
+        "end": 660,
         "delta": [
           0.26,
           -0.25,
           0.1
         ],
-        "return_start": 840,
-        "return_end": 846,
+        "return_start": 767,
+        "return_end": 774,
         "detail": false,
         "waypoints": [
           [
-            728,
+            648,
             [
               0,
               0,
@@ -2106,7 +2106,7 @@
         ],
         "return_waypoints": [
           [
-            843,
+            770,
             [
               0,
               0,
@@ -2121,15 +2121,15 @@
         "objects": [
           "box_up"
         ],
-        "start": 742,
-        "end": 752,
+        "start": 661,
+        "end": 675,
         "delta": [
           0,
           -0.28,
           0.06
         ],
-        "return_start": 833,
-        "return_end": 839,
+        "return_start": 759,
+        "return_end": 766,
         "detail": false
       },
       {
@@ -2138,15 +2138,15 @@
         "objects": [
           "box_up2"
         ],
-        "start": 755,
-        "end": 763,
+        "start": 676,
+        "end": 690,
         "delta": [
           0,
           0.28,
           0.06
         ],
-        "return_start": 826,
-        "return_end": 832,
+        "return_start": 751,
+        "return_end": 758,
         "detail": false
       }
     ],
@@ -2167,150 +2167,112 @@
     "shots": [
       [
         "T01",
-        "Hero推进与20度有限环绕",
+        "Hero相机推进与有限环绕",
         1,
         90,
         "A",
-        "低侧前方推进、圆弧移动、略微升高；机体不倾斜",
-        "开场主体"
+        "保持R2开场相机与灯光，机体不倾斜",
+        "完整机型"
       ],
       [
         "T02",
-        "三脚架同步退出",
+        "脚架与外涵道同步退出",
         91,
-        145,
+        200,
         "A",
-        "稳定主镜头，先径向让开再同步下移",
-        "脚架结构"
+        "稳定主镜头交代三脚架和三片涵道",
+        "整体结构"
       ],
       [
         "T03",
-        "单脚架特写",
-        146,
-        180,
+        "单片外涵道细节",
+        201,
+        230,
         "C",
-        "短距离推进",
-        "脚架细节"
-      ],
-      [
-        "T04",
-        "外涵道同步退出",
-        181,
-        235,
-        "A",
-        "稳定主镜头，三片同步径向分离",
-        "外壳结构"
-      ],
-      [
-        "T05",
-        "单片外涵道特写",
-        236,
-        270,
-        "C",
-        "短距离推进",
+        "保留必要的细节推进",
         "涵道细节"
       ],
       [
-        "T06",
-        "完整动力组件整体退出",
-        271,
-        360,
+        "T04",
+        "完整动力组件",
+        231,
+        305,
         "C",
-        "关注电机与旋翼整体，跟随共同平移并停留",
-        "动力组件"
+        "电机和旋翼共同退出，局部旋转保留",
+        "动力整体"
       ],
       [
-        "T07",
+        "T05",
         "内涵道退出",
-        361,
-        390,
+        306,
+        335,
         "A",
-        "主镜头稳定",
+        "稳定主镜头",
         "内部结构"
       ],
       [
-        "T08",
-        "四舵面同步±20度",
-        391,
-        480,
+        "T06",
+        "四舵面功能与同步退出、四舵机退出",
+        336,
+        505,
         "B",
-        "稳定斜俯视，正偏归零负偏归零",
-        "控制功能"
+        "全段固定斜俯视，不切单件特写",
+        "控制系统"
       ],
       [
-        "T09",
-        "舵面依次退出与舵机协调退出",
-        481,
-        580,
-        "B",
-        "稳定构图，不为单个零件切镜头",
-        "四象限布局"
-      ],
-      [
-        "T10",
-        "一组舵机与舵面特写",
-        581,
-        600,
-        "C",
-        "短距离推进",
-        "对应关系"
-      ],
-      [
-        "T11",
-        "电池框架、电调与夹持件拆解",
-        601,
-        765,
+        "T07",
+        "电池框架、电调和夹持件",
+        506,
+        690,
         "A",
-        "主镜头贯穿，无飞控/电调独立特写",
+        "连贯整体展示，不追踪飞控或电调",
         "机身结构"
       ],
       [
-        "T12",
-        "完整分解保持",
-        766,
-        825,
+        "T08",
+        "完整分解停留",
+        691,
+        750,
         "A",
-        "先停留、升高后退及小幅环绕后稳定",
-        "全景揭示"
+        "缓慢升高后退与有限圆弧",
+        "完整布局"
       ],
       [
-        "T13",
-        "逆序逐组装配",
-        826,
-        945,
+        "T09",
+        "逆序装配",
+        751,
+        870,
         "A",
-        "稳定主镜头",
-        "结构恢复"
+        "固定主镜头，分组逐次恢复",
+        "装配恢复"
       ],
       [
-        "T14",
-        "完整机型结束停留",
-        946,
-        990,
+        "T10",
+        "完整机型收尾",
+        871,
+        900,
         "A",
-        "稳定完整机型构图",
-        "结尾留量"
+        "稳定完整机型",
+        "结束保持"
       ]
     ],
     "stills": {
       "stage_00_hero": 30,
       "intro_final": 90,
       "legs_separated": 145,
-      "leg_detail": 170,
-      "ducts_synchronous": 235,
-      "duct_detail": 260,
-      "power_component": 350,
-      "inner_duct_exit": 390,
-      "surfaces_positive_20": 412,
-      "surfaces_negative_20": 453,
-      "surface_sequential": 494,
-      "servo_exit": 575,
-      "servo_pair_detail": 590,
-      "battery_side_exit": 625,
-      "battery_frame_separated": 720,
-      "lower_structure": 763,
-      "stage_06_final_exploded": 821,
-      "reassembled_complete": 975
+      "ducts_synchronous": 200,
+      "duct_detail": 220,
+      "power_component": 300,
+      "inner_duct_exit": 335,
+      "surfaces_positive_20": 357,
+      "surfaces_negative_20": 398,
+      "surfaces_synchronous": 465,
+      "servo_exit": 500,
+      "battery_side_exit": 540,
+      "battery_frame_separated": 640,
+      "lower_structure": 690,
+      "stage_06_final_exploded": 745,
+      "reassembled_complete": 885
     },
     "servo_surface_pairs": [
       {
@@ -2336,21 +2298,8 @@
     ],
     "details": [
       {
-        "start": 146,
-        "end": 180,
-        "module": "LEG1",
-        "objects": [
-          "tail-1"
-        ],
-        "offset": [
-          0.62,
-          0.36,
-          0.12
-        ]
-      },
-      {
-        "start": 236,
-        "end": 270,
+        "start": 201,
+        "end": 230,
         "module": "DUCT1",
         "objects": [
           "duct-out-1"
@@ -2362,8 +2311,8 @@
         ]
       },
       {
-        "start": 271,
-        "end": 360,
+        "start": 231,
+        "end": 305,
         "module": "POWER",
         "objects": [
           "motor-Sunnysky-X2814III-1000KV",
@@ -2374,28 +2323,14 @@
           -0.6,
           0.2
         ]
-      },
-      {
-        "start": 581,
-        "end": 600,
-        "module": "SERVO1",
-        "objects": [
-          "servo-KST-X08H-1",
-          "cs11"
-        ],
-        "offset": [
-          0.34,
-          -0.4,
-          0.32
-        ]
       }
     ],
-    "revision": "4.0-R2",
+    "revision": "4.0-R3",
     "style": "Soft Neutral Studio Gray",
     "output_stage": "stage-4",
-    "work_dir": ".work/stage-4-r2",
-    "overview_name": "STAGE_4_0_R2_OVERVIEW.png",
-    "overview_title": "Stage 4.0-R2 柔和中性灰 / 动力组件拆解",
+    "work_dir": ".work/stage-4-r3",
+    "overview_name": "STAGE_4_0_R3_OVERVIEW.png",
+    "overview_title": "Stage 4.0-R3 镜头精简 / 舵面同步拆解",
     "pose": {
       "root": "S4::AIRCRAFT_POSE_ROOT",
       "enabled": false,
@@ -2414,39 +2349,39 @@
           0
         ],
         [
-          391,
+          336,
           0
         ],
         [
-          410,
+          355,
           20
         ],
         [
-          415,
+          360,
           20
         ],
         [
-          433,
+          378,
           0
         ],
         [
-          451,
+          396,
           -20
         ],
         [
-          456,
+          401,
           -20
         ],
         [
-          474,
+          419,
           0
         ],
         [
-          480,
+          425,
           0
         ],
         [
-          990,
+          900,
           0
         ]
       ],
@@ -2455,22 +2390,51 @@
     "still_labels": {
       "intro_final": "开场推进 / 环绕最终视角",
       "legs_separated": "三脚架同步退出并拉开",
-      "leg_detail": "单脚架特写",
       "ducts_synchronous": "三片外涵道同步退出",
       "duct_detail": "单片涵道细节推进",
       "power_component": "电机 / 旋翼整体退出",
       "inner_duct_exit": "内涵道退出",
       "surfaces_positive_20": "四舵面同步 +20°",
       "surfaces_negative_20": "四舵面同步 -20°",
-      "surface_sequential": "舵面按原方位依次退出",
       "servo_exit": "四舵机协调退出",
-      "servo_pair_detail": "一组舵机 / 舵面对应",
       "battery_side_exit": "电池实际沿 -Y 侧向退出",
       "battery_frame_separated": "电池框架分解",
       "lower_structure": "电调及下部夹持结构",
-      "reassembled_complete": "逆序装配完成"
+      "reassembled_complete": "逆序装配完成",
+      "surfaces_synchronous": "四舵面同步退出并保持方位"
     },
     "overview_subdir": ".",
-    "overview_local_only": false
+    "overview_local_only": false,
+    "exploded_hold": [
+      691,
+      750
+    ],
+    "reassembly_range": [
+      751,
+      870
+    ],
+    "complete_hold": [
+      871,
+      900
+    ],
+    "surface_demo": [
+      336,
+      425
+    ],
+    "record_subdir": "r3",
+    "gui_check_frames": [
+      75,
+      200,
+      220,
+      300,
+      357,
+      398,
+      445,
+      485,
+      540,
+      745,
+      830,
+      885
+    ]
   }
 }

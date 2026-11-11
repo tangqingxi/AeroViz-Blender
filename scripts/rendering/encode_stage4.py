@@ -15,7 +15,7 @@ def main():
     parser.add_argument('--encoder',default='h264_nvenc')
     args = parser.parse_args()
     config = json.loads((WORKSPACE/args.config).read_text(encoding='utf8'))
-    if config['presentation'].get('revision') in ('4.0-R1','4.0-R2'):
+    if config['presentation'].get('revision') in ('4.0-R1','4.0-R2','4.0-R3'):
         raise RuntimeError('当前修订禁止制作MP4')
     spec = config['presentation']; work = WORKSPACE/'.work/stage-4.0'
     frames = work/'frames'; ordered = work/'encode_frames'; ordered.mkdir(exist_ok=True)

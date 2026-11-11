@@ -185,11 +185,13 @@ def battery_verify(config):
 
 def validate(config,baseline):
     spec=config['presentation'];source_result=p.check_source(config,baseline)
+    r3=spec.get('revision')=='4.0-R3';last=spec['frame_end'] if r3 else 990
+    demo_start,demo_end=spec['surface_demo'] if r3 else (391,480)
     source=bpy.data.scenes[spec['source_scene']];p.activate(source);source.frame_set(1)
     bindings={b['motion']['joint']:b for b in k.bindings(config)}
     scene=bpy.data.scenes[spec['scene']];p.activate(scene);scene.frame_set(1)
-    assert scene.get('stage4_r2') and scene.frame_end==990 and scene.render.fps==30
-    retained=json.loads(scene['stage4_r2_retained_objects']);assert len(retained)==72 and set(retained)<=set(o.name for o in scene.objects)
+    assert scene.get('stage4_r3' if r3 else 'stage4_r2') and scene.frame_end==last and scene.render.fps==30
+    retained=json.loads(scene['stage4_r3_retained_objects' if r3 else 'stage4_r2_retained_objects']);assert len(retained)==(73 if r3 else 72) and set(retained)<=set(o.name for o in scene.objects)
     assert all(o.get(p.OWNER) for o in scene.objects)
     assert set(bpy.data.objects.keys())==set(baseline['objects'])|set(o.name for o in scene.objects)
     assert all(a.name in {v['name'] for v in baseline['actions'].values()} or a.get(p.OWNER) for a in bpy.data.actions)
@@ -204,20 +206,21 @@ def validate(config,baseline):
     root_initial=root.matrix_world.copy();power=bpy.data.objects['S4::MODULE::POWER']
     assert bpy.data.objects['S4::MODULE::MOTOR'].parent==power and bpy.data.objects['S4::MODULE::ROTOR'].parent==power
     assert not bpy.data.objects['S4::MODULE::MOTOR'].animation_data and not bpy.data.objects['S4::MODULE::ROTOR'].animation_data
-    assert len(spec['details'])==4 and {d['module'] for d in spec['details']}=={'LEG1','DUCT1','POWER','SERVO1'}
+    assert len(spec['details'])==(2 if r3 else 4) and {d['module'] for d in spec['details']}==({'DUCT1','POWER'} if r3 else {'LEG1','DUCT1','POWER','SERVO1'})
     assert [(m.frame,m.camera.name) for m in scene.timeline_markers if m.camera]==[(s[2],'S4::CAMERA_'+s[4]) for s in spec['shots']]
     controllers={m['id']:bpy.data.objects['S4::MODULE::'+m['id']] for m in spec['modules']}
     for ctrl in controllers.values():
         assert all(pt.interpolation=='LINEAR' for curve in k.fcurves(ctrl) for pt in curve.keyframe_points)
     surfaces=[m for m in spec['modules'] if m['id'].startswith('SURFACE')]
-    assert all(a['end']<b['start'] for a,b in zip(surfaces,surfaces[1:]))
+    if r3:assert len({(m['start'],m['end'],m['return_start'],m['return_end']) for m in surfaces})==1
+    else:assert all(a['end']<b['start'] for a,b in zip(surfaces,surfaces[1:]))
     motor=bpy.data.objects['S4::INSTANCE::motor-Sunnysky-X2814III-1000KV'];rotor=bpy.data.objects['S4::INSTANCE::rotor']
     pivot=bpy.data.objects['S4::MOTION::rotor_joint'];pivot_initial=bpy.data.objects['JOINT::rotor_joint'].matrix_world.copy()
     binding=bindings['rotor_joint'];relative_initial=motor.matrix_world.inverted() @ rotor.matrix_world
     power_error=0;power_translation_error=0;axis_error=0;trajectory_error=0;sync_error=0;angle_error=0;relative_error=0
     camera_margin=1.;focus_margin=1.;opening_body_error=0;arc=[];opening_positions=[];previous_q=None;spin_total=0;speeds=[]
     from bpy_extras.object_utils import world_to_camera_view
-    for frame in range(1,991):
+    for frame in range(1,last+1):
         scene.frame_set(frame);assert k.matrix_error(root.matrix_world,root_initial)<1e-8
         if frame<=90:
             opening_body_error=max(opening_body_error,max(k.matrix_error(bpy.data.objects['S4::INSTANCE::'+n].matrix_world,initial[n]) for n in names if n!='rotor'))
@@ -229,7 +232,9 @@ def validate(config,baseline):
             trajectory_error=max(trajectory_error,(ctrl.location-r1.location_at(m,frame)).length)
             if frame<=m['start'] or frame>=m['return_end']:assert ctrl.location.length<1e-6
             assert Vector(ctrl.rotation_euler).length<1e-7 and (ctrl.scale-Vector((1,1,1))).length<1e-7
-        for group in [('LEG1','LEG2','LEG3'),('DUCT1','DUCT2','DUCT3'),tuple('SERVO'+str(i) for i in range(1,5))]:
+        groups=[('LEG1','LEG2','LEG3'),('DUCT1','DUCT2','DUCT3'),tuple('SERVO'+str(i) for i in range(1,5))]
+        if r3:groups.append(tuple('SURFACE'+str(i) for i in range(1,5)))
+        for group in groups:
             sync_error=max(sync_error,max(factors[n] for n in group)-min(factors[n] for n in group))
         q=binding['q0'].inverted() @ pivot.rotation_quaternion.normalized()
         expected=power.matrix_world @ pivot_initial @ q.to_matrix().to_4x4() @ pivot_initial.inverted() @ initial['rotor']
@@ -270,11 +275,11 @@ def validate(config,baseline):
     assert angle_error<1e-4 and abs(spin_total-360)<1e-3 and min(speeds)>28 and max(speeds)<32
     assert 15<=max(arc)-min(arc)<=25 and opening_positions[0][0]>opening_positions[-1][0] and opening_positions[-1][1]>opening_positions[0][1]
     recovery=max(k.matrix_error(bpy.data.objects['S4::INSTANCE::'+n].matrix_world,initial[n]) for n in names);assert recovery<1e-6
-    scene.frame_set(800);legs=[p.centroid(bpy.data.objects['S4::INSTANCE::tail-'+str(i)]) for i in (1,2,3)]
+    scene.frame_set(spec['exploded_hold'][0] if r3 else 800);legs=[p.centroid(bpy.data.objects['S4::INSTANCE::tail-'+str(i)]) for i in (1,2,3)]
     leg_gap=min((a-b).length for i,a in enumerate(legs) for b in legs[i+1:]);assert leg_gap>.80
     # 分量线性插值与0.25帧实际求值共同约束四个舵面的限位。
     submax=0
-    for quarter in range(391*4,480*4+1):
+    for quarter in range(demo_start*4,demo_end*4+1):
         scene.frame_set(quarter//4,subframe=quarter%4/4)
         for joint in spec['surface_motion']['joints']:
             b=bindings[joint];obj=bpy.data.objects['S4::MOTION::'+joint]
@@ -282,9 +287,9 @@ def validate(config,baseline):
             dq=b['q0'].inverted() @ obj.rotation_quaternion.normalized();theta=2*math.atan2(Vector((dq.x,dq.y,dq.z)).dot(b['axis_local']),dq.w)
             assert b['lower']-1e-8<=theta<=b['upper']+1e-8;submax=max(submax,abs(theta))
     battery=battery_verify(config);scene.frame_set(1)
-    return {'status':'PASS','revision':'4.0-R2','source':source_result,'source_scene_objects':117,'retained_r1_objects':72,
+    return {'status':'PASS','revision':spec['revision'],'source':source_result,'source_scene_objects':117,('retained_r2_objects' if r3 else 'retained_r1_objects'):len(retained),
             'presentation_objects':len(scene.objects),'global_objects':len(bpy.data.objects),'modules':len(spec['modules']),
-            'frames':[1,990],'fps':30,'duration_s':33,'initial_matrix_error':error,'reassembly_matrix_error':recovery,
+            'frames':[1,last],'fps':30,'duration_s':last/30,'initial_matrix_error':error,'reassembly_matrix_error':recovery,
             'body_opening_matrix_error':opening_body_error,'aircraft_pose_root_disabled':True,'camera_intro_arc_degrees':max(arc)-min(arc),
             'power_installation_matrix_error':power_error,'power_relative_translation_error':power_translation_error,'rotor_axis_error':axis_error,
             'rotor_total_degrees':spin_total,'rotor_speed_range_degrees_per_s':[min(speeds),max(speeds)],

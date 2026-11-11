@@ -62,14 +62,19 @@ def compose(config, source_dir, font_path=None):
                         'sha256':hashlib.sha256(path.read_bytes()).hexdigest()})
     for i,name in enumerate(heroes): panel(name,gap+i*(960+gap),header,960,hero_height)
     start_y = header+hero_height+gap
-    for i,name in enumerate(details): panel(name,gap+(i%4)*(cell_width+gap),start_y+(i//4)*(cell_height+gap),cell_width,cell_height)
+    for i,name in enumerate(details):
+        remaining=len(details)-(i//4)*4
+        offset=(4-remaining)*(cell_width+gap)//2 if remaining<4 else 0
+        panel(name,gap+offset+(i%4)*(cell_width+gap),start_y+(i//4)*(cell_height+gap),cell_width,cell_height)
     draw.text((gap,height-40),'上排：完整机型 / 最终布局；下排：按时间顺序的阶段与细节。画面不代表实际拆装行程。',font=note_font,fill=(156,164,175))
     destination.parent.mkdir(parents=True,exist_ok=True)
     sheet.save(destination)
     record = {'local_only':spec.get('overview_local_only',True),'path':destination.relative_to(project_io.audit_root(config)).as_posix(),
               'width':width,'height':height,'source_frame_count':len(sources),'sources':sources,
               'sha256':hashlib.sha256(destination.read_bytes()).hexdigest(),'bytes':destination.stat().st_size}
-    (evidence/'contact_sheet.json').write_bytes((json.dumps(record,ensure_ascii=False,indent=2)+'\n').encode('utf8'))
+    record_dir=evidence/spec.get('record_subdir','.')
+    record_dir.mkdir(parents=True,exist_ok=True)
+    (record_dir/'contact_sheet.json').write_bytes((json.dumps(record,ensure_ascii=False,indent=2)+'\n').encode('utf8'))
     return destination
 
 
