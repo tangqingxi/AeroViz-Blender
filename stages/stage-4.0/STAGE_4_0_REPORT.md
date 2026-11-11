@@ -6,13 +6,11 @@
 
 - [完整低清MP4](evidence/video/DF4_Stage4_0_preview.mp4)：55秒、960×540、15FPS、H.264/yuv420p、825帧、12,546,000字节，无音轨。全帧解码PASS。
 - [简短中文验收说明](STAGE_4_0_ACCEPTANCE.md)：只需打开、播放/暂停和定位帧号，不要求用户改参数、关键帧或对象位置。
-- 14张干净Eevee渲染PNG见下表，视频8采样、静帧32采样，均为原型质量。`gui_layout_only.png`仅证明窗口布局，绝不作为最终展示素材。
+- 原14个干净渲染帧已拼为一张本地总览图，分散PNG已清理，视频8采样、静帧32采样，均为原型质量。`gui_layout_only.png`仅证明窗口布局，绝不作为最终展示素材。
 - 唯一正式工程：`<DEV>/output/DF4/DF4.blend`，5,466,403字节。SHA256：`489553c18fffb5c12cbce8efcc5c41ced7f6d1e507c7bda90988e684565c60d7`。
 - Stage3输入历史哈希：`392af12f14a6fbfb27b201d836b86752c90a97afbc024960fc00f03407726824`。Stage1–3原报告和证据不改写。
 
-![Hero Shot](evidence/images/stage_00_hero.png)
-
-![最终完整分解](evidence/images/stage_06_final_exploded.png)
+本地合图：`evidence/images/DF4_Stage4_0_overview.png`（1952×1738）。按用户最新要求，当前分支及后续阶段不上传images图片，GitHub仅保留路径/帧号/哈希元数据。此前已上传版本仍在历史提交中，本次不改写历史。
 
 开发仓库提交：`f38b2f43a436150f59b58b0a9443389a0f3ddc05`（main，已推送）。Audit提交以最终交付消息和Git HEAD为准，避免自引用哈希。
 
@@ -92,26 +90,28 @@ Hawkeye Grid标称色号：World `#38383C`、Ground `#202022`、Minor `#616161`�
 
 在第532–699帧，四舵面先依次偏转并回零；第700帧起才进行舵面平移。电机先近景揭示，再退出；旋翼再近景揭示、退出；内涵道最后退出。先电池，再上框与飞控，再两侧板与GPS固定平面，再下框；电调与两夹持片后拆。
 
-## 静帧索引
+## 本地总览图索引
 
-| PNG | 帧 | 验收内容 |
-|---|---:|---|
-| [stage_00_hero.png](evidence/images/stage_00_hero.png) | 60 | hero |
-| [stage_01_legs_out.png](evidence/images/stage_01_legs_out.png) | 140 | legs_out |
-| [stage_02_outer_duct_partial.png](evidence/images/stage_02_outer_duct_partial.png) | 264 | outer_duct_partial |
-| [stage_03_power_system.png](evidence/images/stage_03_power_system.png) | 475 | power_system |
-| [stage_04_controls_servos.png](evidence/images/stage_04_controls_servos.png) | 1034 | controls_servos |
-| [stage_05_battery_frame.png](evidence/images/stage_05_battery_frame.png) | 1334 | battery_frame |
-| [stage_06_final_exploded.png](evidence/images/stage_06_final_exploded.png) | 1648 | final_exploded |
-| [stage_00_hero_reveal_start.png](evidence/images/stage_00_hero_reveal_start.png) | 1 | hero_reveal_start |
-| [stage_01_leg_closeup.png](evidence/images/stage_01_leg_closeup.png) | 165 | leg_closeup |
-| [stage_03_motor_closeup.png](evidence/images/stage_03_motor_closeup.png) | 385 | motor_closeup |
-| [stage_04_surface_deflection.png](evidence/images/stage_04_surface_deflection.png) | 545 | surface_deflection |
-| [stage_04_servo_pair_closeup.png](evidence/images/stage_04_servo_pair_closeup.png) | 900 | servo_pair_closeup |
-| [stage_05_flight_controller_closeup.png](evidence/images/stage_05_flight_controller_closeup.png) | 1148 | flight_controller_closeup |
-| [stage_06_esc_closeup.png](evidence/images/stage_06_esc_closeup.png) | 1400 | esc_closeup |
+只交付一张总览图；上排完整机型与最终布局，下排按时间排序的12个阶段/细节画面。
 
-PNG全部直接由正式工程重开后渲染。MP4先由通过回归的临时副本渲染，副本与正式工程的对象、镜头、灯光、材质节点、Action/NLA和切换表渲染输入签名一致，见`preview_formal_equivalence.json`。布局与标记文字调整不改变渲染输入。
+| 合图画面 | 帧 |
+|---|---:|
+| 完整机型 · Hero | 60 |
+| 最终完整分解 | 1648 |
+| 低角度登场 · 灯光揭示 | 1 |
+| 三脚架整体拆出 | 140 |
+| 单脚架细节 | 165 |
+| 外涵道逐片分离 | 264 |
+| 电机揭示与退出 | 385 |
+| 旋翼与动力系统 | 475 |
+| 四舵面独立偏转 | 545 |
+| 舵机与舵面对应 | 900 |
+| 舵面 / 舵机依次退出 | 1034 |
+| 上框与飞控共同移出 | 1148 |
+| 电池框架拆解 | 1334 |
+| 电调与下部夹持结构 | 1400 |
+
+14个原始帧直接从正式工程渲染；合图仅缩放排版并添加标签，不改写渲染内容。源帧哈希及合图哈希见`evidence/contact_sheet.json`。公开清单的`evidence`只含入库文件，合图另列`local_artifacts`，不要求GitHub克隆包含本地图片。MP4与工程的渲染输入一致性见`preview_formal_equivalence.json`。
 
 ## 验证结果
 
@@ -147,3 +147,8 @@ PNG全部直接由正式工程重开后渲染。MP4先由通过回归的临时�
 原Gazebo的飞控悬空、固定平面装配现状继续保留。无新的源结构问题，未擅自修正原模型。未进行实机传动或物理拆装验证。两仓库保持Public，不提交.blend/STL/SDF或中间序列。临时字节备份与序列在最终回归后按受限清理接口删除；结果见`delivery_checks.json`。
 
 **下一步：等待用户Stage4.0人工效果验收与新授权。**
+
+
+## 当前55秒镜头的导演描述
+
+影片以两秒低机位侧前方推进开场，灯光由弱到强扫过机体，让白色涵道和脚架轮廓逐渐显现，旋翼缓慢转动，建立明星登场的仪式感。随后镜头拉开，三只脚架作为一个整体缓慢下沉，停稳后切到单只脚架近景，交代其支撑形态。回到侧前方主镜头，三片外涵道伴随小幅环绕逐片退开，每片到位后稍作停留，让内部结构依次显露。动力段切入斜侧特写，先展示电机再让电机退出，随后展示并拆出旋翼，最后移开内涵道。控制段采用稳定的斜俯视：四个舵面先依次偏转、回零，再逐个退出；穿插一组舵机与舵面的近景，随后四个舵机沿对应方位依次分离。中后段回到主三分之四视角，电池先向上退出，上框连同飞控移开，两块侧板分别退开，GPS固定平面保持原相对位置随侧板移动，最后下框退出；电调获得一次跟随特写后离场，两片脚架夹持件最后拆出。结尾以约四秒的全景揭示收束：所有部件保持分层布局，镜头缓慢升高、后退并小幅转向，最后停稳，留出整体观察和后期剪辑的余量。全段以“揭示—分离—停留”为节拍，用稳定主镜头交代关系，用短特写强调细节。

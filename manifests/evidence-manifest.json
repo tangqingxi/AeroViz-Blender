@@ -1,11 +1,11 @@
 {
   "schema_version": 2,
   "phase": "Stage4.0",
-  "created_at": "2026-11-11T03:31:04.327671+00:00",
+  "created_at": "2026-11-11T06:40:48.540752+00:00",
   "development": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender",
     "branch": "main",
-    "commit": "f38b2f43a436150f59b58b0a9443389a0f3ddc05"
+    "commit": "51b04a79f5b9fd37c1ce6aed4740775b33714edc"
   },
   "audit": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
@@ -19,16 +19,22 @@
       "kind": "record"
     },
     {
+      "path": ".gitignore",
+      "sha256": "8104a0500867f921365480e08c7d7568fc9a2383fc5cc8af02c13810a5990758",
+      "bytes": 96,
+      "kind": "record"
+    },
+    {
       "path": "HANDOFF.md",
-      "sha256": "9237db18729616e5b2096612916677846d2fa2b312ba871a34a14471412e3d27",
-      "bytes": 3180,
-      "kind": "report"
+      "sha256": "59fa8fce67e48a2ff8d5d0536b935e847fbb8ad7896d71ba23cff11c99102af1",
+      "bytes": 3472,
+      "kind": "record"
     },
     {
       "path": "manifests/ARTIFACT_MANIFEST.md",
-      "sha256": "a705738e8a6cf5fd53d53b2df8f3bd3aa69a31a562814a6e864e6aec298ebe88",
-      "bytes": 15506,
-      "kind": "report"
+      "sha256": "a23ad9c503ebc4844b626a23271b3cc0b139fca65fded9189bf9e387e207b07c",
+      "bytes": 15826,
+      "kind": "record"
     },
     {
       "path": "manifests/io-regression-driver.log",
@@ -70,7 +76,7 @@
       "path": "README.md",
       "sha256": "df394df2fb35f65f1d9070a787c6bb095f48b7f40cc7c308935dab121a6fe0b0",
       "bytes": 4915,
-      "kind": "report"
+      "kind": "record"
     },
     {
       "path": "stages/stage-1/evidence/gui_front.png",
@@ -136,7 +142,7 @@
       "path": "stages/stage-1/STAGE_1_REPORT.md",
       "sha256": "0223e59ecdf0f0b799b6349ab9d5b999bc3f6b85d213b1b56c649a2b4caec0f7",
       "bytes": 19075,
-      "kind": "report"
+      "kind": "record"
     },
     {
       "path": "stages/stage-1.5/evidence/eevee_preview.png",
@@ -190,7 +196,7 @@
       "path": "stages/stage-1.5/STAGE_1_5_REPORT.md",
       "sha256": "41acaad870679195ba50a6fcebab93ef071a87af826bab60f80a7b8c8f4932a7",
       "bytes": 17428,
-      "kind": "report"
+      "kind": "record"
     },
     {
       "path": "stages/stage-2/evidence/apply.log",
@@ -370,7 +376,7 @@
       "path": "stages/stage-2/STAGE_2_REPORT.md",
       "sha256": "7a572361e59af318bcbf73596f86c1f23018e532d64a2c130debcd657c052490",
       "bytes": 8396,
-      "kind": "report"
+      "kind": "record"
     },
     {
       "path": "stages/stage-3/evidence/assembly_restore.json",
@@ -550,12 +556,18 @@
       "path": "stages/stage-3/STAGE_3_REPORT.md",
       "sha256": "a0fbc376aa55e5cc7e5cb1607563d2acce36902d546826dd96d093c78ba743bd",
       "bytes": 13936,
-      "kind": "report"
+      "kind": "record"
     },
     {
       "path": "stages/stage-4.0/evidence/baseline_regression.json",
       "sha256": "0643d61ebe599290516af775015a5cacf5ca4faa92622b7e0c120f421e79b1d6",
       "bytes": 1804077,
+      "kind": "record"
+    },
+    {
+      "path": "stages/stage-4.0/evidence/contact_sheet.json",
+      "sha256": "332f85d8f53317d4d236165c9975594e7c501a2f07c900549ae215fb12e858e9",
+      "bytes": 3139,
       "kind": "record"
     },
     {
@@ -577,88 +589,10 @@
       "kind": "record"
     },
     {
-      "path": "stages/stage-4.0/evidence/images/stage_00_hero.png",
-      "sha256": "9bb25b178978d5d7111abd1856ae4764f09076ae43291c2ddc7f4b4294ecd209",
-      "bytes": 464102,
-      "kind": "image"
-    },
-    {
-      "path": "stages/stage-4.0/evidence/images/stage_00_hero_reveal_start.png",
-      "sha256": "9358f98de99df691713f880274ae8ece281dd12a80986907469a5b39d3e3a71c",
-      "bytes": 440373,
-      "kind": "image"
-    },
-    {
-      "path": "stages/stage-4.0/evidence/images/stage_01_leg_closeup.png",
-      "sha256": "9e756574dc210380b7686d104e27eace9db85012fd6e98b111f3659285e768d0",
-      "bytes": 490618,
-      "kind": "image"
-    },
-    {
-      "path": "stages/stage-4.0/evidence/images/stage_01_legs_out.png",
-      "sha256": "6c6058961ab418c61befe2c36030e49d785bb5c993af4a3db4b63186d12dae00",
-      "bytes": 497964,
-      "kind": "image"
-    },
-    {
-      "path": "stages/stage-4.0/evidence/images/stage_02_outer_duct_partial.png",
-      "sha256": "47cee1549562d8d5eab9eb13052e7cf4e5eedb4a05712f198b5d7bd42ee4074d",
-      "bytes": 507003,
-      "kind": "image"
-    },
-    {
-      "path": "stages/stage-4.0/evidence/images/stage_03_motor_closeup.png",
-      "sha256": "89050ec80b7b454f52ce77adf377d82e19c090b5e48ae733bd079b001b2c2ed3",
-      "bytes": 447546,
-      "kind": "image"
-    },
-    {
-      "path": "stages/stage-4.0/evidence/images/stage_03_power_system.png",
-      "sha256": "419f139780185e2433c339544308a18a07ca34056e14bd3ea9737c4d89e2a9c6",
-      "bytes": 446764,
-      "kind": "image"
-    },
-    {
-      "path": "stages/stage-4.0/evidence/images/stage_04_controls_servos.png",
-      "sha256": "4b02e08095df2da254ddf4d2880ea1c5dc83e533530cf570bd7bb8bbba93fb05",
-      "bytes": 554491,
-      "kind": "image"
-    },
-    {
-      "path": "stages/stage-4.0/evidence/images/stage_04_servo_pair_closeup.png",
-      "sha256": "d58942844f77698cf1486e7f1edcecade6415ae5333a85f86405de0375db0419",
-      "bytes": 512251,
-      "kind": "image"
-    },
-    {
-      "path": "stages/stage-4.0/evidence/images/stage_04_surface_deflection.png",
-      "sha256": "6bb0457477bb3178e16dd95df58395e50b814525853d6afa278be3aaa0821553",
-      "bytes": 555088,
-      "kind": "image"
-    },
-    {
-      "path": "stages/stage-4.0/evidence/images/stage_05_battery_frame.png",
-      "sha256": "3bb5a7cd2e772a7a88c0543c47b6dbe418c9a15bf1675a3675e91a7319780875",
-      "bytes": 502892,
-      "kind": "image"
-    },
-    {
-      "path": "stages/stage-4.0/evidence/images/stage_05_flight_controller_closeup.png",
-      "sha256": "9755e576c7be03dff1d83f3fa6c74894845156693474dd79bffcc538cd94e81d",
-      "bytes": 449981,
-      "kind": "image"
-    },
-    {
-      "path": "stages/stage-4.0/evidence/images/stage_06_esc_closeup.png",
-      "sha256": "85fcf2fbb3c8d5a875ad066c06733dbd7c5a39b3ab40cdc8c98ffbb4628f234e",
-      "bytes": 485186,
-      "kind": "image"
-    },
-    {
-      "path": "stages/stage-4.0/evidence/images/stage_06_final_exploded.png",
-      "sha256": "ed957c99def4636751b32d6d6548526545e501f944ad0f9206471b10dd9a3f3f",
-      "bytes": 508005,
-      "kind": "image"
+      "path": "stages/stage-4.0/evidence/image_delivery_policy.json",
+      "sha256": "c3e31e9a41c9d2b915252599de8b7165446651034a602d282e1d2332e4c0fff1",
+      "bytes": 555,
+      "kind": "record"
     },
     {
       "path": "stages/stage-4.0/evidence/input_preservation.json",
@@ -698,8 +632,8 @@
     },
     {
       "path": "stages/stage-4.0/evidence/summary.json",
-      "sha256": "b4796d1104d91e585c79f59db5926bddcde41306638d6f14b16c8b19fc907376",
-      "bytes": 717,
+      "sha256": "2791785d6453263140442060ade25df6403d99f7b2f4e9501b221eaea490f1b5",
+      "bytes": 784,
       "kind": "record"
     },
     {
@@ -716,26 +650,35 @@
     },
     {
       "path": "stages/stage-4.0/evidence-manifest.json",
-      "sha256": "e355e443529e10b29db67916abba8897f3329311557367264164774776da97d1",
-      "bytes": 6868,
+      "sha256": "fed08ca9a1db44858d3909291e71060ae4ea421337afa46d71915d981c4b4c04",
+      "bytes": 4578,
       "kind": "record"
     },
     {
       "path": "stages/stage-4.0/STAGE_4_0_ACCEPTANCE.md",
-      "sha256": "d4c24d1b3a66248591d4d9f8aa0f6fbaf6bbf8067efdbb9dbcca081d3f5cf8c2",
-      "bytes": 1467,
-      "kind": "report"
+      "sha256": "bc1b9c0d9e3b813b992213e3b1bf60ea1f50f8422ee42792e93076cf47f22c99",
+      "bytes": 1493,
+      "kind": "record"
     },
     {
       "path": "stages/stage-4.0/STAGE_4_0_REPORT.md",
-      "sha256": "b21683f0438abac84abcbd0fbfa720a4823e32f6f19c18f1286679589c287f7e",
-      "bytes": 13314,
-      "kind": "report"
+      "sha256": "36e51f37983889a085526d6696b02b8bb2429d8dbc61126df099363d7673a714",
+      "bytes": 13913,
+      "kind": "record"
     }
   ],
   "limitations": [
     "低清展示原型，等待用户人工效果验收。",
     "未进行实机传动测定或物理拆装验证；Gazebo装配现状保留。"
   ],
-  "next_action": "等待Stage4.0人工效果验收；4.1–4.3未授权。"
+  "next_action": "等待Stage4.0人工效果验收；4.1–4.3未授权。",
+  "local_artifacts": [
+    {
+      "path": "stages/stage-4.0/evidence/images/DF4_Stage4_0_overview.png",
+      "sha256": "81b6a50de7b6ee5f8b741fa20160f1bc0cd23463f6550e58c35e8bb820a71606",
+      "bytes": 2136815,
+      "kind": "local_only_image"
+    }
+  ],
+  "image_policy": "所有阶段仅交付一张本地总览图；images不入GitHub；分散渲染帧合图后清理。"
 }

@@ -1,6 +1,6 @@
 # Agent Handoff — Stage 4.0 展示原型完成，待人工效果验收
 
-- DEV：<https://github.com/tangqingxi/AeroViz-Blender>，main，`f38b2f43a436150f59b58b0a9443389a0f3ddc05`（已推送）。
+- DEV：<https://github.com/tangqingxi/AeroViz-Blender>，main，`51b04a79f5b9fd37c1ce6aed4740775b33714edc`（已推送）。
 - AUDIT：<https://github.com/tangqingxi/AeroViz-Blender-Audit>，main，最终提交见交付消息/Git HEAD。
 - 两仓库Public，不上传.blend/STL/SDF，不force push、不创建Tag。
 
@@ -13,7 +13,7 @@
 
 冻结顺序：三脚架整体→外涵道三片逐个→电机揭示/退出→旋翼揭示/退出→内涵道→四舵面偏转/逐个退出→四舵机→电池→上框/飞控→两侧板/GPS固定平面→下框→电调→两片夹持件→终态全景。舵机展示对应1/cs11、2/cs2、4/cs33、3/cs4，依据几何方位，未虚构连杆。controller2悬空、X-tend相对位置保持Gazebo现状。
 
-55秒960×540/15FPS MP4与14张干净PNG均在`stages/stage-4.0/evidence/`，主报告只有`STAGE_4_0_REPORT.md`一份；简短中文验收说明按用户明确要求单列。MP4全825帧解码PASS，预览副本与正式工程渲染输入签名一致，静帧从正式工程重新渲染。
+55秒960×540/15FPS MP4与一张本地总览图（14帧拼接，分散帧已清理）均在`stages/stage-4.0/evidence/`，主报告只有`STAGE_4_0_REPORT.md`一份；简短中文验收说明按用户明确要求单列。MP4全825帧解码PASS，预览副本与正式工程渲染输入签名一致，静帧从正式工程重新渲染。
 
 ## 用户最新窗口要求
 
@@ -26,3 +26,6 @@
 正式工程原子更新前完成副本测试，更新后独立进程回归；布局保存后又重开验证。原输入34文件与Stage1归档逐字节哈希一致。临时备份/825帧序列已按project_io受限清理接口处理，详见delivery_checks.json。没有重做机械运动或修正装配。
 
 下一步只等待用户观看MP4并验收节奏/镜头/拆解布局。不得自动进入4.1精修、4.2高质量渲染、4.3剪辑交接，也不得重导模型或改实机装配关系。
+
+
+用户最新图片交付规范：以后各阶段只提供一张本地总览图，分散帧只作临时输入；images图片不上传GitHub。当前分支已移除14个图片文件并加入目录忽略规则，历史提交保留。公开清单与本地图片记录分列。

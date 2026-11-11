@@ -13,8 +13,10 @@
   "shots": 17,
   "camera_cut_markers": 17,
   "phase_markers": 17,
-  "stills": 14,
+  "stills": 1,
   "preview_duration_s": 55,
   "next_action": "等待人工效果验收；不进入4.1–4.3",
-  "development_head": "f38b2f43a436150f59b58b0a9443389a0f3ddc05"
+  "development_head": "f38b2f43a436150f59b58b0a9443389a0f3ddc05",
+  "source_frames_in_contact_sheet": 14,
+  "image_delivery": "local_only_contact_sheet"
 }

@@ -198,5 +198,8 @@ Stage2历史交付为 `c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f8
 - 唯一正式工程：`<DEV>/output/DF4/DF4.blend`，5,466,403字节，SHA256 `489553c18fffb5c12cbce8efcc5c41ced7f6d1e507c7bda90988e684565c60d7`。
 - 原Scene117对象/33网格/7材质/29动画对象保持；新增展示Scene67对象，整体184对象/8材质。
 - 低清MP4：`stages/stage-4.0/evidence/video/DF4_Stage4_0_preview.mp4`，55秒、960×540、15FPS、825帧。
-- 14张干净PNG、GUI布局证据、主报告及验收说明均在Stage4.0目录；完整清单与哈希见该目录evidence-manifest.json。
+- 一张本地总览图（14帧拼接，分散帧已清理）、GUI布局证据、主报告及验收说明均在Stage4.0目录；完整清单与哈希见该目录evidence-manifest.json。
 - 技术回归PASS，等待人工效果验收；4.1–4.3未授权。本文既有Stage1–3哈希保留为历史，不替换历史交付记录。
+
+
+用户最新图片交付规范：以后各阶段只提供一张本地总览图，分散帧只作临时输入；images图片不上传GitHub。当前分支已移除14个图片文件并加入目录忽略规则，历史提交保留。公开清单与本地图片记录分列。
