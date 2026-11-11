@@ -14,15 +14,45 @@ sys.path.insert(0,str(WORKSPACE/'scripts'));sys.dont_write_bytecode=True
 import presentation
 import presentation_r1
 import project_io
+import mesh_intersections
+
+
+def apply_framing(args,config,target,work,baseline):
+    """几何运动不变时复用高密筛查，只原子提交已在副本通过的镜头构图。"""
+    approval=json.loads((work/'framing_approval.json').read_text(encoding='utf8'))
+    sweep=json.loads((work/'intersection_probe.json').read_text(encoding='utf8'))
+    assert approval['status']=='PASS' and approval['config']==config['presentation']
+    assert sweep['status']=='PASS' and sweep['candidate_sha256']==approval['geometry_tested_sha256']
+    assert hashlib.sha256((work/'geometry_tested.blend').read_bytes()).hexdigest()==approval['geometry_tested_sha256']
+    assert hashlib.sha256((work/'candidate.blend').read_bytes()).hexdigest()==approval['approved_candidate_sha256']
+    assert args.expected_sha256 and hashlib.sha256(target.read_bytes()).hexdigest()==args.expected_sha256
+    backup=work/'rollback/framing.blend';assert hashlib.sha256(backup.read_bytes()).hexdigest()==args.expected_sha256
+    bpy.ops.wm.open_mainfile(filepath=str(target));presentation.activate(bpy.data.scenes[config['presentation']['scene']])
+    assert mesh_intersections.geometry_signature(bpy.context.scene)==approval['geometry_signature']
+    presentation_r1.refresh_framing(config)
+    assert mesh_intersections.geometry_signature(bpy.context.scene)==approval['geometry_signature']
+    result=presentation_r1.validate(config,baseline)
+    try:
+        project_io.save_project(config)
+        command=[bpy.app.binary_path,'--background','--factory-startup','--python-exit-code','1','--python',str(WORKSPACE/'tests/reverify_saved_project.py'),'--','--config',args.config,'--out',str(work/'framing_regression.json')]
+        process=subprocess.run(command,cwd=WORKSPACE,capture_output=True,timeout=240)
+        (work/'framing_saved_verify.log').write_bytes(process.stdout+process.stderr)
+        if process.returncode:raise RuntimeError(process.stdout.decode('utf8',errors='replace')[-2000:])
+    except Exception:
+        shutil.copyfile(backup,target);assert hashlib.sha256(target.read_bytes()).hexdigest()==args.expected_sha256
+        raise
+    (work/'framing_validation.json').write_bytes((json.dumps(result,ensure_ascii=False,indent=2)+'\n').encode('utf8'))
+    print('R1_FRAMING_APPLY_PASS',result['focused_parts_min_normalized_margin'])
 
 
 def main():
     parser=argparse.ArgumentParser();parser.add_argument('--config',required=True)
-    parser.add_argument('--phase',choices=['prepare','verify','apply'],required=True)
+    parser.add_argument('--phase',choices=['prepare','verify','apply','framing-apply'],required=True)
     parser.add_argument('--expected-sha256');args=parser.parse_args(sys.argv[sys.argv.index('--')+1:])
     config=json.loads(project_io.resolve(args.config).read_text(encoding='utf8'))
     target=project_io.project(config);work=WORKSPACE/'.work/stage-4-r1'
     baseline=json.loads((project_io.evidence_dir(config,'stage-4.0')/'source_baseline.json').read_text(encoding='utf8'))
+    if args.phase=='framing-apply':return apply_framing(args,config,target,work,baseline)
     if args.phase=='prepare':assert target.is_relative_to(work)
     if args.phase=='apply':
         assert args.expected_sha256 and hashlib.sha256(target.read_bytes()).hexdigest()==args.expected_sha256

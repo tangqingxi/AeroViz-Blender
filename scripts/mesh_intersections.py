@@ -1,9 +1,29 @@
 """展示碰撞筛查：真实三角网格BVH，源装配已有相交单列记录。"""
 import itertools
+import hashlib
+import json
 from mathutils import Vector
 from mathutils.bvhtree import BVHTree
 
 import geometry_checks as geo
+
+
+def geometry_signature(scene):
+    """只比较共享网格、父级及全部几何运动输入，排除相机和灯光。"""
+    from animation import exploded_view
+    import materials
+    scene.frame_set(1)
+    members=set(o for o in scene.objects if o.get('source_object'))
+    for obj in list(members):
+        parent=obj.parent
+        while parent:members.add(parent);parent=parent.parent
+    states={o.name:materials.object_state(o) for o in members}
+    actions=exploded_view.actions_snapshot([o for o in members if o.animation_data and o.animation_data.action])
+    nla={o.name:[(s.action.name,s.action_slot.identifier,s.frame_start,s.frame_end,s.action_frame_start,s.action_frame_end,s.scale,s.repeat,s.blend_type,s.extrapolation)
+                 for t in o.animation_data.nla_tracks for s in t.strips] for o in members if o.animation_data and o.animation_data.nla_tracks}
+    meshes={n:h for n,h in exploded_view.mesh_fingerprints().items() if n in states}
+    value={'objects':states,'actions':actions,'nla':nla,'meshes':meshes,'fps':scene.render.fps,'range':[scene.frame_start,scene.frame_end]}
+    return hashlib.sha256(json.dumps(value,sort_keys=True).encode()).hexdigest()
 
 
 def scan(scene,frames):

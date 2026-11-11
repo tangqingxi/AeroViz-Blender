@@ -50,3 +50,5 @@
 `tests/test_presentation_r1.py`提供prepare/verify/apply。正式apply必须匹配原文件SHA、字节备份、已通过的副本配置以及几何筛查对应的副本SHA/配置SHA；保存后新进程完整回归，失败恢复旧字节。R1的原Scene基线继续读取Audit Stage4.0 source_baseline.json，不改历史报告。
 
 当前展示990帧、21镜头；811–870为分解停留，871–960逐组回装，961–990完整机型停留。`stage4_preview.py`只允许stills/benchmark，video与编码入口均对R1拒绝执行。总览图按配置 `output_stage/work_dir/overview_name/still_labels` 写入新R1证据目录，GUI截图只在.work内作检查，最终清理。
+
+末轮镜头构图修正只刷新相机及目标Action，B镜头按关注部件的整段运动包围盒固定构图；全部442帧B/C关注部件和548帧主镜头均有边距约束。`mesh_intersections.geometry_signature()`锁定网格、父级、几何Action/NLA，与相机/灯光分离；构图副本和原14,647样本筛查副本的几何运动输入相同，正式`framing-apply`再次核对该签名并执行独立进程回归。

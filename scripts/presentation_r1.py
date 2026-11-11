@@ -148,9 +148,21 @@ def cameras(config,scene):
         position=focus+(position-focus)*extra
         rows.append((frame,position,focus))
     p.camera_keys(pairs['A'],rows)
-    p.camera_keys(pairs['B'],[(1,(.85,-.98,.60),(0,0,-.18)),(390,(.85,-.98,.60),(0,0,-.18)),
-        (391,(.50,-.58,.35),(0,0,-.14)),(480,(.50,-.58,.35),(0,0,-.14)),
-        (481,(.85,-.98,.60),(0,0,-.20)),(990,(.85,-.98,.60),(0,0,-.20))])
+    b_rows=[]
+    groups={m['id']:m for m in spec['modules']}
+    for start,end,direction,target,ids in (
+        (361,390,(.85,-.98,.8),(0,-.30,-.22),['INNER_DUCT']),
+        (391,480,(.50,-.58,.49),(0,0,-.14),['SURFACE'+str(i) for i in range(1,5)]),
+        (481,550,(.85,-.98,.8),(0,0,-.34),['SURFACE'+str(i) for i in range(1,5)]+['SERVO'+str(i) for i in range(1,5)])):
+        focused=[bpy.data.objects['S4::INSTANCE::'+name] for id in ids for name in groups[id]['objects']]
+        distance=0
+        for frame in range(start,end+1):
+            scene.frame_set(frame);position,focus=fit(scene,pairs['B'][0],direction,target,focused,margin=.80)
+            distance=max(distance,(position-focus).length)
+        position=Vector(target)+Vector(direction).normalized()*distance
+        if not b_rows:b_rows.append((1,position,target))
+        b_rows.extend([(start,position,target),(end,position,target)])
+    b_rows.append((990,b_rows[-1][1],b_rows[-1][2]));p.camera_keys(pairs['B'],b_rows)
     modules={m['id']:m for m in spec['modules']}
     for detail in spec['details']:
         name=detail['object'];proxy=bpy.data.objects['S4::INSTANCE::'+name]
@@ -241,6 +253,18 @@ def apply(config,baseline):
     return scene
 
 
+def refresh_framing(config):
+    """只更新三类相机及目标，不改任何几何运动，用于末轮关注部件构图修正。"""
+    scene=bpy.data.scenes[config['presentation']['scene']];p.activate(scene);scene.frame_set(1)
+    assert scene.get('stage4_r1')
+    for name in 'ABC':
+        clear_animation(bpy.data.objects['S4::CAMERA_'+name])
+        clear_animation(bpy.data.objects['S4::CAMERA_'+name+'::TARGET'])
+    for action in list(bpy.data.actions):
+        if action.get(p.OWNER) and action.users==0:bpy.data.actions.remove(action)
+    cameras(config,scene);ease_owned();p.configure_layout(scene)
+
+
 def validate(config,baseline):
     """保留源回归强度，逐帧验证同步、限位、姿态归零与最终恢复。"""
     spec=config['presentation'];source_result=p.check_source(config,baseline)
@@ -273,7 +297,7 @@ def validate(config,baseline):
     for joint in spec['surface_motion']['joints']:
         curves=k.fcurves(bpy.data.objects['S4::MOTION::'+joint])
         assert len(curves)==4 and all(c.data_path=='rotation_quaternion' and all(pt.interpolation=='LINEAR' for pt in c.keyframe_points) for c in curves)
-    max_axis_error=0;sync_error=0;camera_margin=1.;camera_frames=0;max_angle_error=0;relative_error=0;pose_error=0
+    max_axis_error=0;sync_error=0;camera_margin=1.;camera_frames=0;max_angle_error=0;relative_error=0;pose_error=0;focus_margin=1.
     rotor=bpy.data.objects['S4::MOTION::rotor_joint'];previous_rotor=None;spin_total=0;spin_steps=[]
     from bpy_extras.object_utils import world_to_camera_view
     for frame in range(1,991):
@@ -319,6 +343,20 @@ def validate(config,baseline):
                 for corner in obj.bound_box:
                     projected=world_to_camera_view(scene,scene.camera,obj.matrix_world @ Vector(corner))
                     camera_margin=min(camera_margin,projected.x,projected.y,1-projected.x,1-projected.y)
+        focused=[]
+        if scene.camera.name=='S4::CAMERA_B':
+            if frame<=390:focused=['duct-in']
+            elif frame<=480:focused=[m['objects'][0] for m in spec['modules'] if m['id'].startswith('SURFACE')]
+            else:focused=[m['objects'][0] for m in spec['modules'] if m['id'].startswith(('SURFACE','SERVO'))]
+        if scene.camera.name=='S4::CAMERA_C':
+            detail=next(d for d in spec['details'] if d['start']<=frame<=d['end']);focused=[detail['object']]
+            if detail['module']=='SERVO1':focused.append('cs11')
+        for name in focused:
+            obj=bpy.data.objects['S4::INSTANCE::'+name]
+            for corner in obj.bound_box:
+                point=world_to_camera_view(scene,scene.camera,obj.matrix_world @ Vector(corner))
+                margin=min(point.x,point.y,1-point.x,1-point.y);focus_margin=min(focus_margin,margin)
+                assert margin>.015,(frame,scene.camera.name,name,margin)
         for m in spec['modules']:
             a=m['objects'][0]
             for b in m['objects'][1:]:
@@ -357,6 +395,7 @@ def validate(config,baseline):
             'surface_limit_radians':.3491,'surface_subframe_samples_per_joint':357,
             'group_relative_matrix_max_error':relative_error,'leg_endpoint_centroid_min_distance_m':leg_gap,
             'main_camera_frames_verified':camera_frames,'main_camera_min_normalized_margin':camera_margin,
+            'focused_parts_min_normalized_margin':focus_margin,
             'pose_neutral_before_disassembly':True,'battery':battery,'shots':len(spec['shots']),
             'pose_rigid_matrix_max_error':pose_error,'rotor_actual_total_degrees':spin_total,
             'rotor_actual_speed_range_degrees_per_s':[min(spin_steps),max(spin_steps)],
