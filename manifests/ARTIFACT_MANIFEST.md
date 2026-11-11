@@ -4,9 +4,9 @@
 > 实际文件计算，不是手工誊写。审计仓库内的证据文件为逐字节拷贝，哈希与开发工作区一致。
 
 - 开发仓库：<https://github.com/tangqingxi/AeroViz-Blender>
-- 开发提交：`7df632edfc1f1320bc0b270cb22d3e73e2e6dc81`（`main`）
+- 开发提交：`f7cbd09837037480f5a7df4325a49b5a57b68440`（`main`）
 - 审计仓库：<https://github.com/tangqingxi/AeroViz-Blender-Audit>
-- 生成日期：2026-11-10
+- 更新日期：2026-11-11
 
 ---
 
@@ -24,10 +24,16 @@
 
 ## 2. 阶段报告
 
+完整阶段索引见根 [`README.md`](../README.md)；Stage 4 的四个修订版 + 4.1 见 [`stages/stage-4/INDEX.md`](../stages/stage-4/INDEX.md)。
+
 | 阶段 | 报告 | 证据清单 |
 |---|---|---|
 | Stage 1 | [`stages/stage-1/STAGE_1_REPORT.md`](../stages/stage-1/STAGE_1_REPORT.md) | [`stages/stage-1/evidence-manifest.json`](../stages/stage-1/evidence-manifest.json) |
 | Stage 1.5 | [`stages/stage-1.5/STAGE_1_5_REPORT.md`](../stages/stage-1.5/STAGE_1_5_REPORT.md) | [`stages/stage-1.5/evidence-manifest.json`](../stages/stage-1.5/evidence-manifest.json) |
+| Stage 2 | [`stages/stage-2/STAGE_2_REPORT.md`](../stages/stage-2/STAGE_2_REPORT.md) | [`stages/stage-2/evidence-manifest.json`](../stages/stage-2/evidence-manifest.json) |
+| Stage 3 | [`stages/stage-3/STAGE_3_REPORT.md`](../stages/stage-3/STAGE_3_REPORT.md) | [`stages/stage-3/evidence-manifest.json`](../stages/stage-3/evidence-manifest.json) |
+| Stage 4.0-R3（当前基线） | [`stages/stage-4/STAGE_4_0_R3_REPORT.md`](../stages/stage-4/STAGE_4_0_R3_REPORT.md) | [`stages/stage-4/evidence-manifest-r3.json`](../stages/stage-4/evidence-manifest-r3.json) |
+| Stage 4.1（画质定标） | [`stages/stage-4/STAGE_4_1_CYCLES_REPORT.md`](../stages/stage-4/STAGE_4_1_CYCLES_REPORT.md) | [`stages/stage-4/evidence-manifest-s41.json`](../stages/stage-4/evidence-manifest-s41.json) |
 
 ## 3. 原始输入（34 个文件，只读，不发布）
 
@@ -115,7 +121,12 @@
 | `stages/stage-1/evidence/` | 4 张图形窗口截图、1 张离线等轴测预览、`validation.json`、`gui_validation.json`、`joint_checks.json`、`input_manifest.json` |
 | `stages/stage-1.5/evidence/` | Material Preview 整窗/视口截图、Eevee 渲染、`material_validation.json`、`material_gui_validation.json`、`material_structure_baseline.json`、`material_input_manifest.json` |
 | `stages/stage-2/evidence/` | 独立运动、121帧组合、连续转角、结构基线、正式回归、七张真实窗口截图与日志 |
-| `manifests/reverify-current.json` | **当前工程** `DF4.blend` 的只读复验记录（见 §7） |
+| `stages/stage-3/evidence/` | 爆炸/恢复语义比较、坐标测试、六帧真实窗口截图、正式回归 |
+| `stages/stage-4.0/evidence/` | 4.0 原型：源基线、回归、GUI 布局、低清预览 MP4 |
+| `stages/stage-4.0-r1/evidence/` | R1：回归、电池路径、接触表、输入保全 |
+| `stages/stage-4/evidence/`（顶层） | **R2** 机器证据与 `STAGE_4_0_R2_OVERVIEW.png` |
+| `stages/stage-4/evidence/r3/` | **R3** 机器证据（当前基线的回归与重开验证） |
+| `stages/stage-4/evidence/stage4_1/` | **4.1** Cycles 总览图与渲染记录 |
 | `manifests/reverify-2026-11-10.json` | 归一化之前两个阶段工程的复验记录（历史） |
 
 未复制到审计仓库的文件（体积大且可重生成）：`build.log`、`material_build.log`、`material_mapping_tests.log`、`joint_checks.log`、`gui_process.log`、`material_gui_process.log`、`*_pid.txt`、四张离线正交预览（`front/top/side/isometric`，等轴测已收）。
@@ -145,7 +156,9 @@
 - 本项目自身的许可证尚未确定，因此**没有放置 `LICENSE` 文件**，默认"保留所有权利"。若选 MIT / BSD-3-Clause / Apache-2.0，需同时补版权行。
 - 上游无许可证文本；若将来需要把几何本体对外共享，先确认许可再执行。
 
-## 7. 当前工程的只读复验（Stage 3 / 2026-11-10）
+## 7. 历史只读复验记录
+
+### 7.1 Stage 3 基线（2026-11-10）
 
 Stage3在用户批准的新字节基线上加入坐标元数据与24个独立位移层，对**磁盘上当前字节**执行历史断言、Stage2原121帧与Stage3至301帧的复核。新旧基线完整语义一致，记录见Stage3 semantic_comparison.json；历史Stage2交付哈希保持不变。命令：
 
@@ -154,7 +167,7 @@ Stage3在用户批准的新字节基线上加入坐标元数据与24个独立位
   --python '.\tests\reverify_saved_project.py' -- --config configs/DF4.json
 ```
 
-输出 `REVERIFY_OK`，记录见 [`reverify-current.json`](reverify-current.json)。该脚本读取本仓库已归档的 Stage 1 / 1.5 期望值，不依赖本地 `output/reports`：
+输出 `REVERIFY_OK`。该脚本读取本仓库已归档的 Stage 1 / 1.5 期望值，不依赖本地 `output/reports`：
 
 | 检查 | 结果 |
 |---|---|
@@ -172,6 +185,12 @@ Stage3在用户批准的新字节基线上加入坐标元数据与24个独立位
 
 归一化之前的记录 [`reverify-2026-11-10.json`](reverify-2026-11-10.json) 保留作为历史：它对应 `DF4_Stage1.blend` 与 `DF4_Stage1_5.blend` 两个文件，那两份字节已在本轮清理中删除。
 
+### 7.2 当前字节（Stage 4.0-R3）
+
+当前正式工程 `output/DF4/DF4.blend` 的完整回归与重开验证在 [`stages/stage-4/evidence/r3/`](../stages/stage-4/evidence/r3/)（`saved_project_regression.json`、`final_reopen_validation.json`、`r2_compatibility_regression.json`），工程 SHA256 为 `cfafc7c7…295a0`。Stage 4 各版本的有效性以 [`stages/stage-4/INDEX.md`](../stages/stage-4/INDEX.md) 为准。
+
+2026-11-11 删除的 `manifests/reverify-current.json` 与 `stages/stage-4.0-r1/evidence/saved_project_regression.json` **逐字节相同**（`c48eec1c…`），内容是 R1 期数据，文件名却暗示"当前"。权威副本仍在 R1 证据目录中，删除不影响历史可追溯性。
+
 ## 8. 仓库整理时的一次性迁移校验（2026-11-10）
 
 本轮把两个导入模块移入 `adapters/` 并引入注册表，需要证明"整理"没有改变解析行为。校验方式：在 Blender 后台导入新包结构，重新解析 DF4 描述文件，并与 Stage 1/1.5 已记录的基线逐项比对。记录见 [`refactor-check-2026-11-10.json`](refactor-check-2026-11-10.json)：
@@ -188,12 +207,12 @@ Stage3在用户批准的新字节基线上加入坐标元数据与24个独立位
 
 同时复跑了 `tests/test_material_mapping.py`（`MATERIAL_MAPPING_TESTS_OK`）。该迁移校验脚本为一次性使用、未纳入开发仓库；长期回归依赖开发仓库的 `tests/reverify_saved_project.py`。
 
-### Stage3基线接受与当前字节
+### Stage 2 / Stage 3 阶段结束时的工程字节（历史）
 
 Stage2历史交付为 `c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f84d8873b`。本轮当前文件为 `5e96e2af3f88d7f5bedc8b9041b6404b039c851c8c089517c995b675222b5943`，用户明确接受，不恢复旧备份；所要求机械语义完整比较一致。Stage3最终为 `392af12f14a6fbfb27b201d836b86752c90a97afbc024960fc00f03407726824`，保存后独立进程回归PASS，历史阶段报告和证据没有改写。证据位于 stages/stage-3/evidence，完整工程不上传。
 
 
-## Stage 4.0 历史交付
+## 9. Stage 4.0 历史交付
 
 - 唯一正式工程：`<DEV>/output/DF4/DF4.blend`，5,466,403字节，SHA256 `489553c18fffb5c12cbce8efcc5c41ced7f6d1e507c7bda90988e684565c60d7`。
 - 原Scene117对象/33网格/7材质/29动画对象保持；新增展示Scene67对象，整体184对象/8材质。
@@ -205,7 +224,7 @@ Stage2历史交付为 `c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f8
 用户最新图片交付规范：以后各阶段只提供一张本地总览图，分散帧只作临时输入；images图片不上传GitHub。当前分支已移除14个图片文件并加入目录忽略规则，历史提交保留。公开清单与本地图片记录分列。
 
 
-## Stage 4.0-R1 历史交付
+## 10. Stage 4.0-R1 历史交付
 
 - 唯一正式工程：`<DEV>/output/DF4/DF4.blend`，5,498,544字节，SHA256 `da631cf33dfc6ecb8a4c0a1393b13831067967f79fb83886a1dee0bf18629287`。
 - 原117对象/33网格/7材质/29 Action全部保留；既有67展示对象保留，现72展示对象，整体189对象/8材质。
@@ -215,7 +234,7 @@ Stage2历史交付为 `c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f8
 - 状态为READY FOR USER VISUAL ACCEPTANCE，尚未获得用户效果认可。原Stage4.0及Stage1–3报告/哈希保持历史。
 
 
-## Stage 4.0-R2 历史交付
+## 11. Stage 4.0-R2 历史交付
 
 - 唯一正式工程：`<DEV>/output/DF4/DF4.blend`，5,518,390字节，SHA256 `766faf3114d05f2b3f0193ae8cc0ecd0aeb0e08f476afcc686e34d59be8af197`。
 - DEV：`4b8dca8ef2e2810f2c40477f8c394ff8c4d49b21`。源117对象/33网格/7材质/29Action保持；R1展示72对象保留，只增POWER，展示73/全局190对象。
@@ -225,7 +244,7 @@ Stage2历史交付为 `c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f8
 - 状态READY FOR USER VISUAL ACCEPTANCE，用户效果验收PENDING。Blender保持Camera A、Frame1、停止播放，等用户按空格检查。
 
 
-## Stage 4.0-R3 当前交付
+## 12. Stage 4.0-R3 当前基线交付
 
 - 唯一正式工程`<DEV>/output/DF4/DF4.blend`，5,519,908字节，SHA256 `cfafc7c7245654409a378a7c16267251a3307863dfcfb6c288ac53c1674295a0`，DEV `e38ecc3f646eaccdd16c13cf7cc6593fce02a870`。
 - 实际R2基线766faf31…保留回归和字节备份记录，未回退R1。源117对象/33网格/7材质/29Action及展示73对象保持，不改原几何/父级/材质。
@@ -233,3 +252,14 @@ Stage2历史交付为 `c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f8
 - 691–750分解保持2秒，751–870逆序回装4秒，871–900完整机型1秒。恢复误差2.45e-16；13,981自适应网格子帧无新增相交对，源输入34哈希/完整回归/真实GUI通过。
 - 唯一图片`stages/stage-4/evidence/STAGE_4_0_R3_OVERVIEW.png`，16画面由正式工程实际渲染。R3记录单独存evidence/r3，历史报告/清单保持，无新MP4或分散序列；.work/stage-4-r3清理。
 - READY FOR USER VISUAL ACCEPTANCE，效果验收PENDING。Blender保持Camera A、第1帧、停止播放，等待用户检查。
+
+> Stage 4 各版本的判定以 [`stages/stage-4/INDEX.md`](../stages/stage-4/INDEX.md) 为准；本节的"当前"指 R3 交付时点。
+
+## 13. Stage 4.1 画质定标
+
+- 只读使用 R3 工程，工程字节未变（`cfafc7c7…295a0`）。渲染在 `<out>/_work/` 的临时副本上进行，未把任何 Cycles 设置写回正式工程。
+- 参数：Cycles GPU/OptiX、1920×1080 100%、30 FPS、256 samples、Adaptive 0.01、OpenImageDenoise（Albedo+Normal，prefilter ACCURATE）、AgX + `AgX - Medium High Contrast`、Exposure −0.1、PNG RGB 8-bit、背景不透明、Motion Blur 关闭。
+- 8 帧实测：合计 80.64 s，平均 10.08 s/帧；900 帧推算约 2.52 小时、PNG 母版约 1.63 GB。
+- 交付物：[`STAGE_4_1_CYCLES_REPORT.md`](../stages/stage-4/STAGE_4_1_CYCLES_REPORT.md)、总览图 [`stage4_1/STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png`](../stages/stage-4/evidence/stage4_1/STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png)、渲染记录 [`stage4_1/stage4_1_render_record.json`](../stages/stage-4/evidence/stage4_1/stage4_1_render_record.json)。
+- 8 张全分辨率 PNG 仅存本地 `DF4_Render/Stage4_1_QualityTest/frames/`，不入库。
+- 状态：**READY FOR USER QUALITY ACCEPTANCE**。Stage 4.2（900 帧 + MP4）未授权，正式工程不保存 Cycles 设置。
