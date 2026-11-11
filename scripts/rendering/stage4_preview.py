@@ -22,13 +22,15 @@ def main():
     parser.add_argument('--start',type=int,default=1)
     parser.add_argument('--end',type=int)
     parser.add_argument('--image-python',default='python',help='用于合图的本机Python，需要Pillow')
+    parser.add_argument('--keep-work-source',action='store_true',help='仅测试副本时保留.work输入帧')
     args = parser.parse_args(sys.argv[sys.argv.index('--')+1:])
     config = json.loads(project_io.resolve(args.config).read_text(encoding='utf8'))
+    if config['presentation'].get('revision')=='4.0-R1' and args.mode=='video':
+        raise RuntimeError('Stage4.0-R1明确禁止生成MP4或视频预览序列')
     bpy.ops.wm.open_mainfile(filepath=str(project_io.project(config)))
     spec = config['presentation']; scene = bpy.data.scenes[spec['scene']]
     presentation.activate(scene)
-    work = WORKSPACE/'.work/stage-4.0'
-    evidence = project_io.evidence_dir(config,'stage-4.0')
+    work = WORKSPACE/spec.get('work_dir','.work/stage-4.0')
     scene.render.image_settings.file_format = 'PNG'
     scene.render.resolution_x = spec['preview']['width'];scene.render.resolution_y = spec['preview']['height']
     scene.render.resolution_percentage = 100
@@ -52,8 +54,10 @@ def main():
         print('S4_RENDER',index+1,len(frames),frame,round(time.monotonic()-start,2),flush=True)
     if args.mode == 'stills':
         # 分散帧只作临时输入，最终交付一张本地合图。
-        subprocess.run([args.image_python,str(Path(__file__).with_name('contact_sheet.py')),
-                        '--config',args.config,'--source-dir',str(destination),'--clean-work-source'],check=True)
+        command=[args.image_python,str(Path(__file__).with_name('contact_sheet.py')),
+                 '--config',args.config,'--source-dir',str(destination)]
+        if not args.keep_work_source:command.append('--clean-work-source')
+        subprocess.run(command,check=True)
 
 
 if __name__ == '__main__':

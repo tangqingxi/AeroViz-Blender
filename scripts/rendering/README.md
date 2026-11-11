@@ -1,4 +1,6 @@
-# `scripts/rendering/` —— Stage 4.0 低清展示原型
+# `scripts/rendering/` —— Stage 4 展示验收
+
+当前Stage4.0-R1只渲染一张本地总览图，不制作MP4。视频/编码入口在R1配置下直接拒绝执行；编码模块保留供历史Stage4.0使用。
 
 `stage4_preview.py`只读当前工程的展示Scene，输出一张本地总览图或临时低清序列；`encode_stage4.py`调用本地FFmpeg生成MP4；`gui_stage4.py`检查真实窗口相机、Timeline与完整播放，并可按用户指令保存布局、停留或退出。
 

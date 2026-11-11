@@ -16,8 +16,8 @@ import project_io
 
 def compose(config, source_dir, font_path=None):
     spec = config['presentation']; source_dir = Path(source_dir).resolve()
-    evidence = project_io.evidence_dir(config,'stage-4.0')
-    destination = evidence/'images'/f"{config['model_name']}_Stage4_0_overview.png"
+    evidence = project_io.evidence_dir(config,spec.get('output_stage','stage-4.0'))
+    destination = evidence/'images'/spec.get('overview_name',f"{config['model_name']}_Stage4_0_overview.png")
     frames = sorted(spec['stills'].items(),key=lambda row:row[1])
     labels = {
         'stage_00_hero':'完整机型 · Hero',
@@ -35,6 +35,7 @@ def compose(config, source_dir, font_path=None):
         'stage_06_esc_closeup':'电调与下部夹持结构',
         'stage_06_final_exploded':'最终完整分解',
     }
+    labels.update(spec.get('still_labels',{}))
     font_path = font_path or Path(os.environ.get('WINDIR','C:/Windows'))/'Fonts/msyh.ttc'
     title_font = ImageFont.truetype(str(font_path),40)
     label_font = ImageFont.truetype(str(font_path),24)
@@ -45,7 +46,7 @@ def compose(config, source_dir, font_path=None):
     rows = (len(details)+3)//4
     height = header + hero_height + gap + rows*(cell_height+gap)+54
     sheet = Image.new('RGB',(width,height),(27,28,31)); draw = ImageDraw.Draw(sheet)
-    draw.text((gap,18),config['model_name']+'  |  Stage 4.0 展示与渐进式拆解',font=title_font,fill=(235,237,240))
+    draw.text((gap,18),config['model_name']+'  |  '+spec.get('overview_title','Stage 4.0 展示与渐进式拆解'),font=title_font,fill=(235,237,240))
     draw.text((gap,72),'按原渲染拼接 · 帧号对应 30 FPS 时间轴 · 本地视觉验收合图',font=note_font,fill=(156,164,175))
     sources = []
     def panel(name,x,y,target_width,target_height):

@@ -1550,7 +1550,7 @@
     "source_scene": "Scene",
     "prefix": "S4::",
     "fps": 30,
-    "frame_end": 1650,
+    "frame_end": 990,
     "preview": {
       "width": 960,
       "height": 540,
@@ -1558,30 +1558,124 @@
       "samples": 8
     },
     "palette": {
-      "world": "38383C",
-      "ground": "202022",
-      "minor_grid": "616161",
-      "major_grid": "8F8F8F"
+      "world": "62666B",
+      "ground": "484C52",
+      "minor_grid": "64686D",
+      "major_grid": "6B6F75"
     },
     "ground_z": -0.84,
     "note": "展示实例共享原网格和原材质；展示位移不代表实际拆装行程，不修正Gazebo装配关系。",
     "modules": [
       {
-        "id": "LEGS",
-        "label": "三脚架整体",
+        "id": "LEG1",
+        "label": "脚架1",
         "objects": [
-          "tail-1",
-          "tail-2",
+          "tail-1"
+        ],
+        "start": 121,
+        "end": 170,
+        "delta": [
+          0.16,
+          -0.27712812921102037,
+          -0.4
+        ],
+        "return_start": 955,
+        "return_end": 960,
+        "detail": true,
+        "waypoints": [
+          [
+            144,
+            [
+              0.08,
+              -0.13856406460551018,
+              0
+            ]
+          ]
+        ],
+        "return_waypoints": [
+          [
+            957,
+            [
+              0.08,
+              -0.13856406460551018,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "id": "LEG2",
+        "label": "脚架2",
+        "objects": [
+          "tail-2"
+        ],
+        "start": 121,
+        "end": 170,
+        "delta": [
+          -0.32,
+          0,
+          -0.4
+        ],
+        "return_start": 955,
+        "return_end": 960,
+        "detail": true,
+        "waypoints": [
+          [
+            144,
+            [
+              -0.16,
+              0.0,
+              0
+            ]
+          ]
+        ],
+        "return_waypoints": [
+          [
+            957,
+            [
+              -0.16,
+              0.0,
+              0
+            ]
+          ]
+        ]
+      },
+      {
+        "id": "LEG3",
+        "label": "脚架3",
+        "objects": [
           "tail-3"
         ],
-        "start": 61,
-        "end": 120,
+        "start": 121,
+        "end": 170,
         "delta": [
-          0,
-          0,
-          -0.48
+          0.16,
+          0.27712812921102037,
+          -0.4
         ],
-        "detail": true
+        "return_start": 955,
+        "return_end": 960,
+        "detail": true,
+        "waypoints": [
+          [
+            144,
+            [
+              0.08,
+              0.13856406460551018,
+              0
+            ]
+          ]
+        ],
+        "return_waypoints": [
+          [
+            957,
+            [
+              0.08,
+              0.13856406460551018,
+              0
+            ]
+          ]
+        ]
       },
       {
         "id": "DUCT1",
@@ -1589,14 +1683,16 @@
         "objects": [
           "duct-out-1"
         ],
-        "start": 181,
-        "end": 210,
+        "start": 211,
+        "end": 248,
         "delta": [
           0.34,
           0,
           0.02
         ],
-        "detail": false
+        "return_start": 949,
+        "return_end": 954,
+        "detail": true
       },
       {
         "id": "DUCT2",
@@ -1604,13 +1700,15 @@
         "objects": [
           "duct-out-2"
         ],
-        "start": 223,
-        "end": 252,
+        "start": 211,
+        "end": 248,
         "delta": [
           -0.17,
           0.29445,
           0.02
         ],
+        "return_start": 949,
+        "return_end": 954,
         "detail": false
       },
       {
@@ -1619,13 +1717,15 @@
         "objects": [
           "duct-out-3"
         ],
-        "start": 265,
-        "end": 294,
+        "start": 211,
+        "end": 248,
         "delta": [
           -0.17,
           -0.29445,
           0.02
         ],
+        "return_start": 949,
+        "return_end": 954,
         "detail": false
       },
       {
@@ -1634,14 +1734,36 @@
         "objects": [
           "motor-Sunnysky-X2814III-1000KV"
         ],
-        "start": 352,
-        "end": 390,
+        "start": 283,
+        "end": 307,
         "delta": [
-          0.22,
-          0.2,
-          -0.1
+          0.38,
+          -0.28,
+          0.06
         ],
-        "detail": true
+        "return_start": 943,
+        "return_end": 948,
+        "detail": true,
+        "waypoints": [
+          [
+            299,
+            [
+              0.13,
+              -0.12,
+              0
+            ]
+          ]
+        ],
+        "return_waypoints": [
+          [
+            946,
+            [
+              0.13,
+              -0.12,
+              0
+            ]
+          ]
+        ]
       },
       {
         "id": "ROTOR",
@@ -1649,14 +1771,36 @@
         "objects": [
           "rotor"
         ],
-        "start": 442,
-        "end": 480,
+        "start": 327,
+        "end": 352,
         "delta": [
-          0,
-          0,
-          -0.18
+          0.32,
+          -0.24,
+          0.23
         ],
-        "detail": true
+        "return_start": 937,
+        "return_end": 942,
+        "detail": true,
+        "waypoints": [
+          [
+            340,
+            [
+              0.2,
+              0,
+              0
+            ]
+          ]
+        ],
+        "return_waypoints": [
+          [
+            940,
+            [
+              0.2,
+              0,
+              0
+            ]
+          ]
+        ]
       },
       {
         "id": "INNER_DUCT",
@@ -1664,14 +1808,52 @@
         "objects": [
           "duct-in"
         ],
-        "start": 487,
-        "end": 525,
+        "start": 361,
+        "end": 382,
         "delta": [
           0,
-          0,
-          -0.34
+          -0.6,
+          -0.32
         ],
-        "detail": false
+        "return_start": 931,
+        "return_end": 936,
+        "detail": false,
+        "waypoints": [
+          [
+            367,
+            [
+              0,
+              0,
+              0.07
+            ]
+          ],
+          [
+            376,
+            [
+              0,
+              -0.6,
+              0.07
+            ]
+          ]
+        ],
+        "return_waypoints": [
+          [
+            933,
+            [
+              0,
+              -0.6,
+              0.07
+            ]
+          ],
+          [
+            934,
+            [
+              0,
+              0,
+              0.07
+            ]
+          ]
+        ]
       },
       {
         "id": "SURFACE1",
@@ -1679,14 +1861,16 @@
         "objects": [
           "cs11"
         ],
-        "start": 700,
-        "end": 729,
+        "start": 481,
+        "end": 515,
         "delta": [
           0.32,
           0,
           -0.39
         ],
-        "detail": true
+        "return_start": 925,
+        "return_end": 930,
+        "detail": false
       },
       {
         "id": "SURFACE2",
@@ -1694,14 +1878,16 @@
         "objects": [
           "cs2"
         ],
-        "start": 742,
-        "end": 771,
+        "start": 481,
+        "end": 515,
         "delta": [
           0,
           -0.32,
           -0.39
         ],
-        "detail": true
+        "return_start": 925,
+        "return_end": 930,
+        "detail": false
       },
       {
         "id": "SURFACE3",
@@ -1709,14 +1895,16 @@
         "objects": [
           "cs33"
         ],
-        "start": 784,
-        "end": 813,
+        "start": 481,
+        "end": 515,
         "delta": [
           -0.32,
           0,
           -0.39
         ],
-        "detail": true
+        "return_start": 925,
+        "return_end": 930,
+        "detail": false
       },
       {
         "id": "SURFACE4",
@@ -1724,14 +1912,16 @@
         "objects": [
           "cs4"
         ],
-        "start": 826,
-        "end": 855,
+        "start": 481,
+        "end": 515,
         "delta": [
           0,
           0.32,
           -0.39
         ],
-        "detail": true
+        "return_start": 925,
+        "return_end": 930,
+        "detail": false
       },
       {
         "id": "SERVO1",
@@ -1739,13 +1929,15 @@
         "objects": [
           "servo-KST-X08H-1"
         ],
-        "start": 868,
-        "end": 897,
+        "start": 526,
+        "end": 550,
         "delta": [
           0.23,
           0,
           -0.24
         ],
+        "return_start": 919,
+        "return_end": 924,
         "detail": true
       },
       {
@@ -1754,13 +1946,15 @@
         "objects": [
           "servo-KST-X08H-2"
         ],
-        "start": 910,
-        "end": 939,
+        "start": 526,
+        "end": 550,
         "delta": [
           0,
           -0.23,
           -0.24
         ],
+        "return_start": 919,
+        "return_end": 924,
         "detail": true
       },
       {
@@ -1769,13 +1963,15 @@
         "objects": [
           "servo-KST-X08H-4"
         ],
-        "start": 952,
-        "end": 981,
+        "start": 526,
+        "end": 550,
         "delta": [
           -0.23,
           0,
           -0.24
         ],
+        "return_start": 919,
+        "return_end": 924,
         "detail": true
       },
       {
@@ -1784,13 +1980,15 @@
         "objects": [
           "servo-KST-X08H-3"
         ],
-        "start": 994,
-        "end": 1023,
+        "start": 526,
+        "end": 550,
         "delta": [
           0,
           0.23,
           -0.24
         ],
+        "return_start": 919,
+        "return_end": 924,
         "detail": true
       },
       {
@@ -1799,14 +1997,16 @@
         "objects": [
           "battery-4s-10000-2"
         ],
-        "start": 1036,
-        "end": 1080,
+        "start": 571,
+        "end": 607,
         "delta": [
           0,
-          0,
-          0.4
+          -0.38,
+          0
         ],
-        "detail": true
+        "return_start": 913,
+        "return_end": 918,
+        "detail": false
       },
       {
         "id": "FLYBOARD",
@@ -1815,13 +2015,15 @@
           "base_board_flyctrl",
           "controller2"
         ],
-        "start": 1096,
-        "end": 1140,
+        "start": 616,
+        "end": 652,
         "delta": [
           0,
           0.28,
           0.15
         ],
+        "return_start": 907,
+        "return_end": 912,
         "detail": true
       },
       {
@@ -1830,13 +2032,15 @@
         "objects": [
           "panel11"
         ],
-        "start": 1156,
-        "end": 1200,
+        "start": 661,
+        "end": 679,
         "delta": [
           0.25,
           0,
           0.09
         ],
+        "return_start": 901,
+        "return_end": 906,
         "detail": false
       },
       {
@@ -1846,13 +2050,15 @@
           "panel12",
           "X-tend"
         ],
-        "start": 1216,
-        "end": 1260,
+        "start": 682,
+        "end": 700,
         "delta": [
           -0.25,
           0,
           0.09
         ],
+        "return_start": 895,
+        "return_end": 900,
         "detail": false
       },
       {
@@ -1861,14 +2067,52 @@
         "objects": [
           "shelf1"
         ],
-        "start": 1276,
-        "end": 1320,
+        "start": 706,
+        "end": 730,
         "delta": [
           0,
           0.4,
           -0.04
         ],
-        "detail": false
+        "return_start": 889,
+        "return_end": 894,
+        "detail": false,
+        "waypoints": [
+          [
+            712,
+            [
+              0,
+              0,
+              0.015
+            ]
+          ],
+          [
+            725,
+            [
+              0,
+              0.4,
+              0.015
+            ]
+          ]
+        ],
+        "return_waypoints": [
+          [
+            891,
+            [
+              0,
+              0.4,
+              0.015
+            ]
+          ],
+          [
+            893,
+            [
+              0,
+              0,
+              0.015
+            ]
+          ]
+        ]
       },
       {
         "id": "ESC",
@@ -1876,14 +2120,36 @@
         "objects": [
           "bec-Hobbywing-Platinum"
         ],
-        "start": 1351,
-        "end": 1395,
+        "start": 746,
+        "end": 772,
         "delta": [
           0.26,
           -0.25,
           0.1
         ],
-        "detail": true
+        "return_start": 883,
+        "return_end": 888,
+        "detail": true,
+        "waypoints": [
+          [
+            755,
+            [
+              0,
+              0,
+              0.04
+            ]
+          ]
+        ],
+        "return_waypoints": [
+          [
+            886,
+            [
+              0,
+              0,
+              0.04
+            ]
+          ]
+        ]
       },
       {
         "id": "CLAMP1",
@@ -1891,14 +2157,16 @@
         "objects": [
           "box_up"
         ],
-        "start": 1411,
-        "end": 1455,
+        "start": 781,
+        "end": 792,
         "delta": [
           0,
           -0.28,
           0.06
         ],
-        "detail": true
+        "return_start": 877,
+        "return_end": 882,
+        "detail": false
       },
       {
         "id": "CLAMP2",
@@ -1906,14 +2174,16 @@
         "objects": [
           "box_up2"
         ],
-        "start": 1471,
-        "end": 1515,
+        "start": 796,
+        "end": 807,
         "delta": [
           0,
           0.28,
           0.06
         ],
-        "detail": true
+        "return_start": 871,
+        "return_end": 876,
+        "detail": false
       }
     ],
     "motion_reuse": [
@@ -1922,232 +2192,224 @@
         "joint": "rotor_joint",
         "source": [
           1,
-          2.5
+          10
         ],
         "timeline": [
           1,
-          61
-        ]
-      },
-      {
-        "object": "cs11",
-        "joint": "cs1_joint",
-        "source": [
-          1,
-          31
-        ],
-        "timeline": [
-          532,
-          572
-        ]
-      },
-      {
-        "object": "cs2",
-        "joint": "cs2_joint",
-        "source": [
-          31,
-          61
-        ],
-        "timeline": [
-          574,
-          614
-        ]
-      },
-      {
-        "object": "cs33",
-        "joint": "cs3_joint",
-        "source": [
-          61,
-          91
-        ],
-        "timeline": [
-          616,
-          656
-        ]
-      },
-      {
-        "object": "cs4",
-        "joint": "cs4_joint",
-        "source": [
-          91,
-          121
-        ],
-        "timeline": [
-          658,
-          698
+          361
         ]
       }
     ],
     "shots": [
       [
-        "S01",
-        "Hero Entrance",
+        "R01",
+        "Hero与轻微姿态展示",
         1,
-        60,
+        120,
         "A",
-        "低角度推进与灯光揭示",
-        "开场、标题前后留量"
+        "低机位推进、组合姿态后归零",
+        "完整机型开场"
       ],
       [
-        "S02",
-        "脚架整体退出",
-        61,
-        140,
-        "A",
-        "保持完整轮廓，脚架垂直下移",
-        "结构揭示"
-      ],
-      [
-        "S03",
-        "脚架细节",
-        141,
+        "R02",
+        "三脚架同步退出",
+        121,
         180,
-        "C",
-        "跟随一个脚架，缓慢推进",
-        "脚架细节插镜"
+        "A",
+        "保持主视角，三个脚架同步向外下方展开",
+        "支撑结构"
       ],
       [
-        "S04",
-        "三片外涵道依次退出",
+        "R03",
+        "单脚架特写",
         181,
-        306,
+        210,
+        "C",
+        "短距离推进、停留",
+        "脚架细节"
+      ],
+      [
+        "R04",
+        "三片外涵道同步退出",
+        211,
+        248,
         "A",
-        "有限环绕，每片到位停顿",
+        "稳定主视角，三片沿径向同步展开",
         "外壳结构"
       ],
       [
-        "S05",
-        "电机揭示与退出",
-        307,
-        396,
+        "R05",
+        "单片外涵道特写",
+        249,
+        270,
         "C",
-        "电机特写推进与跟随",
+        "短距离推进",
+        "外涵道细节"
+      ],
+      [
+        "R06",
+        "电机展示与退出",
+        271,
+        315,
+        "C",
+        "先推进，再跟随退出，停留",
         "动力细节"
       ],
       [
-        "S06",
-        "旋翼揭示与退出",
-        397,
-        486,
+        "R07",
+        "旋翼同侧退出",
+        316,
+        360,
         "C",
-        "旋翼俯侧特写与跟随",
-        "旋翼细节"
+        "旋翼特写，跟随至电机同侧",
+        "动力连接层次"
       ],
       [
-        "S07",
+        "R08",
         "内涵道退出",
-        487,
-        531,
+        361,
+        390,
         "B",
-        "斜俯视保持",
-        "分层结构"
+        "适度斜俯视保持",
+        "轴向分层"
       ],
       [
-        "S08",
-        "四舵面独立偏转",
-        532,
-        699,
+        "R09",
+        "四舵面同步±20度",
+        391,
+        480,
         "B",
-        "稳定斜俯视，复用四个原Action",
-        "运动功能演示"
+        "稳定观察同步正偏、归零、负偏、归零",
+        "控制功能"
       ],
       [
-        "S09",
-        "四舵面依次退出",
-        700,
-        867,
+        "R10",
+        "四舵面同步退出",
+        481,
+        525,
         "B",
-        "保持相同方位，依次分离",
-        "控制系统布局"
+        "保持四象限关系",
+        "舵面布局"
       ],
       [
-        "S10",
-        "舵机1对应舵面1",
-        868,
-        909,
+        "R11",
+        "四舵机协调退出",
+        526,
+        550,
+        "B",
+        "稳定斜俯视",
+        "舵机布局"
+      ],
+      [
+        "R12",
+        "舵机与舵面对应近景",
+        551,
+        570,
         "C",
-        "特写同一径向的舵机与舵面",
-        "对应关系插镜"
+        "一组对应关系短推进",
+        "控制系统细节"
       ],
       [
-        "S11",
-        "舵机2至4依次退出",
-        910,
-        1035,
-        "B",
-        "斜俯视保持原四象限对应",
-        "控制系统布局"
-      ],
-      [
-        "S12",
-        "电池先退出",
-        1036,
-        1095,
+        "R13",
+        "电池侧向退出",
+        571,
+        615,
         "A",
-        "主三分之四保持",
-        "框架内部揭示"
+        "保持主镜头，沿-Y开口退出",
+        "电池路径"
       ],
       [
-        "S13",
-        "上框与飞控一起退出",
-        1096,
-        1155,
+        "R14",
+        "上框与飞控移出",
+        616,
+        660,
         "C",
-        "跟随飞控，保持原相对位置",
-        "电子设备细节"
+        "跟随上框和飞控，保留原关系",
+        "飞控细节"
       ],
       [
-        "S14",
-        "两侧板与下框依次退出",
-        1156,
-        1335,
-        "A",
-        "稳定主镜头，分层展开",
-        "电池框架"
-      ],
-      [
-        "S15",
-        "简化电调展示与退出",
-        1336,
-        1410,
-        "C",
-        "电调特写与跟随",
-        "电子设备插镜"
-      ],
-      [
-        "S16",
-        "两片夹持结构最后退出",
-        1411,
-        1515,
+        "R15",
+        "两侧板与固定平面依次退出",
+        661,
+        705,
         "A",
         "稳定主镜头",
-        "下部连接语义"
+        "框架结构"
       ],
       [
-        "S17",
-        "最终完整分解揭示",
-        1516,
-        1650,
+        "R16",
+        "下框退出",
+        706,
+        735,
         "A",
-        "先停顿、缓慢升高后退、最后保持",
-        "结尾留量、全景停帧"
+        "主镜头保持",
+        "底座结构"
+      ],
+      [
+        "R17",
+        "电调特写与退出",
+        736,
+        780,
+        "C",
+        "先特写，再跟随退出",
+        "电子设备"
+      ],
+      [
+        "R18",
+        "两夹持片依次退出",
+        781,
+        810,
+        "A",
+        "稳定主镜头",
+        "下部结构"
+      ],
+      [
+        "R19",
+        "完整分解状态停留",
+        811,
+        870,
+        "A",
+        "先保持、升高后退、最终稳定",
+        "分解全景"
+      ],
+      [
+        "R20",
+        "逆序逐组重新装配",
+        871,
+        960,
+        "A",
+        "主镜头稳定，15组按逆序返回",
+        "恢复结构"
+      ],
+      [
+        "R21",
+        "完整机型结束停留",
+        961,
+        990,
+        "A",
+        "完整机型稳定保持",
+        "结尾留量"
       ]
     ],
     "stills": {
       "stage_00_hero": 60,
-      "stage_01_legs_out": 140,
-      "stage_02_outer_duct_partial": 264,
-      "stage_03_power_system": 475,
-      "stage_04_controls_servos": 1034,
-      "stage_05_battery_frame": 1334,
-      "stage_06_final_exploded": 1648,
-      "stage_00_hero_reveal_start": 1,
-      "stage_01_leg_closeup": 165,
-      "stage_03_motor_closeup": 385,
-      "stage_04_surface_deflection": 545,
-      "stage_04_servo_pair_closeup": 900,
-      "stage_05_flight_controller_closeup": 1148,
-      "stage_06_esc_closeup": 1400
+      "pose_demo": 80,
+      "legs_separated": 178,
+      "leg_detail": 204,
+      "ducts_synchronous": 248,
+      "duct_detail": 265,
+      "motor_detail": 310,
+      "rotor_side_exit": 355,
+      "surfaces_positive_20": 412,
+      "surfaces_negative_20": 453,
+      "servo_exit": 550,
+      "servo_pair_detail": 565,
+      "battery_side_exit": 612,
+      "flight_controller_detail": 655,
+      "battery_frame_separated": 733,
+      "esc_detail": 775,
+      "stage_06_final_exploded": 867,
+      "reassembled_complete": 975
     },
     "servo_surface_pairs": [
       {
@@ -2173,41 +2435,52 @@
     ],
     "details": [
       {
-        "start": 141,
-        "end": 180,
+        "start": 181,
+        "end": 210,
         "object": "tail-1",
-        "module": "LEGS",
+        "module": "LEG1",
         "offset": [
-          0.47,
-          -0.57,
-          0.15
+          0.62,
+          0.36,
+          0.12
         ]
       },
       {
-        "start": 307,
-        "end": 396,
+        "start": 249,
+        "end": 270,
+        "object": "duct-out-1",
+        "module": "DUCT1",
+        "offset": [
+          0.43,
+          -0.5,
+          0.25
+        ]
+      },
+      {
+        "start": 271,
+        "end": 315,
         "object": "motor-Sunnysky-X2814III-1000KV",
         "module": "MOTOR",
         "offset": [
-          0.37,
-          -0.45,
-          -0.18
+          0.3,
+          -0.36,
+          0.03
         ]
       },
       {
-        "start": 397,
-        "end": 486,
+        "start": 316,
+        "end": 360,
         "object": "rotor",
         "module": "ROTOR",
         "offset": [
           0.52,
-          -0.62,
-          -0.18
+          -0.6,
+          0.25
         ]
       },
       {
-        "start": 868,
-        "end": 909,
+        "start": 551,
+        "end": 570,
         "object": "servo-KST-X08H-1",
         "module": "SERVO1",
         "offset": [
@@ -2217,8 +2490,8 @@
         ]
       },
       {
-        "start": 1096,
-        "end": 1155,
+        "start": 616,
+        "end": 660,
         "object": "controller2",
         "module": "FLYBOARD",
         "offset": [
@@ -2228,8 +2501,8 @@
         ]
       },
       {
-        "start": 1336,
-        "end": 1410,
+        "start": 736,
+        "end": 780,
         "object": "bec-Hobbywing-Platinum",
         "module": "ESC",
         "offset": [
@@ -2238,6 +2511,135 @@
           0.22
         ]
       }
-    ]
+    ],
+    "revision": "4.0-R1",
+    "style": "Neutral Tech Studio",
+    "output_stage": "stage-4.0-r1",
+    "work_dir": ".work/stage-4-r1",
+    "overview_name": "STAGE_4_0_R1_OVERVIEW.png",
+    "overview_title": "Stage 4.0-R1 中性摄影棚与拆解 / 装配",
+    "pose": {
+      "root": "S4::AIRCRAFT_POSE_ROOT",
+      "keys": [
+        [
+          1,
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          61,
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          80,
+          [
+            3,
+            -3,
+            2
+          ]
+        ],
+        [
+          106,
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          120,
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          990,
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "note": "展示实例几何包围盒中心附近的展示枢轴，非实机CG。"
+    },
+    "surface_motion": {
+      "joints": [
+        "cs1_joint",
+        "cs2_joint",
+        "cs3_joint",
+        "cs4_joint"
+      ],
+      "angle_keys": [
+        [
+          1,
+          0
+        ],
+        [
+          391,
+          0
+        ],
+        [
+          410,
+          20
+        ],
+        [
+          415,
+          20
+        ],
+        [
+          433,
+          0
+        ],
+        [
+          451,
+          -20
+        ],
+        [
+          456,
+          -20
+        ],
+        [
+          474,
+          0
+        ],
+        [
+          480,
+          0
+        ],
+        [
+          990,
+          0
+        ]
+      ],
+      "interpolation": "SMOOTHSTEP_SAMPLED_QUATERNION"
+    },
+    "still_labels": {
+      "pose_demo": "整机轻微姿态展示",
+      "legs_separated": "三脚架同步拉开",
+      "leg_detail": "单脚架特写",
+      "ducts_synchronous": "三片外涵道同步退出",
+      "duct_detail": "单片外涵道推进",
+      "motor_detail": "电机特写 / 同侧展示",
+      "rotor_side_exit": "旋翼与电机同侧展示",
+      "surfaces_positive_20": "四舵面同步 +20°",
+      "surfaces_negative_20": "四舵面同步 -20°",
+      "servo_exit": "四舵机协调退出",
+      "servo_pair_detail": "舵机 / 舵面对应",
+      "battery_side_exit": "电池沿 -Y 侧向退出",
+      "flight_controller_detail": "上框与飞控共同移出",
+      "battery_frame_separated": "电池框架分解",
+      "esc_detail": "电调特写",
+      "reassembled_complete": "逆序装配完成"
+    }
   }
 }

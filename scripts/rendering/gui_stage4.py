@@ -20,17 +20,44 @@ parser.add_argument('--config',required=True)
 parser.add_argument('--save-layout',action='store_true')
 parser.add_argument('--leave-open',action='store_true')
 parser.add_argument('--quick',action='store_true')
+parser.add_argument('--reopen-check-only',action='store_true',help='只读确认重新打开后的布局，不保存或播放')
 args = parser.parse_args(sys.argv[sys.argv.index('--')+1:])
 config = json.loads(project_io.resolve(args.config).read_text(encoding='utf8'))
-evidence = project_io.evidence_dir(config,'stage-4.0')
+evidence = project_io.evidence_dir(config,config['presentation'].get('output_stage','stage-4.0'))
 evidence.mkdir(parents=True,exist_ok=True)
-state = {'step':'setup','samples':[]}
+work=WORKSPACE/config['presentation'].get('work_dir','.work/stage-4.0')
+screen_path=work/'gui_layout_only.png' if config['presentation'].get('revision')=='4.0-R1' else evidence/'gui_layout_only.png'
+screen_path.parent.mkdir(parents=True,exist_ok=True)
+state = {'step':'reopen-check' if args.reopen_check_only else 'setup','samples':[]}
+initial_open_state={'scene':bpy.context.scene.name,'frame':bpy.context.scene.frame_current}
 
 
 def timer():
     try:
         assert not bpy.app.background
         scene = bpy.data.scenes[config['presentation']['scene']]
+        if state['step']=='reopen-check':
+            observed={'scene':bpy.context.scene.name,'frame':scene.frame_current,
+                      'is_playing':bpy.context.screen.is_animation_playing}
+            # 原生启动事件或用户浏览可能推进画面；最终只调整会话，不保存工程。
+            if bpy.context.screen.is_animation_playing:bpy.ops.screen.animation_cancel(restore_frame=False)
+            if bpy.context.scene!=scene:bpy.context.window.scene=scene
+            if scene.frame_current!=1:scene.frame_set(1)
+            scene.camera=bpy.data.objects['S4::CAMERA_A']
+            area=max(bpy.context.screen.areas,key=lambda a:a.width*a.height)
+            assert area.type=='VIEW_3D' and area.spaces.active.region_3d.view_perspective=='CAMERA'
+            timeline=next(a for a in bpy.context.screen.areas if a.type=='DOPESHEET_EDITOR' and a.ui_type=='TIMELINE')
+            region=next(r for r in timeline.regions if r.type=='WINDOW')
+            left=region.view2d.region_to_view(0,0)[0];right=region.view2d.region_to_view(region.width,0)[0]
+            assert left<=1 and right>=scene.frame_end
+            bpy.ops.screen.screenshot(filepath=str(work/'final_reopen.png'))
+            result={'status':'PASS','background':False,'scene':scene.name,'camera':scene.camera.name,
+                    'frame':scene.frame_current,'is_playing':False,'range':[scene.frame_start,scene.frame_end],
+                    'timeline_visible_range':[left,right],'save_called':False,'left_open':True,
+                    'initial_cli_state':initial_open_state,'observed_before_normalizing':observed,
+                    'project_sha256':hashlib.sha256(project_io.project(config).read_bytes()).hexdigest()}
+            (evidence/'final_reopen_validation.json').write_bytes((json.dumps(result,ensure_ascii=False,indent=2)+'\n').encode('utf8'))
+            print('FINAL_REOPEN_PASS',flush=True);return None
         if state['step'] == 'setup':
             presentation.configure_layout(scene)
             scene.sync_mode = 'FRAME_DROP'
@@ -65,7 +92,7 @@ def timer():
             assert scene.camera.name == 'S4::CAMERA_A' and scene.frame_current == 1
             if args.save_layout: project_io.save_project(config)
             state['project_sha256'] = hashlib.sha256(project_io.project(config).read_bytes()).hexdigest()
-            bpy.ops.screen.screenshot(filepath=str(evidence/'gui_layout_only.png'))
+            bpy.ops.screen.screenshot(filepath=str(screen_path))
             state['step'] = 'finish' if args.quick else 'play'
             if not args.quick:
                 state['started'] = time.monotonic()
@@ -85,17 +112,36 @@ def timer():
                 return 1.0
             state['samples'].append({'elapsed_s':round(time.monotonic()-state['started'],3),
                                      'frame':scene.frame_current,'camera':scene.camera.name})
+            if config['presentation'].get('revision')=='4.0-R1':
+                captured=state.setdefault('visual_sample_frames',{})
+                for frame in (80,248,412,453,612,807,855,930,975):
+                    if frame<=scene.frame_current<frame+25 and str(frame) not in captured:
+                        bpy.ops.screen.screenshot(filepath=str(work/f'gui_live_{frame:03d}.png'))
+                        captured[str(frame)]={'actual_frame':scene.frame_current,'camera':scene.camera.name}
             wrapped = any(b['frame'] < a['frame'] for a,b in zip(state['samples'],state['samples'][1:]))
             if wrapped:
                 bpy.ops.screen.animation_cancel(restore_frame=False)
+                if config['presentation'].get('revision')=='4.0-R1':
+                    state['check_frames']=[80,248,412,453,807,930,975]
+                    state['check_index']=0;state['check_wait']=False;state['step']='checks';return .2
                 scene.frame_set(1);scene.camera = bpy.data.objects['S4::CAMERA_A']
                 state['step'] = 'finish';return 2.0
             if time.monotonic()-state['started'] > 85:
                 raise RuntimeError('真实窗口未观察到完整播放循环')
             return .5
+        if state['step']=='checks':
+            frame=state['check_frames'][state['check_index']]
+            if not state['check_wait']:
+                scene.frame_set(frame);state['check_wait']=True;return 1.2
+            bpy.ops.screen.screenshot(filepath=str(work/f'gui_exact_{frame:03d}.png'))
+            state.setdefault('exact_visual_frames',[]).append(frame)
+            state['check_index']+=1;state['check_wait']=False
+            if state['check_index']<len(state['check_frames']):return .2
+            scene.frame_set(1);scene.camera=bpy.data.objects['S4::CAMERA_A']
+            state['step']='finish';return 2.0
         if state['step'] == 'finish':
             scene.frame_set(1);scene.camera = bpy.data.objects['S4::CAMERA_A']
-            bpy.ops.screen.screenshot(filepath=str(evidence/'gui_layout_only.png'))
+            bpy.ops.screen.screenshot(filepath=str(screen_path))
             assert state['project_sha256'] == hashlib.sha256(project_io.project(config).read_bytes()).hexdigest()
             result = {'status':'PASS','background':False,'project_sha256':state['project_sha256'],
                       'blender_version':bpy.app.version_string,'camera':scene.camera.name,'frame':1,
@@ -104,6 +150,8 @@ def timer():
                       'areas':[{'type':a.type,'ui_type':a.ui_type,'height':a.height,'width':a.width} for a in bpy.context.screen.areas],
                       'full_cycle_observed':not args.quick,'playback_samples':state['samples'],
                       'restart_count':state.get('restart_count',0),
+                      'visual_sample_frames':state.get('visual_sample_frames',{}),
+                      'exact_visual_frames':state.get('exact_visual_frames',[]),
                       'left_open':args.leave_open,
                       'note':'GUI截图仅证明窗口布局，不作为展示渲染素材；最终停留遵循用户最新补充要求。'}
             (evidence/'gui_validation.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf8')

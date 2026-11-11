@@ -363,6 +363,13 @@ def build(config, baseline):
 
 
 def validate(config, baseline):
+    if config['presentation'].get('revision') == '4.0-R1':
+        import presentation_r1
+        return presentation_r1.validate(config,baseline)
+    return validate_original(config,baseline)
+
+
+def validate_original(config, baseline):
     """完整源回归之外，验证展示实例身份、模块关系、动作顺序及NLA复用。"""
     source_result = check_source(config,baseline)
     spec = config['presentation']; film = bpy.data.scenes[spec['scene']]
