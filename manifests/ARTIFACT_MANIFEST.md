@@ -263,3 +263,12 @@ Stage2历史交付为 `c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f8
 - 交付物：[`STAGE_4_1_CYCLES_REPORT.md`](../stages/stage-4/STAGE_4_1_CYCLES_REPORT.md)、总览图 [`stage4_1/STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png`](../stages/stage-4/evidence/stage-4.1/STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png)、渲染记录 [`stage4_1/stage4_1_render_record.json`](../stages/stage-4/evidence/stage-4.1/stage4_1_render_record.json)。
 - 8 张全分辨率 PNG 仅存本地 `DF4_Render/Stage4_1_QualityTest/frames/`，不入库。
 - 状态：**READY FOR USER QUALITY ACCEPTANCE**。Stage 4.2（900 帧 + MP4）未授权，正式工程不保存 Cycles 设置。
+
+## 14. Stage 4.2 正式全片渲染
+
+- 900 张 1920×1080 PNG 母版（1,631,175,874 B ≈ 1.52 GiB）与 1080p30 MP4（6,329,553 B）只存本地 `DF4_Render/Stage4_2_Final/`，不入库。
+- 参数沿用 4.1 验收值：Cycles GPU/OptiX、256 samples、Adaptive 0.01、OpenImageDenoise（Albedo+Normal）、AgX / `AgX - Medium High Contrast` / Exposure −0.1、PNG RGB 8-bit、背景不透明、Motion Blur 关闭。
+- 实测：渲染 11,136.17 s（3 小时 5 分 36 秒），平均 12.37 s/帧；编码 8.3 s（libx264 CRF 17 / preset slow / High@4.1 / yuv420p / BT.709 / faststart / 无音轨）。
+- 交付物：[`STAGE_4_2_FINAL_RENDER_REPORT.md`](../stages/stage-4/STAGE_4_2_FINAL_RENDER_REPORT.md)、[`evidence/stage-4.2/`](../stages/stage-4/evidence/stage-4.2/)（渲染汇总、MP4 媒体信息、9 帧联系表）。
+- 正式工程 SHA256 未变（`cfafc7c7…295a0`）；渲染只在临时副本上进行。
+- 状态：**FINAL RENDER COMPLETE**，等待用户确认成片；Stage 4.3 未授权。

@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "RepoSync",
-  "created_at": "2026-11-11T11:07:34Z",
+  "created_at": "2026-11-11T14:19:13Z",
   "agent": {
     "name": "deepseek-harness",
     "model": "deepseek-flash"
@@ -9,7 +9,7 @@
   "development": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender",
     "branch": "main",
-    "commit": "f7cbd09837037480f5a7df4325a49b5a57b68440"
+    "commit": "1e04052ace5decd448f7053e582c77e7cd7131b5"
   },
   "audit": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
@@ -28,17 +28,17 @@
     },
     {
       "path": "HANDOFF.md",
-      "sha256": "7a12283e18052a02074f3eed79760ecba5afa46f53ea91d1747b543d42f34554",
+      "sha256": "08a7bcb8d01994e2e69f44a99af49748e6add2042ef1bea8027a8340aba36544",
       "kind": "handoff"
     },
     {
       "path": "README.md",
-      "sha256": "205e1bf5dc8c59e19f625539bb85a74250d287eba223d818ddbf50df3e68e157",
+      "sha256": "040c993c97f2351a34dcd03b63e4c9b543b7b337fba4662def19f61f1e0de641",
       "kind": "other"
     },
     {
       "path": "manifests/ARTIFACT_MANIFEST.md",
-      "sha256": "64c1f34394adfc573785aeb7c5cf61a311c0e0c19b8fa4a92901765118c49988",
+      "sha256": "be351586b16aecaecdb0d00390848da808a65e562c6e70c3322e6e27e04bb40a",
       "kind": "other"
     },
     {
@@ -468,7 +468,7 @@
     },
     {
       "path": "stages/stage-4/INDEX.md",
-      "sha256": "112a8a1705b03997174126f7a3a5f0bcd658807e75ab053404ab150ba37468a3",
+      "sha256": "2fa391fc8b54d36077fc95d1802c21980ba207379c6483e4801ea426ec21b5ba",
       "kind": "other"
     },
     {
@@ -502,6 +502,11 @@
       "kind": "report"
     },
     {
+      "path": "stages/stage-4/STAGE_4_2_FINAL_RENDER_REPORT.md",
+      "sha256": "65ea76d89324bbdf41a1b5178ae5f99db27b0cd6f40f0b60d44c8f57a5bda506",
+      "kind": "report"
+    },
+    {
       "path": "stages/stage-4/evidence-manifest-stage-4.0-r1.json",
       "sha256": "79b2b0009857a59478604f87159f6e621bb0e5f9c75fa71affae3d5957a979c9",
       "kind": "other"
@@ -524,6 +529,11 @@
     {
       "path": "stages/stage-4/evidence-manifest-stage-4.1.json",
       "sha256": "c475e179a0110fc629eba0597932ea18538f2bd68ba957df67ed0636d689c677",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-4/evidence-manifest-stage-4.2.json",
+      "sha256": "4b42141112a002000f3d4455eaef8c5d8e21e5af728c4ef32a2c871bc12bddd4",
       "kind": "other"
     },
     {
@@ -849,6 +859,21 @@
     {
       "path": "stages/stage-4/evidence/stage-4.1/stage4_1_render_record.json",
       "sha256": "0b89afe3e3bfd11795a3dd0722f70ff5c8b076f91b6531971463fdb7e48de94a",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.2/contact_sheet.png",
+      "sha256": "57bef8d633bc2da5997ea9fdfcaaf553213931162c549678310a0908c7c398f7",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.2/mp4_media_info.txt",
+      "sha256": "94c3718d9e52c57fd9075ae10e686012091fabd8a59e75467de4f4c828f0fc01",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.2/stage4_2_render_summary.json",
+      "sha256": "296028e57c44ec3f926ddd0552bb4b641a04af410c69b21f0137d2b65fba9ccb",
       "kind": "other"
     }
   ],

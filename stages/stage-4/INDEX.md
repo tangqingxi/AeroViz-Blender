@@ -8,13 +8,14 @@ Stage 4 有四个镜头/拆解修订版和一次画质定标。2026-11-11 已把
 
 | 项目 | 值 |
 |---|---|
-| 当前正式版本 | **Stage 4.0-R3**（已验收基线） |
-| 当前画质定标 | **Stage 4.1**（Cycles 参数与 8 帧测试，待用户画质验收） |
+| 当前正式版本 | **Stage 4.0-R3**（镜头/动画基线，已验收） |
+| 画质定标 | **Stage 4.1**（Cycles 参数，已验收） |
+| 成片交付 | **Stage 4.2**（900 帧 PNG 母版 + 1080p30 MP4，已完成） |
 | 正式工程 | `<DEV>/output/DF4/DF4.blend` |
 | 正式工程 SHA256 | `cfafc7c7245654409a378a7c16267251a3307863dfcfb6c288ac53c1674295a0` |
 | 正式工程大小 | 5,519,908 B |
 | 时间轴 | 30 FPS，1–900 帧，30 秒，10 个章节 |
-| 阶段状态 | **STAGE 4.1: READY FOR USER QUALITY ACCEPTANCE** |
+| 阶段状态 | **STAGE 4.2: FINAL RENDER COMPLETE** |
 
 除 R3 与 4.1 之外的内容都是历史记录，不得当作当前状态引用。
 
@@ -29,17 +30,20 @@ stages/stage-4/
 ├── STAGE_4_0_R2_REPORT.md                R2 主报告
 ├── STAGE_4_0_R3_REPORT.md                R3 主报告（当前基线）
 ├── STAGE_4_1_CYCLES_REPORT.md            4.1 画质定标报告
+├── STAGE_4_2_FINAL_RENDER_REPORT.md      4.2 正式全片渲染报告
 ├── evidence-manifest-stage-4.0.json      4.0 证据清单
 ├── evidence-manifest-stage-4.0-r1.json   R1 证据清单
 ├── evidence-manifest-stage-4.0-r2.json   R2 证据清单
 ├── evidence-manifest-stage-4.0-r3.json   R3 证据清单
 ├── evidence-manifest-stage-4.1.json      4.1 证据清单
+├── evidence-manifest-stage-4.2.json      4.2 证据清单
 └── evidence/
     ├── stage-4.0/        4.0 的机器证据、总览图与低清预览 MP4
     ├── stage-4.0-r1/     R1 的机器证据
     ├── stage-4.0-r2/     R2 的机器证据与 STAGE_4_0_R2_OVERVIEW.png
     ├── stage-4.0-r3/     R3 的机器证据与 STAGE_4_0_R3_OVERVIEW.png
-    └── stage-4.1/        4.1 的 Cycles 总览图与渲染记录
+    ├── stage-4.1/        4.1 的 Cycles 总览图与渲染记录
+    └── stage-4.2/        4.2 的渲染汇总、MP4 媒体信息与联系表
 ```
 
 ## 版本一览
@@ -50,7 +54,8 @@ stages/stage-4/
 | 4.0-R1 | [`STAGE_4_0_R1_REPORT.md`](STAGE_4_0_R1_REPORT.md) | [`evidence/stage-4.0-r1/`](evidence/stage-4.0-r1/) | [`evidence-manifest-stage-4.0-r1.json`](evidence-manifest-stage-4.0-r1.json) | `da631cf3…9287` | 历史 |
 | 4.0-R2 | [`STAGE_4_0_R2_REPORT.md`](STAGE_4_0_R2_REPORT.md) | [`evidence/stage-4.0-r2/`](evidence/stage-4.0-r2/) | [`evidence-manifest-stage-4.0-r2.json`](evidence-manifest-stage-4.0-r2.json) | `766faf31…f197` | 历史 |
 | **4.0-R3** | [`STAGE_4_0_R3_REPORT.md`](STAGE_4_0_R3_REPORT.md) | [`evidence/stage-4.0-r3/`](evidence/stage-4.0-r3/) | [`evidence-manifest-stage-4.0-r3.json`](evidence-manifest-stage-4.0-r3.json) | `cfafc7c7…295a0` | **当前基线，已验收** |
-| **4.1** | [`STAGE_4_1_CYCLES_REPORT.md`](STAGE_4_1_CYCLES_REPORT.md) | [`evidence/stage-4.1/`](evidence/stage-4.1/) | [`evidence-manifest-stage-4.1.json`](evidence-manifest-stage-4.1.json) | 同上（只读使用，未改动） | **待用户画质验收** |
+| **4.1** | [`STAGE_4_1_CYCLES_REPORT.md`](STAGE_4_1_CYCLES_REPORT.md) | [`evidence/stage-4.1/`](evidence/stage-4.1/) | [`evidence-manifest-stage-4.1.json`](evidence-manifest-stage-4.1.json) | 同上（只读使用，未改动） | 已验收 |
+| **4.2** | [`STAGE_4_2_FINAL_RENDER_REPORT.md`](STAGE_4_2_FINAL_RENDER_REPORT.md) | [`evidence/stage-4.2/`](evidence/stage-4.2/) | [`evidence-manifest-stage-4.2.json`](evidence-manifest-stage-4.2.json) | 同上（只读使用，未改动） | **已完成，待用户看成片** |
 
 ## 2026-11-11 合并说明
 

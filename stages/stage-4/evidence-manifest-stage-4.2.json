@@ -1,0 +1,60 @@
+{
+  "schema_version": 2,
+  "phase": "Stage4.2",
+  "created_at": "2026-11-11T14:19:06Z",
+  "agent": {
+    "name": "deepseek-harness",
+    "model": "deepseek-flash"
+  },
+  "development": {
+    "repository": "https://github.com/tangqingxi/AeroViz-Blender",
+    "branch": "main",
+    "commit": "1e04052ace5decd448f7053e582c77e7cd7131b5"
+  },
+  "audit": {
+    "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
+  },
+  "status": "in-progress",
+  "environment": {
+    "os": "Windows 11 10.0.26200",
+    "blender": "5.0.1 build a3db93c5b259",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop 8GB driver 591.91",
+    "cycles_device": "OPTIX",
+    "ffmpeg": "9.0.2 essentials (libx264)"
+  },
+  "evidence": [
+    {
+      "path": "stages/stage-4/STAGE_4_2_FINAL_RENDER_REPORT.md",
+      "sha256": "65ea76d89324bbdf41a1b5178ae5f99db27b0cd6f40f0b60d44c8f57a5bda506",
+      "kind": "report"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.2/stage4_2_render_summary.json",
+      "sha256": "296028e57c44ec3f926ddd0552bb4b641a04af410c69b21f0137d2b65fba9ccb",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.2/mp4_media_info.txt",
+      "sha256": "94c3718d9e52c57fd9075ae10e686012091fabd8a59e75467de4f4c828f0fc01",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.2/contact_sheet.png",
+      "sha256": "57bef8d633bc2da5997ea9fdfcaaf553213931162c549678310a0908c7c398f7",
+      "kind": "other"
+    }
+  ],
+  "verification": {
+    "commands": [
+      "check_frames.py PNG_Master 1 900 -> 900/900, all 1920x1080, 0 missing",
+      "ffprobe DF4_Final_1080p30.mp4 -> h264 High 1920x1080 30fps 30.000s 900 frames bt709"
+    ],
+    "result": "passed"
+  },
+  "limitations": [
+    "900 PNG and the MP4 stay local; only the summary, media info and contact sheet are published.",
+    "Rendering took 12.37 s/frame versus the 10.08 s/frame measured on 8 calibration frames, so a re-render should budget about 3.5 hours.",
+    "FFmpeg was downloaded locally (9.0.2 essentials) because no system install existed; it is not in the repository."
+  ],
+  "next_action": "Await user review of the MP4, then authorise Stage 4.3 delivery cleanup."
+}

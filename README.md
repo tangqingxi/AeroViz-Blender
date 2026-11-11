@@ -32,7 +32,8 @@
 | Stage 4.0-R1 | 中性摄影棚、姿态、同步拆解与逆序装配 | 历史（已被 R3 取代） | [`STAGE_4_0_R1_REPORT.md`](stages/stage-4/STAGE_4_0_R1_REPORT.md) |
 | Stage 4.0-R2 | 柔和灰摄影棚、相机叙事与完整动力拆解 | 历史（已被 R3 取代） | [`STAGE_4_0_R2_REPORT.md`](stages/stage-4/STAGE_4_0_R2_REPORT.md) |
 | **Stage 4.0-R3** | 镜头精简与四舵面同步拆解 | **当前基线，已验收** | [`STAGE_4_0_R3_REPORT.md`](stages/stage-4/STAGE_4_0_R3_REPORT.md) |
-| **Stage 4.1** | Cycles 正式画质定标（8 帧测试） | **待用户画质验收** | [`STAGE_4_1_CYCLES_REPORT.md`](stages/stage-4/STAGE_4_1_CYCLES_REPORT.md) |
+| **Stage 4.1** | Cycles 正式画质定标（8 帧测试） | 已验收 | [`STAGE_4_1_CYCLES_REPORT.md`](stages/stage-4/STAGE_4_1_CYCLES_REPORT.md) |
+| **Stage 4.2** | 正式全片渲染（900 帧 PNG + 1080p30 MP4） | **已完成，待用户看成片** | [`STAGE_4_2_FINAL_RENDER_REPORT.md`](stages/stage-4/STAGE_4_2_FINAL_RENDER_REPORT.md) |
 | Stage 4.2 | 正式渲染 900 帧 + MP4 | 未授权 | — |
 | Stage 5 | 多机型适配与工具完善 | 未执行 | — |
 
