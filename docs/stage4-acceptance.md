@@ -6,16 +6,15 @@
 
 把鼠标放在画面或 Timeline 上，按 **空格** 播放，再按一次暂停。完整范围为 **1–1650帧（55秒）**。暂停后在 Timeline 点击定位，或在当前帧数字框输入帧号；无需移动对象。Timeline 上的 S01–S17 标记对应镜头阶段。
 
-| 验收项目 | 定位帧 | PNG文件 |
+| 验收项目 | 定位帧 | 总览图中的画面 |
 |---|---:|---|
-| 完整机型与Hero登场 | 60 | `stage_00_hero.png` |
-| 三脚架整体拆出 | 140 | `stage_01_legs_out.png` |
-| 单脚架细节 | 165 | `stage_01_leg_closeup.png` |
-| 外涵道逐片分离 | 264 | `stage_02_outer_duct_partial.png` |
-| 动力系统 | 475 | `stage_03_power_system.png` |
-| 舵面偏转 | 545 | `stage_04_surface_deflection.png` |
-| 舵面与舵机依次退出 | 1034 | `stage_04_controls_servos.png` |
-| 电池框架拆解 | 1334 | `stage_05_battery_frame.png` |
-| 最终完整分解布局 | 1648 | `stage_06_final_exploded.png` |
+| 完整机型与Hero登场 | 60 | 上排左侧 |
+| 最终完整分解布局 | 1648 | 上排右侧 |
+| 三脚架整体拆出 | 140 | 下排「三脚架整体拆出」 |
+| 脚架细节 | 165 | 下排「单脚架细节」 |
+| 外涵道依次退出 | 264 | 下排「外涵道逐片分离」 |
+| 动力系统 | 475 | 下排「旋翼与动力系统」 |
+| 舵面偏转、舵机退出 | 545 / 1034 | 下排控制系统画面 |
+| 电池框架拆解 | 1334 | 下排「电池框架拆解」 |
 
-PNG 位于 Audit 仓库 `stages/stage-4.0/evidence/images/`。直接双击 `stages/stage-4.0/evidence/video/DF4_Stage4_0_preview.mp4` 可观看完整预览，无需进入 Blender。
+本地仅保留一张总览图：`stages/stage-4.0/evidence/images/DF4_Stage4_0_overview.png`，含阶段名与帧号，图片不上传GitHub。直接双击 `stages/stage-4.0/evidence/video/DF4_Stage4_0_preview.mp4` 可观看完整预览，无需进入Blender。
