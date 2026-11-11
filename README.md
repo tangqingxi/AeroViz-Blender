@@ -24,6 +24,7 @@
 | Stage 3 | FLU定义与爆炸/恢复视图 | **COMPLETE / PASS** | [`STAGE_3_REPORT.md`](stages/stage-3/STAGE_3_REPORT.md) |
 | Stage 4.0 | 展示镜头与渐进式拆解原型 | **技术PASS / 等待人工效果验收** | [STAGE_4_0_REPORT.md](stages/stage-4.0/STAGE_4_0_REPORT.md) |
 | Stage 4.0-R1 | 中性摄影棚、姿态、同步拆解与逆序装配 | **READY FOR USER VISUAL ACCEPTANCE** | [STAGE_4_0_R1_REPORT.md](stages/stage-4.0-r1/STAGE_4_0_R1_REPORT.md) |
+| Stage 4.0-R2 | 柔和灰摄影棚、相机叙事与完整动力拆解 | **READY FOR USER VISUAL ACCEPTANCE** | [STAGE_4_0_R2_REPORT.md](stages/stage-4/STAGE_4_0_R2_REPORT.md) |
 | Stage 5 | 多机型适配与工具完善 | 未执行 | — |
 
 当前验证机型只有 DF4。项目定位、路线图与代码结构见开发仓库 README。
@@ -63,9 +64,9 @@ python scripts/verify_evidence.py <audit-root> <audit-root>/stages/stage-1.5/evi
 
 ## 当前工程
 
-本地只有一个工程：`output/DF4/DF4.blend`，SHA256 `392af12f14a6fbfb27b201d836b86752c90a97afbc024960fc00f03407726824`。
+唯一正式工程为`<DEV>/output/DF4/DF4.blend`，当前Stage4.0-R2 SHA256 `766faf3114d05f2b3f0193ae8cc0ecd0aeb0e08f476afcc686e34d59be8af197`。原Stage1–3成果保留，新增展示层为33秒、1–990帧。最终Blender保持Camera A、第1帧、停止播放，用户可直接按空格检查。
 
-Stage 1、Stage 1.5、Stage 2 与 Stage 3 的成果都在这一个文件里；后续阶段直接在它上面迭代，不再生成阶段编号的 `.blend`。两份历史报告保留原始文件名与历史哈希，作为过程记录。
+本轮唯一总览图在`stages/stage-4/evidence/STAGE_4_0_R2_OVERVIEW.png`，随R2报告提交；此前images目录仍忽略。无新视频或分散序列。用户视觉验收仍PENDING，历史报告和哈希保持原记录。当前DEV提交`4b8dca8ef2e2810f2c40477f8c394ff8c4d49b21`。
 
 ## 分工边界
 
@@ -83,10 +84,10 @@ Stage 1、Stage 1.5、Stage 2 与 Stage 3 的成果都在这一个文件里；�
 
 ## 明确声明
 
-- Stage 1.5 结束时工程是静态的；Stage 2 现已加入五个关节的独立动画，尚无爆炸视图或视频。
+- Stage1.5静态、Stage2机械运动、Stage3爆炸恢复和Stage4展示各阶段历史记录分别保留；当前状态见R2报告。
 - 报告中的数据全部来自实际执行与工程文件，未将计划功能写成已实现功能。
 - 未创建版本 Tag；本项目自身许可证尚未确定。
 
-Stage 2 窗口、运动测试和保存后回归见阶段主报告；证据清单为 `stages/stage-2/evidence-manifest.json`。当前工程：117对象、33网格、7材质、33材质分配、29动画对象（旧5个JOINT与24个独立爆炸Empty）。
+Stage 2 窗口、运动测试和保存后回归见阶段主报告；证据清单为 `stages/stage-2/evidence-manifest.json`。源Scene保持117对象、33网格、7材质、33材质分配、29动画对象（5个JOINT与24个爆炸Empty）；当前展示层另行统计。
 
-Stage3主报告与截图见 `stages/stage-3/STAGE_3_REPORT.md`，坐标定义为FLU，爆炸距离是展示参数。按用户最新要求截图验收后已退出Blender，不要求用户操作软件。
+Stage3主报告与截图见 `stages/stage-3/STAGE_3_REPORT.md`，坐标定义为FLU，爆炸距离是展示参数。Stage3当时截图验收后退出；当前R2按最新要求保持Blender打开，空格即可播放。

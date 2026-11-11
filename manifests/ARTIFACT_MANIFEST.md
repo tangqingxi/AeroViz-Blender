@@ -193,7 +193,7 @@ Stage3在用户批准的新字节基线上加入坐标元数据与24个独立位
 Stage2历史交付为 `c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f84d8873b`。本轮当前文件为 `5e96e2af3f88d7f5bedc8b9041b6404b039c851c8c089517c995b675222b5943`，用户明确接受，不恢复旧备份；所要求机械语义完整比较一致。Stage3最终为 `392af12f14a6fbfb27b201d836b86752c90a97afbc024960fc00f03407726824`，保存后独立进程回归PASS，历史阶段报告和证据没有改写。证据位于 stages/stage-3/evidence，完整工程不上传。
 
 
-## Stage 4.0 当前交付
+## Stage 4.0 历史交付
 
 - 唯一正式工程：`<DEV>/output/DF4/DF4.blend`，5,466,403字节，SHA256 `489553c18fffb5c12cbce8efcc5c41ced7f6d1e507c7bda90988e684565c60d7`。
 - 原Scene117对象/33网格/7材质/29动画对象保持；新增展示Scene67对象，整体184对象/8材质。
@@ -205,7 +205,7 @@ Stage2历史交付为 `c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f8
 用户最新图片交付规范：以后各阶段只提供一张本地总览图，分散帧只作临时输入；images图片不上传GitHub。当前分支已移除14个图片文件并加入目录忽略规则，历史提交保留。公开清单与本地图片记录分列。
 
 
-## Stage 4.0-R1 当前交付
+## Stage 4.0-R1 历史交付
 
 - 唯一正式工程：`<DEV>/output/DF4/DF4.blend`，5,498,544字节，SHA256 `da631cf33dfc6ecb8a4c0a1393b13831067967f79fb83886a1dee0bf18629287`。
 - 原117对象/33网格/7材质/29 Action全部保留；既有67展示对象保留，现72展示对象，整体189对象/8材质。
@@ -213,3 +213,13 @@ Stage2历史交付为 `c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f8
 - 本地只交付`stages/stage-4.0-r1/evidence/images/STAGE_4_0_R1_OVERVIEW.png`。18个正式工程实际渲染画面拼接；无MP4，分散帧清理，images不上传GitHub。
 - 源输入34文件哈希一致，全部源回归、姿态/同步±20°限位、侧向电池、回装/构图、14,647自适应几何样本及真实GUI通过。完整报告与哈希见R1目录。
 - 状态为READY FOR USER VISUAL ACCEPTANCE，尚未获得用户效果认可。原Stage4.0及Stage1–3报告/哈希保持历史。
+
+
+## Stage 4.0-R2 当前交付
+
+- 唯一正式工程：`<DEV>/output/DF4/DF4.blend`，5,518,390字节，SHA256 `766faf3114d05f2b3f0193ae8cc0ecd0aeb0e08f476afcc686e34d59be8af197`。
+- DEV：`4b8dca8ef2e2810f2c40477f8c394ff8c4d49b21`。源117对象/33网格/7材质/29Action保持；R1展示72对象保留，只增POWER，展示73/全局190对象。
+- 33秒、30FPS、1–990帧，14镜头；机体静止开场，完整动力组件共同退出，舵面同步±20°后依次退出，电池-Y380mm，完整分解后逆序回装。
+- 唯一图片：`stages/stage-4/evidence/STAGE_4_0_R2_OVERVIEW.png`，18个正式工程渲染画面合图；按本轮明确路径提交一张总览图，历史images仍忽略。无新MP4或序列。
+- Stage1–3/源输入34文件哈希/17,245几何样本/动力与舵面/电池连续扫掠/正式重开/真实GUI播放全部PASS。回装误差2.45e-16。历史阶段目录不改写，临时副本及PNG结束清理。
+- 状态READY FOR USER VISUAL ACCEPTANCE，用户效果验收PENDING。Blender保持Camera A、Frame1、停止播放，等用户按空格检查。

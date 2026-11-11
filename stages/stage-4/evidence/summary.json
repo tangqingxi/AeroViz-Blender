@@ -1,0 +1,33 @@
+{
+  "status": "STAGE 4.0-R2: READY FOR USER VISUAL ACCEPTANCE",
+  "human_visual_acceptance": "PENDING",
+  "formal_project": "output/DF4/DF4.blend",
+  "sha256": "766faf3114d05f2b3f0193ae8cc0ecd0aeb0e08f476afcc686e34d59be8af197",
+  "baseline_sha256": "da631cf33dfc6ecb8a4c0a1393b13831067967f79fb83886a1dee0bf18629287",
+  "fps": 30,
+  "frames": [
+    1,
+    990
+  ],
+  "duration_s": 33,
+  "source_objects": 117,
+  "source_meshes": 33,
+  "source_materials": 7,
+  "source_actions": 29,
+  "presentation_objects": 73,
+  "global_objects": 190,
+  "retained_presentation_objects": 72,
+  "battery_direction": "-Y",
+  "battery_delta_m": [
+    0,
+    -0.38,
+    0
+  ],
+  "recovery_error": 2.4492937051703357e-16,
+  "geometry_samples": 17245,
+  "new_intersection_pairs": 0,
+  "mp4_generated": false,
+  "overview": "stages/stage-4/evidence/STAGE_4_0_R2_OVERVIEW.png",
+  "blender_left_open": true,
+  "development_head": "4b8dca8ef2e2810f2c40477f8c394ff8c4d49b21"
+}
