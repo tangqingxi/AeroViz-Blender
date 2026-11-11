@@ -1,10 +1,46 @@
 {
-  "generated_at": "2026-11-10T14:58:28Z",
+  "generated_at": "2026-11-11T03:26:24Z",
   "blender_version": "5.0.1",
   "background": true,
   "project": "output/DF4/DF4.blend",
   "overall": "PASS",
-  "project_sha256": "392af12f14a6fbfb27b201d836b86752c90a97afbc024960fc00f03407726824",
+  "project_sha256": "489553c18fffb5c12cbce8efcc5c41ced7f6d1e507c7bda90988e684565c60d7",
+  "startup": {
+    "scene": "STAGE4_PRESENTATION",
+    "frame": 1,
+    "camera": "S4::CAMERA_A"
+  },
+  "stage4_0": {
+    "status": "PASS",
+    "source": {
+      "status": "PASS",
+      "objects": 117,
+      "original_actions": 29,
+      "original_meshes": 33,
+      "original_materials": 7
+    },
+    "scene": "STAGE4_PRESENTATION",
+    "presentation_objects": 67,
+    "global_objects": 184,
+    "modules": 23,
+    "linked_mesh_instances": 27,
+    "reused_original_actions": 5,
+    "initial_world_matrix_max_error": 0.0,
+    "endpoint_max_error": 0.0,
+    "attached_parts_relative_matrix_max_error": 0.0,
+    "trajectory_frames_verified": 1650,
+    "trajectory_axis_max_error": 5.5755039852469285e-08,
+    "main_camera_frames_verified": 746,
+    "main_camera_min_normalized_margin": 0.06424634903669357,
+    "shots": 17,
+    "range": [
+      1,
+      1650
+    ],
+    "camera_cut_markers": 17,
+    "readable_phase_markers": 17,
+    "original_scene_unchanged": true
+  },
   "stage1": {
     "mesh_count": 33,
     "visible_count": 27,

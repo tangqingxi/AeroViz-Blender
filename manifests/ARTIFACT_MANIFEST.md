@@ -191,3 +191,12 @@ Stage3在用户批准的新字节基线上加入坐标元数据与24个独立位
 ### Stage3基线接受与当前字节
 
 Stage2历史交付为 `c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f84d8873b`。本轮当前文件为 `5e96e2af3f88d7f5bedc8b9041b6404b039c851c8c089517c995b675222b5943`，用户明确接受，不恢复旧备份；所要求机械语义完整比较一致。Stage3最终为 `392af12f14a6fbfb27b201d836b86752c90a97afbc024960fc00f03407726824`，保存后独立进程回归PASS，历史阶段报告和证据没有改写。证据位于 stages/stage-3/evidence，完整工程不上传。
+
+
+## Stage 4.0 当前交付
+
+- 唯一正式工程：`<DEV>/output/DF4/DF4.blend`，5,466,403字节，SHA256 `489553c18fffb5c12cbce8efcc5c41ced7f6d1e507c7bda90988e684565c60d7`。
+- 原Scene117对象/33网格/7材质/29动画对象保持；新增展示Scene67对象，整体184对象/8材质。
+- 低清MP4：`stages/stage-4.0/evidence/video/DF4_Stage4_0_preview.mp4`，55秒、960×540、15FPS、825帧。
+- 14张干净PNG、GUI布局证据、主报告及验收说明均在Stage4.0目录；完整清单与哈希见该目录evidence-manifest.json。
+- 技术回归PASS，等待人工效果验收；4.1–4.3未授权。本文既有Stage1–3哈希保留为历史，不替换历史交付记录。
