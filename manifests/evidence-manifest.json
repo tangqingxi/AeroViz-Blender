@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "RepoSync",
-  "created_at": "2026-11-11T10:52:01Z",
+  "created_at": "2026-11-11T10:52:12Z",
   "agent": {
     "name": "deepseek-harness",
     "model": "deepseek-flash"
@@ -652,8 +652,18 @@
       "kind": "report"
     },
     {
+      "path": "stages/stage-4/STAGE_4_1_CYCLES_REPORT.md",
+      "sha256": "0f075445ee024fe89b181a931de674138cbe1f34a90da8142cd44d904081325c",
+      "kind": "report"
+    },
+    {
       "path": "stages/stage-4/evidence-manifest-r3.json",
       "sha256": "27e0c5f2c03b82b0e753ba3a9f26514be66d757b4133dcf6fb285e4837456a70",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-4/evidence-manifest-s41.json",
+      "sha256": "67c2adc9097b276d0d41da34192b81862ccb5c210e80282c92e6b360e7119bc9",
       "kind": "other"
     },
     {
@@ -812,6 +822,16 @@
       "kind": "other"
     },
     {
+      "path": "stages/stage-4/evidence/stage4_1/STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png",
+      "sha256": "e077876bc37effaf91bbd5272e5b6fe398367bb6cb7f5a81971611afd11f3d23",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage4_1/stage4_1_render_record.json",
+      "sha256": "0b89afe3e3bfd11795a3dd0722f70ff5c8b076f91b6531971463fdb7e48de94a",
+      "kind": "other"
+    },
+    {
       "path": "stages/stage-4/evidence/static_checks.json",
       "sha256": "5f8af210f9c23205f259ce3f2f6183d24490b722d6bf5de1ead6cfde50ec54e4",
       "kind": "other"
@@ -823,8 +843,10 @@
     }
   ],
   "verification": {
-    "commands": [],
-    "result": "not-run"
+    "commands": [
+      "python scripts/verify_evidence.py <audit-root> <manifest>"
+    ],
+    "result": "passed"
   },
   "next_action": "本文件是全仓快照，只对生成时刻的 HEAD 有效；阶段结论以各阶段 evidence-manifest 为准。"
 }

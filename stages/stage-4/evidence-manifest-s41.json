@@ -1,0 +1,53 @@
+{
+  "schema_version": 2,
+  "phase": "Stage4.1",
+  "created_at": "2026-11-11T10:51:52Z",
+  "agent": {
+    "name": "deepseek-harness",
+    "model": "deepseek-flash"
+  },
+  "development": {
+    "repository": "https://github.com/tangqingxi/AeroViz-Blender",
+    "branch": "main",
+    "commit": "f7cbd09837037480f5a7df4325a49b5a57b68440"
+  },
+  "audit": {
+    "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
+  },
+  "status": "in-progress",
+  "environment": {
+    "os": "Windows 11 10.0.26200",
+    "blender": "5.0.1 build a3db93c5b259",
+    "gpu": "NVIDIA GeForce RTX 5060 Laptop 8GB driver 591.91",
+    "cycles_device": "OPTIX"
+  },
+  "evidence": [
+    {
+      "path": "stages/stage-4/STAGE_4_1_CYCLES_REPORT.md",
+      "sha256": "0f075445ee024fe89b181a931de674138cbe1f34a90da8142cd44d904081325c",
+      "kind": "report"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage4_1/STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png",
+      "sha256": "e077876bc37effaf91bbd5272e5b6fe398367bb6cb7f5a81971611afd11f3d23",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage4_1/stage4_1_render_record.json",
+      "sha256": "0b89afe3e3bfd11795a3dd0722f70ff5c8b076f91b6531971463fdb7e48de94a",
+      "kind": "other"
+    }
+  ],
+  "verification": {
+    "commands": [
+      "blender --background --factory-startup --python-exit-code 1 --python scripts/rendering/render_cycles.py -- --config configs/DF4.json --frames 30,145,200,270,412,540,745,885 --tag main"
+    ],
+    "result": "passed"
+  },
+  "limitations": [
+    "Only eight frames were rendered; extreme transition frames were not sampled.",
+    "900-frame time is a linear projection; sustained GPU clocks may be lower than an 8-frame burst.",
+    "No 512-sample control frame was rendered, since 256 samples already showed no visible noise."
+  ],
+  "next_action": "Await user quality acceptance, then authorise Stage 4.2 full render."
+}
