@@ -23,6 +23,7 @@
 | Stage 2 | 机械运动骨架与独立运动测试 | **COMPLETE / PASS** | [`STAGE_2_REPORT.md`](stages/stage-2/STAGE_2_REPORT.md) |
 | Stage 3 | FLU定义与爆炸/恢复视图 | **COMPLETE / PASS** | [`STAGE_3_REPORT.md`](stages/stage-3/STAGE_3_REPORT.md) |
 | Stage 4.0 | 展示镜头与渐进式拆解原型 | **技术PASS / 等待人工效果验收** | [STAGE_4_0_REPORT.md](stages/stage-4.0/STAGE_4_0_REPORT.md) |
+| Stage 4.0-R1 | 中性摄影棚、姿态、同步拆解与逆序装配 | **READY FOR USER VISUAL ACCEPTANCE** | [STAGE_4_0_R1_REPORT.md](stages/stage-4.0-r1/STAGE_4_0_R1_REPORT.md) |
 | Stage 5 | 多机型适配与工具完善 | 未执行 | — |
 
 当前验证机型只有 DF4。项目定位、路线图与代码结构见开发仓库 README。

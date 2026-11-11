@@ -1,0 +1,176 @@
+{
+  "status": "PASS",
+  "baseline": "stages/stage-1/evidence/input_manifest.json",
+  "files": [
+    {
+      "path": "ductedfan4.sdf.jinja",
+      "sha256": "8567be57b6181812bc0f20c8bd065b02f89eeec0f6b3047ca02154786e5b52c4",
+      "bytes": 46482
+    },
+    {
+      "path": "meshes/base.STL",
+      "sha256": "b459ad3a9e9207dc2317439cf9c1983bdcffbf5e01ea70184a3313fe49555f26",
+      "bytes": 2660184
+    },
+    {
+      "path": "meshes/base_board_flyctrl.STL",
+      "sha256": "5733a2dca0c3fad377ed888a4c83d67fcb56dddd403ad38c3ffbfa7d3b2b9384",
+      "bytes": 96584
+    },
+    {
+      "path": "meshes/battery-4s-10000-2.STL",
+      "sha256": "e0d6c87ce8fce37b8278e8a06a9e522a15424b60931b0058c4f65677b6ba7bce",
+      "bytes": 684
+    },
+    {
+      "path": "meshes/bec-Hobbywing-Platinum.STL",
+      "sha256": "40c760f56e46ed8542188ca3e0024f1529b1b942acdd25f54e3ad494d803a278",
+      "bytes": 684
+    },
+    {
+      "path": "meshes/box_up.STL",
+      "sha256": "2859507769e03d03c1152f9c6a993ea968c2f565e355aef918f2dc3c08b10d1c",
+      "bytes": 139584
+    },
+    {
+      "path": "meshes/box_up2.STL",
+      "sha256": "1be6087d1f4a9a73298fe502d100249a1cd423e2b024e553dc6594c4e5d7322e",
+      "bytes": 47684
+    },
+    {
+      "path": "meshes/controller2.STL",
+      "sha256": "472610d149cb3382e5749814f02de3b99a2865e924fe39cf16f6cdc2ef3cf05b",
+      "bytes": 30684
+    },
+    {
+      "path": "meshes/cs11.STL",
+      "sha256": "cd7cc90e1a4d9ec20b2cc23df0f1b7729a9a9eec6e6f1cb8f4818574f3178bbc",
+      "bytes": 451984
+    },
+    {
+      "path": "meshes/cs2.STL",
+      "sha256": "8c5c49b51bbb59dae2b94c038291cb302b77e8374edf1bc1b5d1da2d028727ba",
+      "bytes": 451984
+    },
+    {
+      "path": "meshes/cs33.STL",
+      "sha256": "4bff5de0af83870a4778d17c8bda1aa089d5923ffea302602071ae41bb60a1b8",
+      "bytes": 451984
+    },
+    {
+      "path": "meshes/cs4.STL",
+      "sha256": "ee727ea57d4dae7b7f50d831816c331ca7858d92700609c46203db9e8fd039be",
+      "bytes": 451984
+    },
+    {
+      "path": "meshes/duct-in.STL",
+      "sha256": "d1c7b99f055a820a832b1a71e247e4324f3e78e7eb13c937d43e8b12b5568881",
+      "bytes": 1379884
+    },
+    {
+      "path": "meshes/duct-out-1.STL",
+      "sha256": "9839b6094cefb318b430ff4d0bfe1a73e7a21c9c88a9c9b3638385133ea51294",
+      "bytes": 183584
+    },
+    {
+      "path": "meshes/duct-out-2.STL",
+      "sha256": "55ef4263f8e4b029a886dc6bb4d7c401ba1a8845dcd8a86c7c791e947848dd2e",
+      "bytes": 183584
+    },
+    {
+      "path": "meshes/duct-out-3.STL",
+      "sha256": "bb5bf4b4b157cd28b794692b97b1e3cb823ba33a05b3362b09ce511afd132ac9",
+      "bytes": 183584
+    },
+    {
+      "path": "meshes/motor-Sunnysky-X2814III-1000KV.STL",
+      "sha256": "166e46509f9425f7ebd8eaf4a27df93504ffe6777769721607de0e1a1a0a2309",
+      "bytes": 19084
+    },
+    {
+      "path": "meshes/panel11.STL",
+      "sha256": "cf5c5b6c7ecdfb54bad5ea03e01e205d4423b587dd0bec511f003b4193aeb4fb",
+      "bytes": 58284
+    },
+    {
+      "path": "meshes/panel12.STL",
+      "sha256": "6413c9d979b6a40d89f3be335f1b6743fa324cf5dbdbd7d5cc79b5b36cff5f72",
+      "bytes": 58284
+    },
+    {
+      "path": "meshes/rotor-iFlight-9inch.STL",
+      "sha256": "2fe5e5cc3e9573b31f3ec3b3e4275b725dd20e58d5a5a6b01c678c452a8d5935",
+      "bytes": 2538484
+    },
+    {
+      "path": "meshes/rotor.STL",
+      "sha256": "2fe5e5cc3e9573b31f3ec3b3e4275b725dd20e58d5a5a6b01c678c452a8d5935",
+      "bytes": 2538484
+    },
+    {
+      "path": "meshes/servo-KST-X08H-1.STL",
+      "sha256": "e685562ec15ecbc77bf769a5b68b81f1bada9cc80458cb80ef46877ec77d2ea4",
+      "bytes": 24284
+    },
+    {
+      "path": "meshes/servo-KST-X08H-2.STL",
+      "sha256": "37a0bcc929836c091f607d9dc117381d9f4d5e8cfe9c93700f5df03bccaeb328",
+      "bytes": 24284
+    },
+    {
+      "path": "meshes/servo-KST-X08H-3.STL",
+      "sha256": "07d6ffa2c5905023093e2a2058b830e1a7c87c655c7f001f9381bb8fe6309e8d",
+      "bytes": 24284
+    },
+    {
+      "path": "meshes/servo-KST-X08H-4.STL",
+      "sha256": "98a720565b653a989823eb8a12c460438ce3946a9b667c4d3d7911bf5805275c",
+      "bytes": 24284
+    },
+    {
+      "path": "meshes/shelf1.STL",
+      "sha256": "fa1baa8ccf13150f3f908cec4a1f619edf2318914b81faa4782d6630ece2942c",
+      "bytes": 35284
+    },
+    {
+      "path": "meshes/surface-60-1.STL",
+      "sha256": "4bff5de0af83870a4778d17c8bda1aa089d5923ffea302602071ae41bb60a1b8",
+      "bytes": 451984
+    },
+    {
+      "path": "meshes/surface-60-2.STL",
+      "sha256": "8c5c49b51bbb59dae2b94c038291cb302b77e8374edf1bc1b5d1da2d028727ba",
+      "bytes": 451984
+    },
+    {
+      "path": "meshes/surface-60-3.STL",
+      "sha256": "cd7cc90e1a4d9ec20b2cc23df0f1b7729a9a9eec6e6f1cb8f4818574f3178bbc",
+      "bytes": 451984
+    },
+    {
+      "path": "meshes/surface-60-4.STL",
+      "sha256": "ee727ea57d4dae7b7f50d831816c331ca7858d92700609c46203db9e8fd039be",
+      "bytes": 451984
+    },
+    {
+      "path": "meshes/tail-1.STL",
+      "sha256": "b5f4043625b7cb286cb0556d5e47dc74e81ebbbd1df4d5762b3d6c66f8b4f096",
+      "bytes": 59284
+    },
+    {
+      "path": "meshes/tail-2.STL",
+      "sha256": "4ee0900bb9f0e82bec10c1739050cab4d13d9e926c0b8c3a5c5687cbb79bf0ad",
+      "bytes": 59284
+    },
+    {
+      "path": "meshes/tail-3.STL",
+      "sha256": "b6c1bed67516ed01c2ff1773679e27875eda0d683f2cfce7ebd5e8408995a238",
+      "bytes": 59284
+    },
+    {
+      "path": "meshes/X-tend.STL",
+      "sha256": "e7f833d938f25d9263ddefcc7dca1652e2ed1e5d8668f125f56a01717b45e3ff",
+      "bytes": 30284
+    }
+  ]
+}
