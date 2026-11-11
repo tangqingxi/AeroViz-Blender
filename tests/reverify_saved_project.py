@@ -166,6 +166,16 @@ def main():
         assert project.is_file(), f"当前工程不存在：{project}"
         result["project_sha256"] = hashlib.sha256(project.read_bytes()).hexdigest()
         bpy.ops.wm.open_mainfile(filepath=str(project))
+        if config.get('presentation') and bpy.data.scenes.get(config['presentation']['scene']):
+            import presentation
+            assert bpy.context.scene.name == config['presentation']['scene']
+            assert bpy.context.scene.frame_current == 1 and bpy.context.scene.camera.name == 'S4::CAMERA_A'
+            result['startup'] = {'scene':bpy.context.scene.name,'frame':1,'camera':bpy.context.scene.camera.name}
+            source = project_io.evidence_dir(config,'stage-4.0')/'source_baseline.json'
+            if not source.is_file():
+                source = WORKSPACE/'.work/stage-4.0/source_baseline.json'
+            # 先独立验证完整展示层，再在本只读进程移除新增层；历史计数断言不放宽。
+            result['stage4_0'] = presentation.isolate_source_for_legacy_tests(config,load(source))
         animated = sorted(o.name for o in bpy.data.objects if o.animation_data)
         stage2_active = bool(bpy.context.scene.get("aeroviz_animation"))
         allowed = sorted("JOINT::"+m["joint"] for m in config.get("animation",{}).get("motions",[])) if stage2_active else []

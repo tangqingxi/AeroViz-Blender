@@ -53,7 +53,11 @@ Blender 5.0.1 的 Action 经 `layers → strips → channelbag(action_slot) → 
 - 爆炸回归逐整数帧检查机械末帧之后的刚体平移、非目标不动、保持段和最终恢复；原机械Action在121之后按原外推保持，不延长或重做。
 - `tests/reverify_saved_project.py`保留旧检查，仅扩展配置白名单：声明的控制器、24个关节父级变更及总帧数；其余原对象字段仍逐项检查。完整动画工程需要Audit的Stage3结构与Action基线。
 
-## Stage 4 —— 镜头、灯光与视频渲染
+## Stage 4.0 —— 已实现的展示原型
+
+当前实际入口、独立Scene/NLA契约、逐帧回归和原子保存见 [展示层接口](stage4-presentation.md)。用户操作见 [验收说明](stage4-acceptance.md)。本阶段的验收素材为干净Eevee渲染和低清MP4，GUI截图只证明布局和播放。
+
+### 后续完整渲染接口草案（尚未授权）
 
 预期入口：`scripts/rendering/render.py`。
 
@@ -77,7 +81,7 @@ Blender 5.0.1 的 Action 经 `layers → strips → channelbag(action_slot) → 
 
 - 渲染只读当前工程；不修改几何或骨架状态。
 - 帧序列写入工程之外的临时目录，只有最终视频与少量静帧保留；两者都不提交到本仓库。
-- 渲染本身不算验收证据；同一状态仍需真实窗口截图进入审计记录。
+- Stage4.0的最终展示证据使用干净渲染画面；真实窗口单独验证打开、布局与播放，不替代最终素材。
 
 ## 一以贯之的非目标
 

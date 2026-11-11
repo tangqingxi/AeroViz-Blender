@@ -1544,5 +1544,700 @@
       "位移是人为展示参数，不是实测拆装行程或物理运动",
       "分组用于标注，不扩展SDF未证实的机械连接关系"
     ]
+  },
+  "presentation": {
+    "scene": "STAGE4_PRESENTATION",
+    "source_scene": "Scene",
+    "prefix": "S4::",
+    "fps": 30,
+    "frame_end": 1650,
+    "preview": {
+      "width": 960,
+      "height": 540,
+      "frame_step": 2,
+      "samples": 8
+    },
+    "palette": {
+      "world": "38383C",
+      "ground": "202022",
+      "minor_grid": "616161",
+      "major_grid": "8F8F8F"
+    },
+    "ground_z": -0.84,
+    "note": "展示实例共享原网格和原材质；展示位移不代表实际拆装行程，不修正Gazebo装配关系。",
+    "modules": [
+      {
+        "id": "LEGS",
+        "label": "三脚架整体",
+        "objects": [
+          "tail-1",
+          "tail-2",
+          "tail-3"
+        ],
+        "start": 61,
+        "end": 120,
+        "delta": [
+          0,
+          0,
+          -0.48
+        ],
+        "detail": true
+      },
+      {
+        "id": "DUCT1",
+        "label": "外涵道1",
+        "objects": [
+          "duct-out-1"
+        ],
+        "start": 181,
+        "end": 210,
+        "delta": [
+          0.34,
+          0,
+          0.02
+        ],
+        "detail": false
+      },
+      {
+        "id": "DUCT2",
+        "label": "外涵道2",
+        "objects": [
+          "duct-out-2"
+        ],
+        "start": 223,
+        "end": 252,
+        "delta": [
+          -0.17,
+          0.29445,
+          0.02
+        ],
+        "detail": false
+      },
+      {
+        "id": "DUCT3",
+        "label": "外涵道3",
+        "objects": [
+          "duct-out-3"
+        ],
+        "start": 265,
+        "end": 294,
+        "delta": [
+          -0.17,
+          -0.29445,
+          0.02
+        ],
+        "detail": false
+      },
+      {
+        "id": "MOTOR",
+        "label": "电机",
+        "objects": [
+          "motor-Sunnysky-X2814III-1000KV"
+        ],
+        "start": 352,
+        "end": 390,
+        "delta": [
+          0.22,
+          0.2,
+          -0.1
+        ],
+        "detail": true
+      },
+      {
+        "id": "ROTOR",
+        "label": "旋翼",
+        "objects": [
+          "rotor"
+        ],
+        "start": 442,
+        "end": 480,
+        "delta": [
+          0,
+          0,
+          -0.18
+        ],
+        "detail": true
+      },
+      {
+        "id": "INNER_DUCT",
+        "label": "内涵道",
+        "objects": [
+          "duct-in"
+        ],
+        "start": 487,
+        "end": 525,
+        "delta": [
+          0,
+          0,
+          -0.34
+        ],
+        "detail": false
+      },
+      {
+        "id": "SURFACE1",
+        "label": "舵面1",
+        "objects": [
+          "cs11"
+        ],
+        "start": 700,
+        "end": 729,
+        "delta": [
+          0.32,
+          0,
+          -0.39
+        ],
+        "detail": true
+      },
+      {
+        "id": "SURFACE2",
+        "label": "舵面2",
+        "objects": [
+          "cs2"
+        ],
+        "start": 742,
+        "end": 771,
+        "delta": [
+          0,
+          -0.32,
+          -0.39
+        ],
+        "detail": true
+      },
+      {
+        "id": "SURFACE3",
+        "label": "舵面3",
+        "objects": [
+          "cs33"
+        ],
+        "start": 784,
+        "end": 813,
+        "delta": [
+          -0.32,
+          0,
+          -0.39
+        ],
+        "detail": true
+      },
+      {
+        "id": "SURFACE4",
+        "label": "舵面4",
+        "objects": [
+          "cs4"
+        ],
+        "start": 826,
+        "end": 855,
+        "delta": [
+          0,
+          0.32,
+          -0.39
+        ],
+        "detail": true
+      },
+      {
+        "id": "SERVO1",
+        "label": "舵机1",
+        "objects": [
+          "servo-KST-X08H-1"
+        ],
+        "start": 868,
+        "end": 897,
+        "delta": [
+          0.23,
+          0,
+          -0.24
+        ],
+        "detail": true
+      },
+      {
+        "id": "SERVO2",
+        "label": "舵机2",
+        "objects": [
+          "servo-KST-X08H-2"
+        ],
+        "start": 910,
+        "end": 939,
+        "delta": [
+          0,
+          -0.23,
+          -0.24
+        ],
+        "detail": true
+      },
+      {
+        "id": "SERVO3",
+        "label": "舵机4（展示对应舵面3）",
+        "objects": [
+          "servo-KST-X08H-4"
+        ],
+        "start": 952,
+        "end": 981,
+        "delta": [
+          -0.23,
+          0,
+          -0.24
+        ],
+        "detail": true
+      },
+      {
+        "id": "SERVO4",
+        "label": "舵机3（展示对应舵面4）",
+        "objects": [
+          "servo-KST-X08H-3"
+        ],
+        "start": 994,
+        "end": 1023,
+        "delta": [
+          0,
+          0.23,
+          -0.24
+        ],
+        "detail": true
+      },
+      {
+        "id": "BATTERY",
+        "label": "电池",
+        "objects": [
+          "battery-4s-10000-2"
+        ],
+        "start": 1036,
+        "end": 1080,
+        "delta": [
+          0,
+          0,
+          0.4
+        ],
+        "detail": true
+      },
+      {
+        "id": "FLYBOARD",
+        "label": "上框与飞控",
+        "objects": [
+          "base_board_flyctrl",
+          "controller2"
+        ],
+        "start": 1096,
+        "end": 1140,
+        "delta": [
+          0,
+          0.28,
+          0.15
+        ],
+        "detail": true
+      },
+      {
+        "id": "PANEL_FRONT",
+        "label": "前侧板",
+        "objects": [
+          "panel11"
+        ],
+        "start": 1156,
+        "end": 1200,
+        "delta": [
+          0.25,
+          0,
+          0.09
+        ],
+        "detail": false
+      },
+      {
+        "id": "PANEL_REAR",
+        "label": "后侧板与GPS固定平面",
+        "objects": [
+          "panel12",
+          "X-tend"
+        ],
+        "start": 1216,
+        "end": 1260,
+        "delta": [
+          -0.25,
+          0,
+          0.09
+        ],
+        "detail": false
+      },
+      {
+        "id": "SHELF",
+        "label": "下框",
+        "objects": [
+          "shelf1"
+        ],
+        "start": 1276,
+        "end": 1320,
+        "delta": [
+          0,
+          0.4,
+          -0.04
+        ],
+        "detail": false
+      },
+      {
+        "id": "ESC",
+        "label": "简化电调",
+        "objects": [
+          "bec-Hobbywing-Platinum"
+        ],
+        "start": 1351,
+        "end": 1395,
+        "delta": [
+          0.26,
+          -0.25,
+          0.1
+        ],
+        "detail": true
+      },
+      {
+        "id": "CLAMP1",
+        "label": "脚架夹持片1",
+        "objects": [
+          "box_up"
+        ],
+        "start": 1411,
+        "end": 1455,
+        "delta": [
+          0,
+          -0.28,
+          0.06
+        ],
+        "detail": true
+      },
+      {
+        "id": "CLAMP2",
+        "label": "脚架夹持片2",
+        "objects": [
+          "box_up2"
+        ],
+        "start": 1471,
+        "end": 1515,
+        "delta": [
+          0,
+          0.28,
+          0.06
+        ],
+        "detail": true
+      }
+    ],
+    "motion_reuse": [
+      {
+        "object": "rotor",
+        "joint": "rotor_joint",
+        "source": [
+          1,
+          2.5
+        ],
+        "timeline": [
+          1,
+          61
+        ]
+      },
+      {
+        "object": "cs11",
+        "joint": "cs1_joint",
+        "source": [
+          1,
+          31
+        ],
+        "timeline": [
+          532,
+          572
+        ]
+      },
+      {
+        "object": "cs2",
+        "joint": "cs2_joint",
+        "source": [
+          31,
+          61
+        ],
+        "timeline": [
+          574,
+          614
+        ]
+      },
+      {
+        "object": "cs33",
+        "joint": "cs3_joint",
+        "source": [
+          61,
+          91
+        ],
+        "timeline": [
+          616,
+          656
+        ]
+      },
+      {
+        "object": "cs4",
+        "joint": "cs4_joint",
+        "source": [
+          91,
+          121
+        ],
+        "timeline": [
+          658,
+          698
+        ]
+      }
+    ],
+    "shots": [
+      [
+        "S01",
+        "Hero Entrance",
+        1,
+        60,
+        "A",
+        "低角度推进与灯光揭示",
+        "开场、标题前后留量"
+      ],
+      [
+        "S02",
+        "脚架整体退出",
+        61,
+        140,
+        "A",
+        "保持完整轮廓，脚架垂直下移",
+        "结构揭示"
+      ],
+      [
+        "S03",
+        "脚架细节",
+        141,
+        180,
+        "C",
+        "跟随一个脚架，缓慢推进",
+        "脚架细节插镜"
+      ],
+      [
+        "S04",
+        "三片外涵道依次退出",
+        181,
+        306,
+        "A",
+        "有限环绕，每片到位停顿",
+        "外壳结构"
+      ],
+      [
+        "S05",
+        "电机揭示与退出",
+        307,
+        396,
+        "C",
+        "电机特写推进与跟随",
+        "动力细节"
+      ],
+      [
+        "S06",
+        "旋翼揭示与退出",
+        397,
+        486,
+        "C",
+        "旋翼俯侧特写与跟随",
+        "旋翼细节"
+      ],
+      [
+        "S07",
+        "内涵道退出",
+        487,
+        531,
+        "B",
+        "斜俯视保持",
+        "分层结构"
+      ],
+      [
+        "S08",
+        "四舵面独立偏转",
+        532,
+        699,
+        "B",
+        "稳定斜俯视，复用四个原Action",
+        "运动功能演示"
+      ],
+      [
+        "S09",
+        "四舵面依次退出",
+        700,
+        867,
+        "B",
+        "保持相同方位，依次分离",
+        "控制系统布局"
+      ],
+      [
+        "S10",
+        "舵机1对应舵面1",
+        868,
+        909,
+        "C",
+        "特写同一径向的舵机与舵面",
+        "对应关系插镜"
+      ],
+      [
+        "S11",
+        "舵机2至4依次退出",
+        910,
+        1035,
+        "B",
+        "斜俯视保持原四象限对应",
+        "控制系统布局"
+      ],
+      [
+        "S12",
+        "电池先退出",
+        1036,
+        1095,
+        "A",
+        "主三分之四保持",
+        "框架内部揭示"
+      ],
+      [
+        "S13",
+        "上框与飞控一起退出",
+        1096,
+        1155,
+        "C",
+        "跟随飞控，保持原相对位置",
+        "电子设备细节"
+      ],
+      [
+        "S14",
+        "两侧板与下框依次退出",
+        1156,
+        1335,
+        "A",
+        "稳定主镜头，分层展开",
+        "电池框架"
+      ],
+      [
+        "S15",
+        "简化电调展示与退出",
+        1336,
+        1410,
+        "C",
+        "电调特写与跟随",
+        "电子设备插镜"
+      ],
+      [
+        "S16",
+        "两片夹持结构最后退出",
+        1411,
+        1515,
+        "A",
+        "稳定主镜头",
+        "下部连接语义"
+      ],
+      [
+        "S17",
+        "最终完整分解揭示",
+        1516,
+        1650,
+        "A",
+        "先停顿、缓慢升高后退、最后保持",
+        "结尾留量、全景停帧"
+      ]
+    ],
+    "stills": {
+      "stage_00_hero": 60,
+      "stage_01_legs_out": 140,
+      "stage_02_outer_duct_partial": 264,
+      "stage_03_power_system": 475,
+      "stage_04_controls_servos": 1034,
+      "stage_05_battery_frame": 1334,
+      "stage_06_final_exploded": 1648,
+      "stage_00_hero_reveal_start": 1,
+      "stage_01_leg_closeup": 165,
+      "stage_03_motor_closeup": 385,
+      "stage_04_surface_deflection": 545,
+      "stage_04_servo_pair_closeup": 900,
+      "stage_05_flight_controller_closeup": 1148,
+      "stage_06_esc_closeup": 1400
+    },
+    "servo_surface_pairs": [
+      {
+        "servo": "servo-KST-X08H-1",
+        "surface": "cs11",
+        "basis": "依据原STL几何方位建立展示对应；模型没有摇臂/连杆，不宣称完成实际传动测定。"
+      },
+      {
+        "servo": "servo-KST-X08H-2",
+        "surface": "cs2",
+        "basis": "依据原STL几何方位建立展示对应；模型没有摇臂/连杆，不宣称完成实际传动测定。"
+      },
+      {
+        "servo": "servo-KST-X08H-4",
+        "surface": "cs33",
+        "basis": "依据原STL几何方位建立展示对应；模型没有摇臂/连杆，不宣称完成实际传动测定。"
+      },
+      {
+        "servo": "servo-KST-X08H-3",
+        "surface": "cs4",
+        "basis": "依据原STL几何方位建立展示对应；模型没有摇臂/连杆，不宣称完成实际传动测定。"
+      }
+    ],
+    "details": [
+      {
+        "start": 141,
+        "end": 180,
+        "object": "tail-1",
+        "module": "LEGS",
+        "offset": [
+          0.47,
+          -0.57,
+          0.15
+        ]
+      },
+      {
+        "start": 307,
+        "end": 396,
+        "object": "motor-Sunnysky-X2814III-1000KV",
+        "module": "MOTOR",
+        "offset": [
+          0.37,
+          -0.45,
+          -0.18
+        ]
+      },
+      {
+        "start": 397,
+        "end": 486,
+        "object": "rotor",
+        "module": "ROTOR",
+        "offset": [
+          0.52,
+          -0.62,
+          -0.18
+        ]
+      },
+      {
+        "start": 868,
+        "end": 909,
+        "object": "servo-KST-X08H-1",
+        "module": "SERVO1",
+        "offset": [
+          0.34,
+          -0.4,
+          0.32
+        ]
+      },
+      {
+        "start": 1096,
+        "end": 1155,
+        "object": "controller2",
+        "module": "FLYBOARD",
+        "offset": [
+          0.3,
+          -0.39,
+          0.25
+        ]
+      },
+      {
+        "start": 1336,
+        "end": 1410,
+        "object": "bec-Hobbywing-Platinum",
+        "module": "ESC",
+        "offset": [
+          0.32,
+          -0.4,
+          0.22
+        ]
+      }
+    ]
   }
 }

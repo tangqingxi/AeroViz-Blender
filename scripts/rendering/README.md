@@ -1,9 +1,9 @@
-# `scripts/rendering/` —— 预留目录，尚未实现
+# `scripts/rendering/` —— Stage 4.0 低清展示原型
 
-**本目录下没有任何实现。** 本仓库目前没有镜头编排、没有正式的灯光布置，也没有视频编码。
+`stage4_preview.py`只读当前工程的展示Scene，输出干净PNG或临时低清序列；`encode_stage4.py`调用本地FFmpeg生成MP4；`gui_stage4.py`检查真实窗口相机、Timeline与完整播放，并可按用户指令保存布局、停留或退出。
 
-本目录预定的内容：Stage 4 —— 镜头、灯光与视频渲染（`render.py`），消费一个已完成的阶段工程，不修改几何或骨架状态。
+展示Scene由上一级的`presentation.py`建立。原Scene、原几何/材质、Stage2五个Action和Stage3控制器保持原样。使用共享Mesh实例和NLA片段复用，不重新导入模型。
 
-参数契约与证据规则（渲染本身不算验收证据）见 [`docs/interfaces.md`](../../docs/interfaces.md)。
+参数、流程与限制见 [展示层接口](../../docs/stage4-presentation.md)。本阶段最终视觉验收素材为干净渲染及MP4，GUI截图只证明布局和播放。
 
-需要注意区分：现有的四个 `VIEW::*` 正交相机与四个 `MATERIAL_LIGHT::*` 面积灯，是 Stage 1 / Stage 1.5 产生的**预览**设施，不是渲染管线。
+现有四个`VIEW::*`正交相机与四个`MATERIAL_LIGHT::*`灯仍属于源Scene；展示Scene使用独立的相机A/B/C与五灯。仅交付Stage4.0原型，不进行4.1精修、4.2高质量渲染或4.3剪辑交接。
