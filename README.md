@@ -99,6 +99,7 @@ python scripts/verify_evidence.py <audit-root> <audit-root>/stages/stage-4/evide
 | 修正 | `manifests/ARTIFACT_MANIFEST.md` | §5 把 R1 期的复验文件标成"当前工程复验"；§7 的工程哈希与对象数是 Stage 3 的旧值 |
 | 删除 | `manifests/reverify-current.json` | 与 `stages/stage-4.0-r1/evidence/saved_project_regression.json` **逐字节相同**（`c48eec1c…`），内容是 R1 期数据，文件名却暗示"当前" |
 | 重新生成 | `manifests/evidence-manifest.json` | 全仓快照；删除重复文件后必然失效，且其 phase 字段被标成 Stage4.0-R3，易被误读为阶段验收记录。重生成后标注为 `RepoSnapshot` |
+| 规范化 | 6 份阶段清单的 `status`，4 份的 `verification` / `created_at` / `kind` | 取值不符合 schema v2（自定义状态词、缺 `verification`、带毫秒的 `created_at`、非枚举 `kind`），导致 `verify_evidence.py` 对全部历史清单报错。除这些字段外，证据路径、SHA256、phase 与 development 提交逐字未改；原状态词保留在新增的 `status_note` |
 | 保留 | R1/R2/R3 全部报告、证据、阶段清单 | 历史价值，且 R2 清单的文件名虽无版本后缀，内容是唯一的一份 R2 记录 |
 
 删除前均核对过 SHA256 与引用关系；无法确定用途的文件一律保留（如 `manifests/io-regression*`）。

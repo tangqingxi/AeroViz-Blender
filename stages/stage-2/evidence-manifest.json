@@ -13,7 +13,8 @@
   "audit": {
     "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
   },
-  "status": "passed",
+  "status": "accepted",
+  "status_note": "original: passed",
   "environment": {
     "blender": "5.0.1 build a3db93c5b259",
     "os": "Windows"

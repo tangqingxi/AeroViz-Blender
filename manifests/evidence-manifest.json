@@ -1,7 +1,7 @@
 {
   "schema_version": 2,
   "phase": "RepoSync",
-  "created_at": "2026-11-11T10:52:12Z",
+  "created_at": "2026-11-11T10:53:47Z",
   "agent": {
     "name": "deepseek-harness",
     "model": "deepseek-flash"
@@ -33,7 +33,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "fb416c19e1cdbdb6a0a14e83abd90ad1f41d48fafb9cb42027e70e1947530be5",
+      "sha256": "562df3c709b3cedf8cd5233c1dd3a6668081b1158cdf2f8aec7496ced8083322",
       "kind": "other"
     },
     {
@@ -173,7 +173,7 @@
     },
     {
       "path": "stages/stage-2/evidence-manifest.json",
-      "sha256": "7c1592a612b841ebbeb820583f6878b266766dcde8b013ffa2baafce0d79b68a",
+      "sha256": "e50ffa7abdc1220bc24bd6797381555f330d6da1da7069563d7e7d7f6d94ad55",
       "kind": "other"
     },
     {
@@ -323,7 +323,7 @@
     },
     {
       "path": "stages/stage-3/evidence-manifest.json",
-      "sha256": "98c59ebf8728ec2d7163fa24d8f2278d68757055d9ab4e1e38ec95d708ec06b9",
+      "sha256": "829c6f1efd2bebd01c14e7f457e69f8b26e04695d52690f9de213f04ce987da7",
       "kind": "other"
     },
     {
@@ -473,7 +473,7 @@
     },
     {
       "path": "stages/stage-4.0-r1/evidence-manifest.json",
-      "sha256": "a4910f2bcb55ad9962671efe3385633afed528aab4db6ab6d5fd1517e17e8f59",
+      "sha256": "d566cba5ee4a33395623ed243728507c6ebb2a4d996dba3134f94d452f868547",
       "kind": "other"
     },
     {
@@ -558,7 +558,7 @@
     },
     {
       "path": "stages/stage-4.0/evidence-manifest.json",
-      "sha256": "fed08ca9a1db44858d3909291e71060ae4ea421337afa46d71915d981c4b4c04",
+      "sha256": "ad638e436bc95f7056730d4604d2e893c0e0038b7e54db20403cd0295ca268f7",
       "kind": "other"
     },
     {
@@ -658,7 +658,7 @@
     },
     {
       "path": "stages/stage-4/evidence-manifest-r3.json",
-      "sha256": "27e0c5f2c03b82b0e753ba3a9f26514be66d757b4133dcf6fb285e4837456a70",
+      "sha256": "5c3e960038b4fb5c1ca5d4eb266277fe91409b929595b891618c2baca2565d97",
       "kind": "other"
     },
     {
@@ -668,7 +668,7 @@
     },
     {
       "path": "stages/stage-4/evidence-manifest.json",
-      "sha256": "4f861f070e10c113146213288147e019db84dce2fdb0c2a041696dbc75864a75",
+      "sha256": "3b8e3fc1df8753964ee400621bd35cf6d15da320f24c0d7323fa5f50f9cdfb72",
       "kind": "other"
     },
     {
