@@ -28,15 +28,15 @@
 | Stage 1.5 | SDF 材质恢复 | 已完成 | [`STAGE_1_5_REPORT.md`](stages/stage-1.5/STAGE_1_5_REPORT.md) |
 | Stage 2 | 机械运动骨架与独立运动测试 | COMPLETE / PASS | [`STAGE_2_REPORT.md`](stages/stage-2/STAGE_2_REPORT.md) |
 | Stage 3 | FLU 定义与爆炸/恢复视图 | COMPLETE / PASS | [`STAGE_3_REPORT.md`](stages/stage-3/STAGE_3_REPORT.md) |
-| Stage 4.0 | 展示镜头与渐进式拆解原型 | 历史（已被 R3 取代） | [`STAGE_4_0_REPORT.md`](stages/stage-4.0/STAGE_4_0_REPORT.md) |
-| Stage 4.0-R1 | 中性摄影棚、姿态、同步拆解与逆序装配 | 历史（已被 R3 取代） | [`STAGE_4_0_R1_REPORT.md`](stages/stage-4.0-r1/STAGE_4_0_R1_REPORT.md) |
+| Stage 4.0 | 展示镜头与渐进式拆解原型 | 历史（已被 R3 取代） | [`STAGE_4_0_REPORT.md`](stages/stage-4/STAGE_4_0_REPORT.md) |
+| Stage 4.0-R1 | 中性摄影棚、姿态、同步拆解与逆序装配 | 历史（已被 R3 取代） | [`STAGE_4_0_R1_REPORT.md`](stages/stage-4/STAGE_4_0_R1_REPORT.md) |
 | Stage 4.0-R2 | 柔和灰摄影棚、相机叙事与完整动力拆解 | 历史（已被 R3 取代） | [`STAGE_4_0_R2_REPORT.md`](stages/stage-4/STAGE_4_0_R2_REPORT.md) |
 | **Stage 4.0-R3** | 镜头精简与四舵面同步拆解 | **当前基线，已验收** | [`STAGE_4_0_R3_REPORT.md`](stages/stage-4/STAGE_4_0_R3_REPORT.md) |
 | **Stage 4.1** | Cycles 正式画质定标（8 帧测试） | **待用户画质验收** | [`STAGE_4_1_CYCLES_REPORT.md`](stages/stage-4/STAGE_4_1_CYCLES_REPORT.md) |
 | Stage 4.2 | 正式渲染 900 帧 + MP4 | 未授权 | — |
 | Stage 5 | 多机型适配与工具完善 | 未执行 | — |
 
-Stage 4 的四个修订版 + 4.1 分散在三个目录，**先读** [`stages/stage-4/INDEX.md`](stages/stage-4/INDEX.md)：它说明每个版本的报告、证据目录与清单的对应关系，以及 `evidence-manifest.json` 实际只覆盖 R2 这件事。
+Stage 4 的四个修订版 + 4.1 已全部收在 [`stages/stage-4/`](stages/stage-4/) 一处：报告平铺、证据按版本分子目录、清单按版本命名。**先读** [`stages/stage-4/INDEX.md`](stages/stage-4/INDEX.md)。
 
 ## 目录结构
 
@@ -55,20 +55,20 @@ AeroViz-Blender-Audit/
     ├── stage-1.5/      STAGE_1_5_REPORT.md + evidence-manifest.json + evidence/
     ├── stage-2/        STAGE_2_REPORT.md + evidence-manifest.json + evidence/
     ├── stage-3/        STAGE_3_REPORT.md + evidence-manifest.json + evidence/
-    ├── stage-4.0/      STAGE_4_0_REPORT.md + ACCEPTANCE + evidence-manifest.json + evidence/
-    ├── stage-4.0-r1/   STAGE_4_0_R1_REPORT.md + evidence-manifest.json + evidence/
-    └── stage-4/        Stage 4 的 R2 / R3 / 4.1
-        ├── INDEX.md                   ← Stage 4 系列索引（先读这个）
+    └── stage-4/        Stage 4 全部版本（4.0 / R1 / R2 / R3 / 4.1）
+        ├── INDEX.md                   ← 先读这个
+        ├── STAGE_4_0_REPORT.md + STAGE_4_0_ACCEPTANCE.md
+        ├── STAGE_4_0_R1_REPORT.md
         ├── STAGE_4_0_R2_REPORT.md
         ├── STAGE_4_0_R3_REPORT.md
         ├── STAGE_4_1_CYCLES_REPORT.md
-        ├── evidence-manifest.json     ← 覆盖 R2（phase 字段：Stage4.0-R2）
-        ├── evidence-manifest-r3.json  ← 覆盖 R3
-        ├── evidence-manifest-s41.json ← 覆盖 4.1
+        ├── evidence-manifest-stage-4.0.json / -r1 / -r2 / -r3 / -4.1
         └── evidence/
-            ├── …                     R2 的机器证据与 STAGE_4_0_R2_OVERVIEW.png
-            ├── r3/                   R3 的机器证据与 STAGE_4_0_R3_OVERVIEW.png 同级文件
-            └── stage4_1/             4.1 的总览图与渲染记录
+            ├── stage-4.0/        机器证据、总览图、低清预览 MP4
+            ├── stage-4.0-r1/
+            ├── stage-4.0-r2/     含 STAGE_4_0_R2_OVERVIEW.png
+            ├── stage-4.0-r3/     含 STAGE_4_0_R3_OVERVIEW.png
+            └── stage-4.1/        Cycles 总览图与渲染记录
 ```
 
 ## 证据校验
@@ -79,11 +79,11 @@ AeroViz-Blender-Audit/
 python scripts/verify_evidence.py <audit-root> <audit-root>/stages/stage-1/evidence-manifest.json
 python scripts/verify_evidence.py <audit-root> <audit-root>/stages/stage-2/evidence-manifest.json
 python scripts/verify_evidence.py <audit-root> <audit-root>/stages/stage-3/evidence-manifest.json
-python scripts/verify_evidence.py <audit-root> <audit-root>/stages/stage-4.0/evidence-manifest.json
-python scripts/verify_evidence.py <audit-root> <audit-root>/stages/stage-4.0-r1/evidence-manifest.json
-python scripts/verify_evidence.py <audit-root> <audit-root>/stages/stage-4/evidence-manifest.json        # R2
-python scripts/verify_evidence.py <audit-root> <audit-root>/stages/stage-4/evidence-manifest-r3.json     # R3
-python scripts/verify_evidence.py <audit-root> <audit-root>/stages/stage-4/evidence-manifest-s41.json    # 4.1
+python scripts/verify_evidence.py <audit-root> <audit-root>/stages/stage-4/evidence-manifest-stage-4.0.json
+python scripts/verify_evidence.py <audit-root> <audit-root>/stages/stage-4/evidence-manifest-stage-4.0-r1.json
+python scripts/verify_evidence.py <audit-root> <audit-root>/stages/stage-4/evidence-manifest-stage-4.0-r2.json
+python scripts/verify_evidence.py <audit-root> <audit-root>/stages/stage-4/evidence-manifest-stage-4.0-r3.json
+python scripts/verify_evidence.py <audit-root> <audit-root>/stages/stage-4/evidence-manifest-stage-4.1.json
 ```
 
 退出码 0 表示列出的文件本地字节与记录一致。该校验只证明本地文件完整性，不证明测试结论。
@@ -101,6 +101,7 @@ python scripts/verify_evidence.py <audit-root> <audit-root>/stages/stage-4/evide
 | 重新生成 | `manifests/evidence-manifest.json` | 全仓快照；删除重复文件后必然失效，且其 phase 字段被标成 Stage4.0-R3，易被误读为阶段验收记录。重生成后标注为 `RepoSnapshot` |
 | 规范化 | 6 份阶段清单的 `status`，4 份的 `verification` / `created_at` / `kind` | 取值不符合 schema v2（自定义状态词、缺 `verification`、带毫秒的 `created_at`、非枚举 `kind`），导致 `verify_evidence.py` 对全部历史清单报错。除这些字段外，证据路径、SHA256、phase 与 development 提交逐字未改；原状态词保留在新增的 `status_note` |
 | 保留 | R1/R2/R3 全部报告、证据、阶段清单 | 历史价值，且 R2 清单的文件名虽无版本后缀，内容是唯一的一份 R2 记录 |
+| 合并（2026-11-11 二次整理） | `stages/stage-4.0/`、`stages/stage-4.0-r1/` 与 `stages/stage-4/` 三个目录 | Stage 4 的内容分散在三个同级目录、清单命名不统一。全部并入 `stages/stage-4/`：报告平铺、证据按版本分子目录（`evidence/stage-4.0/` 等）、清单改名为 `evidence-manifest-stage-<版本>.json`。只改路径字面量，报告结论与全部哈希未变；证据 JSON 内部的旧路径作为历史记录保留 |
 
 删除前均核对过 SHA256 与引用关系；无法确定用途的文件一律保留（如 `manifests/io-regression*`）。
 

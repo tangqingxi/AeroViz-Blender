@@ -13,8 +13,8 @@
 | 工程大小 | 5,519,908 B |
 | 渲染日期 | 2026-11-11 |
 | 输出位置 | `<local>/DF4_Render/Stage4_1_QualityTest/`（Git 之外） |
-| 审计材料 | [`evidence/stage4_1/`](evidence/stage4_1/) |
-| 证据清单 | [`evidence-manifest-s41.json`](evidence-manifest-s41.json) |
+| 审计材料 | [`evidence/stage-4.1/`](evidence/stage-4.1/) |
+| 证据清单 | [`evidence-manifest-stage-4.1.json`](evidence-manifest-stage-4.1.json) |
 
 ## 1. 范围
 
@@ -58,7 +58,7 @@
 | Motion Blur | 关闭 |
 | 光线反弹 | `max_bounces = 12`（除取样/降噪外未改动其他光路设置） |
 
-参数同时以机器可读形式保存在 [`evidence/stage4_1/stage4_1_render_record.json`](evidence/stage4_1/stage4_1_render_record.json) 的 `render` 段。
+参数同时以机器可读形式保存在 [`evidence/stage-4.1/stage4_1_render_record.json`](evidence/stage-4.1/stage4_1_render_record.json) 的 `render` 段。
 
 ## 4. 八张测试帧
 
@@ -77,7 +77,7 @@
 
 合计 80.64 s，平均 **10.08 s/帧**（最快 8.33 s，最慢 12.10 s；首帧含 OptiX 内核编译，未单独剔除）。逐帧 SHA256 见渲染记录。
 
-总览图：[`evidence/stage4_1/STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png`](evidence/stage4_1/STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png)（3840×1800，8 画面均来自上述 Cycles 渲染，含帧号与中文说明）。
+总览图：[`evidence/stage-4.1/STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png`](evidence/stage-4.1/STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png)（3840×1800，8 画面均来自上述 Cycles 渲染，含帧号与中文说明）。
 
 ## 5. 画质判断（逐条回答任务问题）
 

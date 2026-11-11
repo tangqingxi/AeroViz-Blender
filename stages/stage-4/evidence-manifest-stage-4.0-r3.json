@@ -17,113 +17,112 @@
     "result": "passed",
     "notes": "技术验证结果沿用原 status 字段（见 status_note）；视觉验收状态以该字段为准，详细记录见该阶段报告。"
   },
-
   "next_action": "等待用户视觉验收，不进入最终渲染或Premiere。",
   "evidence": [
     {
       "path": "stages/stage-4/STAGE_4_0_R3_REPORT.md",
-      "sha256": "cedbf076dfc23e427196bf30b30ff003409015a43d854228325200dcf58b5c6f",
-      "bytes": 9846,
+      "sha256": "37d35ee54a4b3e1c1e958a37b24a82be7fbb65695b193d830144c10dbb69af78",
+      "bytes": 10005,
       "kind": "report"
     },
     {
-      "path": "stages/stage-4/evidence/STAGE_4_0_R3_OVERVIEW.png",
+      "path": "stages/stage-4/evidence/stage-4.0-r3/STAGE_4_0_R3_OVERVIEW.png",
       "sha256": "a8dc8501cc698ebdbb09c09b53a7571e28b9f215b1be4da998740db0fc5fde30",
       "bytes": 2035308,
       "kind": "other"
     },
     {
-      "path": "stages/stage-4/evidence/r3/baseline_regression.json",
+      "path": "stages/stage-4/evidence/stage-4.0-r3/baseline_regression.json",
       "sha256": "cd897b1680d423ea279afc48dd36143d2507ca3811772a4ba85fbd68ff909ff3",
       "bytes": 1822477,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4/evidence/r3/battery_path.json",
+      "path": "stages/stage-4/evidence/stage-4.0-r3/battery_path.json",
       "sha256": "6d98ba6a3a9baecf85a509c87e3963f4222f951a387d6078122069cbcacefe45",
       "bytes": 17128,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4/evidence/r3/contact_sheet.json",
+      "path": "stages/stage-4/evidence/stage-4.0-r3/contact_sheet.json",
       "sha256": "191bf0773e53fb23988d8e08dd6c1039af2064d1383713bb057448eaef125bf1",
       "bytes": 3464,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4/evidence/r3/delivery_checks.json",
+      "path": "stages/stage-4/evidence/stage-4.0-r3/delivery_checks.json",
       "sha256": "c9c4134af42259be0511498cb39bc60322f473c23845d9d867c3aed3b2ccf7a3",
       "bytes": 768,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4/evidence/r3/final_reopen_validation.json",
+      "path": "stages/stage-4/evidence/stage-4.0-r3/final_reopen_validation.json",
       "sha256": "2f256e13c76339e3cb7d8dc3e0712716c107815ea6ecfac6573f0d302644c0d1",
       "bytes": 590,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4/evidence/r3/formal_candidate_equivalence.json",
+      "path": "stages/stage-4/evidence/stage-4.0-r3/formal_candidate_equivalence.json",
       "sha256": "9b14625f5f76c05af0d00172435362e40c16b5de6fe69405522f79639098a9b7",
       "bytes": 724,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4/evidence/r3/geometry_intersections.json",
+      "path": "stages/stage-4/evidence/stage-4.0-r3/geometry_intersections.json",
       "sha256": "6e0d3b7e9448819f27b69a16a132ac32305d4b9435fda24236041449b67f3668",
       "bytes": 1196,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4/evidence/r3/gui_validation.json",
+      "path": "stages/stage-4/evidence/stage-4.0-r3/gui_validation.json",
       "sha256": "c45dc835082df6829b5e3025fb01cb3eb5fc854a1d8b03d4cdd8ea9e8f9b32bc",
       "bytes": 7939,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4/evidence/r3/input_preservation.json",
+      "path": "stages/stage-4/evidence/stage-4.0-r3/input_preservation.json",
       "sha256": "e9b225b122eaa246a6d44b0654f7e07b130bc9da751f885ebc5308907c87a3a0",
       "bytes": 5517,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4/evidence/r3/presentation_config.json",
+      "path": "stages/stage-4/evidence/stage-4.0-r3/presentation_config.json",
       "sha256": "0a4a3a7a4aa411f6ea1c9fe2037d45ff3e780d0e1d3626449dd2afe49ff4281d",
       "bytes": 15897,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4/evidence/r3/preserved_design.json",
+      "path": "stages/stage-4/evidence/stage-4.0-r3/preserved_design.json",
       "sha256": "be17c709089950ac8bc6776614fde3f9f012a67fd8cd6880e9a20f580a1cf977",
       "bytes": 7096,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4/evidence/r3/r2_compatibility_regression.json",
+      "path": "stages/stage-4/evidence/stage-4.0-r3/r2_compatibility_regression.json",
       "sha256": "5fe1f83f1527e54bfad37d83c2e269848260d78332f9ec82f6744ab6d3e2db40",
       "bytes": 17872,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4/evidence/r3/repository_visibility.json",
+      "path": "stages/stage-4/evidence/stage-4.0-r3/repository_visibility.json",
       "sha256": "41e8a2134c01c286d80ee90d4e3e90a28863fb0c3eb0b9ef01c7207930a7c4d5",
       "bytes": 342,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4/evidence/r3/saved_project_regression.json",
+      "path": "stages/stage-4/evidence/stage-4.0-r3/saved_project_regression.json",
       "sha256": "1e55bd18e88a44f45785b51d13678258995eeb5c7b774ab922936731720a1612",
       "bytes": 1827454,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4/evidence/r3/static_checks.json",
+      "path": "stages/stage-4/evidence/stage-4.0-r3/static_checks.json",
       "sha256": "8516236edab5a85d993289042c621fee1009d3451651748025e41e100f736370",
       "bytes": 188,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4/evidence/r3/summary.json",
+      "path": "stages/stage-4/evidence/stage-4.0-r3/summary.json",
       "sha256": "bf185759dbf30e63068061dea898af0232a8e9181c078c718940ae7b25820475",
       "bytes": 1214,
       "kind": "review-data"

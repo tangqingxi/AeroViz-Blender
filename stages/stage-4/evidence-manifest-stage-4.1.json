@@ -24,18 +24,21 @@
   "evidence": [
     {
       "path": "stages/stage-4/STAGE_4_1_CYCLES_REPORT.md",
-      "sha256": "0f075445ee024fe89b181a931de674138cbe1f34a90da8142cd44d904081325c",
-      "kind": "report"
+      "sha256": "9ca9a2a8d31bbee3b937ee008f9f4035315bb97af7b72d811ddbc3909e08374f",
+      "kind": "report",
+      "bytes": 8921
     },
     {
-      "path": "stages/stage-4/evidence/stage4_1/STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png",
+      "path": "stages/stage-4/evidence/stage-4.1/STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png",
       "sha256": "e077876bc37effaf91bbd5272e5b6fe398367bb6cb7f5a81971611afd11f3d23",
-      "kind": "other"
+      "kind": "other",
+      "bytes": 2352514
     },
     {
-      "path": "stages/stage-4/evidence/stage4_1/stage4_1_render_record.json",
+      "path": "stages/stage-4/evidence/stage-4.1/stage4_1_render_record.json",
       "sha256": "0b89afe3e3bfd11795a3dd0722f70ff5c8b076f91b6531971463fdb7e48de94a",
-      "kind": "other"
+      "kind": "other",
+      "bytes": 6540
     }
   ],
   "verification": {

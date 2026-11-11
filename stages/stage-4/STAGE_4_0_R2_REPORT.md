@@ -69,7 +69,7 @@ DF4保持原始直立姿态，展示姿态根无Action、无人工倾斜；开�
 
 直接读取实际R1 Blend的Location关键帧和世界包围盒轨迹，测得退出差值`[0, -0.3799999952, 0]`m，匹配R1配置和历史R1报告的-Y 380mm。更早Stage4.0曾使用+Z 400mm，不将该记录误作实际R1，也不改写历史报告。本轮保留正确侧向路径，只重定时到601–624，返回875–881。
 
-对电池长方体与panel11、panel12、base_board_flyctrl、shelf1等9件实际三角网格重新检查：±Y完整连续0.38m扫掠无穿透；+X被panel11阻挡，-X被panel12/X-tend阻挡。另检查实际进出31个整数帧，无穿透。X-tend与电池包围盒重叠但三角检查无实体相交，不擅自改变源安装关系。详见`evidence/r1_battery_actual.json`、`battery_path.json`。
+对电池长方体与panel11、panel12、base_board_flyctrl、shelf1等9件实际三角网格重新检查：±Y完整连续0.38m扫掠无穿透；+X被panel11阻挡，-X被panel12/X-tend阻挡。另检查实际进出31个整数帧，无穿透。X-tend与电池包围盒重叠但三角检查无实体相交，不擅自改变源安装关系。详见`evidence/stage-4.0-r2/r1_battery_actual.json`、`battery_path.json`。
 
 ## 回归与实际打开
 
@@ -95,7 +95,7 @@ DF4保持原始直立姿态，展示姿态根无Action、无人工倾斜；开�
 
 ## 唯一视觉交付及操作
 
-![Stage4.0-R2总览](evidence/STAGE_4_0_R2_OVERVIEW.png)
+![Stage4.0-R2总览](evidence/stage-4.0-r2/STAGE_4_0_R2_OVERVIEW.png)
 
 一张1952×2064总览图，18个画面全部来自最终正式工程实际Eevee渲染；上排完整Hero与完整分解，下方中文阶段名及帧号。按本轮明确路径存入Audit平级evidence，一张总览图随报告提交；历史images目录仍忽略，不上传大量PNG。不生成任何新视频或MP4。所有中间渲染/GUI截图与副本均限于`.work/stage-4-r2/`并清理。
 

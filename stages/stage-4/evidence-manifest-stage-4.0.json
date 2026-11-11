@@ -17,108 +17,107 @@
     "result": "passed",
     "notes": "技术验证结果沿用原 status 字段（见 status_note）；视觉验收状态以该字段为准，详细记录见该阶段报告。"
   },
-
   "evidence": [
     {
-      "path": "stages/stage-4.0/evidence/baseline_regression.json",
+      "path": "stages/stage-4/evidence/stage-4.0/baseline_regression.json",
       "sha256": "0643d61ebe599290516af775015a5cacf5ca4faa92622b7e0c120f421e79b1d6",
       "bytes": 1804077,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4.0/evidence/contact_sheet.json",
+      "path": "stages/stage-4/evidence/stage-4.0/contact_sheet.json",
       "sha256": "332f85d8f53317d4d236165c9975594e7c501a2f07c900549ae215fb12e858e9",
       "bytes": 3139,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4.0/evidence/delivery_checks.json",
+      "path": "stages/stage-4/evidence/stage-4.0/delivery_checks.json",
       "sha256": "c2d2995c89453f31353172db56643c9fa373d0e1192afb6149980f675ef47fbd",
       "bytes": 527,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4.0/evidence/gui_layout_only.png",
+      "path": "stages/stage-4/evidence/stage-4.0/gui_layout_only.png",
       "sha256": "0243357d5ba3b27739c70cf515a16e80f6413845022e28bd2cf3053b22c4845a",
       "bytes": 2557194,
       "kind": "other"
     },
     {
-      "path": "stages/stage-4.0/evidence/gui_validation.json",
+      "path": "stages/stage-4/evidence/stage-4.0/gui_validation.json",
       "sha256": "a21fb1a163ea55bd55e9349ec1f830eecaa0b66fbfc8132a2e0cf8299d79a2e5",
       "bytes": 11607,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4.0/evidence/image_delivery_policy.json",
+      "path": "stages/stage-4/evidence/stage-4.0/image_delivery_policy.json",
       "sha256": "c3e31e9a41c9d2b915252599de8b7165446651034a602d282e1d2332e4c0fff1",
       "bytes": 555,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4.0/evidence/input_preservation.json",
+      "path": "stages/stage-4/evidence/stage-4.0/input_preservation.json",
       "sha256": "ba28bc7d442bed70fa239c2396347bcd961f7fd8233a8453117b227cfa252588",
       "bytes": 5672,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4.0/evidence/preview_formal_equivalence.json",
+      "path": "stages/stage-4/evidence/stage-4.0/preview_formal_equivalence.json",
       "sha256": "219906e29640b6fcabf6fd99c486e43ba02965b9c61a0cd14a96899ba33b3d5c",
       "bytes": 451,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4.0/evidence/repository_visibility.json",
+      "path": "stages/stage-4/evidence/stage-4.0/repository_visibility.json",
       "sha256": "a416da5d6df51ab8728f55766eb57dbdf9a8d9e4e8bb2939f15c2252720006ec",
       "bytes": 346,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4.0/evidence/saved_project_regression.json",
+      "path": "stages/stage-4/evidence/stage-4.0/saved_project_regression.json",
       "sha256": "d1926e0809d9c7e9ac3e81f3b4bbe655831956aae13561e6471cd5929e8d72e6",
       "bytes": 1805082,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4.0/evidence/source_baseline.json",
+      "path": "stages/stage-4/evidence/stage-4.0/source_baseline.json",
       "sha256": "537c183689b3f133f0c040cce1a162aea154b3c32771cb8970d5c1b04d87cc09",
       "bytes": 1650176,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4.0/evidence/static_checks.json",
+      "path": "stages/stage-4/evidence/stage-4.0/static_checks.json",
       "sha256": "3b6308f944c1181d8e5d4e0566b0723dd028b7843b656af1d5fd3a8d4ee3c937",
       "bytes": 1917,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4.0/evidence/summary.json",
+      "path": "stages/stage-4/evidence/stage-4.0/summary.json",
       "sha256": "2791785d6453263140442060ade25df6403d99f7b2f4e9501b221eaea490f1b5",
       "bytes": 784,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4.0/evidence/video/DF4_Stage4_0_preview.mp4",
+      "path": "stages/stage-4/evidence/stage-4.0/video/DF4_Stage4_0_preview.mp4",
       "sha256": "bf24ec7948e88b6196aa01cbb48279366d012846a207b360b2fa6355d3977326",
       "bytes": 12546000,
       "kind": "other"
     },
     {
-      "path": "stages/stage-4.0/evidence/video_validation.json",
+      "path": "stages/stage-4/evidence/stage-4.0/video_validation.json",
       "sha256": "88ab97bc9902bf26e2b80be5e05e79b86c3cee04493dc28533b9f50c01748075",
       "bytes": 329,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4.0/STAGE_4_0_ACCEPTANCE.md",
-      "sha256": "bc1b9c0d9e3b813b992213e3b1bf60ea1f50f8422ee42792e93076cf47f22c99",
-      "bytes": 1493,
+      "path": "stages/stage-4/STAGE_4_0_ACCEPTANCE.md",
+      "sha256": "5adbf48a482f2592baaf8d4614addda2217d7ddb728828aa8c4553fa790ee2ec",
+      "bytes": 1529,
       "kind": "review-data"
     },
     {
-      "path": "stages/stage-4.0/STAGE_4_0_REPORT.md",
-      "sha256": "36e51f37983889a085526d6696b02b8bb2429d8dbc61126df099363d7673a714",
-      "bytes": 13913,
+      "path": "stages/stage-4/STAGE_4_0_REPORT.md",
+      "sha256": "b58e1c39f247d830ad2d28b4c56f6c1a686f46407bf1da153147c12f6ac021bd",
+      "bytes": 14097,
       "kind": "review-data"
     }
   ],
@@ -129,7 +128,7 @@
   "next_action": "等待Stage4.0人工效果验收；4.1–4.3未授权。",
   "local_artifacts": [
     {
-      "path": "stages/stage-4.0/evidence/images/DF4_Stage4_0_overview.png",
+      "path": "stages/stage-4/evidence/stage-4.0/images/DF4_Stage4_0_overview.png",
       "sha256": "81b6a50de7b6ee5f8b741fa20160f1bc0cd23463f6550e58c35e8bb820a71606",
       "bytes": 2136815,
       "kind": "local_only_image"

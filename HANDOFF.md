@@ -25,7 +25,7 @@
 ## 本轮完成
 
 1. **Audit 治理**：新增 `stages/stage-4/INDEX.md`；重写本文件与 `README.md`；修正 `manifests/ARTIFACT_MANIFEST.md` 中把 R1 期文件标成"当前"的段落；删除与 R1 证据逐字节相同的 `manifests/reverify-current.json`。详见 `README.md` 的「本轮治理」表。
-2. **Stage 4.1 Cycles 定标**：8 帧 1920×1080 / 256 samples / OptiX / OIDN / AgX，平均 10.08 s/帧；900 帧约 2.52 小时、PNG 母版约 1.63 GB。报告见 `stages/stage-4/STAGE_4_1_CYCLES_REPORT.md`，总览图见 `stages/stage-4/evidence/stage4_1/STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png`。
+2. **Stage 4.1 Cycles 定标**：8 帧 1920×1080 / 256 samples / OptiX / OIDN / AgX，平均 10.08 s/帧；900 帧约 2.52 小时、PNG 母版约 1.63 GB。报告见 `stages/stage-4/STAGE_4_1_CYCLES_REPORT.md`，总览图见 `stages/stage-4/evidence/stage-4.1/STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png`。Stage 4 全部版本已合并到 `stages/stage-4/` 一处，索引见 `stages/stage-4/INDEX.md`。
 3. **DEV 新增** `scripts/rendering/render_cycles.py`：只读正式工程的 Cycles 静帧渲染入口，带 `--skip-existing` 续跑检查。
 
 ## 待用户确认

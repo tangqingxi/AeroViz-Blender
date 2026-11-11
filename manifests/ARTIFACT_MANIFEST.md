@@ -32,8 +32,8 @@
 | Stage 1.5 | [`stages/stage-1.5/STAGE_1_5_REPORT.md`](../stages/stage-1.5/STAGE_1_5_REPORT.md) | [`stages/stage-1.5/evidence-manifest.json`](../stages/stage-1.5/evidence-manifest.json) |
 | Stage 2 | [`stages/stage-2/STAGE_2_REPORT.md`](../stages/stage-2/STAGE_2_REPORT.md) | [`stages/stage-2/evidence-manifest.json`](../stages/stage-2/evidence-manifest.json) |
 | Stage 3 | [`stages/stage-3/STAGE_3_REPORT.md`](../stages/stage-3/STAGE_3_REPORT.md) | [`stages/stage-3/evidence-manifest.json`](../stages/stage-3/evidence-manifest.json) |
-| Stage 4.0-R3（当前基线） | [`stages/stage-4/STAGE_4_0_R3_REPORT.md`](../stages/stage-4/STAGE_4_0_R3_REPORT.md) | [`stages/stage-4/evidence-manifest-r3.json`](../stages/stage-4/evidence-manifest-r3.json) |
-| Stage 4.1（画质定标） | [`stages/stage-4/STAGE_4_1_CYCLES_REPORT.md`](../stages/stage-4/STAGE_4_1_CYCLES_REPORT.md) | [`stages/stage-4/evidence-manifest-s41.json`](../stages/stage-4/evidence-manifest-s41.json) |
+| Stage 4.0-R3（当前基线） | [`stages/stage-4/STAGE_4_0_R3_REPORT.md`](../stages/stage-4/STAGE_4_0_R3_REPORT.md) | [`stages/stage-4/evidence-manifest-stage-4.0-r3.json`](../stages/stage-4/evidence-manifest-stage-4.0-r3.json) |
+| Stage 4.1（画质定标） | [`stages/stage-4/STAGE_4_1_CYCLES_REPORT.md`](../stages/stage-4/STAGE_4_1_CYCLES_REPORT.md) | [`stages/stage-4/evidence-manifest-stage-4.1.json`](../stages/stage-4/evidence-manifest-stage-4.1.json) |
 
 ## 3. 原始输入（34 个文件，只读，不发布）
 
@@ -122,8 +122,8 @@
 | `stages/stage-1.5/evidence/` | Material Preview 整窗/视口截图、Eevee 渲染、`material_validation.json`、`material_gui_validation.json`、`material_structure_baseline.json`、`material_input_manifest.json` |
 | `stages/stage-2/evidence/` | 独立运动、121帧组合、连续转角、结构基线、正式回归、七张真实窗口截图与日志 |
 | `stages/stage-3/evidence/` | 爆炸/恢复语义比较、坐标测试、六帧真实窗口截图、正式回归 |
-| `stages/stage-4.0/evidence/` | 4.0 原型：源基线、回归、GUI 布局、低清预览 MP4 |
-| `stages/stage-4.0-r1/evidence/` | R1：回归、电池路径、接触表、输入保全 |
+| `stages/stage-4/evidence/stage-4.0/` | 4.0 原型：源基线、回归、GUI 布局、低清预览 MP4 |
+| `stages/stage-4/evidence/stage-4.0-r1/` | R1：回归、电池路径、接触表、输入保全 |
 | `stages/stage-4/evidence/`（顶层） | **R2** 机器证据与 `STAGE_4_0_R2_OVERVIEW.png` |
 | `stages/stage-4/evidence/r3/` | **R3** 机器证据（当前基线的回归与重开验证） |
 | `stages/stage-4/evidence/stage4_1/` | **4.1** Cycles 总览图与渲染记录 |
@@ -187,9 +187,9 @@ Stage3在用户批准的新字节基线上加入坐标元数据与24个独立位
 
 ### 7.2 当前字节（Stage 4.0-R3）
 
-当前正式工程 `output/DF4/DF4.blend` 的完整回归与重开验证在 [`stages/stage-4/evidence/r3/`](../stages/stage-4/evidence/r3/)（`saved_project_regression.json`、`final_reopen_validation.json`、`r2_compatibility_regression.json`），工程 SHA256 为 `cfafc7c7…295a0`。Stage 4 各版本的有效性以 [`stages/stage-4/INDEX.md`](../stages/stage-4/INDEX.md) 为准。
+当前正式工程 `output/DF4/DF4.blend` 的完整回归与重开验证在 [`stages/stage-4/evidence/r3/`](../stages/stage-4/evidence/stage-4.0-r3/)（`saved_project_regression.json`、`final_reopen_validation.json`、`r2_compatibility_regression.json`），工程 SHA256 为 `cfafc7c7…295a0`。Stage 4 各版本的有效性以 [`stages/stage-4/INDEX.md`](../stages/stage-4/INDEX.md) 为准。
 
-2026-11-11 删除的 `manifests/reverify-current.json` 与 `stages/stage-4.0-r1/evidence/saved_project_regression.json` **逐字节相同**（`c48eec1c…`），内容是 R1 期数据，文件名却暗示"当前"。权威副本仍在 R1 证据目录中，删除不影响历史可追溯性。
+2026-11-11 删除的 `manifests/reverify-current.json` 与 `stages/stage-4/evidence/stage-4.0-r1/saved_project_regression.json` **逐字节相同**（`c48eec1c…`），内容是 R1 期数据，文件名却暗示"当前"。权威副本仍在 R1 证据目录中，删除不影响历史可追溯性。
 
 ## 8. 仓库整理时的一次性迁移校验（2026-11-10）
 
@@ -216,7 +216,7 @@ Stage2历史交付为 `c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f8
 
 - 唯一正式工程：`<DEV>/output/DF4/DF4.blend`，5,466,403字节，SHA256 `489553c18fffb5c12cbce8efcc5c41ced7f6d1e507c7bda90988e684565c60d7`。
 - 原Scene117对象/33网格/7材质/29动画对象保持；新增展示Scene67对象，整体184对象/8材质。
-- 低清MP4：`stages/stage-4.0/evidence/video/DF4_Stage4_0_preview.mp4`，55秒、960×540、15FPS、825帧。
+- 低清MP4：`stages/stage-4/evidence/stage-4.0/video/DF4_Stage4_0_preview.mp4`，55秒、960×540、15FPS、825帧。
 - 一张本地总览图（14帧拼接，分散帧已清理）、GUI布局证据、主报告及验收说明均在Stage4.0目录；完整清单与哈希见该目录evidence-manifest.json。
 - 技术回归PASS，等待人工效果验收；4.1–4.3未授权。本文既有Stage1–3哈希保留为历史，不替换历史交付记录。
 
@@ -229,7 +229,7 @@ Stage2历史交付为 `c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f8
 - 唯一正式工程：`<DEV>/output/DF4/DF4.blend`，5,498,544字节，SHA256 `da631cf33dfc6ecb8a4c0a1393b13831067967f79fb83886a1dee0bf18629287`。
 - 原117对象/33网格/7材质/29 Action全部保留；既有67展示对象保留，现72展示对象，整体189对象/8材质。
 - 33秒、30FPS、1–990帧，811–870分解停留，871–960逆序回装，961–990完整机型保持。
-- 本地只交付`stages/stage-4.0-r1/evidence/images/STAGE_4_0_R1_OVERVIEW.png`。18个正式工程实际渲染画面拼接；无MP4，分散帧清理，images不上传GitHub。
+- 本地只交付`stages/stage-4/evidence/stage-4.0-r1/images/STAGE_4_0_R1_OVERVIEW.png`。18个正式工程实际渲染画面拼接；无MP4，分散帧清理，images不上传GitHub。
 - 源输入34文件哈希一致，全部源回归、姿态/同步±20°限位、侧向电池、回装/构图、14,647自适应几何样本及真实GUI通过。完整报告与哈希见R1目录。
 - 状态为READY FOR USER VISUAL ACCEPTANCE，尚未获得用户效果认可。原Stage4.0及Stage1–3报告/哈希保持历史。
 
@@ -260,6 +260,6 @@ Stage2历史交付为 `c206c5daf61c182982101bdbe8bd797fe0ea47e52dd5855989f16c2f8
 - 只读使用 R3 工程，工程字节未变（`cfafc7c7…295a0`）。渲染在 `<out>/_work/` 的临时副本上进行，未把任何 Cycles 设置写回正式工程。
 - 参数：Cycles GPU/OptiX、1920×1080 100%、30 FPS、256 samples、Adaptive 0.01、OpenImageDenoise（Albedo+Normal，prefilter ACCURATE）、AgX + `AgX - Medium High Contrast`、Exposure −0.1、PNG RGB 8-bit、背景不透明、Motion Blur 关闭。
 - 8 帧实测：合计 80.64 s，平均 10.08 s/帧；900 帧推算约 2.52 小时、PNG 母版约 1.63 GB。
-- 交付物：[`STAGE_4_1_CYCLES_REPORT.md`](../stages/stage-4/STAGE_4_1_CYCLES_REPORT.md)、总览图 [`stage4_1/STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png`](../stages/stage-4/evidence/stage4_1/STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png)、渲染记录 [`stage4_1/stage4_1_render_record.json`](../stages/stage-4/evidence/stage4_1/stage4_1_render_record.json)。
+- 交付物：[`STAGE_4_1_CYCLES_REPORT.md`](../stages/stage-4/STAGE_4_1_CYCLES_REPORT.md)、总览图 [`stage4_1/STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png`](../stages/stage-4/evidence/stage-4.1/STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png)、渲染记录 [`stage4_1/stage4_1_render_record.json`](../stages/stage-4/evidence/stage-4.1/stage4_1_render_record.json)。
 - 8 张全分辨率 PNG 仅存本地 `DF4_Render/Stage4_1_QualityTest/frames/`，不入库。
 - 状态：**READY FOR USER QUALITY ACCEPTANCE**。Stage 4.2（900 帧 + MP4）未授权，正式工程不保存 Cycles 设置。
