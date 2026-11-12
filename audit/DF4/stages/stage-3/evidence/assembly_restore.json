@@ -1,0 +1,2663 @@
+{
+  "status": "PASS",
+  "reference_frame": 121,
+  "restored_frame": 301,
+  "max_return_matrix_error": 0.0,
+  "selected_frames": [
+    {
+      "frame": 121,
+      "factor": 0.0,
+      "max_rigid_translation_error": 0.0,
+      "controllers": {
+        "EXPLODE_OFFSET::cs1_joint": {
+          "local_location": [
+            0.0,
+            -0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::cs2_joint": {
+          "local_location": [
+            0.0,
+            -0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::cs3_joint": {
+          "local_location": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            -0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::cs4_joint": {
+          "local_location": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            -0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_0": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_1": {
+          "local_location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_10": {
+          "local_location": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_11": {
+          "local_location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_12": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_13": {
+          "local_location": [
+            0.0,
+            -0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_14": {
+          "local_location": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            -0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_15": {
+          "local_location": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            -0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_16": {
+          "local_location": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_17": {
+          "local_location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_18": {
+          "local_location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_2": {
+          "local_location": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_3": {
+          "local_location": [
+            -0.0,
+            -0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_4": {
+          "local_location": [
+            0.0,
+            -0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_5": {
+          "local_location": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            -0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_6": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_7": {
+          "local_location": [
+            0.0,
+            -0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_8": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_9": {
+          "local_location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::rotor_joint": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        }
+      }
+    },
+    {
+      "frame": 136,
+      "factor": 0.25,
+      "max_rigid_translation_error": 3.725290298461914e-09,
+      "controllers": {
+        "EXPLODE_OFFSET::cs1_joint": {
+          "local_location": [
+            0.05499999597668648,
+            -1.90126975212479e-05,
+            -0.09000000357627869
+          ],
+          "expected_world_offset": [
+            0.05499999597668648,
+            -1.90126975212479e-05,
+            -0.09000000357627869
+          ]
+        },
+        "EXPLODE_OFFSET::cs2_joint": {
+          "local_location": [
+            0.0,
+            -0.054999999701976776,
+            -0.09000000357627869
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.054999999701976776,
+            -0.09000000357627869
+          ]
+        },
+        "EXPLODE_OFFSET::cs3_joint": {
+          "local_location": [
+            -0.054999999701976776,
+            0.0,
+            -0.09000000357627869
+          ],
+          "expected_world_offset": [
+            -0.054999999701976776,
+            0.0,
+            -0.09000000357627869
+          ]
+        },
+        "EXPLODE_OFFSET::cs4_joint": {
+          "local_location": [
+            -4.61278177681379e-05,
+            0.054999981075525284,
+            -0.09000000357627869
+          ],
+          "expected_world_offset": [
+            -4.61278177681379e-05,
+            0.054999981075525284,
+            -0.09000000357627869
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_0": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.06499999761581421
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.06499999761581421
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_1": {
+          "local_location": [
+            0.05999999865889549,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.05999999865889549,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_10": {
+          "local_location": [
+            -0.04500000178813934,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.04500000178813934,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_11": {
+          "local_location": [
+            0.0,
+            0.08500000089406967,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.08500000089406967,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_12": {
+          "local_location": [
+            0.0358646884560585,
+            0.0109532680362463,
+            -0.032499998807907104
+          ],
+          "expected_world_offset": [
+            0.0358646884560585,
+            0.0109532680362463,
+            -0.032499998807907104
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_13": {
+          "local_location": [
+            0.0109532680362463,
+            -0.0358646884560585,
+            -0.032499998807907104
+          ],
+          "expected_world_offset": [
+            0.0109532680362463,
+            -0.0358646884560585,
+            -0.032499998807907104
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_14": {
+          "local_location": [
+            -0.0109532680362463,
+            0.0358646884560585,
+            -0.032499998807907104
+          ],
+          "expected_world_offset": [
+            -0.0109532680362463,
+            0.0358646884560585,
+            -0.032499998807907104
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_15": {
+          "local_location": [
+            -0.0358646884560585,
+            -0.0109532680362463,
+            -0.032499998807907104
+          ],
+          "expected_world_offset": [
+            -0.0358646884560585,
+            -0.0109532680362463,
+            -0.032499998807907104
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_16": {
+          "local_location": [
+            0.0,
+            -0.054999999701976776,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.054999999701976776,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_17": {
+          "local_location": [
+            0.0,
+            0.054999999701976776,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.054999999701976776,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_18": {
+          "local_location": [
+            0.0,
+            0.05000000074505806,
+            0.004999999888241291
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.05000000074505806,
+            0.004999999888241291
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_2": {
+          "local_location": [
+            -0.029999999329447746,
+            0.051961500197649,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.029999999329447746,
+            0.051961500197649,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_3": {
+          "local_location": [
+            -0.029999999329447746,
+            -0.051961500197649,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.029999999329447746,
+            -0.051961500197649,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_4": {
+          "local_location": [
+            0.054999999701976776,
+            -0.09526275098323822,
+            -0.007499999832361937
+          ],
+          "expected_world_offset": [
+            0.054999999701976776,
+            -0.09526275098323822,
+            -0.007499999832361937
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_5": {
+          "local_location": [
+            -0.10999999940395355,
+            0.0,
+            -0.007499999832361937
+          ],
+          "expected_world_offset": [
+            -0.10999999940395355,
+            0.0,
+            -0.007499999832361937
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_6": {
+          "local_location": [
+            0.054999999701976776,
+            0.09526275098323822,
+            -0.007499999832361937
+          ],
+          "expected_world_offset": [
+            0.054999999701976776,
+            0.09526275098323822,
+            -0.007499999832361937
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_7": {
+          "local_location": [
+            0.029999999329447746,
+            -0.029999999329447746,
+            -0.007499999832361937
+          ],
+          "expected_world_offset": [
+            0.029999999329447746,
+            -0.029999999329447746,
+            -0.007499999832361937
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_8": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.029999999329447746
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.029999999329447746
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_9": {
+          "local_location": [
+            0.04500000178813934,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.04500000178813934,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::rotor_joint": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.03500000014901161
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.03500000014901161
+          ]
+        }
+      }
+    },
+    {
+      "frame": 151,
+      "factor": 0.5,
+      "max_rigid_translation_error": 0.0,
+      "controllers": {
+        "EXPLODE_OFFSET::cs1_joint": {
+          "local_location": [
+            0.10999999195337296,
+            -3.80253950424958e-05,
+            -0.18000000715255737
+          ],
+          "expected_world_offset": [
+            0.10999999195337296,
+            -3.80253950424958e-05,
+            -0.18000000715255737
+          ]
+        },
+        "EXPLODE_OFFSET::cs2_joint": {
+          "local_location": [
+            0.0,
+            -0.10999999940395355,
+            -0.18000000715255737
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.10999999940395355,
+            -0.18000000715255737
+          ]
+        },
+        "EXPLODE_OFFSET::cs3_joint": {
+          "local_location": [
+            -0.10999999940395355,
+            0.0,
+            -0.18000000715255737
+          ],
+          "expected_world_offset": [
+            -0.10999999940395355,
+            0.0,
+            -0.18000000715255737
+          ]
+        },
+        "EXPLODE_OFFSET::cs4_joint": {
+          "local_location": [
+            -9.22556355362758e-05,
+            0.10999996215105057,
+            -0.18000000715255737
+          ],
+          "expected_world_offset": [
+            -9.22556355362758e-05,
+            0.10999996215105057,
+            -0.18000000715255737
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_0": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.12999999523162842
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.12999999523162842
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_1": {
+          "local_location": [
+            0.11999999731779099,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.11999999731779099,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_10": {
+          "local_location": [
+            -0.09000000357627869,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.09000000357627869,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_11": {
+          "local_location": [
+            0.0,
+            0.17000000178813934,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.17000000178813934,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_12": {
+          "local_location": [
+            0.071729376912117,
+            0.0219065360724926,
+            -0.06499999761581421
+          ],
+          "expected_world_offset": [
+            0.071729376912117,
+            0.0219065360724926,
+            -0.06499999761581421
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_13": {
+          "local_location": [
+            0.0219065360724926,
+            -0.071729376912117,
+            -0.06499999761581421
+          ],
+          "expected_world_offset": [
+            0.0219065360724926,
+            -0.071729376912117,
+            -0.06499999761581421
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_14": {
+          "local_location": [
+            -0.0219065360724926,
+            0.071729376912117,
+            -0.06499999761581421
+          ],
+          "expected_world_offset": [
+            -0.0219065360724926,
+            0.071729376912117,
+            -0.06499999761581421
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_15": {
+          "local_location": [
+            -0.071729376912117,
+            -0.0219065360724926,
+            -0.06499999761581421
+          ],
+          "expected_world_offset": [
+            -0.071729376912117,
+            -0.0219065360724926,
+            -0.06499999761581421
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_16": {
+          "local_location": [
+            0.0,
+            -0.10999999940395355,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.10999999940395355,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_17": {
+          "local_location": [
+            0.0,
+            0.10999999940395355,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.10999999940395355,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_18": {
+          "local_location": [
+            0.0,
+            0.10000000149011612,
+            0.009999999776482582
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.10000000149011612,
+            0.009999999776482582
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_2": {
+          "local_location": [
+            -0.05999999865889549,
+            0.103923000395298,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.05999999865889549,
+            0.103923000395298,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_3": {
+          "local_location": [
+            -0.05999999865889549,
+            -0.103923000395298,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.05999999865889549,
+            -0.103923000395298,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_4": {
+          "local_location": [
+            0.10999999940395355,
+            -0.19052550196647644,
+            -0.014999999664723873
+          ],
+          "expected_world_offset": [
+            0.10999999940395355,
+            -0.19052550196647644,
+            -0.014999999664723873
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_5": {
+          "local_location": [
+            -0.2199999988079071,
+            0.0,
+            -0.014999999664723873
+          ],
+          "expected_world_offset": [
+            -0.2199999988079071,
+            0.0,
+            -0.014999999664723873
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_6": {
+          "local_location": [
+            0.10999999940395355,
+            0.19052550196647644,
+            -0.014999999664723873
+          ],
+          "expected_world_offset": [
+            0.10999999940395355,
+            0.19052550196647644,
+            -0.014999999664723873
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_7": {
+          "local_location": [
+            0.05999999865889549,
+            -0.05999999865889549,
+            -0.014999999664723873
+          ],
+          "expected_world_offset": [
+            0.05999999865889549,
+            -0.05999999865889549,
+            -0.014999999664723873
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_8": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.05999999865889549
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.05999999865889549
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_9": {
+          "local_location": [
+            0.09000000357627869,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.09000000357627869,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::rotor_joint": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.07000000029802322
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.07000000029802322
+          ]
+        }
+      }
+    },
+    {
+      "frame": 166,
+      "factor": 0.75,
+      "max_rigid_translation_error": 1.4901161193847656e-08,
+      "controllers": {
+        "EXPLODE_OFFSET::cs1_joint": {
+          "local_location": [
+            0.16499999165534973,
+            -5.703809438273311e-05,
+            -0.27000001072883606
+          ],
+          "expected_world_offset": [
+            0.16499999165534973,
+            -5.703809438273311e-05,
+            -0.27000001072883606
+          ]
+        },
+        "EXPLODE_OFFSET::cs2_joint": {
+          "local_location": [
+            0.0,
+            -0.16499999165534973,
+            -0.27000001072883606
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.16499999165534973,
+            -0.27000001072883606
+          ]
+        },
+        "EXPLODE_OFFSET::cs3_joint": {
+          "local_location": [
+            -0.16499999165534973,
+            0.0,
+            -0.27000001072883606
+          ],
+          "expected_world_offset": [
+            -0.16499999165534973,
+            0.0,
+            -0.27000001072883606
+          ]
+        },
+        "EXPLODE_OFFSET::cs4_joint": {
+          "local_location": [
+            -0.0001383834460284561,
+            0.16499994695186615,
+            -0.27000001072883606
+          ],
+          "expected_world_offset": [
+            -0.0001383834460284561,
+            0.16499994695186615,
+            -0.27000001072883606
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_0": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.19499999284744263
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.19499999284744263
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_1": {
+          "local_location": [
+            0.18000000715255737,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.17999999225139618,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_10": {
+          "local_location": [
+            -0.13500000536441803,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.13500000536441803,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_11": {
+          "local_location": [
+            0.0,
+            0.2549999952316284,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.2549999952316284,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_12": {
+          "local_location": [
+            0.1075940653681755,
+            0.03285980597138405,
+            -0.09749999642372131
+          ],
+          "expected_world_offset": [
+            0.1075940653681755,
+            0.03285980224609375,
+            -0.09749999642372131
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_13": {
+          "local_location": [
+            0.03285980597138405,
+            -0.1075940653681755,
+            -0.09749999642372131
+          ],
+          "expected_world_offset": [
+            0.03285980224609375,
+            -0.1075940653681755,
+            -0.09749999642372131
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_14": {
+          "local_location": [
+            -0.03285980597138405,
+            0.1075940653681755,
+            -0.09749999642372131
+          ],
+          "expected_world_offset": [
+            -0.03285980224609375,
+            0.1075940653681755,
+            -0.09749999642372131
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_15": {
+          "local_location": [
+            -0.1075940653681755,
+            -0.03285980597138405,
+            -0.09749999642372131
+          ],
+          "expected_world_offset": [
+            -0.1075940653681755,
+            -0.03285980224609375,
+            -0.09749999642372131
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_16": {
+          "local_location": [
+            0.0,
+            -0.16499999165534973,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.16499999165534973,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_17": {
+          "local_location": [
+            0.0,
+            0.16499999165534973,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.16499999165534973,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_18": {
+          "local_location": [
+            0.0,
+            0.15000000596046448,
+            0.014999999664723873
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.15000000596046448,
+            0.014999999664723873
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_2": {
+          "local_location": [
+            -0.09000000357627869,
+            0.1558845043182373,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.08999999612569809,
+            0.1558845043182373,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_3": {
+          "local_location": [
+            -0.09000000357627869,
+            -0.1558845043182373,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.08999999612569809,
+            -0.1558845043182373,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_4": {
+          "local_location": [
+            0.16499999165534973,
+            -0.28578823804855347,
+            -0.02250000089406967
+          ],
+          "expected_world_offset": [
+            0.16499999165534973,
+            -0.28578823804855347,
+            -0.022499999031424522
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_5": {
+          "local_location": [
+            -0.32999998331069946,
+            0.0,
+            -0.02250000089406967
+          ],
+          "expected_world_offset": [
+            -0.32999998331069946,
+            0.0,
+            -0.022499999031424522
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_6": {
+          "local_location": [
+            0.16499999165534973,
+            0.28578823804855347,
+            -0.02250000089406967
+          ],
+          "expected_world_offset": [
+            0.16499999165534973,
+            0.28578823804855347,
+            -0.022499999031424522
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_7": {
+          "local_location": [
+            0.09000000357627869,
+            -0.09000000357627869,
+            -0.02250000089406967
+          ],
+          "expected_world_offset": [
+            0.08999999612569809,
+            -0.08999999612569809,
+            -0.022499999031424522
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_8": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.09000000357627869
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.08999999612569809
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_9": {
+          "local_location": [
+            0.13500000536441803,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.13500000536441803,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::rotor_joint": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.10500000417232513
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.10500000417232513
+          ]
+        }
+      }
+    },
+    {
+      "frame": 181,
+      "factor": 1.0,
+      "max_rigid_translation_error": 2.9802322387695312e-08,
+      "controllers": {
+        "EXPLODE_OFFSET::cs1_joint": {
+          "local_location": [
+            0.2199999839067459,
+            -7.60507900849916e-05,
+            -0.36000001430511475
+          ],
+          "expected_world_offset": [
+            0.2199999839067459,
+            -7.60507900849916e-05,
+            -0.36000001430511475
+          ]
+        },
+        "EXPLODE_OFFSET::cs2_joint": {
+          "local_location": [
+            0.0,
+            -0.2199999988079071,
+            -0.36000001430511475
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.2199999988079071,
+            -0.36000001430511475
+          ]
+        },
+        "EXPLODE_OFFSET::cs3_joint": {
+          "local_location": [
+            -0.2199999988079071,
+            0.0,
+            -0.36000001430511475
+          ],
+          "expected_world_offset": [
+            -0.2199999988079071,
+            0.0,
+            -0.36000001430511475
+          ]
+        },
+        "EXPLODE_OFFSET::cs4_joint": {
+          "local_location": [
+            -0.0001845112710725516,
+            0.21999992430210114,
+            -0.36000001430511475
+          ],
+          "expected_world_offset": [
+            -0.0001845112710725516,
+            0.21999992430210114,
+            -0.36000001430511475
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_0": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.25999999046325684
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.25999999046325684
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_1": {
+          "local_location": [
+            0.23999999463558197,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.23999999463558197,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_10": {
+          "local_location": [
+            -0.18000000715255737,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.18000000715255737,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_11": {
+          "local_location": [
+            0.0,
+            0.3400000035762787,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.3400000035762787,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_12": {
+          "local_location": [
+            0.143458753824234,
+            0.0438130721449852,
+            -0.12999999523162842
+          ],
+          "expected_world_offset": [
+            0.143458753824234,
+            0.0438130721449852,
+            -0.12999999523162842
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_13": {
+          "local_location": [
+            0.0438130721449852,
+            -0.143458753824234,
+            -0.12999999523162842
+          ],
+          "expected_world_offset": [
+            0.0438130721449852,
+            -0.143458753824234,
+            -0.12999999523162842
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_14": {
+          "local_location": [
+            -0.0438130721449852,
+            0.143458753824234,
+            -0.12999999523162842
+          ],
+          "expected_world_offset": [
+            -0.0438130721449852,
+            0.143458753824234,
+            -0.12999999523162842
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_15": {
+          "local_location": [
+            -0.143458753824234,
+            -0.0438130721449852,
+            -0.12999999523162842
+          ],
+          "expected_world_offset": [
+            -0.143458753824234,
+            -0.0438130721449852,
+            -0.12999999523162842
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_16": {
+          "local_location": [
+            0.0,
+            -0.2199999988079071,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.2199999988079071,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_17": {
+          "local_location": [
+            0.0,
+            0.2199999988079071,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.2199999988079071,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_18": {
+          "local_location": [
+            0.0,
+            0.20000000298023224,
+            0.019999999552965164
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.20000000298023224,
+            0.019999999552965164
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_2": {
+          "local_location": [
+            -0.11999999731779099,
+            0.207846000790596,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.11999999731779099,
+            0.207846000790596,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_3": {
+          "local_location": [
+            -0.11999999731779099,
+            -0.207846000790596,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.11999999731779099,
+            -0.207846000790596,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_4": {
+          "local_location": [
+            0.2199999988079071,
+            -0.3810510039329529,
+            -0.029999999329447746
+          ],
+          "expected_world_offset": [
+            0.2199999988079071,
+            -0.3810510039329529,
+            -0.029999999329447746
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_5": {
+          "local_location": [
+            -0.4399999976158142,
+            0.0,
+            -0.029999999329447746
+          ],
+          "expected_world_offset": [
+            -0.4399999976158142,
+            0.0,
+            -0.029999999329447746
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_6": {
+          "local_location": [
+            0.2199999988079071,
+            0.3810510039329529,
+            -0.029999999329447746
+          ],
+          "expected_world_offset": [
+            0.2199999988079071,
+            0.3810510039329529,
+            -0.029999999329447746
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_7": {
+          "local_location": [
+            0.11999999731779099,
+            -0.11999999731779099,
+            -0.029999999329447746
+          ],
+          "expected_world_offset": [
+            0.11999999731779099,
+            -0.11999999731779099,
+            -0.029999999329447746
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_8": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.11999999731779099
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.11999999731779099
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_9": {
+          "local_location": [
+            0.18000000715255737,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.18000000715255737,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::rotor_joint": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.14000000059604645
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.14000000059604645
+          ]
+        }
+      }
+    },
+    {
+      "frame": 211,
+      "factor": 1.0,
+      "max_rigid_translation_error": 2.9802322387695312e-08,
+      "controllers": {
+        "EXPLODE_OFFSET::cs1_joint": {
+          "local_location": [
+            0.2199999839067459,
+            -7.60507900849916e-05,
+            -0.36000001430511475
+          ],
+          "expected_world_offset": [
+            0.2199999839067459,
+            -7.60507900849916e-05,
+            -0.36000001430511475
+          ]
+        },
+        "EXPLODE_OFFSET::cs2_joint": {
+          "local_location": [
+            0.0,
+            -0.2199999988079071,
+            -0.36000001430511475
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.2199999988079071,
+            -0.36000001430511475
+          ]
+        },
+        "EXPLODE_OFFSET::cs3_joint": {
+          "local_location": [
+            -0.2199999988079071,
+            0.0,
+            -0.36000001430511475
+          ],
+          "expected_world_offset": [
+            -0.2199999988079071,
+            0.0,
+            -0.36000001430511475
+          ]
+        },
+        "EXPLODE_OFFSET::cs4_joint": {
+          "local_location": [
+            -0.0001845112710725516,
+            0.21999992430210114,
+            -0.36000001430511475
+          ],
+          "expected_world_offset": [
+            -0.0001845112710725516,
+            0.21999992430210114,
+            -0.36000001430511475
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_0": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.25999999046325684
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.25999999046325684
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_1": {
+          "local_location": [
+            0.23999999463558197,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.23999999463558197,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_10": {
+          "local_location": [
+            -0.18000000715255737,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.18000000715255737,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_11": {
+          "local_location": [
+            0.0,
+            0.3400000035762787,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.3400000035762787,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_12": {
+          "local_location": [
+            0.143458753824234,
+            0.0438130721449852,
+            -0.12999999523162842
+          ],
+          "expected_world_offset": [
+            0.143458753824234,
+            0.0438130721449852,
+            -0.12999999523162842
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_13": {
+          "local_location": [
+            0.0438130721449852,
+            -0.143458753824234,
+            -0.12999999523162842
+          ],
+          "expected_world_offset": [
+            0.0438130721449852,
+            -0.143458753824234,
+            -0.12999999523162842
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_14": {
+          "local_location": [
+            -0.0438130721449852,
+            0.143458753824234,
+            -0.12999999523162842
+          ],
+          "expected_world_offset": [
+            -0.0438130721449852,
+            0.143458753824234,
+            -0.12999999523162842
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_15": {
+          "local_location": [
+            -0.143458753824234,
+            -0.0438130721449852,
+            -0.12999999523162842
+          ],
+          "expected_world_offset": [
+            -0.143458753824234,
+            -0.0438130721449852,
+            -0.12999999523162842
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_16": {
+          "local_location": [
+            0.0,
+            -0.2199999988079071,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.2199999988079071,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_17": {
+          "local_location": [
+            0.0,
+            0.2199999988079071,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.2199999988079071,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_18": {
+          "local_location": [
+            0.0,
+            0.20000000298023224,
+            0.019999999552965164
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.20000000298023224,
+            0.019999999552965164
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_2": {
+          "local_location": [
+            -0.11999999731779099,
+            0.207846000790596,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.11999999731779099,
+            0.207846000790596,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_3": {
+          "local_location": [
+            -0.11999999731779099,
+            -0.207846000790596,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.11999999731779099,
+            -0.207846000790596,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_4": {
+          "local_location": [
+            0.2199999988079071,
+            -0.3810510039329529,
+            -0.029999999329447746
+          ],
+          "expected_world_offset": [
+            0.2199999988079071,
+            -0.3810510039329529,
+            -0.029999999329447746
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_5": {
+          "local_location": [
+            -0.4399999976158142,
+            0.0,
+            -0.029999999329447746
+          ],
+          "expected_world_offset": [
+            -0.4399999976158142,
+            0.0,
+            -0.029999999329447746
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_6": {
+          "local_location": [
+            0.2199999988079071,
+            0.3810510039329529,
+            -0.029999999329447746
+          ],
+          "expected_world_offset": [
+            0.2199999988079071,
+            0.3810510039329529,
+            -0.029999999329447746
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_7": {
+          "local_location": [
+            0.11999999731779099,
+            -0.11999999731779099,
+            -0.029999999329447746
+          ],
+          "expected_world_offset": [
+            0.11999999731779099,
+            -0.11999999731779099,
+            -0.029999999329447746
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_8": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.11999999731779099
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.11999999731779099
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_9": {
+          "local_location": [
+            0.18000000715255737,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.18000000715255737,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::rotor_joint": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.14000000059604645
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.14000000059604645
+          ]
+        }
+      }
+    },
+    {
+      "frame": 241,
+      "factor": 1.0,
+      "max_rigid_translation_error": 2.9802322387695312e-08,
+      "controllers": {
+        "EXPLODE_OFFSET::cs1_joint": {
+          "local_location": [
+            0.2199999839067459,
+            -7.60507900849916e-05,
+            -0.36000001430511475
+          ],
+          "expected_world_offset": [
+            0.2199999839067459,
+            -7.60507900849916e-05,
+            -0.36000001430511475
+          ]
+        },
+        "EXPLODE_OFFSET::cs2_joint": {
+          "local_location": [
+            0.0,
+            -0.2199999988079071,
+            -0.36000001430511475
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.2199999988079071,
+            -0.36000001430511475
+          ]
+        },
+        "EXPLODE_OFFSET::cs3_joint": {
+          "local_location": [
+            -0.2199999988079071,
+            0.0,
+            -0.36000001430511475
+          ],
+          "expected_world_offset": [
+            -0.2199999988079071,
+            0.0,
+            -0.36000001430511475
+          ]
+        },
+        "EXPLODE_OFFSET::cs4_joint": {
+          "local_location": [
+            -0.0001845112710725516,
+            0.21999992430210114,
+            -0.36000001430511475
+          ],
+          "expected_world_offset": [
+            -0.0001845112710725516,
+            0.21999992430210114,
+            -0.36000001430511475
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_0": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.25999999046325684
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.25999999046325684
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_1": {
+          "local_location": [
+            0.23999999463558197,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.23999999463558197,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_10": {
+          "local_location": [
+            -0.18000000715255737,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.18000000715255737,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_11": {
+          "local_location": [
+            0.0,
+            0.3400000035762787,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.3400000035762787,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_12": {
+          "local_location": [
+            0.143458753824234,
+            0.0438130721449852,
+            -0.12999999523162842
+          ],
+          "expected_world_offset": [
+            0.143458753824234,
+            0.0438130721449852,
+            -0.12999999523162842
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_13": {
+          "local_location": [
+            0.0438130721449852,
+            -0.143458753824234,
+            -0.12999999523162842
+          ],
+          "expected_world_offset": [
+            0.0438130721449852,
+            -0.143458753824234,
+            -0.12999999523162842
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_14": {
+          "local_location": [
+            -0.0438130721449852,
+            0.143458753824234,
+            -0.12999999523162842
+          ],
+          "expected_world_offset": [
+            -0.0438130721449852,
+            0.143458753824234,
+            -0.12999999523162842
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_15": {
+          "local_location": [
+            -0.143458753824234,
+            -0.0438130721449852,
+            -0.12999999523162842
+          ],
+          "expected_world_offset": [
+            -0.143458753824234,
+            -0.0438130721449852,
+            -0.12999999523162842
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_16": {
+          "local_location": [
+            0.0,
+            -0.2199999988079071,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.2199999988079071,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_17": {
+          "local_location": [
+            0.0,
+            0.2199999988079071,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.2199999988079071,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_18": {
+          "local_location": [
+            0.0,
+            0.20000000298023224,
+            0.019999999552965164
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.20000000298023224,
+            0.019999999552965164
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_2": {
+          "local_location": [
+            -0.11999999731779099,
+            0.207846000790596,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.11999999731779099,
+            0.207846000790596,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_3": {
+          "local_location": [
+            -0.11999999731779099,
+            -0.207846000790596,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.11999999731779099,
+            -0.207846000790596,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_4": {
+          "local_location": [
+            0.2199999988079071,
+            -0.3810510039329529,
+            -0.029999999329447746
+          ],
+          "expected_world_offset": [
+            0.2199999988079071,
+            -0.3810510039329529,
+            -0.029999999329447746
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_5": {
+          "local_location": [
+            -0.4399999976158142,
+            0.0,
+            -0.029999999329447746
+          ],
+          "expected_world_offset": [
+            -0.4399999976158142,
+            0.0,
+            -0.029999999329447746
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_6": {
+          "local_location": [
+            0.2199999988079071,
+            0.3810510039329529,
+            -0.029999999329447746
+          ],
+          "expected_world_offset": [
+            0.2199999988079071,
+            0.3810510039329529,
+            -0.029999999329447746
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_7": {
+          "local_location": [
+            0.11999999731779099,
+            -0.11999999731779099,
+            -0.029999999329447746
+          ],
+          "expected_world_offset": [
+            0.11999999731779099,
+            -0.11999999731779099,
+            -0.029999999329447746
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_8": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.11999999731779099
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.11999999731779099
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_9": {
+          "local_location": [
+            0.18000000715255737,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.18000000715255737,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::rotor_joint": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.14000000059604645
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.14000000059604645
+          ]
+        }
+      }
+    },
+    {
+      "frame": 271,
+      "factor": 0.5,
+      "max_rigid_translation_error": 0.0,
+      "controllers": {
+        "EXPLODE_OFFSET::cs1_joint": {
+          "local_location": [
+            0.10999999195337296,
+            -3.80253950424958e-05,
+            -0.18000000715255737
+          ],
+          "expected_world_offset": [
+            0.10999999195337296,
+            -3.80253950424958e-05,
+            -0.18000000715255737
+          ]
+        },
+        "EXPLODE_OFFSET::cs2_joint": {
+          "local_location": [
+            0.0,
+            -0.10999999940395355,
+            -0.18000000715255737
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.10999999940395355,
+            -0.18000000715255737
+          ]
+        },
+        "EXPLODE_OFFSET::cs3_joint": {
+          "local_location": [
+            -0.10999999940395355,
+            0.0,
+            -0.18000000715255737
+          ],
+          "expected_world_offset": [
+            -0.10999999940395355,
+            0.0,
+            -0.18000000715255737
+          ]
+        },
+        "EXPLODE_OFFSET::cs4_joint": {
+          "local_location": [
+            -9.22556355362758e-05,
+            0.10999996215105057,
+            -0.18000000715255737
+          ],
+          "expected_world_offset": [
+            -9.22556355362758e-05,
+            0.10999996215105057,
+            -0.18000000715255737
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_0": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.12999999523162842
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.12999999523162842
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_1": {
+          "local_location": [
+            0.11999999731779099,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.11999999731779099,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_10": {
+          "local_location": [
+            -0.09000000357627869,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.09000000357627869,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_11": {
+          "local_location": [
+            0.0,
+            0.17000000178813934,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.17000000178813934,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_12": {
+          "local_location": [
+            0.071729376912117,
+            0.0219065360724926,
+            -0.06499999761581421
+          ],
+          "expected_world_offset": [
+            0.071729376912117,
+            0.0219065360724926,
+            -0.06499999761581421
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_13": {
+          "local_location": [
+            0.0219065360724926,
+            -0.071729376912117,
+            -0.06499999761581421
+          ],
+          "expected_world_offset": [
+            0.0219065360724926,
+            -0.071729376912117,
+            -0.06499999761581421
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_14": {
+          "local_location": [
+            -0.0219065360724926,
+            0.071729376912117,
+            -0.06499999761581421
+          ],
+          "expected_world_offset": [
+            -0.0219065360724926,
+            0.071729376912117,
+            -0.06499999761581421
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_15": {
+          "local_location": [
+            -0.071729376912117,
+            -0.0219065360724926,
+            -0.06499999761581421
+          ],
+          "expected_world_offset": [
+            -0.071729376912117,
+            -0.0219065360724926,
+            -0.06499999761581421
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_16": {
+          "local_location": [
+            0.0,
+            -0.10999999940395355,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.10999999940395355,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_17": {
+          "local_location": [
+            0.0,
+            0.10999999940395355,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.10999999940395355,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_18": {
+          "local_location": [
+            0.0,
+            0.10000000149011612,
+            0.009999999776482582
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.10000000149011612,
+            0.009999999776482582
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_2": {
+          "local_location": [
+            -0.05999999865889549,
+            0.103923000395298,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.05999999865889549,
+            0.103923000395298,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_3": {
+          "local_location": [
+            -0.05999999865889549,
+            -0.103923000395298,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.05999999865889549,
+            -0.103923000395298,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_4": {
+          "local_location": [
+            0.10999999940395355,
+            -0.19052550196647644,
+            -0.014999999664723873
+          ],
+          "expected_world_offset": [
+            0.10999999940395355,
+            -0.19052550196647644,
+            -0.014999999664723873
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_5": {
+          "local_location": [
+            -0.2199999988079071,
+            0.0,
+            -0.014999999664723873
+          ],
+          "expected_world_offset": [
+            -0.2199999988079071,
+            0.0,
+            -0.014999999664723873
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_6": {
+          "local_location": [
+            0.10999999940395355,
+            0.19052550196647644,
+            -0.014999999664723873
+          ],
+          "expected_world_offset": [
+            0.10999999940395355,
+            0.19052550196647644,
+            -0.014999999664723873
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_7": {
+          "local_location": [
+            0.05999999865889549,
+            -0.05999999865889549,
+            -0.014999999664723873
+          ],
+          "expected_world_offset": [
+            0.05999999865889549,
+            -0.05999999865889549,
+            -0.014999999664723873
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_8": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.05999999865889549
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.05999999865889549
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_9": {
+          "local_location": [
+            0.09000000357627869,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.09000000357627869,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::rotor_joint": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.07000000029802322
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.07000000029802322
+          ]
+        }
+      }
+    },
+    {
+      "frame": 301,
+      "factor": 0.0,
+      "max_rigid_translation_error": 0.0,
+      "controllers": {
+        "EXPLODE_OFFSET::cs1_joint": {
+          "local_location": [
+            0.0,
+            -0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::cs2_joint": {
+          "local_location": [
+            0.0,
+            -0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::cs3_joint": {
+          "local_location": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            -0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::cs4_joint": {
+          "local_location": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            -0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_0": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_1": {
+          "local_location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_10": {
+          "local_location": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_11": {
+          "local_location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_12": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_13": {
+          "local_location": [
+            0.0,
+            -0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_14": {
+          "local_location": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            -0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_15": {
+          "local_location": [
+            -0.0,
+            -0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            -0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_16": {
+          "local_location": [
+            0.0,
+            -0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_17": {
+          "local_location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_18": {
+          "local_location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_2": {
+          "local_location": [
+            -0.0,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_3": {
+          "local_location": [
+            -0.0,
+            -0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            -0.0,
+            -0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_4": {
+          "local_location": [
+            0.0,
+            -0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_5": {
+          "local_location": [
+            -0.0,
+            0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            -0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_6": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_7": {
+          "local_location": [
+            0.0,
+            -0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            -0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_8": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        },
+        "EXPLODE_OFFSET::JOINT_9": {
+          "local_location": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            0.0
+          ]
+        },
+        "EXPLODE_OFFSET::rotor_joint": {
+          "local_location": [
+            0.0,
+            0.0,
+            -0.0
+          ],
+          "expected_world_offset": [
+            0.0,
+            0.0,
+            -0.0
+          ]
+        }
+      }
+    }
+  ]
+}

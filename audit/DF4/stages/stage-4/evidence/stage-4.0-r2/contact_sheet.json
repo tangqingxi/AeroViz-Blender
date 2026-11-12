@@ -1,0 +1,119 @@
+{
+  "local_only": false,
+  "path": "stages/stage-4/evidence/STAGE_4_0_R2_OVERVIEW.png",
+  "width": 1952,
+  "height": 2064,
+  "source_frame_count": 18,
+  "sources": [
+    {
+      "source": "stage_00_hero.png",
+      "frame": 30,
+      "label": "完整机型 · Hero",
+      "sha256": "a7f896ec3d4685472c75c5e4bfa2991e616a6f7e8a716b1d0dac9e071e6ecace"
+    },
+    {
+      "source": "stage_06_final_exploded.png",
+      "frame": 821,
+      "label": "最终完整分解",
+      "sha256": "721f252216bfdd60b27d91e19c70df5f5d5e99739bc17896218bca1413b940af"
+    },
+    {
+      "source": "intro_final.png",
+      "frame": 90,
+      "label": "开场推进 / 环绕最终视角",
+      "sha256": "9872bc4b5e92b4205a5aba6c3c5c43f9d5d3d85937dbe2c0f51b390a5a000da3"
+    },
+    {
+      "source": "legs_separated.png",
+      "frame": 145,
+      "label": "三脚架同步退出并拉开",
+      "sha256": "444ff235d5fff38df736be10eec8059e646efed06c96786eb08579c913e011b4"
+    },
+    {
+      "source": "leg_detail.png",
+      "frame": 170,
+      "label": "单脚架特写",
+      "sha256": "230a93503153cb56dfed572dcb579a42b7f648b76aac7c45f364d032d8e1d53d"
+    },
+    {
+      "source": "ducts_synchronous.png",
+      "frame": 235,
+      "label": "三片外涵道同步退出",
+      "sha256": "22149f457fcfa38ffd7383bef2e72182f0243677bcdfb12d78626f76372f0961"
+    },
+    {
+      "source": "duct_detail.png",
+      "frame": 260,
+      "label": "单片涵道细节推进",
+      "sha256": "1d08177548ef33dd7adabf3c0d2fc6835de060df75a80b14857e9810409634db"
+    },
+    {
+      "source": "power_component.png",
+      "frame": 350,
+      "label": "电机 / 旋翼整体退出",
+      "sha256": "52c23c9a34808cbf348a7e3e3bdfb9fd945cfb7bca4d002ed23e49737f466279"
+    },
+    {
+      "source": "inner_duct_exit.png",
+      "frame": 390,
+      "label": "内涵道退出",
+      "sha256": "ef8d8f7cac93bdea8b7c28f4017ad589bb36fdb235dc158d2c1b51b0443d54b5"
+    },
+    {
+      "source": "surfaces_positive_20.png",
+      "frame": 412,
+      "label": "四舵面同步 +20°",
+      "sha256": "1c871406f99d2ba4b1e3676fdbd00c1824e55bc6e3fe2056d66fe11615202077"
+    },
+    {
+      "source": "surfaces_negative_20.png",
+      "frame": 453,
+      "label": "四舵面同步 -20°",
+      "sha256": "fc4a8a9f03a0255f38b18ee43562d19992ca4d1bd015f448ac6681b06e3cba89"
+    },
+    {
+      "source": "surface_sequential.png",
+      "frame": 494,
+      "label": "舵面按原方位依次退出",
+      "sha256": "47cc73474fbd1d4a5e5f92b7aff04b95484208d152129c35a31d3a09886731a1"
+    },
+    {
+      "source": "servo_exit.png",
+      "frame": 575,
+      "label": "四舵机协调退出",
+      "sha256": "2916bf4ace7fda2cbfdb606062b930e91a10eedc5f220b70588fbc2529b4e96f"
+    },
+    {
+      "source": "servo_pair_detail.png",
+      "frame": 590,
+      "label": "一组舵机 / 舵面对应",
+      "sha256": "d18cf32397f0da0d5d20d2436c402e99545fe24a61e3cc72edbe3d3c04d7fb13"
+    },
+    {
+      "source": "battery_side_exit.png",
+      "frame": 625,
+      "label": "电池实际沿 -Y 侧向退出",
+      "sha256": "48c2d98ce3085571d7f226f1a764a5b9bb2ec88c7a5b71722d7eaa5f49f278ac"
+    },
+    {
+      "source": "battery_frame_separated.png",
+      "frame": 720,
+      "label": "电池框架分解",
+      "sha256": "2d6d4dd994bdec68e96321aee5d720c1df6725be65180713cfdaf06d2552fdb2"
+    },
+    {
+      "source": "lower_structure.png",
+      "frame": 763,
+      "label": "电调及下部夹持结构",
+      "sha256": "75bc5e884d9e753bd810e2dfdb45e9c11997c71864ed495294100b6660ad60da"
+    },
+    {
+      "source": "reassembled_complete.png",
+      "frame": 975,
+      "label": "逆序装配完成",
+      "sha256": "2999b8f67ac7646454f53bd682e9d1c0a1a3ab1165fab80c525c113bfe15ac71"
+    }
+  ],
+  "sha256": "7817973881e0a45a8008a85423f7b283a00f9ce049a99e8d50b789d15132b5a2",
+  "bytes": 2216997
+}

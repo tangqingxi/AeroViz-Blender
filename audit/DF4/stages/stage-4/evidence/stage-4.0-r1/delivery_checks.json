@@ -1,0 +1,13 @@
+{
+  "status": "PASS",
+  "project_sha256": "da631cf33dfc6ecb8a4c0a1393b13831067967f79fb83886a1dee0bf18629287",
+  "development_head": "33834c8ba51e0a400477c64d148a5eb87a51a880",
+  "work_stage_4_r1_absent": true,
+  "single_formal_project": true,
+  "no_blend1_or_partial": true,
+  "no_r1_mp4": true,
+  "one_local_overview": true,
+  "historical_stage_directories_unchanged": true,
+  "blender_left_open_camera_A_frame_1_stopped": true,
+  "source_input_hashes_verified": 34
+}

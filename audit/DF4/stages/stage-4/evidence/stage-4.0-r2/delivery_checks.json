@@ -1,0 +1,19 @@
+{
+  "status": "PASS",
+  "project_sha256": "766faf3114d05f2b3f0193ae8cc0ecd0aeb0e08f476afcc686e34d59be8af197",
+  "development_head": "4b8dca8ef2e2810f2c40477f8c394ff8c4d49b21",
+  "config_presentation_sha256": "73c92c56e036bd07e28ca333f9a4d12a6c5f91e4fd30625b69fafa15d82acaa0",
+  "work_stage_4_r2_absent": true,
+  "single_formal_project": true,
+  "no_blend1_or_partial": true,
+  "no_r2_video": true,
+  "one_final_overview": true,
+  "historical_stage_directories_unchanged": true,
+  "source_input_hashes_verified": 34,
+  "blender_left_open_camera_A_frame_1_stopped": true,
+  "gui_process": {
+    "Id": 36108,
+    "ProcessName": "blender",
+    "MainWindowTitle": "DF4 [D:\\01_绉戠爺\\TIE\\DF4_SolidWorks\\AeroViz-Blender\\output\\DF4\\DF4.blend] - Blender 5.0.1"
+  }
+}

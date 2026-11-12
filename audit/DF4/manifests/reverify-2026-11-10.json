@@ -1,0 +1,58 @@
+{
+  "blender_version": "5.0.1",
+  "background": true,
+  "config": "configs/DF4.json",
+  "stage1": {
+    "project": "output/DF4/DF4_Stage1.blend",
+    "project_sha256_note": "hash recorded separately by the audit manifest",
+    "mesh_count": 33,
+    "visible_count": 27,
+    "reference_only_count": 6,
+    "link_empty_count": 26,
+    "joint_empty_count": 25,
+    "object_total": 89,
+    "world_matrix_max_error": 0.0,
+    "bbox_dimensions_m": [
+      0.35328055918216705,
+      0.3756099194288254,
+      0.3776235282421112
+    ],
+    "bbox_dimensions_recorded_m": [
+      0.35328054428100586,
+      0.3756099343299866,
+      0.3776235282421112
+    ],
+    "bbox_max_abs_error": 1.4901161193847656e-08,
+    "objects_with_animation": [],
+    "status": "PASS"
+  },
+  "stage1_5": {
+    "project": "output/DF4/DF4_Stage1_5.blend",
+    "object_total": 93,
+    "baseline_object_count": 89,
+    "preserved_object_count": 89,
+    "added_objects": [
+      "MATERIAL_LIGHT::FILL",
+      "MATERIAL_LIGHT::KEY",
+      "MATERIAL_LIGHT::LOW_FILL",
+      "MATERIAL_LIGHT::RIM"
+    ],
+    "mesh_count": 33,
+    "material_count": 7,
+    "materials": [
+      "SDF_MAT::Gazebo_Black::e1f385be44bc",
+      "SDF_MAT::Gazebo_White::8192dd01231b",
+      "SDF_MAT::display_default::d6ed713989a8",
+      "SDF_MAT::sdf_rgba::26bda2d0a666",
+      "SDF_MAT::sdf_rgba::275a120d4904",
+      "SDF_MAT::sdf_rgba::599e0cbb3c46",
+      "SDF_MAT::sdf_rgba::ee00e3e90d78"
+    ],
+    "assignments_verified": 33,
+    "assignment_color_max_error": 2.8610229518832853e-08,
+    "render_engine": "BLENDER_EEVEE",
+    "objects_with_animation": [],
+    "status": "PASS"
+  },
+  "overall": "PASS"
+}

@@ -1,0 +1,120 @@
+{
+  "schema_version": 2,
+  "phase": "Stage4.0-R2",
+  "created_at": "2026-11-11T09:17:07Z",
+  "development": {
+    "repository": "https://github.com/tangqingxi/AeroViz-Blender",
+    "branch": "main",
+    "commit": "4b8dca8ef2e2810f2c40477f8c394ff8c4d49b21"
+  },
+  "audit": {
+    "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
+  },
+  "status": "in-progress",
+  "status_note": "original: ready_for_user_visual_acceptance",
+  "verification": {
+    "commands": [],
+    "result": "passed",
+    "notes": "技术验证结果沿用原 status 字段（见 status_note）；视觉验收状态以该字段为准，详细记录见该阶段报告。"
+  },
+  "next_action": "等待用户视觉验收，不进入最终渲染或Premiere。",
+  "evidence": [
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r2/baseline_regression.json",
+      "sha256": "09af102b72d2b0f263b370c75c789eda33ec5321e99093a640718fc79c2066d8",
+      "bytes": 1831002,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r2/battery_path.json",
+      "sha256": "85dcfaed3d8830a45e40b1ded9fda0976f30bdd74f3734a6e0f69b017a76e075",
+      "bytes": 13361,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r2/contact_sheet.json",
+      "sha256": "0b4098582d2d4ee375118c0210da368cd3cc3f3dfcf71408e597294a65c572f1",
+      "bytes": 3843,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r2/delivery_checks.json",
+      "sha256": "b5f0aeffd549d6b234bc2e502e95d7ef52c9f465eb8faa13218fb2f0f303673c",
+      "bytes": 768,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r2/final_reopen_validation.json",
+      "sha256": "ef8118dd56e36324cb3c200ff7f6758e5d8e95f20172858d6d54ca24d24336cc",
+      "bytes": 590,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r2/formal_candidate_equivalence.json",
+      "sha256": "56d7e216b2890cd449b424cdd0c4b249122f355ed9106be0da306c174eec57d2",
+      "bytes": 524,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r2/geometry_intersections.json",
+      "sha256": "81b70bace044735cab916eb38960f63700dcebd27321138b62d55f2dab09ce10",
+      "bytes": 1098,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r2/gui_validation.json",
+      "sha256": "db6d5745f457e2aa9525565acb477591c6282c03ddc631c9e63f15a56db2f691",
+      "bytes": 8217,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r2/input_preservation.json",
+      "sha256": "e9b225b122eaa246a6d44b0654f7e07b130bc9da751f885ebc5308907c87a3a0",
+      "bytes": 5517,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r2/r1_battery_actual.json",
+      "sha256": "9771adb82561034e3450c834d4d15b1f6aeceb5a01d850bb01fe58bdb83caff8",
+      "bytes": 12462,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r2/repository_visibility.json",
+      "sha256": "41e8a2134c01c286d80ee90d4e3e90a28863fb0c3eb0b9ef01c7207930a7c4d5",
+      "bytes": 342,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r2/saved_project_regression.json",
+      "sha256": "3d6386db1ece097617bc55950bc40341422f813c3985cd226975f4a937d6aeb1",
+      "bytes": 1822477,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r2/STAGE_4_0_R2_OVERVIEW.png",
+      "sha256": "7817973881e0a45a8008a85423f7b283a00f9ce049a99e8d50b789d15132b5a2",
+      "bytes": 2216997,
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r2/static_checks.json",
+      "sha256": "5f8af210f9c23205f259ce3f2f6183d24490b722d6bf5de1ead6cfde50ec54e4",
+      "bytes": 130,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r2/summary.json",
+      "sha256": "c6b7770a1d1d6242e0893bff08a112deca74365813b9a8ef372bd50236511083",
+      "bytes": 949,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/STAGE_4_0_R2_REPORT.md",
+      "sha256": "84739456919e45993e0755eeeaba40a2fe1f8253531d9e9de8fc49b3c8e203e1",
+      "bytes": 10900,
+      "kind": "report"
+    }
+  ],
+  "local_artifacts": []
+}

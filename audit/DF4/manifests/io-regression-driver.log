@@ -1,0 +1,18 @@
+PASS static_checks
+PASS path_safety
+PASS success
+PASS success_reopen
+PASS save_failure
+PASS save_failure_reopen
+PASS replace_failure
+PASS replace_failure_reopen
+PASS new_target
+PASS new_target_reopen
+PASS guard
+PASS force_gate
+PASS first_gate
+00:07.562  blend            | Read blend: "<DEV>\output\DF4\DF4.blend"
+IO_REGRESSION PASS
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
+
+Blender quit

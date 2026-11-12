@@ -1,0 +1,95 @@
+{
+  "local_only": true,
+  "path": "stages/stage-4.0/evidence/images/DF4_Stage4_0_overview.png",
+  "width": 1952,
+  "height": 1738,
+  "source_frame_count": 14,
+  "sources": [
+    {
+      "source": "stage_00_hero.png",
+      "frame": 60,
+      "label": "完整机型 · Hero",
+      "sha256": "f581aeb54a6f24de9ca95232877437627138a981d5c6e364fda0208bc118a16d"
+    },
+    {
+      "source": "stage_06_final_exploded.png",
+      "frame": 1648,
+      "label": "最终完整分解",
+      "sha256": "c097f60e54db78cf47e3be5532d7885a5f92062fe5845deb6865f08c098da1ef"
+    },
+    {
+      "source": "stage_00_hero_reveal_start.png",
+      "frame": 1,
+      "label": "低角度登场 · 灯光揭示",
+      "sha256": "c6d9c1f15b59a2848aa66d5149271a66cf857e9a265e40056fdaa198c75553cf"
+    },
+    {
+      "source": "stage_01_legs_out.png",
+      "frame": 140,
+      "label": "三脚架整体拆出",
+      "sha256": "722ef28d975a7a3946ca1d85edfb1d3ae7bf1bd2dc1679925e660ad5976c8cc2"
+    },
+    {
+      "source": "stage_01_leg_closeup.png",
+      "frame": 165,
+      "label": "单脚架细节",
+      "sha256": "51713367e62dc8a7b4e118e43dc32b5dcde15c79421117e777f313cb9e7e5cac"
+    },
+    {
+      "source": "stage_02_outer_duct_partial.png",
+      "frame": 264,
+      "label": "外涵道逐片分离",
+      "sha256": "31ba1c6d44110c4499b6243c4501c0296e097489cc03ec0240c8f16cc8da2e5c"
+    },
+    {
+      "source": "stage_03_motor_closeup.png",
+      "frame": 385,
+      "label": "电机揭示与退出",
+      "sha256": "065d03b080e0e6063f2346f8ebc0c9bd5a6acab126a22fd09c030cd6126c6b21"
+    },
+    {
+      "source": "stage_03_power_system.png",
+      "frame": 475,
+      "label": "旋翼与动力系统",
+      "sha256": "8533a583f1974156b0c110bd6680a0e47951d39fe28b0e0918e0d025cd6aa1b3"
+    },
+    {
+      "source": "stage_04_surface_deflection.png",
+      "frame": 545,
+      "label": "四舵面独立偏转",
+      "sha256": "578fa685e69312b5d13261a7197e41d6e5677f8ea70653934c7c0c8de9cf61e8"
+    },
+    {
+      "source": "stage_04_servo_pair_closeup.png",
+      "frame": 900,
+      "label": "舵机与舵面对应",
+      "sha256": "9485ffb6f2051d9be0373254e05708611619708389b21fd15b46db3b9799f162"
+    },
+    {
+      "source": "stage_04_controls_servos.png",
+      "frame": 1034,
+      "label": "舵面 / 舵机依次退出",
+      "sha256": "d3d0e9c97e55273f8e3dcd91ed3972e968f9295c2f6f36922ec3c0b40ed5b4d8"
+    },
+    {
+      "source": "stage_05_flight_controller_closeup.png",
+      "frame": 1148,
+      "label": "上框与飞控共同移出",
+      "sha256": "e1cc51c347c85c55452b59feaa486024162cf3b58269130cd3e130814fbe7f94"
+    },
+    {
+      "source": "stage_05_battery_frame.png",
+      "frame": 1334,
+      "label": "电池框架拆解",
+      "sha256": "9f120a6daec86d0737afa94321f2536b8ae82fd26c41b9ae80131bf21d72a36c"
+    },
+    {
+      "source": "stage_06_esc_closeup.png",
+      "frame": 1400,
+      "label": "电调与下部夹持结构",
+      "sha256": "61c9c4747af2c9c33db4d3325b51934efe568f6eaabc9f1628d0d80ab38737cf"
+    }
+  ],
+  "sha256": "81b6a50de7b6ee5f8b741fa20160f1bc0cd23463f6550e58c35e8bb820a71606",
+  "bytes": 2136815
+}

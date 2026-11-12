@@ -1,0 +1,15 @@
+{
+  "status": "PASS",
+  "files": [
+    {
+      "path": ".work\\stage-4-r2\\candidate.blend",
+      "sha256": "f292f7a44121af30bb191669d08fd4563cd1d4e79753d1dd6289a2324bedf4b7",
+      "render_input_signature": "1d2d0faaa11442362928a99bcf71a8b6693a92beb4f18e58fb9011ee864582aa"
+    },
+    {
+      "path": "output\\DF4\\DF4.blend",
+      "sha256": "766faf3114d05f2b3f0193ae8cc0ecd0aeb0e08f476afcc686e34d59be8af197",
+      "render_input_signature": "1d2d0faaa11442362928a99bcf71a8b6693a92beb4f18e58fb9011ee864582aa"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "status": "PASS",
+  "background": false,
+  "scene": "STAGE4_PRESENTATION",
+  "camera": "S4::CAMERA_A",
+  "frame": 1,
+  "is_playing": false,
+  "range": [
+    1,
+    990
+  ],
+  "timeline_visible_range": [
+    -27.29756736755371,
+    1018.7962036132812
+  ],
+  "save_called": false,
+  "left_open": true,
+  "initial_cli_state": {
+    "scene": "STAGE4_PRESENTATION",
+    "frame": 1
+  },
+  "observed_before_normalizing": {
+    "scene": "STAGE4_PRESENTATION",
+    "frame": 1,
+    "is_playing": false
+  },
+  "project_sha256": "da631cf33dfc6ecb8a4c0a1393b13831067967f79fb83886a1dee0bf18629287"
+}

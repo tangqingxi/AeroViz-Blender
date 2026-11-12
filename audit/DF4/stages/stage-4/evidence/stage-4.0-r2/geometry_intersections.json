@@ -1,0 +1,31 @@
+{
+  "method": "世界空间真实三角网格BVH相交；严格包围盒排除接触；源相交不作新穿插",
+  "baseline_pairs": {
+    "X-tend | base_board_flyctrl": 8,
+    "X-tend | panel12": 87,
+    "box_up | box_up2": 39,
+    "box_up | panel12": 220,
+    "box_up2 | tail-1": 184,
+    "box_up2 | tail-2": 58,
+    "box_up2 | tail-3": 140,
+    "duct-in | duct-out-1": 518,
+    "duct-in | duct-out-2": 397,
+    "duct-in | duct-out-3": 443,
+    "duct-in | servo-KST-X08H-1": 198,
+    "duct-in | servo-KST-X08H-2": 198,
+    "duct-in | servo-KST-X08H-3": 197,
+    "duct-in | servo-KST-X08H-4": 197,
+    "duct-in | tail-1": 318,
+    "duct-in | tail-2": 223,
+    "duct-in | tail-3": 264,
+    "duct-out-1 | tail-1": 263,
+    "duct-out-2 | tail-3": 319,
+    "motor-Sunnysky-X2814III-1000KV | rotor": 205
+  },
+  "frames_checked": 17245,
+  "new_intersection_events": [],
+  "status": "PASS",
+  "candidate_sha256": "f292f7a44121af30bb191669d08fd4563cd1d4e79753d1dd6289a2324bedf4b7",
+  "config_sha256": "73c92c56e036bd07e28ca333f9a4d12a6c5f91e4fd30625b69fafa15d82acaa0",
+  "spatial_step_target_m": 0.001
+}

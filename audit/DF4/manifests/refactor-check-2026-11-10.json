@@ -1,0 +1,29 @@
+{
+  "blender_version": "5.0.1",
+  "registry": {
+    "sdf": "adapters.import_sdf",
+    "stl": "adapters.import_stl"
+  },
+  "sdf_parse": {
+    "parts": 25,
+    "links": 26,
+    "joints": 25,
+    "includes": 1,
+    "ignored_joints": 1,
+    "matches_recorded_baseline": true
+  },
+  "material_parse": {
+    "visual_records": 25,
+    "with_material": 25
+  },
+  "mesh_object_projection": {
+    "total": 33,
+    "recorded_imported_count": 33
+  },
+  "stl_units": [
+    "cm",
+    "m",
+    "mm"
+  ],
+  "overall": "PASS"
+}

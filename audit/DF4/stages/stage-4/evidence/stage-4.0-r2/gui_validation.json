@@ -1,0 +1,425 @@
+{
+  "status": "PASS",
+  "background": false,
+  "project_sha256": "766faf3114d05f2b3f0193ae8cc0ecd0aeb0e08f476afcc686e34d59be8af197",
+  "blender_version": "5.0.1",
+  "camera": "S4::CAMERA_A",
+  "frame": 1,
+  "timeline_visible": true,
+  "range": [
+    1,
+    990
+  ],
+  "markers": 28,
+  "layout_saved": true,
+  "areas": [
+    {
+      "type": "PROPERTIES",
+      "ui_type": "PROPERTIES",
+      "height": 1241,
+      "width": 451
+    },
+    {
+      "type": "OUTLINER",
+      "ui_type": "OUTLINER",
+      "height": 280,
+      "width": 451
+    },
+    {
+      "type": "DOPESHEET_EDITOR",
+      "ui_type": "TIMELINE",
+      "height": 220,
+      "width": 2098
+    },
+    {
+      "type": "VIEW_3D",
+      "ui_type": "VIEW_3D",
+      "height": 1301,
+      "width": 2098
+    }
+  ],
+  "full_cycle_observed": true,
+  "playback_samples": [
+    {
+      "elapsed_s": 0.609,
+      "frame": 15,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 1.109,
+      "frame": 30,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 1.625,
+      "frame": 45,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 2.125,
+      "frame": 60,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 2.625,
+      "frame": 75,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 3.125,
+      "frame": 90,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 3.625,
+      "frame": 105,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 4.14,
+      "frame": 120,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 4.64,
+      "frame": 136,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 5.14,
+      "frame": 151,
+      "camera": "S4::CAMERA_C"
+    },
+    {
+      "elapsed_s": 5.64,
+      "frame": 166,
+      "camera": "S4::CAMERA_C"
+    },
+    {
+      "elapsed_s": 6.14,
+      "frame": 181,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 6.656,
+      "frame": 196,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 7.156,
+      "frame": 211,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 7.656,
+      "frame": 226,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 8.156,
+      "frame": 241,
+      "camera": "S4::CAMERA_C"
+    },
+    {
+      "elapsed_s": 8.656,
+      "frame": 256,
+      "camera": "S4::CAMERA_C"
+    },
+    {
+      "elapsed_s": 9.171,
+      "frame": 271,
+      "camera": "S4::CAMERA_C"
+    },
+    {
+      "elapsed_s": 9.671,
+      "frame": 286,
+      "camera": "S4::CAMERA_C"
+    },
+    {
+      "elapsed_s": 10.171,
+      "frame": 302,
+      "camera": "S4::CAMERA_C"
+    },
+    {
+      "elapsed_s": 10.671,
+      "frame": 317,
+      "camera": "S4::CAMERA_C"
+    },
+    {
+      "elapsed_s": 11.187,
+      "frame": 332,
+      "camera": "S4::CAMERA_C"
+    },
+    {
+      "elapsed_s": 11.687,
+      "frame": 347,
+      "camera": "S4::CAMERA_C"
+    },
+    {
+      "elapsed_s": 12.203,
+      "frame": 362,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 12.703,
+      "frame": 377,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 13.203,
+      "frame": 392,
+      "camera": "S4::CAMERA_B"
+    },
+    {
+      "elapsed_s": 13.703,
+      "frame": 407,
+      "camera": "S4::CAMERA_B"
+    },
+    {
+      "elapsed_s": 14.203,
+      "frame": 422,
+      "camera": "S4::CAMERA_B"
+    },
+    {
+      "elapsed_s": 14.703,
+      "frame": 437,
+      "camera": "S4::CAMERA_B"
+    },
+    {
+      "elapsed_s": 15.203,
+      "frame": 453,
+      "camera": "S4::CAMERA_B"
+    },
+    {
+      "elapsed_s": 15.718,
+      "frame": 468,
+      "camera": "S4::CAMERA_B"
+    },
+    {
+      "elapsed_s": 16.234,
+      "frame": 483,
+      "camera": "S4::CAMERA_B"
+    },
+    {
+      "elapsed_s": 16.765,
+      "frame": 499,
+      "camera": "S4::CAMERA_B"
+    },
+    {
+      "elapsed_s": 17.296,
+      "frame": 515,
+      "camera": "S4::CAMERA_B"
+    },
+    {
+      "elapsed_s": 17.828,
+      "frame": 531,
+      "camera": "S4::CAMERA_B"
+    },
+    {
+      "elapsed_s": 18.359,
+      "frame": 547,
+      "camera": "S4::CAMERA_B"
+    },
+    {
+      "elapsed_s": 18.906,
+      "frame": 563,
+      "camera": "S4::CAMERA_B"
+    },
+    {
+      "elapsed_s": 19.406,
+      "frame": 579,
+      "camera": "S4::CAMERA_B"
+    },
+    {
+      "elapsed_s": 19.937,
+      "frame": 594,
+      "camera": "S4::CAMERA_C"
+    },
+    {
+      "elapsed_s": 20.437,
+      "frame": 609,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 20.937,
+      "frame": 625,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 21.437,
+      "frame": 640,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 21.937,
+      "frame": 655,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 22.453,
+      "frame": 670,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 22.953,
+      "frame": 685,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 23.453,
+      "frame": 700,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 23.953,
+      "frame": 715,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 24.453,
+      "frame": 730,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 24.953,
+      "frame": 745,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 25.468,
+      "frame": 760,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 25.968,
+      "frame": 775,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 26.468,
+      "frame": 790,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 26.968,
+      "frame": 806,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 27.468,
+      "frame": 821,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 27.968,
+      "frame": 836,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 28.468,
+      "frame": 851,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 28.984,
+      "frame": 866,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 29.484,
+      "frame": 881,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 29.984,
+      "frame": 896,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 30.484,
+      "frame": 911,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 31.0,
+      "frame": 926,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 31.5,
+      "frame": 941,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 32.0,
+      "frame": 956,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 32.5,
+      "frame": 971,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 33.0,
+      "frame": 986,
+      "camera": "S4::CAMERA_A"
+    },
+    {
+      "elapsed_s": 33.5,
+      "frame": 10,
+      "camera": "S4::CAMERA_A"
+    }
+  ],
+  "restart_count": 0,
+  "visual_sample_frames": {
+    "75": {
+      "actual_frame": 75,
+      "camera": "S4::CAMERA_A"
+    },
+    "235": {
+      "actual_frame": 241,
+      "camera": "S4::CAMERA_C"
+    },
+    "350": {
+      "actual_frame": 362,
+      "camera": "S4::CAMERA_A"
+    },
+    "412": {
+      "actual_frame": 422,
+      "camera": "S4::CAMERA_B"
+    },
+    "453": {
+      "actual_frame": 453,
+      "camera": "S4::CAMERA_B"
+    },
+    "625": {
+      "actual_frame": 625,
+      "camera": "S4::CAMERA_A"
+    },
+    "821": {
+      "actual_frame": 821,
+      "camera": "S4::CAMERA_A"
+    },
+    "913": {
+      "actual_frame": 926,
+      "camera": "S4::CAMERA_A"
+    },
+    "975": {
+      "actual_frame": 986,
+      "camera": "S4::CAMERA_A"
+    }
+  },
+  "exact_visual_frames": [
+    75,
+    350,
+    412,
+    453,
+    625,
+    821,
+    913,
+    975
+  ],
+  "left_open": true,
+  "note": "GUI截图仅证明窗口布局，不作为展示渲染素材；最终停留遵循用户最新补充要求。"
+}

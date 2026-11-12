@@ -1,0 +1,18 @@
+{
+  "programs": [],
+  "stream_groups": [],
+  "streams": [
+    {
+      "codec_name": "h264",
+      "width": 960,
+      "height": 540,
+      "avg_frame_rate": "15/1",
+      "nb_frames": "825"
+    }
+  ],
+  "format": {
+    "duration": "55.000000",
+    "size": "12546000"
+  },
+  "decode_all_frames_status": "PASS"
+}

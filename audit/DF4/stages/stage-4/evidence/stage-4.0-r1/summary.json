@@ -1,0 +1,26 @@
+{
+  "status": "STAGE 4.0-R1: READY FOR USER VISUAL ACCEPTANCE",
+  "human_visual_acceptance": "PENDING",
+  "formal_project": "output/DF4/DF4.blend",
+  "sha256": "da631cf33dfc6ecb8a4c0a1393b13831067967f79fb83886a1dee0bf18629287",
+  "baseline_sha256": "489553c18fffb5c12cbce8efcc5c41ced7f6d1e507c7bda90988e684565c60d7",
+  "fps": 30,
+  "frames": [
+    1,
+    990
+  ],
+  "duration_s": 33,
+  "source_objects": 117,
+  "presentation_objects": 72,
+  "global_objects": 189,
+  "retained_presentation_objects": 67,
+  "battery_direction": "-Y",
+  "pose_pass": true,
+  "recovery_error": 2.4492937051703357e-16,
+  "geometry_samples": 14647,
+  "new_intersection_pairs": 0,
+  "mp4_generated": false,
+  "overview": "stages/stage-4.0-r1/evidence/images/STAGE_4_0_R1_OVERVIEW.png",
+  "blender_left_open": true,
+  "development_head": "33834c8ba51e0a400477c64d148a5eb87a51a880"
+}

@@ -1,0 +1,22 @@
+{
+  "stage": "4.0",
+  "technical_status": "PASS",
+  "human_visual_acceptance": "PENDING",
+  "project": "output/DF4/DF4.blend",
+  "project_sha256": "489553c18fffb5c12cbce8efcc5c41ced7f6d1e507c7bda90988e684565c60d7",
+  "project_bytes": 5466403,
+  "source_stage3_sha256": "392af12f14a6fbfb27b201d836b86752c90a97afbc024960fc00f03407726824",
+  "source_scene_objects": 117,
+  "presentation_scene_objects": 67,
+  "global_objects": 184,
+  "global_materials": 8,
+  "shots": 17,
+  "camera_cut_markers": 17,
+  "phase_markers": 17,
+  "stills": 1,
+  "preview_duration_s": 55,
+  "next_action": "等待人工效果验收；不进入4.1–4.3",
+  "development_head": "f38b2f43a436150f59b58b0a9443389a0f3ddc05",
+  "source_frames_in_contact_sheet": 14,
+  "image_delivery": "local_only_contact_sheet"
+}

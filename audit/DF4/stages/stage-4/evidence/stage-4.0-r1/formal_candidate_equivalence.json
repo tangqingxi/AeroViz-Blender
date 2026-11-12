@@ -1,0 +1,11 @@
+{
+  "tested_candidate": {
+    "project_sha256": "2ec3d32402077ec3fb53dfde2d28c82d1213e2c1d6531599b269080ddb5a4d6f",
+    "visual_input_sha256": "48fbcd1870ee29d2b9b89ace7482dc4ca14b5d9ccda7b7d0c92e23399e49244e"
+  },
+  "formal": {
+    "project_sha256": "da631cf33dfc6ecb8a4c0a1393b13831067967f79fb83886a1dee0bf18629287",
+    "visual_input_sha256": "48fbcd1870ee29d2b9b89ace7482dc4ca14b5d9ccda7b7d0c92e23399e49244e"
+  },
+  "status": "PASS"
+}

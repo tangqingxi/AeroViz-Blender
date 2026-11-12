@@ -1,0 +1,180 @@
+{
+  "schema_version": 2,
+  "phase": "Stage3",
+  "created_at": "2026-11-10T14:55:48Z",
+  "agent": {
+    "name": "codex"
+  },
+  "development": {
+    "repository": "https://github.com/tangqingxi/AeroViz-Blender",
+    "branch": "main",
+    "commit": "6b2480bc6683de6a2d94fb23b20683c04f8bc17d"
+  },
+  "audit": {
+    "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
+  },
+  "status": "accepted",
+  "status_note": "original: passed",
+  "environment": {
+    "blender": "5.0.1",
+    "os": "Windows"
+  },
+  "evidence": [
+    {
+      "path": "stages/stage-3/STAGE_3_REPORT.md",
+      "sha256": "a0fbc376aa55e5cc7e5cb1607563d2acce36902d546826dd96d093c78ba743bd",
+      "kind": "report"
+    },
+    {
+      "path": "stages/stage-3/evidence/assembly_restore.json",
+      "sha256": "d0292ec206fab1978ebcabfd736ce7d6907b5ffc6e026c5cbe7542eaf7d03301",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/branch_manifest.json",
+      "sha256": "2e9a1975efb7f997743535a5d2c9317c8757b713dd3787431371bfc75fa59580",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/coordinate-tests.log",
+      "sha256": "b0e743d73602c101806e78863624ef29928098ddbd2b34e06564af9ba92baf3f",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/coordinate_tests.json",
+      "sha256": "d30dd0fd417f340c3d3d9d28e8c33b5adee4f6ac1d930c499c8e538c08209e20",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/explosion_baseline.json",
+      "sha256": "673c820c2d9aab1c48ab9c57f7e67684a78975b8c8952f13e601872df3e88c2c",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/explosion_validation.json",
+      "sha256": "2e75679d089b1b0a4dd128b9abd0ac07e4b81d3e31445f47f92e8a9c8f8b31ca",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/final-regression.log",
+      "sha256": "c5a397f869367c06882ec2cba2765f93771cde5c0be0640d80c3cec14ba8f0b2",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/formal-apply.log",
+      "sha256": "d6b7a888a8e202902fc94fc8f857379a5a110c2c96351ef63c2f75d1d8004348",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/formal-regression.json",
+      "sha256": "93c5dc198d639e54c4ae33222ad3cc656baef5233641486a91c152ded4a82201",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/full-semantic.log",
+      "sha256": "015ab056a86e29918d77391930044705d7c73c47b5d1dfbec30716395407f903",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/gui_frame_001.png",
+      "sha256": "a7704879757011d0b563069d66a2f2299d0b3b923630487ab6a87134dab2a577",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/gui_frame_121.png",
+      "sha256": "87a2005ad82e5f405bfd43946020942462de1151e1603aa1712e7724d4269cf3",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/gui_frame_151.png",
+      "sha256": "7acaa32daa74b9b2e3d90ff06aec849264b9352410415605d881e940e1e3353c",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/gui_frame_181.png",
+      "sha256": "0a6b4e765f53a247ad5d56387d6439a2e8e40e9e14db829bafe31d8d0c9c5ec3",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/gui_frame_241.png",
+      "sha256": "737e37a59b5b7333f49f540a9d61d4fda72f171e03177bd2d42b465ea4a30f56",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/gui_frame_301.png",
+      "sha256": "e228dc1f1aefe83cfb8044d316c5d8eba19a383571f71f5de19c8b4e9b0c6e73",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/gui_playback.png",
+      "sha256": "4838195f69b31bef88c0bae1ec853c5ab5d5240f0ded5972c95e3ce5c36427c8",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/gui_validation.json",
+      "sha256": "103b31acf34daab09bd5facdad5a919b3fb03e4f3ef3424638b4446e436a32e3",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/independent_joint_checks.json",
+      "sha256": "3a29ba79ad09ee3fdfbf8ad8c291772f13714b97940fb1a3f56feddb4fc7c020",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/joint-checks.log",
+      "sha256": "7aaf73f25f36804308932775bf050c05b5ef7db4e9514e482f752c0f1562f08c",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/prepare.log",
+      "sha256": "323fbd8a46a867457108b73d3c0a6c5e0df158336af6efd049fe0be47f146d1f",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/reuse.log",
+      "sha256": "aa2a53fb41c47c287c82b72dc419ea0ae92443fa143fea7149eb0817a7715315",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/saved-regression.log",
+      "sha256": "17742dd947ee8b54196ff3219aa2a24512186ab4fadb284725130410bb59eff3",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/saved-verify.log",
+      "sha256": "81c2149bb5cb938875e11ebf24e4194fff2983309bc5fea7b36b974e923c951e",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/semantic_comparison.json",
+      "sha256": "3024e3566379a85b3c3925a95c7a728a751a3756382d3576536834bab97c72e6",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/stage2_regression.json",
+      "sha256": "bb49b03391cbffdefa0691b4c84354c2e905104cef9e42fcb6ea0f57cf438e97",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/stage3_validation.json",
+      "sha256": "3c5d5e53cb56fe3b9e411002fe954dbb5827bdaa744346c563d74426a4489cb3",
+      "kind": "other"
+    },
+    {
+      "path": "stages/stage-3/evidence/static-checks.json",
+      "sha256": "6ee975710b579595d1c9926efb9d66d48bb87ff608ed5ea3e231c27ac4c2bd40",
+      "kind": "other"
+    }
+  ],
+  "verification": {
+    "commands": [
+      "python scripts/verify_evidence.py <audit-root> <manifest>"
+    ],
+    "result": "passed"
+  },
+  "limitations": [
+    "坐标语义由用户冻结；未独立复核不可见的Autopilot源码。",
+    "爆炸位移是展示参数，不是物理仿真或实测拆装行程。"
+  ],
+  "next_action": "Stage 4: WAITING FOR AUTHORIZATION"
+}

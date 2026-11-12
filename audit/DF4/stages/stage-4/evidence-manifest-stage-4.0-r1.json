@@ -1,0 +1,121 @@
+{
+  "schema_version": 2,
+  "phase": "Stage4.0-R1",
+  "created_at": "2026-11-11T08:31:28Z",
+  "development": {
+    "repository": "https://github.com/tangqingxi/AeroViz-Blender",
+    "branch": "main",
+    "commit": "33834c8ba51e0a400477c64d148a5eb87a51a880"
+  },
+  "audit": {
+    "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
+  },
+  "status": "in-progress",
+  "status_note": "original: ready_for_user_visual_acceptance",
+  "verification": {
+    "commands": [],
+    "result": "passed",
+    "notes": "技术验证结果沿用原 status 字段（见 status_note）；视觉验收状态以该字段为准，详细记录见该阶段报告。"
+  },
+  "next_action": "等待用户视觉验收；R1已交付，不代表视觉效果认可。",
+  "evidence": [
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r1/baseline_regression.json",
+      "sha256": "38b733806fae1b3a0f4fe828e1844610ce155c4907364b98668506cb2f072a23",
+      "bytes": 1805082,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r1/battery_path.json",
+      "sha256": "b5fe8963256a6b8bf2c6e458c66b7cae4fcf21a18a0e9947aefeaa6bd29c370b",
+      "bytes": 20250,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r1/contact_sheet.json",
+      "sha256": "cfd0291c90272b73044be42ac9efe215f877a21791d5c7b26bf84800e3bef694",
+      "bytes": 3811,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r1/delivery_checks.json",
+      "sha256": "6091402ea4a83b1439be699fe25a1e37a70a2e5809469603c6a5e92b697e9188",
+      "bytes": 469,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r1/final_reopen_validation.json",
+      "sha256": "a0927a9776f8b80365ba0a08805921b8ffcfc02cd44583a2e702c478b098f5c6",
+      "bytes": 590,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r1/formal_candidate_equivalence.json",
+      "sha256": "3d26b6cf8c3630cf65c397412a13ad09aa56bd7852295448e3ff1110c7df5192",
+      "bytes": 448,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r1/framing_geometry_equivalence.json",
+      "sha256": "3986f4d684c79630d005d49265f5d8f2787a829c4831e144c917dab599155b01",
+      "bytes": 341,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r1/geometry_intersections.json",
+      "sha256": "c1720f9bf6e02a7482ee56989d7a8e7c8f4b3e8ca8eb289020d01a66adedff43",
+      "bytes": 1146,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r1/gui_validation.json",
+      "sha256": "6cf726db670c3bdcf70397f59fc22846556c68084205cc904b377474b5838ce9",
+      "bytes": 8213,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r1/input_preservation.json",
+      "sha256": "132bdbb2cea1433617e2a151ed5d3823e8f58e557e38c1cb472c1dce43f652c8",
+      "bytes": 5471,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r1/repository_visibility.json",
+      "sha256": "ca7c1e76879a47f38f4fd9c14b75685bee38dc7ea7a3190f21a8027e952a3487",
+      "bytes": 342,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r1/saved_project_regression.json",
+      "sha256": "c48eec1c2714a97aae2477616c9d36046fe028a4eadc547aabf79cbe0b64deae",
+      "bytes": 1831002,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r1/static_checks.json",
+      "sha256": "db0602e9e92e20b40e18e9d75ac344006bf7dccc68205aaa3198009a51fc8202",
+      "bytes": 1312,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r1/summary.json",
+      "sha256": "55a3986c7b7ec447667882f2dc34ad6bb2b44a8199ed3ab8eb4247d750ef6106",
+      "bytes": 858,
+      "kind": "review-data"
+    },
+    {
+      "path": "stages/stage-4/STAGE_4_0_R1_REPORT.md",
+      "sha256": "e0db85a33763d17450dc0d90949add2a8bae0587a0939fe50f19a46a348f9ad9",
+      "bytes": 13988,
+      "kind": "report"
+    }
+  ],
+  "local_artifacts": [
+    {
+      "path": "stages/stage-4/evidence/stage-4.0-r1/images/STAGE_4_0_R1_OVERVIEW.png",
+      "sha256": "a9e48e9b395ef01d0948f303f65dafdb5f97bbc1707f22be11cbdc5db2884f0d",
+      "bytes": 2183905,
+      "kind": "review-data"
+    }
+  ]
+}

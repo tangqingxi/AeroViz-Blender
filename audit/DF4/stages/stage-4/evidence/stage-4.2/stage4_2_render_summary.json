@@ -1,0 +1,143 @@
+{
+  "generated_at": "2026-11-11T14:18:07Z",
+  "project": {
+    "path": "output/DF4/DF4.blend",
+    "sha256": "cfafc7c7245654409a378a7c16267251a3307863dfcfb6c288ac53c1674295a0",
+    "unchanged": true
+  },
+  "render": {
+    "engine": "CYCLES",
+    "backend": "OPTIX",
+    "device": [
+      {
+        "name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+        "type": "OPTIX"
+      }
+    ],
+    "blender": "5.0.1",
+    "scene": "STAGE4_PRESENTATION",
+    "resolution": [
+      1920,
+      1080,
+      100
+    ],
+    "samples": 256,
+    "adaptive_threshold": 0.009999999776482582,
+    "denoiser": "OPENIMAGEDENOISE",
+    "frame_range": [
+      1,
+      900
+    ],
+    "fps": 30
+  },
+  "segments": [
+    {
+      "range": [
+        1,
+        300
+      ],
+      "rendered": 299,
+      "skipped": 1,
+      "seconds": 3872.06,
+      "mean_seconds": 12.95,
+      "check": {
+        "expected": 300,
+        "present": 300,
+        "missing_count": 0,
+        "ok": true
+      }
+    },
+    {
+      "range": [
+        301,
+        600
+      ],
+      "rendered": 300,
+      "skipped": 0,
+      "seconds": 3928.61,
+      "mean_seconds": 13.1,
+      "check": {
+        "expected": 300,
+        "present": 300,
+        "missing_count": 0,
+        "ok": true
+      }
+    },
+    {
+      "range": [
+        601,
+        900
+      ],
+      "rendered": 300,
+      "skipped": 0,
+      "seconds": 3328.21,
+      "mean_seconds": 11.09,
+      "check": {
+        "expected": 300,
+        "present": 300,
+        "missing_count": 0,
+        "ok": true
+      }
+    }
+  ],
+  "totals": {
+    "frames": 900,
+    "png_bytes": 1631175874,
+    "png_gib": 1.519,
+    "mean_png_bytes": 1812417.6,
+    "render_seconds": 11136.17,
+    "render_hours": 3.09,
+    "mean_seconds_per_frame": 12.37,
+    "encode_seconds": 8.3
+  },
+  "validation": {
+    "frame_set_ok": true,
+    "missing": 0,
+    "zero_byte": [],
+    "wrong_size": [],
+    "undecodable": []
+  },
+  "mp4": {
+    "path": "MP4/DF4_Final_1080p30.mp4",
+    "bytes": 6329553,
+    "stream": {
+      "codec_name": "h264",
+      "profile": "High",
+      "width": 1920,
+      "height": 1080,
+      "pix_fmt": "yuv420p",
+      "level": 41,
+      "color_space": "bt709",
+      "color_transfer": "bt709",
+      "color_primaries": "bt709",
+      "r_frame_rate": "30/1",
+      "bit_rate": "1684810",
+      "nb_frames": "900"
+    },
+    "format": {
+      "format_name": "mov,mp4,m4a,3gp,3g2,mj2",
+      "duration": "30.000000",
+      "size": "6329553",
+      "bit_rate": "1687880"
+    },
+    "decode_fidelity_mean_abs_rgb": {
+      "F0001": 1.44,
+      "F0450": 1.28,
+      "F0900": 1.15
+    },
+    "audio_streams": 0
+  },
+  "precheck": {
+    "frames": [
+      426,
+      506,
+      751
+    ],
+    "seconds": [
+      9.89,
+      8.7,
+      8.89
+    ],
+    "result": "PASS：无穿模、黑屏、相机异常、丢件、异常模糊或可见噪点"
+  }
+}

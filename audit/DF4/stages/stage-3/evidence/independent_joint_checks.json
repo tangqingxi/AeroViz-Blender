@@ -1,0 +1,146 @@
+{
+  "status": "PASS",
+  "checks": [
+    {
+      "frame": 1,
+      "joint": "JOINT::cs1_joint",
+      "meshes": [
+        "cs11"
+      ],
+      "center_m": [
+        0.0,
+        0.0,
+        -0.14099499583244324
+      ],
+      "max_error": 5.960464477539063e-08,
+      "status": "PASS"
+    },
+    {
+      "frame": 1,
+      "joint": "JOINT::cs2_joint",
+      "meshes": [
+        "cs2"
+      ],
+      "center_m": [
+        0.0,
+        0.0,
+        -0.14099499583244324
+      ],
+      "max_error": 5.960464477539063e-08,
+      "status": "PASS"
+    },
+    {
+      "frame": 1,
+      "joint": "JOINT::cs3_joint",
+      "meshes": [
+        "cs33"
+      ],
+      "center_m": [
+        0.0,
+        0.0,
+        -0.14099499583244324
+      ],
+      "max_error": 5.960464477539063e-08,
+      "status": "PASS"
+    },
+    {
+      "frame": 1,
+      "joint": "JOINT::cs4_joint",
+      "meshes": [
+        "cs4"
+      ],
+      "center_m": [
+        0.0,
+        0.0,
+        -0.14099499583244324
+      ],
+      "max_error": 5.960464477539063e-08,
+      "status": "PASS"
+    },
+    {
+      "frame": 1,
+      "joint": "JOINT::rotor_joint",
+      "meshes": [
+        "rotor"
+      ],
+      "center_m": [
+        0.0,
+        0.0,
+        -0.04500000178813934
+      ],
+      "max_error": 5.960464477539063e-08,
+      "status": "PASS"
+    },
+    {
+      "frame": 181,
+      "joint": "JOINT::cs1_joint",
+      "meshes": [
+        "cs11"
+      ],
+      "center_m": [
+        0.2199999839067459,
+        -7.60507900849916e-05,
+        -0.5009950399398804
+      ],
+      "max_error": 5.960464477539063e-08,
+      "status": "PASS"
+    },
+    {
+      "frame": 181,
+      "joint": "JOINT::cs2_joint",
+      "meshes": [
+        "cs2"
+      ],
+      "center_m": [
+        0.0,
+        -0.2199999988079071,
+        -0.5009950399398804
+      ],
+      "max_error": 5.960464477539063e-08,
+      "status": "PASS"
+    },
+    {
+      "frame": 181,
+      "joint": "JOINT::cs3_joint",
+      "meshes": [
+        "cs33"
+      ],
+      "center_m": [
+        -0.2199999988079071,
+        0.0,
+        -0.5009950399398804
+      ],
+      "max_error": 5.960464477539063e-08,
+      "status": "PASS"
+    },
+    {
+      "frame": 181,
+      "joint": "JOINT::cs4_joint",
+      "meshes": [
+        "cs4"
+      ],
+      "center_m": [
+        -0.0001845112710725516,
+        0.21999992430210114,
+        -0.5009950399398804
+      ],
+      "max_error": 5.960464477539063e-08,
+      "status": "PASS"
+    },
+    {
+      "frame": 181,
+      "joint": "JOINT::rotor_joint",
+      "meshes": [
+        "rotor"
+      ],
+      "center_m": [
+        0.0,
+        0.0,
+        -0.1850000023841858
+      ],
+      "max_error": 5.960464477539063e-08,
+      "status": "PASS"
+    }
+  ],
+  "actions_unchanged": true
+}

@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "geometry_signature": "bcf100cf33047639ea74982a51f4b495cc808924156bcf9051953ec38dbfef09",
+  "geometry_tested_sha256": "c3aee0c7368b40428f49f72ab4c703afda312c77a32ff44bd7394e9d185d4ebe",
+  "approved_candidate_sha256": "2ec3d32402077ec3fb53dfde2d28c82d1213e2c1d6531599b269080ddb5a4d6f",
+  "camera_only_refresh": true
+}

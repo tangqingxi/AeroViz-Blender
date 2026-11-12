@@ -1,0 +1,113 @@
+CASE success EXIT 0
+00:00.359  blend            | Read blend: "<DEV>\.work\io-regression\success\DF4.blend"
+Info: Saved copy as "DF4.lrl8yi7a.partial.blend"
+IO_CASE success PASS
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
+
+Blender quit
+
+CASE reopen EXIT 0
+00:00.344  blend            | Read blend: "<DEV>\.work\io-regression\success\DF4.blend"
+IO_CASE reopen PASS
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
+
+Blender quit
+
+CASE save_failure EXIT 0
+00:00.344  blend            | Read blend: "<DEV>\.work\io-regression\save_failure\DF4.blend"
+IO_CASE save_failure PASS
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
+
+Blender quit
+
+CASE reopen EXIT 0
+00:00.328  blend            | Read blend: "<DEV>\.work\io-regression\save_failure\DF4.blend"
+IO_CASE reopen PASS
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
+
+Blender quit
+
+CASE replace_failure EXIT 0
+00:00.344  blend            | Read blend: "<DEV>\.work\io-regression\replace_failure\DF4.blend"
+Info: Saved copy as "DF4.j5aeopof.partial.blend"
+IO_CASE replace_failure PASS
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
+
+Blender quit
+
+CASE reopen EXIT 0
+00:00.375  blend            | Read blend: "<DEV>\.work\io-regression\replace_failure\DF4.blend"
+IO_CASE reopen PASS
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
+
+Blender quit
+
+CASE new_target EXIT 0
+00:00.344  blend            | Read blend: "<DEV>\.work\io-regression\new_target\DF4.blend"
+00:00.469  blend            | Read blend: "<DEV>\.work\io-regression\new_target\new-target.blend"
+Info: Saved copy as "new-target.2q_hhfee.partial.blend"
+IO_CASE new_target PASS
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
+
+Blender quit
+
+CASE reopen EXIT 0
+00:00.344  blend            | Read blend: "<DEV>\.work\io-regression\new_target\new-target.blend"
+IO_CASE reopen PASS
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
+
+Blender quit
+
+CASE guard EXIT 1
+IO_CASE guard PASS
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
+Traceback (most recent call last):
+  File "<DEV>\scripts\main.py", line 65, in <module>
+    main()
+  File "<DEV>\scripts\main.py", line 28, in main
+    raise FileExistsError(f'拒绝覆盖已有工程：{target}；如需重建必须显式提供 --force-rebuild')
+FileExistsError: 拒绝覆盖已有工程：<DEV>\.work\io-regression\guard\DF4.blend；如需重建必须显式提供 --force-rebuild
+
+CASE force_gate EXIT 1
+IO_CASE force_gate PASS
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
+Traceback (most recent call last):
+  File "<DEV>\scripts\main.py", line 65, in <module>
+    main()
+  File "<DEV>\scripts\main.py", line 38, in main
+    work = project_io.safe_reset_work_dir(config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<BLENDER>\5.0\python\Lib\unittest\mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<BLENDER>\5.0\python\Lib\unittest\mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<BLENDER>\5.0\python\Lib\unittest\mock.py", line 1189, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<DEV>\tests\test_project_io.py", line 47, in stop_cleanup
+    raise RuntimeError("AUTHORIZED_BOUNDARY_NO_REBUILD")
+RuntimeError: AUTHORIZED_BOUNDARY_NO_REBUILD
+
+CASE first_gate EXIT 1
+IO_CASE first_gate PASS
+Blender 5.0.1 (hash a3db93c5b259 built 2025-12-16 01:32:30)
+Traceback (most recent call last):
+  File "<DEV>\scripts\main.py", line 65, in <module>
+    main()
+  File "<DEV>\scripts\main.py", line 38, in main
+    work = project_io.safe_reset_work_dir(config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<BLENDER>\5.0\python\Lib\unittest\mock.py", line 1124, in __call__
+    return self._mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<BLENDER>\5.0\python\Lib\unittest\mock.py", line 1128, in _mock_call
+    return self._execute_mock_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "<BLENDER>\5.0\python\Lib\unittest\mock.py", line 1189, in _execute_mock_call
+    result = effect(*args, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^
+  File "<DEV>\tests\test_project_io.py", line 47, in stop_cleanup
+    raise RuntimeError("AUTHORIZED_BOUNDARY_NO_REBUILD")
+RuntimeError: AUTHORIZED_BOUNDARY_NO_REBUILD

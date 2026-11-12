@@ -1,0 +1,281 @@
+{
+  "generated_at": "2026-11-11T10:48:57Z",
+  "blender": "5.0.1",
+  "scene": "STAGE4_PRESENTATION",
+  "project": {
+    "path": "output/DF4/DF4.blend",
+    "sha256": "cfafc7c7245654409a378a7c16267251a3307863dfcfb6c288ac53c1674295a0"
+  },
+  "render": {
+    "engine": "CYCLES",
+    "device_backend": "OPTIX",
+    "devices": [
+      {
+        "name": "NVIDIA GeForce RTX 5060 Laptop GPU",
+        "type": "OPTIX"
+      }
+    ],
+    "resolution": [
+      1920,
+      1080,
+      100
+    ],
+    "samples": 256,
+    "adaptive_sampling": {
+      "enabled": true,
+      "threshold": 0.009999999776482582
+    },
+    "denoiser": "OPENIMAGEDENOISE",
+    "denoising_input_passes": "RGB_ALBEDO_NORMAL",
+    "denoising_prefilter": "ACCURATE",
+    "view_transform": "AgX",
+    "look": "AgX - Medium High Contrast",
+    "exposure": -0.10000000149011612,
+    "film_transparent": false,
+    "motion_blur": false,
+    "png": {
+      "format": "PNG",
+      "color_mode": "RGB",
+      "depth": "8"
+    },
+    "fps": 30,
+    "frame_range": [
+      1,
+      900
+    ],
+    "markers": [
+      {
+        "name": "CUT::T01",
+        "frame": 1,
+        "camera": "S4::CAMERA_A"
+      },
+      {
+        "name": "CUT::T02",
+        "frame": 91,
+        "camera": "S4::CAMERA_A"
+      },
+      {
+        "name": "CUT::T03",
+        "frame": 201,
+        "camera": "S4::CAMERA_C"
+      },
+      {
+        "name": "CUT::T04",
+        "frame": 231,
+        "camera": "S4::CAMERA_C"
+      },
+      {
+        "name": "CUT::T05",
+        "frame": 306,
+        "camera": "S4::CAMERA_A"
+      },
+      {
+        "name": "CUT::T06",
+        "frame": 336,
+        "camera": "S4::CAMERA_B"
+      },
+      {
+        "name": "CUT::T07",
+        "frame": 506,
+        "camera": "S4::CAMERA_A"
+      },
+      {
+        "name": "CUT::T08",
+        "frame": 691,
+        "camera": "S4::CAMERA_A"
+      },
+      {
+        "name": "CUT::T09",
+        "frame": 751,
+        "camera": "S4::CAMERA_A"
+      },
+      {
+        "name": "CUT::T10",
+        "frame": 871,
+        "camera": "S4::CAMERA_A"
+      },
+      {
+        "name": "T01",
+        "frame": 2,
+        "camera": null
+      },
+      {
+        "name": "T02",
+        "frame": 92,
+        "camera": null
+      },
+      {
+        "name": "T03",
+        "frame": 202,
+        "camera": null
+      },
+      {
+        "name": "T04",
+        "frame": 232,
+        "camera": null
+      },
+      {
+        "name": "T05",
+        "frame": 307,
+        "camera": null
+      },
+      {
+        "name": "T06",
+        "frame": 337,
+        "camera": null
+      },
+      {
+        "name": "T07",
+        "frame": 507,
+        "camera": null
+      },
+      {
+        "name": "T08",
+        "frame": 692,
+        "camera": null
+      },
+      {
+        "name": "T09",
+        "frame": 752,
+        "camera": null
+      },
+      {
+        "name": "T10",
+        "frame": 872,
+        "camera": null
+      }
+    ]
+  },
+  "frames": [
+    {
+      "frame": 30,
+      "file": "DF4_F0030.png",
+      "camera": "S4::CAMERA_A",
+      "bytes": 1758203,
+      "sha256": "7064ea6103ec9b912a7292f3feb5962721815d8d084b446986f4129d7d76b5ed",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "render_seconds": 8.33
+    },
+    {
+      "frame": 145,
+      "file": "DF4_F0145.png",
+      "camera": "S4::CAMERA_A",
+      "bytes": 1809396,
+      "sha256": "9dd027d4d2488c47d5cc092bd1df8c1b13cffde6242aec1f13b74e4d5272a227",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "render_seconds": 8.63
+    },
+    {
+      "frame": 200,
+      "file": "DF4_F0200.png",
+      "camera": "S4::CAMERA_A",
+      "bytes": 1823443,
+      "sha256": "a196b7b33371da0ddb794e3143b1ecf5452938aef6d59e9483f4e17967c9ccbe",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "render_seconds": 9.21
+    },
+    {
+      "frame": 270,
+      "file": "DF4_F0270.png",
+      "camera": "S4::CAMERA_C",
+      "bytes": 1828535,
+      "sha256": "bfc96645bbeef205bd3afcc3df21982445eda903be1f106614cf9500a87371a4",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "render_seconds": 11.76
+    },
+    {
+      "frame": 412,
+      "file": "DF4_F0412.png",
+      "camera": "S4::CAMERA_B",
+      "bytes": 1739940,
+      "sha256": "2e642ed2596d9d343e2c512bb4c1e6568279fec4380a83d6762746289113a410",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "render_seconds": 12.1
+    },
+    {
+      "frame": 540,
+      "file": "DF4_F0540.png",
+      "camera": "S4::CAMERA_A",
+      "bytes": 1829590,
+      "sha256": "d2c2307c8cee3b2960f1926dc1bc5c9aa1c5988fd610a4f0057af58af5e4736e",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "render_seconds": 10.02
+    },
+    {
+      "frame": 745,
+      "file": "DF4_F0745.png",
+      "camera": "S4::CAMERA_A",
+      "bytes": 1824444,
+      "sha256": "925aac01a4bbc41c522c95c2246351fad0f026e9ce98e1b5bb210917cf14c9e7",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "render_seconds": 10.03
+    },
+    {
+      "frame": 885,
+      "file": "DF4_F0885.png",
+      "camera": "S4::CAMERA_A",
+      "bytes": 1833357,
+      "sha256": "1539ba9709fce356171f79e2c1b3df329e77de41edf310c4c6f297dc036ef139",
+      "resolution": [
+        1920,
+        1080
+      ],
+      "mode": "RGB",
+      "render_seconds": 10.56
+    }
+  ],
+  "timing": {
+    "total_seconds": 80.64,
+    "mean_seconds": 10.08,
+    "min_seconds": 8.33,
+    "max_seconds": 12.1,
+    "projected_900_frames_hours": 2.52,
+    "projected_png_total_gb": 1.63
+  },
+  "overview": {
+    "file": "STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png",
+    "bytes": 2352514,
+    "sha256": "e077876bc37effaf91bbd5272e5b6fe398367bb6cb7f5a81971611afd11f3d23",
+    "size": [
+      3840,
+      1800
+    ]
+  },
+  "quality_notes": {
+    "samples_sufficient": true,
+    "needs_512": false,
+    "oidn_detail_loss": "未观察到；100% 裁切下机械边缘保持锐利",
+    "black_legs": "清晰，边缘与灰色背景分离良好",
+    "white_duct": "最亮 237/255，AgX 下保留层次，未过曝",
+    "ground_grid": "细线，灰底上保持次要，不过度抢眼",
+    "visible_noise": "无可见噪点"
+  }
+}
