@@ -1,1 +1,26 @@
-{"status":"AWAITING_FRESH_CLONE_VERIFICATION","remote_audit_deletion":"USER_MANAGED_NOT_EXECUTED"}
+{
+  "status": "CONSOLIDATED_LOCAL_CLEANUP_BLOCKED",
+  "audit_original_head": "3876b07298cb19e408f1c4b7a18e029945da5f32",
+  "subtree_commit": "7e711e962765c6fb88cb5c9f68920a4ae7fd2e01",
+  "pre_completion_pushed_and_fresh_cloned_head": "4f95023efab7b93ff5c6b4ef3a2b3018295c2995",
+  "migrated_files": 173,
+  "original_bytes": 84044806,
+  "byte_identical_files": 156,
+  "documented_changed_files": 17,
+  "evidence_manifests_passed": 11,
+  "internal_markdown_links_passed": 146,
+  "audit_history_commits_preserved": 26,
+  "local_independent_audit_deleted": false,
+  "local_deletion_block": "Automatic approval rejected recursive deletion: blocked by policy",
+  "remote_audit_deleted": false,
+  "remote_deletion_responsibility": "用户最新明确要求自行删除，自动化未执行",
+  "origin_only": true,
+  "formal_blend_sha256": "cfafc7c7245654409a378a7c16267251a3307863dfcfb6c288ac53c1674295a0",
+  "protected_render_files": 974,
+  "protected_render_bytes": 2098192823,
+  "protected_model_files": 34,
+  "protected_model_bytes": 14122254,
+  "protected_file_hashes": "全部逐文件一致",
+  "backup_retained": ".work/audit-migration/AeroViz-Blender-Audit.git + migration-backup.bundle",
+  "stage_5_started": false
+}

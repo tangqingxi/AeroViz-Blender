@@ -34,7 +34,11 @@ Stage1、1.5、2、3完成；Stage4.0-R3完成并验收；Stage4.1 Cycles画质�
 
 ## 完成检查
 
-迁移内容将正常fast-forward推送；从GitHub重新clone主仓库，逐文件核对173文件并重跑全部证据清单和Markdown链接检查。核对通过后才删除本地独立Audit目录，并移除临时audit-source remote，主仓库只保留origin。
+迁移内容已正常fast-forward推送，并从GitHub重新clone主仓库，173文件、11份证据清单与146个内部Markdown链接均PASS，原Audit的26个提交可达。主仓库临时audit-source remote已移除，只保留origin。
+
+本地独立Audit目录删除被自动审批拒绝，工具仅返回“blocked by policy”，未提供具体原因；未绕过限制，目录保持完整，迁移前后再次核验其173文件无变化。该本地目录需用户手动清理。远端旧Audit仓库依用户最新指示由用户删除，自动化未执行删除。当前为CONSOLIDATED_LOCAL_CLEANUP_BLOCKED，不能宣称所有删除步骤完成。
+
+正式工程哈希保持不变；DF4_Render实际974文件、2,098,192,823字节，DF4_gazebo实际34文件、14,122,254字节，全部逐文件SHA256与迁移前一致。完整mirror/bundle保留于.work/audit-migration供用户删除旧仓库后需要时回退。
 
 最终执行结果记录在[migration-validation.json](migration-validation.json)与[migration-completion.json](migration-completion.json)。主仓库最终提交由本文件所在Git HEAD及交付消息标识，避免文件自引用其提交哈希。
 
