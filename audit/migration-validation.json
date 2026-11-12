@@ -1,0 +1,797 @@
+{
+  "status": "PASS",
+  "files": 173,
+  "byte_identical": 156,
+  "recorded_changes": 17,
+  "manifests": [
+    {
+      "path": "audit/DF4/manifests/evidence-manifest.json",
+      "entries": 172,
+      "status": "PASS"
+    },
+    {
+      "path": "audit/DF4/stages/stage-1/evidence-manifest.json",
+      "entries": 10,
+      "status": "PASS"
+    },
+    {
+      "path": "audit/DF4/stages/stage-1.5/evidence-manifest.json",
+      "entries": 8,
+      "status": "PASS"
+    },
+    {
+      "path": "audit/DF4/stages/stage-2/evidence-manifest.json",
+      "entries": 29,
+      "status": "PASS"
+    },
+    {
+      "path": "audit/DF4/stages/stage-3/evidence-manifest.json",
+      "entries": 29,
+      "status": "PASS"
+    },
+    {
+      "path": "audit/DF4/stages/stage-4/evidence-manifest-stage-4.0-r1.json",
+      "entries": 15,
+      "status": "PASS"
+    },
+    {
+      "path": "audit/DF4/stages/stage-4/evidence-manifest-stage-4.0-r2.json",
+      "entries": 16,
+      "status": "PASS"
+    },
+    {
+      "path": "audit/DF4/stages/stage-4/evidence-manifest-stage-4.0-r3.json",
+      "entries": 18,
+      "status": "PASS"
+    },
+    {
+      "path": "audit/DF4/stages/stage-4/evidence-manifest-stage-4.0.json",
+      "entries": 17,
+      "status": "PASS"
+    },
+    {
+      "path": "audit/DF4/stages/stage-4/evidence-manifest-stage-4.1.json",
+      "entries": 3,
+      "status": "PASS"
+    },
+    {
+      "path": "audit/DF4/stages/stage-4/evidence-manifest-stage-4.2.json",
+      "entries": 4,
+      "status": "PASS"
+    }
+  ],
+  "relative_markdown_links": [
+    {
+      "source": "README.md",
+      "target": "audit/DF4/README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "audit/README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "audit/MIGRATION_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "audit/DF4/stages/stage-4/STAGE_4_2_FINAL_RENDER_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "audit/DF4/README.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/architecture.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/interfaces.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/asset-provenance.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/model-onboarding.md",
+      "exists": true
+    },
+    {
+      "source": "README.md",
+      "target": "docs/stage4-acceptance.md",
+      "exists": true
+    },
+    {
+      "source": "audit/MIGRATION_REPORT.md",
+      "target": "migration-file-comparison.json",
+      "exists": true
+    },
+    {
+      "source": "audit/MIGRATION_REPORT.md",
+      "target": "migration-validation.json",
+      "exists": true
+    },
+    {
+      "source": "audit/MIGRATION_REPORT.md",
+      "target": "migration-completion.json",
+      "exists": true
+    },
+    {
+      "source": "audit/README.md",
+      "target": "DF4/README.md",
+      "exists": true
+    },
+    {
+      "source": "audit/README.md",
+      "target": "DF4/stages/stage-4/INDEX.md",
+      "exists": true
+    },
+    {
+      "source": "audit/README.md",
+      "target": "MIGRATION_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/README.md",
+      "target": "migration-file-comparison.json",
+      "exists": true
+    },
+    {
+      "source": "docs/interfaces.md",
+      "target": "stage4-presentation.md",
+      "exists": true
+    },
+    {
+      "source": "docs/interfaces.md",
+      "target": "stage4-acceptance.md",
+      "exists": true
+    },
+    {
+      "source": "docs/model-onboarding.md",
+      "target": "asset-provenance.md",
+      "exists": true
+    },
+    {
+      "source": "docs/stage4-presentation.md",
+      "target": "stage4-acceptance.md",
+      "exists": true
+    },
+    {
+      "source": "examples/README.md",
+      "target": "../configs/DF4.json",
+      "exists": true
+    },
+    {
+      "source": "examples/README.md",
+      "target": "../docs/model-onboarding.md",
+      "exists": true
+    },
+    {
+      "source": "scripts/rendering/README.md",
+      "target": "../../docs/stage4-presentation.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/HANDOFF.md",
+      "target": "README.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/HANDOFF.md",
+      "target": "../MIGRATION_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/README.md",
+      "target": "../MIGRATION_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/README.md",
+      "target": "HANDOFF.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/README.md",
+      "target": "stages/stage-1/STAGE_1_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/README.md",
+      "target": "stages/stage-1.5/STAGE_1_5_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/README.md",
+      "target": "stages/stage-2/STAGE_2_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/README.md",
+      "target": "stages/stage-3/STAGE_3_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/README.md",
+      "target": "stages/stage-4/STAGE_4_0_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/README.md",
+      "target": "stages/stage-4/STAGE_4_0_R1_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/README.md",
+      "target": "stages/stage-4/STAGE_4_0_R2_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/README.md",
+      "target": "stages/stage-4/STAGE_4_0_R3_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/README.md",
+      "target": "stages/stage-4/STAGE_4_1_CYCLES_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/README.md",
+      "target": "stages/stage-4/STAGE_4_2_FINAL_RENDER_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/README.md",
+      "target": "stages/stage-4/",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/README.md",
+      "target": "stages/stage-4/INDEX.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/README.md",
+      "target": "manifests/ARTIFACT_MANIFEST.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../README.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-4/INDEX.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-1/STAGE_1_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-1/evidence-manifest.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-1.5/STAGE_1_5_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-1.5/evidence-manifest.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-2/STAGE_2_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-2/evidence-manifest.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-3/STAGE_3_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-3/evidence-manifest.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-4/STAGE_4_0_R3_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-4/evidence-manifest-stage-4.0-r3.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-4/STAGE_4_1_CYCLES_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-4/evidence-manifest-stage-4.1.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "reverify-2026-11-10.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-4/evidence/stage-4.0-r3/",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-4/INDEX.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "refactor-check-2026-11-10.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-4/INDEX.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-4/STAGE_4_1_CYCLES_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-4/evidence/stage-4.1/STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-4/evidence/stage-4.1/stage4_1_render_record.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-4/STAGE_4_2_FINAL_RENDER_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/manifests/ARTIFACT_MANIFEST.md",
+      "target": "../stages/stage-4/evidence/stage-4.2/",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-1/STAGE_1_REPORT.md",
+      "target": "evidence-manifest.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-1/STAGE_1_REPORT.md",
+      "target": "../../manifests/refactor-check-2026-11-10.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-1/STAGE_1_REPORT.md",
+      "target": "evidence/gui_isometric.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-1/STAGE_1_REPORT.md",
+      "target": "evidence/gui_front.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-1/STAGE_1_REPORT.md",
+      "target": "evidence/gui_top.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-1/STAGE_1_REPORT.md",
+      "target": "evidence/gui_side.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-1/STAGE_1_REPORT.md",
+      "target": "evidence/isometric.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-1/STAGE_1_REPORT.md",
+      "target": "../../manifests/ARTIFACT_MANIFEST.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-1/STAGE_1_REPORT.md",
+      "target": "../../manifests/ARTIFACT_MANIFEST.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-1/STAGE_1_REPORT.md",
+      "target": "evidence/input_manifest.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-1/STAGE_1_REPORT.md",
+      "target": "../../manifests/ARTIFACT_MANIFEST.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-1/STAGE_1_REPORT.md",
+      "target": "../stage-1.5/STAGE_1_5_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-1.5/STAGE_1_5_REPORT.md",
+      "target": "evidence-manifest.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-1.5/STAGE_1_5_REPORT.md",
+      "target": "../stage-1/STAGE_1_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-1.5/STAGE_1_5_REPORT.md",
+      "target": "evidence/material_preview_window.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-1.5/STAGE_1_5_REPORT.md",
+      "target": "evidence/material_preview.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-1.5/STAGE_1_5_REPORT.md",
+      "target": "evidence/eevee_preview.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-1.5/STAGE_1_5_REPORT.md",
+      "target": "../../manifests/ARTIFACT_MANIFEST.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-2/STAGE_2_REPORT.md",
+      "target": "evidence/independent_motion.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-2/STAGE_2_REPORT.md",
+      "target": "evidence/independent_motion.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-2/STAGE_2_REPORT.md",
+      "target": "evidence/rotor_continuity.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-2/STAGE_2_REPORT.md",
+      "target": "evidence/combined_animation.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-2/STAGE_2_REPORT.md",
+      "target": "evidence/structure_baseline.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-2/STAGE_2_REPORT.md",
+      "target": "evidence/final-regression.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-2/STAGE_2_REPORT.md",
+      "target": "evidence/gui_validation.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-2/STAGE_2_REPORT.md",
+      "target": "evidence/gui_initial.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-2/STAGE_2_REPORT.md",
+      "target": "evidence/gui_cs1_positive.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-2/STAGE_2_REPORT.md",
+      "target": "evidence/gui_cs1_negative.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-2/STAGE_2_REPORT.md",
+      "target": "evidence/gui_cs2_positive.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-2/STAGE_2_REPORT.md",
+      "target": "evidence/gui_cs3_positive.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-2/STAGE_2_REPORT.md",
+      "target": "evidence/gui_cs4_positive.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-2/STAGE_2_REPORT.md",
+      "target": "evidence/gui_playback.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-2/STAGE_2_REPORT.md",
+      "target": "evidence/stage2_validation.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-3/STAGE_3_REPORT.md",
+      "target": "evidence/semantic_comparison.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-3/STAGE_3_REPORT.md",
+      "target": "evidence/coordinate_tests.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-3/STAGE_3_REPORT.md",
+      "target": "evidence/branch_manifest.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-3/STAGE_3_REPORT.md",
+      "target": "evidence/explosion_validation.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-3/STAGE_3_REPORT.md",
+      "target": "evidence/assembly_restore.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-3/STAGE_3_REPORT.md",
+      "target": "evidence/stage2_regression.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-3/STAGE_3_REPORT.md",
+      "target": "evidence/formal-regression.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-3/STAGE_3_REPORT.md",
+      "target": "evidence/independent_joint_checks.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-3/STAGE_3_REPORT.md",
+      "target": "evidence/gui_validation.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-3/STAGE_3_REPORT.md",
+      "target": "evidence/gui_frame_001.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-3/STAGE_3_REPORT.md",
+      "target": "evidence/gui_frame_121.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-3/STAGE_3_REPORT.md",
+      "target": "evidence/gui_frame_151.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-3/STAGE_3_REPORT.md",
+      "target": "evidence/gui_frame_181.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-3/STAGE_3_REPORT.md",
+      "target": "evidence/gui_frame_241.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-3/STAGE_3_REPORT.md",
+      "target": "evidence/gui_frame_301.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-3/STAGE_3_REPORT.md",
+      "target": "evidence/stage3_validation.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "STAGE_4_0_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "STAGE_4_0_ACCEPTANCE.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "evidence/stage-4.0/",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "evidence-manifest-stage-4.0.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "STAGE_4_0_R1_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "evidence/stage-4.0-r1/",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "evidence-manifest-stage-4.0-r1.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "STAGE_4_0_R2_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "evidence/stage-4.0-r2/",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "evidence-manifest-stage-4.0-r2.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "STAGE_4_0_R3_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "evidence/stage-4.0-r3/",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "evidence-manifest-stage-4.0-r3.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "STAGE_4_1_CYCLES_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "evidence/stage-4.1/",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "evidence-manifest-stage-4.1.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "STAGE_4_2_FINAL_RENDER_REPORT.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "evidence/stage-4.2/",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "evidence-manifest-stage-4.2.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "../../manifests/ARTIFACT_MANIFEST.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "../../HANDOFF.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/INDEX.md",
+      "target": "../../README.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/STAGE_4_0_R2_REPORT.md",
+      "target": "evidence/stage-4.0-r2/STAGE_4_0_R2_OVERVIEW.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/STAGE_4_0_R3_REPORT.md",
+      "target": "evidence/stage-4.0-r3/STAGE_4_0_R3_OVERVIEW.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/STAGE_4_0_REPORT.md",
+      "target": "evidence/stage-4.0/video/DF4_Stage4_0_preview.mp4",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/STAGE_4_0_REPORT.md",
+      "target": "STAGE_4_0_ACCEPTANCE.md",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/STAGE_4_1_CYCLES_REPORT.md",
+      "target": "evidence/stage-4.1/",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/STAGE_4_1_CYCLES_REPORT.md",
+      "target": "evidence-manifest-stage-4.1.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/STAGE_4_1_CYCLES_REPORT.md",
+      "target": "evidence/stage-4.1/stage4_1_render_record.json",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/STAGE_4_1_CYCLES_REPORT.md",
+      "target": "evidence/stage-4.1/STAGE_4_1_CYCLES_QUALITY_OVERVIEW.png",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/STAGE_4_2_FINAL_RENDER_REPORT.md",
+      "target": "evidence/stage-4.2/",
+      "exists": true
+    },
+    {
+      "source": "audit/DF4/stages/stage-4/STAGE_4_2_FINAL_RENDER_REPORT.md",
+      "target": "evidence-manifest-stage-4.2.json",
+      "exists": true
+    }
+  ],
+  "stale_audit_urls": 0,
+  "original_histories_reachable": true
+}

@@ -57,7 +57,7 @@ Blender 5.0.1 的 Action 经 `layers → strips → channelbag(action_slot) → 
 
 当前实际入口、独立Scene/NLA契约、逐帧回归和原子保存见 [展示层接口](stage4-presentation.md)。用户操作见 [验收说明](stage4-acceptance.md)。本阶段的验收素材为干净Eevee渲染和低清MP4，GUI截图只证明布局和播放。
 
-### Stage 4.1 —— Cycles 静帧参数（已定标，正式序列未授权）
+### Stage 4.1 —— Cycles 静帧参数（已定标，Stage4.2正式序列已完成）
 
 入口：`scripts/rendering/render_cycles.py`。它只读正式工程：把工程复制到 `<out>/_work/` 后
 才打开，渲染设置只写在副本上，不保存、不覆盖正式 `.blend`；`--skip-existing` 会先核对
@@ -69,9 +69,9 @@ prefilter ACCURATE）、AgX + `AgX - Medium High Contrast`、Exposure −0.1、P
 背景不透明、Motion Blur 关闭。8 帧实测平均 10.08 s/帧，900 帧约 2.52 小时、PNG 约 1.63 GB。
 
 定标结论与逐帧记录在审计仓库 `stages/stage-4/STAGE_4_1_CYCLES_REPORT.md`。正式 900 帧
-渲染与 MP4 编码尚未授权。
+Stage4.2已完成900帧正式PNG和MP4；结果位于仓库外DF4_Render/。
 
-### 后续完整渲染接口草案（尚未授权）
+### 完整渲染接口（Stage4.2已完成）
 
 预期入口：`scripts/rendering/render.py`（序列编排与编码），静帧渲染复用 `render_cycles.py`。
 

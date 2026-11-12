@@ -7,7 +7,7 @@
 | 阶段状态 | 已完成并通过本地验收；等待外部复核 |
 | 开发仓库 | <https://github.com/tangqingxi/AeroViz-Blender> |
 | 开发提交 | `b8bca84138636af2e086d76f428b593c8ab5210b`（`main`，已推送；模型证据由 `d956bec…` 的代码产生，`b8bca84` 只改工程路径与保存方式，未重跑导入或材质） |
-| 审计仓库 | <https://github.com/tangqingxi/AeroViz-Blender-Audit> |
+| 审计仓库 | <https://github.com/tangqingxi/AeroViz-Blender/tree/main/audit/DF4> |
 | 原始执行日期 | 2026-11-10 |
 | 报告整理日期 | 2026-11-10 |
 | 证据清单 | [`evidence-manifest.json`](evidence-manifest.json) |

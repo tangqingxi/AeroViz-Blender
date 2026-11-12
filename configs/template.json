@@ -8,7 +8,7 @@
   "output_dir": "output/MODEL",
   "blend_name": "MODEL.blend",
   "work_dir": ".work",
-  "audit_root": "../AeroViz-Blender-Audit",
+  "audit_root": "audit/DF4",
   "apply_model_pose": false,
   "groups": {
     "PARTS": [

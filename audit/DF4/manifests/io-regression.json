@@ -236,7 +236,7 @@
   "dev_commit": "09521e8df71c05565c478ddeebfdde1746373a58",
   "generated_at": "2026-11-10T11:41:43Z",
   "development_repository": "https://github.com/tangqingxi/AeroViz-Blender",
-  "audit_repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit",
+  "audit_repository": "https://github.com/tangqingxi/AeroViz-Blender/tree/main/audit/DF4",
   "baseline_dev_commit": "b8bca84138636af2e086d76f428b593c8ab5210b",
   "baseline_audit_commit": "a0a993cb28654fb299d30c5f26c9dd40fee62c0d",
   "stage2_readiness": "READY FOR USER AUTHORIZATION",

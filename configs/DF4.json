@@ -1,7 +1,7 @@
 {
   "model_name": "DF4",
   "adapter": "sdf",
-  "input_root": "../DF4_SolidWorks",
+  "input_root": "../DF4_gazebo",
   "input_root_env": "AEROVIZ_DF4_INPUT",
   "description": "ductedfan4.sdf.jinja",
   "mesh_unit": "m",
@@ -9,7 +9,7 @@
   "output_dir": "output/DF4",
   "blend_name": "DF4.blend",
   "work_dir": ".work",
-  "audit_root": "../AeroViz-Blender-Audit",
+  "audit_root": "audit/DF4",
   "apply_model_pose": false,
   "expected_dimensions_m": [
     [

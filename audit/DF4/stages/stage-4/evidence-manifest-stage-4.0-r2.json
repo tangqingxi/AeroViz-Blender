@@ -8,7 +8,7 @@
     "commit": "4b8dca8ef2e2810f2c40477f8c394ff8c4d49b21"
   },
   "audit": {
-    "repository": "https://github.com/tangqingxi/AeroViz-Blender-Audit"
+    "repository": "https://github.com/tangqingxi/AeroViz-Blender/tree/main/audit/DF4"
   },
   "status": "in-progress",
   "status_note": "original: ready_for_user_visual_acceptance",

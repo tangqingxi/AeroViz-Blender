@@ -5,7 +5,7 @@
 
 - 开发仓库：<https://github.com/tangqingxi/AeroViz-Blender>
 - 开发提交：`f7cbd09837037480f5a7df4325a49b5a57b68440`（`main`）
-- 审计仓库：<https://github.com/tangqingxi/AeroViz-Blender-Audit>
+- 审计仓库：<https://github.com/tangqingxi/AeroViz-Blender/tree/main/audit/DF4>
 - 更新日期：2026-11-11
 
 ---

@@ -1,9 +1,11 @@
+> 归档入口：原AeroViz-Blender-Audit已于2026-11-12通过不使用squash的Git Subtree迁入主仓库audit/DF4。原HEAD为3876b07298cb19e408f1c4b7a18e029945da5f32，原始Git提交历史完整保留。当前DF4工作流已完成至Stage4.2；下文阶段记录属于历史。迁移详情见[迁移报告](../MIGRATION_REPORT.md)。
+
 # AeroViz-Blender — Audit Repository
 
-本仓库是 **AeroViz-Blender** 的阶段报告、验收证据与交接记录，**不含源码、不含模型资产**。
+本归档是 **AeroViz-Blender** 的阶段报告、验收证据与交接记录，**不含源码、不含模型资产**。
 
 - 开发仓库（代码、配置、文档）：<https://github.com/tangqingxi/AeroViz-Blender>
-- 审计仓库（本仓库）：<https://github.com/tangqingxi/AeroViz-Blender-Audit>
+- 审计归档（主仓库内）：<https://github.com/tangqingxi/AeroViz-Blender/tree/main/audit/DF4>
 
 两个仓库保持 Public。本仓库只放报告、截图与测量记录，不含原始 STL/SDF/`.blend`，也不放可执行源码。
 
